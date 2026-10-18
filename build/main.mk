@@ -101,7 +101,7 @@ endif
 # that exports only retro_*, resolves its own symbols first (the frontend may
 # have its own SDL loaded) and carries its C++ runtime.
 ifeq ($(LIBRETRO),true)
-COMPILE_FLAGS+=-fPIC -DOPENMSX_LIBRETRO -DGLEW_NO_GLU
+COMPILE_FLAGS+=-fPIC -DOPENMSX_LIBRETRO
 LINK_FLAGS+=-Wl,--version-script=src/libretro/link.T -Wl,-Bsymbolic \
 	-Wl,--no-undefined -static-libstdc++ -static-libgcc
 endif

@@ -274,6 +274,9 @@ class GLEW(Library):
 			)
 		if platform.startswith('mingw') and linkStatic:
 			return '%s -DGLEW_STATIC' % flags
+		elif environ.get('LIBRETRO') == 'true':
+			# The libretro core has no GLU, which glew.h includes otherwise
+			return '%s -DGLEW_NO_GLU' % flags
 		else:
 			return flags
 
