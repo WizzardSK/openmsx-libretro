@@ -96,6 +96,15 @@ LINK_FLAGS:=-pthread
 else
 LINK_FLAGS:=-pthread -ldl
 endif
+
+# The libretro core (LIBRETRO=true, with 3RDPARTY_FLAG=true): a shared library
+# that exports only retro_*, resolves its own symbols first (the frontend may
+# have its own SDL loaded) and carries its C++ runtime.
+ifeq ($(LIBRETRO),true)
+COMPILE_FLAGS+=-fPIC -DLIBRETRO
+LINK_FLAGS+=-Wl,--version-script=src/libretro/link.T -Wl,-Bsymbolic \
+	-Wl,--no-undefined -static-libstdc++ -static-libgcc
+endif
 # Flags that specify the target platform.
 # These should be inherited by the 3rd party libs Makefile.
 TARGET_FLAGS:=
@@ -222,14 +231,18 @@ else
   BINARY_FULL:=$(BINARY_PATH)/$(BINARY_FILE)
 endif
 
+ifeq ($(LIBRETRO),true)
+LIBRARY_FILE:=openmsx_libretro$(LIBRARYEXT)
+else
 LIBRARY_FILE:=openmsx$(LIBRARYEXT)
+endif
 LIBRARY_PATH:=$(BUILD_PATH)/lib
 LIBRARY_FULL:=$(LIBRARY_PATH)/$(LIBRARY_FILE)
 
-ifeq ($(OPENMSX_TARGET_OS),android)
-MAIN_EXECUTABLE:=$(LIBRARY_FULL)
-else
+ifeq ($(filter android,$(OPENMSX_TARGET_OS))$(filter true,$(LIBRETRO)),)
 MAIN_EXECUTABLE:=$(BINARY_FULL)
+else
+MAIN_EXECUTABLE:=$(LIBRARY_FULL)
 endif
 
 BUILDINFO_SCRIPT:=build/buildinfo2code.py
@@ -278,6 +291,12 @@ ifeq ($(UNITTEST),true)
 SOURCES_FULL:=$(filter-out src/main.cc,$(SOURCES_FULL))
 else
 SOURCES_FULL:=$(filter-out src/unittest/%.cc,$(SOURCES_FULL))
+endif
+
+ifeq ($(LIBRETRO),true)
+SOURCES_FULL:=$(filter-out src/main.cc,$(SOURCES_FULL))
+else
+SOURCES_FULL:=$(filter-out src/libretro/%.cc,$(SOURCES_FULL))
 endif
 
 # Apply subset to sources list.

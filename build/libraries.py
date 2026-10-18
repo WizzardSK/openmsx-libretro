@@ -10,12 +10,12 @@
 #             linked statically.
 
 from executils import captureStdout, shjoin
+from os import environ
 from msysutils import msysActive, msysPathToNative
 
 from io import open
 from os import listdir
 from os.path import isdir, isfile
-from os import environ
 
 def _get_pkg_config(distroRoot):
 	if distroRoot is None:
@@ -225,6 +225,11 @@ class GL(Library):
 			return '-lopengl32'
 		elif platform in ('netbsd', 'openbsd'):
 			return '-L/usr/X11R6/lib -L/usr/X11R7/lib -lGL'
+		elif environ.get('LIBRETRO') == 'true':
+			# The libretro core: libGL would pull in GLX and X11. libOpenGL
+			# and libEGL (glvnd) dispatch to the frontend's context, and
+			# GLEW is built for EGL.
+			return '-lOpenGL -lEGL'
 		else:
 			return super().getLinkFlags(platform, linkStatic, distroRoot)
 

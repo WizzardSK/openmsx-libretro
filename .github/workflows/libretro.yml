@@ -35,9 +35,8 @@ jobs:
           sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            gcc-13 g++-13 make python3 python3-pip ninja-build pkg-config \
+            gcc-13 g++-13 make python3 pkg-config \
             libopengl-dev libegl-dev libgl-dev
-          pip3 install --user 'meson>=1.3'
 
       - name: Static libraries (cache)
         id: cache
@@ -55,24 +54,17 @@ jobs:
           make 3rdparty OPENMSX_TARGET_CPU=${{ matrix.cpu }} OPENMSX_TARGET_OS=linux \
             OPENMSX_FLAVOUR=opt PYTHON=python3 -j"$(nproc)"
 
-      - name: Configure
-        run: |
-          export PATH="$HOME/.local/bin:$PATH"
-          INSTALL="$PWD/derived/${{ matrix.cpu }}-linux-opt-3rd/3rdparty/install"
-          ls "$INSTALL/lib/pkgconfig"
-          PKG_CONFIG_PATH="$INSTALL/lib/pkgconfig" meson setup builddir \
-            -Dlibretro=true -Dlaserdisc=disabled -Dalsamidi=disabled \
-            -Dbuildtype=release -Db_ndebug=true
-
       - name: Build
+        env:
+          LIBRETRO: 'true'
         run: |
-          export PATH="$HOME/.local/bin:$PATH"
-          ninja -C builddir
+          make OPENMSX_TARGET_CPU=${{ matrix.cpu }} OPENMSX_TARGET_OS=linux \
+            OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j"$(nproc)"
 
       - name: Collect
         run: |
           mkdir -p out
-          cp builddir/openmsx_libretro.so out/
+          cp derived/${{ matrix.cpu }}-linux-opt-3rd/lib/openmsx_libretro.so out/
           strip out/openmsx_libretro.so
           file out/openmsx_libretro.so
           nm -D --defined-only out/openmsx_libretro.so | grep -c ' T retro_'
