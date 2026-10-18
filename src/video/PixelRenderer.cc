@@ -4,6 +4,9 @@ TODO:
 */
 
 #include "PixelRenderer.hh"
+#ifdef LIBRETRO
+#include "LibretroHooks.hh"
+#endif
 
 #include "Display.hh"
 #include "PostProcessor.hh"
@@ -262,6 +265,9 @@ void PixelRenderer::frameEnd(EmuTime time)
 			lastPaintTime = time2;
 		}
 	}
+#ifdef LIBRETRO
+	libretroFrameEnd(vdp.getMotherBoard());
+#endif
 	if (vdp.getMotherBoard().isActive() &&
 	    !vdp.getMotherBoard().isFastForwarding()) {
 		eventDistributor.distributeEvent(FinishFrameEvent(

@@ -41,10 +41,16 @@ endif
 # Dependencies
 # ============
 
-dep_sdl2 = dependency('SDL2')
-dep_sdl2_ttf = dependency('SDL2_ttf')
-dep_png = dependency('libpng')
-dep_tcl = dependency('tcl', version: '>=8.6.0')
+# The libretro core links its libraries statically (built by build/3rdparty.mk)
+libretro = get_option('libretro')
+if libretro
+add_project_arguments('-DLIBRETRO', language: 'cpp')
+endif
+
+dep_sdl2 = dependency('SDL2', static: libretro)
+dep_sdl2_ttf = dependency('SDL2_ttf', static: libretro)
+dep_png = dependency('libpng', static: libretro)
+dep_tcl = dependency('tcl', version: '>=8.6.0', static: libretro)
 dep_threads = dependency('threads')
 dep_zlib = dependency('zlib')
 
@@ -53,8 +59,15 @@ dep_zlib = dependency('zlib')
 # library is absent on other systems, in which case it is simply skipped).
 dep_dl = compiler.find_library('dl', required: false)
 
+if libretro
+# No libGL: that pulls in GLX and X11. libOpenGL and libEGL (glvnd) dispatch to
+# whatever context the frontend made current, and GLEW is built for EGL.
+dep_gl = [dependency('opengl'), dependency('egl')]
+dep_glew = dependency('glew', static: true)
+else
 dep_gl = dependency('GL', required: get_option('glrenderer'))
 dep_glew = dependency('glew', required: get_option('glrenderer'))
+endif
 
 dep_ogg = dependency('ogg', required: get_option('laserdisc'))
 dep_theora = dependency('theoradec', required: get_option('laserdisc'))
@@ -73,8 +86,8 @@ components = {
     'CORE':
         true,
     'GL':
-        not get_option('glrenderer').disabled()
-        and dep_gl.found() and dep_glew.found(),
+        libretro or (not get_option('glrenderer').disabled()
+        and dep_gl.found() and dep_glew.found()),
     'LASERDISC':
         not get_option('laserdisc').disabled()
         and dep_ogg.found() and dep_theora.found() and dep_vorbis.found(),
@@ -157,6 +170,31 @@ hdr_config = custom_target(
 # Targets
 # =======
 
+if libretro
+
+libretro_core = shared_library(
+    'openmsx_libretro',
+    libretro_sources, sources,
+    hdr_version, hdr_config, hdr_components, hdr_systemfuncs,
+    name_prefix: '',
+    implicit_include_directories: false,
+    include_directories: [incdirs, '.'],
+    gnu_symbol_visibility: 'hidden',
+    link_args: [
+        '-Wl,--version-script=' + meson.current_source_dir() / 'src/libretro/link.T',
+        '-Wl,-Bsymbolic',
+        '-Wl,--no-undefined',
+        '-static-libstdc++',
+        '-static-libgcc',
+    ],
+    dependencies: [
+        dep_dl, dep_gl, dep_glew, dep_png, dep_sdl2, dep_sdl2_ttf,
+        dep_tcl, dep_threads, dep_zlib
+    ],
+)
+
+else
+
 main_exec = executable(
     'openmsx',
     main_sources, sources,
@@ -188,3 +226,5 @@ test_exec = executable(
 )
 
 test('combined unit test', test_exec)
+
+endif

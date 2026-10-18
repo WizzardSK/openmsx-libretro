@@ -541,6 +541,12 @@ main_sources = files(
     'main.cc',
 )
 
+libretro_sources = files(
+    'libretro/LibretroCore.cc',
+    'libretro/LibretroSoundDriver.cc',
+    'libretro/LibretroVideoSystem.cc',
+)
+
 test_sources = files(
     'unittest/AdhocCliCommParser_test.cc',
     'unittest/AnalogInput_test.cc',
@@ -618,4 +624,5 @@ incdirs = include_directories(
     'video/ld',
     'video/scalers',
     'video/v9990',
+    'libretro',
 )

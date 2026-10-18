@@ -28,7 +28,7 @@ struct StereoFloat {
 class Mixer final : private Observer<Setting>
 {
 public:
-	enum class SoundDriverType : uint8_t { NONE, SDL };
+	enum class SoundDriverType : uint8_t { NONE, SDL, LIBRETRO };
 
 	Mixer(Reactor& reactor, CommandController& commandController);
 	~Mixer();

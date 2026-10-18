@@ -7,3 +7,6 @@ option('glrenderer', type: 'feature', value: 'auto',
 option('laserdisc', type: 'feature', value: 'auto',
     description: 'emulation of Laserdisc players'
 )
+option('libretro', type: 'boolean', value: false,
+    description: 'build the libretro core (openmsx_libretro) instead of the executable, against static dependencies'
+)

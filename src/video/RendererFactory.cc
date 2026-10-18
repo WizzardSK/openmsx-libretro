@@ -19,6 +19,10 @@
 #include "LDPixelRenderer.hh"
 #endif
 
+#ifdef LIBRETRO
+#include "LibretroVideoSystem.hh"
+#endif
+
 #include <memory>
 
 namespace openmsx::RendererFactory {
@@ -30,7 +34,12 @@ std::unique_ptr<VideoSystem> createVideoSystem(Reactor& reactor)
 		case RenderSettings::RendererID::DUMMY:
 			return std::make_unique<DummyVideoSystem>();
 		case RenderSettings::RendererID::SDLGL_PP:
+#ifdef LIBRETRO
+			// The core paints into the frontend's framebuffer
+			return std::make_unique<LibretroVideoSystem>(reactor);
+#else
 			return std::make_unique<SDLVideoSystem>(reactor);
+#endif
 		default:
 			UNREACHABLE;
 	}

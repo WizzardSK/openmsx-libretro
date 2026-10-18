@@ -105,6 +105,30 @@ else
 USE_VIDEO_X11:=enable
 endif
 
+# The libretro core (LIBRETRO=true) has no window, sound device or joystick of
+# its own, and must not link X11 or Wayland: SDL2 is only used for its surfaces,
+# events and threads, and GLEW gets its functions through EGL (glvnd), which
+# also finds them for a GLX context the frontend made current.
+ifeq ($(LIBRETRO),true)
+USE_VIDEO_X11:=disable
+SDL2_LIBRETRO_FLAGS:=\
+	--disable-video-wayland \
+	--disable-video-kmsdrm \
+	--disable-video-vulkan \
+	--disable-video-opengl \
+	--disable-video-opengles \
+	--disable-audio \
+	--disable-joystick \
+	--disable-haptic \
+	--disable-hidapi \
+	--disable-sensor \
+	--disable-libudev \
+	--disable-dbus \
+	--disable-ime \
+	--disable-ibus \
+	--disable-fcitx
+endif
+
 ifeq ($(OPENMSX_TARGET_OS),android)
 # SDL2's top-level Makefile does not build the platform glue, so linking will fail.
 # As a workaround, we disable HIDAPI, but in the long term we should either fix the
@@ -181,6 +205,7 @@ $(BUILD_DIR)/$(PACKAGE_SDL2)/Makefile: \
 		--$(USE_VIDEO_X11)-video-x11 \
 		--disable-video-directfb \
 		--disable-video-opengles1 \
+		$(SDL2_LIBRETRO_FLAGS) \
 		--disable-nas \
 		--disable-esd \
 		--disable-arts \
@@ -278,7 +303,11 @@ MAKEVAR_OVERRIDE_GLEW:=CC="$(_CC) $(_CFLAGS)" LD="$(_CC) $(_LDFLAGS)"
 ifeq ($(TRIPLE_OS),mingw32)
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=linux-mingw64
 else
+ifeq ($(LIBRETRO),true)
+MAKEVAR_OVERRIDE_GLEW+=SYSTEM=linux-egl
+else
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=$(TRIPLE_OS)
+endif
 endif
 
 # Configure Tcl.
