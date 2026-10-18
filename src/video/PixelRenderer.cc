@@ -4,7 +4,7 @@ TODO:
 */
 
 #include "PixelRenderer.hh"
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 #include "LibretroHooks.hh"
 #endif
 
@@ -265,7 +265,7 @@ void PixelRenderer::frameEnd(EmuTime time)
 			lastPaintTime = time2;
 		}
 	}
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 	libretroFrameEnd(vdp.getMotherBoard());
 #endif
 	if (vdp.getMotherBoard().isActive() &&

@@ -19,7 +19,7 @@
 #include "LDPixelRenderer.hh"
 #endif
 
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 #include "LibretroVideoSystem.hh"
 #endif
 
@@ -34,7 +34,7 @@ std::unique_ptr<VideoSystem> createVideoSystem(Reactor& reactor)
 		case RenderSettings::RendererID::DUMMY:
 			return std::make_unique<DummyVideoSystem>();
 		case RenderSettings::RendererID::SDLGL_PP:
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 			// The core paints into the frontend's framebuffer
 			return std::make_unique<LibretroVideoSystem>(reactor);
 #else

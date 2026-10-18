@@ -3,7 +3,7 @@
 #include "MSXMixer.hh"
 #include "NullSoundDriver.hh"
 #include "SDLSoundDriver.hh"
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 #include "LibretroSoundDriver.hh"
 #endif
 
@@ -31,7 +31,7 @@ static EnumSetting<Mixer::SoundDriverType>::Map getSoundDriverMap()
 	EnumSetting<Mixer::SoundDriverType>::Map soundDriverMap = {
 		{ "null", Mixer::SoundDriverType::NONE },
 		{ "sdl",  Mixer::SoundDriverType::SDL } };
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 	soundDriverMap.emplace_back("libretro", Mixer::SoundDriverType::LIBRETRO);
 #endif
 	return soundDriverMap;
@@ -43,7 +43,7 @@ Mixer::Mixer(Reactor& reactor_, CommandController& commandController_)
 	, soundDriverSetting(
 		commandController, "sound_driver",
 		"select the sound output driver",
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 		Mixer::SoundDriverType::LIBRETRO,
 #else
 		Mixer::SoundDriverType::SDL,
@@ -100,7 +100,7 @@ void Mixer::reloadDriver()
 				frequencySetting.getInt(),
 				samplesSetting.getInt());
 			break;
-#ifdef LIBRETRO
+#ifdef OPENMSX_LIBRETRO
 		case SoundDriverType::LIBRETRO:
 			driver = std::make_unique<LibretroSoundDriver>();
 			break;
