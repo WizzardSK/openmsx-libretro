@@ -79,3 +79,27 @@ jobs:
         with:
           name: openmsx_libretro-${{ matrix.arch }}
           path: out/
+
+  system:
+    name: system files (system/openmsx)
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      # What the core reads from <system>/openmsx/share: openMSX's share
+      # folder with C-BIOS added as an install puts it (build/install.py), so
+      # the core starts on the C-BIOS machines without any other ROMs
+      - name: Assemble
+        run: |
+          mkdir -p out/openmsx
+          cp -r share out/openmsx/share
+          cp -r Contrib/cbios/. out/openmsx/share/machines/
+          mkdir -p out/openmsx/share/systemroms/cbios-old
+          cp -r Contrib/cbios-old/. out/openmsx/share/systemroms/cbios-old/
+          cp Contrib/README.cbios out/openmsx/share/cbios.txt
+          du -sh out/openmsx
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openmsx_system
+          path: out/
