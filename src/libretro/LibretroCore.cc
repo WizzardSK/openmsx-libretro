@@ -148,8 +148,9 @@ void contextReset()
 	glewExperimental = GL_TRUE;
 	// GLEW loads the GL functions first and then EGL's, which needs an EGL
 	// display: with a GLX context from the frontend there is none, as with
-	// openMSX itself on Wayland, and the GL functions are loaded all the same
-	if (GLenum err = glewInit(); err != GLEW_OK && err != GLEW_ERROR_NO_GLX_DISPLAY) {
+	// openMSX itself on Wayland, and the GL functions are loaded all the same.
+	// So what counts is whether OpenGL 2.1 is there afterwards.
+	if (GLenum err = glewInit(); err != GLEW_OK && !GLEW_VERSION_2_1) {
 		log(RETRO_LOG_ERROR, "GLEW: %s\n", reinterpret_cast<const char*>(glewGetErrorString(err)));
 		return;
 	}
