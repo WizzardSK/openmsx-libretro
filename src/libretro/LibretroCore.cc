@@ -36,6 +36,10 @@
 
 using namespace openmsx;
 
+// GLEW 2.2 defines it but leaves it out of glew.h: glewInit() without the
+// GLX/EGL part, which needs the window system the frontend owns
+extern "C" GLenum GLEWAPIENTRY glewContextInit();
+
 namespace {
 
 retro_environment_t environ_cb;
