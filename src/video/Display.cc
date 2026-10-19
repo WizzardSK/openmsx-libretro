@@ -88,6 +88,24 @@ void Display::createVideoSystem()
 	doRendererSwitch(renderSettings.getRenderer());
 }
 
+#ifdef OPENMSX_LIBRETRO
+void Display::releaseVideoSystem()
+{
+	for (auto& l : listeners) {
+		l->preVideoSystemChange();
+	}
+	resetVideoSystem();
+}
+
+void Display::restoreVideoSystem()
+{
+	videoSystem = RendererFactory::createVideoSystem(reactor);
+	for (auto& l : listeners) {
+		l->postVideoSystemChange();
+	}
+}
+#endif
+
 VideoSystem& Display::getVideoSystem()
 {
 	assert(videoSystem);

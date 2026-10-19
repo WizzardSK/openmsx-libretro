@@ -560,14 +560,22 @@ void contextReset()
 			environ_cb(RETRO_ENVIRONMENT_SHUTDOWN, nullptr);
 		}
 	} else {
-		// TODO: a lost context needs every GL object made again
-		log(RETRO_LOG_WARN, "the OpenGL context was reset; the picture may be lost\n");
+		// a new context after a lost one: openMSX makes its GL objects again
+		gl::context.emplace();
+		reactor->getDisplay().restoreVideoSystem();
 	}
 }
 
 void contextDestroy()
 {
+	// With cache_context the frontend calls this only when the context is
+	// really lost (another video driver, an Android app paused) or at
+	// unload: the GL objects go while it is still current
 	contextAlive = false;
+	if (reactor) {
+		reactor->getDisplay().releaseVideoSystem();
+	}
+	gl::context.reset();
 }
 
 // RetroArch's keyboard to SDL keys, as openMSX's keyboard emulation reads them

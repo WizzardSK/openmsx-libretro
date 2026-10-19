@@ -46,6 +46,14 @@ public:
 	void createVideoSystem();
 	[[nodiscard]] VideoSystem& getVideoSystem();
 
+#ifdef OPENMSX_LIBRETRO
+	/** The libretro core's OpenGL context is going away, and is back: every
+	  * GL object goes with the video system and is made again, as on a
+	  * renderer switch. */
+	void releaseVideoSystem();
+	void restoreVideoSystem();
+#endif
+
 	[[nodiscard]] CliComm& getCliComm() const;
 	[[nodiscard]] RenderSettings& getRenderSettings() { return renderSettings; }
 	[[nodiscard]] auto getRenderer() const { return currentRenderer; }
