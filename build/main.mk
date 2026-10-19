@@ -104,9 +104,19 @@ ifeq ($(LIBRETRO),true)
 # The commit the core is built from: its version, and the check that a
 # savestate comes from the same build
 LIBRETRO_COMMIT?=$(shell git rev-parse --short=10 HEAD 2>/dev/null || echo unknown)
-COMPILE_FLAGS+=-fPIC -DOPENMSX_LIBRETRO -DOPENMSX_LIBRETRO_COMMIT='"$(LIBRETRO_COMMIT)"'
+COMPILE_FLAGS+=-DOPENMSX_LIBRETRO -DOPENMSX_LIBRETRO_COMMIT='"$(LIBRETRO_COMMIT)"'
+ifneq ($(filter mingw%,$(OPENMSX_TARGET_OS)),)
+# A DLL exports only what is marked dllexport (retro_*, by libretro.h), and
+# carries winpthread too
+LINK_FLAGS+=-Wl,--no-undefined -static -static-libstdc++ -static-libgcc
+else ifeq ($(OPENMSX_TARGET_OS),darwin)
+# Two-level namespaces keep the core's symbols its own
+LINK_FLAGS+=-Wl,-exported_symbols_list,src/libretro/exports.txt -Wl,-undefined,error
+else
+COMPILE_FLAGS+=-fPIC
 LINK_FLAGS+=-Wl,--version-script=src/libretro/link.T -Wl,-Bsymbolic \
 	-Wl,--no-undefined -static-libstdc++ -static-libgcc
+endif
 endif
 # Flags that specify the target platform.
 # These should be inherited by the 3rd party libs Makefile.
@@ -235,7 +245,8 @@ else
 endif
 
 ifeq ($(LIBRETRO),true)
-LIBRARY_FILE:=openmsx_libretro$(LIBRARYEXT)
+# libretro names a macOS core .dylib
+LIBRARY_FILE:=openmsx_libretro$(if $(filter darwin,$(OPENMSX_TARGET_OS)),.dylib,$(LIBRARYEXT))
 else
 LIBRARY_FILE:=openmsx$(LIBRARYEXT)
 endif

@@ -111,8 +111,16 @@ void setupDirectories()
 {
 	std::string system = directory(RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY) + "/openmsx";
 	std::string saves = directory(RETRO_ENVIRONMENT_GET_SAVE_DIRECTORY) + "/openmsx";
-	setenv("OPENMSX_SYSTEM_DATA", (system + "/share").c_str(), 1);
-	setenv("OPENMSX_HOME", saves.c_str(), 1);
+	// openMSX reads both with getenv(), as UTF-8 also on Windows
+	auto setVariable = [](const char* name, const std::string& value) {
+#ifdef _WIN32
+		_putenv_s(name, value.c_str());
+#else
+		setenv(name, value.c_str(), 1);
+#endif
+	};
+	setVariable("OPENMSX_SYSTEM_DATA", system + "/share");
+	setVariable("OPENMSX_HOME", saves);
 }
 
 void runCommand(const std::string& command)

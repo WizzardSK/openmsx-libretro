@@ -83,6 +83,113 @@ jobs:
           name: openmsx_libretro-${{ matrix.arch }}
           path: out/
 
+  windows:
+    name: libretro core (windows-x86_64)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      # MinGW with POSIX threads, as openMSX's own Windows build
+      - name: Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends mingw-w64 make python3 tcl
+          sudo update-alternatives --set x86_64-w64-mingw32-gcc /usr/bin/x86_64-w64-mingw32-gcc-posix
+          sudo update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
+
+      - name: Static libraries (cache)
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            derived/x86_64-mingw-w64-opt-3rd/3rdparty/install
+            derived/x86_64-mingw-w64-opt-3rd/3rdparty/tools
+          key: 3rdparty-tools-windows-x86_64-${{ hashFiles('build/3rdparty.mk', 'build/packages.py', 'build/3rdparty/*.diff') }}
+
+      - name: Static libraries
+        if: steps.cache.outputs.cache-hit != 'true'
+        env:
+          LIBRETRO: 'true'
+        run: |
+          make 3rdparty OPENMSX_TARGET_CPU=x86_64 OPENMSX_TARGET_OS=mingw-w64 \
+            OPENMSX_FLAVOUR=opt PYTHON=python3 -j"$(nproc)"
+
+      - name: Build
+        env:
+          LIBRETRO: 'true'
+        run: |
+          make OPENMSX_TARGET_CPU=x86_64 OPENMSX_TARGET_OS=mingw-w64 \
+            OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j"$(nproc)"
+
+      - name: Collect
+        run: |
+          mkdir -p out
+          cp derived/x86_64-mingw-w64-opt-3rd/lib/openmsx_libretro.dll out/
+          x86_64-w64-mingw32-strip out/openmsx_libretro.dll
+          file out/openmsx_libretro.dll
+          x86_64-w64-mingw32-objdump -p out/openmsx_libretro.dll | grep -c '\] retro_'
+          # only Windows' own DLLs
+          x86_64-w64-mingw32-objdump -p out/openmsx_libretro.dll | grep 'DLL Name'
+          if x86_64-w64-mingw32-objdump -p out/openmsx_libretro.dll | grep -iE 'DLL Name: (lib|SDL|tcl)'; then
+            echo 'the core needs a DLL that does not come with Windows'; exit 1
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openmsx_libretro-windows-x86_64
+          path: out/
+
+  macos:
+    name: libretro core (macos-${{ matrix.cpu }})
+    strategy:
+      fail-fast: false
+      matrix:
+        cpu: [x86_64, aarch64]
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.4.app
+
+      - name: Static libraries (cache)
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            derived/${{ matrix.cpu }}-darwin-opt-3rd/3rdparty/install
+            derived/${{ matrix.cpu }}-darwin-opt-3rd/3rdparty/tools
+          key: 3rdparty-tools-macos-${{ matrix.cpu }}-${{ hashFiles('build/3rdparty.mk', 'build/packages.py', 'build/3rdparty/*.diff') }}
+
+      - name: Static libraries
+        if: steps.cache.outputs.cache-hit != 'true'
+        env:
+          LIBRETRO: 'true'
+        run: |
+          make 3rdparty OPENMSX_TARGET_CPU=${{ matrix.cpu }} OPENMSX_TARGET_OS=darwin \
+            OPENMSX_FLAVOUR=opt PYTHON=python3 -j"$(sysctl -n hw.ncpu)"
+
+      - name: Build
+        env:
+          LIBRETRO: 'true'
+        run: |
+          make OPENMSX_TARGET_CPU=${{ matrix.cpu }} OPENMSX_TARGET_OS=darwin \
+            OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j"$(sysctl -n hw.ncpu)"
+
+      - name: Collect
+        run: |
+          mkdir -p out
+          cp derived/${{ matrix.cpu }}-darwin-opt-3rd/lib/openmsx_libretro.dylib out/
+          strip -x out/openmsx_libretro.dylib
+          file out/openmsx_libretro.dylib
+          nm -gU out/openmsx_libretro.dylib | grep -c ' _retro_'
+          otool -L out/openmsx_libretro.dylib
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openmsx_libretro-macos-${{ matrix.cpu }}
+          path: out/
+
   system:
     name: system files (system/openmsx)
     runs-on: ubuntu-22.04

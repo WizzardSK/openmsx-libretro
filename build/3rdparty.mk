@@ -110,8 +110,10 @@ endif
 # events and threads, and GLEW gets its functions through EGL (glvnd), which
 # also finds them for a GLX context the frontend made current.
 ifeq ($(LIBRETRO),true)
-# Linked into a shared object
+# Linked into a shared object (all code is position independent on Windows)
+ifeq ($(filter mingw%,$(OPENMSX_TARGET_OS)),)
 override _CFLAGS+=-fPIC
+endif
 USE_VIDEO_X11:=disable
 SDL2_LIBRETRO_FLAGS:=\
 	--disable-video-wayland \
