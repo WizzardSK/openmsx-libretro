@@ -455,6 +455,8 @@ void updateFrameGeometry()
 	unsigned newWidth = unsigned(x1 - x0), newHeight = unsigned(y1 - y0);
 	frameOffset = gl::ivec2(-x0, -y0);
 	if (newWidth != frameWidth || newHeight != frameHeight) {
+		log(RETRO_LOG_INFO, "picture %ux%u from %d,%d of %dx%d (crop %s, VDP %s)\n",
+		    newWidth, newHeight, x0, y0, w, h, cropOverscan ? "on" : "off", vdp ? "found" : "not found");
 		frameWidth = newWidth;
 		frameHeight = newHeight;
 		retro_game_geometry geometry = {};
