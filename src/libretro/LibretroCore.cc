@@ -445,7 +445,12 @@ void updateFrameGeometry()
 		};
 		x0 = std::clamp(toOutput(toPicture(vdp->getLeftSprites())), 0, w);
 		x1 = std::clamp(toOutput(toPicture(vdp->getRightBorder())), 0, w);
-		int top = vdp->getLineZero() - SDLRasterizer::getLineRenderTop(vdp->isPalTiming());
+		// At the end of a frame the VDP has begun the next one, and until
+		// its display line counter resets, the display start is the
+		// frame just shown, counted back from the new frame's start
+		int lineZero = vdp->getLineZero();
+		if (lineZero < 0) lineZero += vdp->getLinesPerFrame();
+		int top = lineZero - SDLRasterizer::getLineRenderTop(vdp->isPalTiming());
 		int lines = vdp->getNumberOfLines();
 		int top0 = std::clamp(top, 0, 240), bottom0 = std::clamp(top + lines, 0, 240);
 		y1 = h - top0 * int(scale);
