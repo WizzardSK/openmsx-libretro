@@ -650,12 +650,15 @@ template<typename T, size_t N> struct SerializeAsMemcpy<std::array<T, N>> : Seri
 class MemOutputArchive final : public OutputArchiveBase<MemOutputArchive>
 {
 public:
+	/** With 'inlineBlobs_' every blob goes into the buffer itself, and the
+	  * buffer alone is the whole state (the libretro core's savestates). */
 	MemOutputArchive(LastDeltaBlocks& lastDeltaBlocks_,
 	                 std::vector<std::shared_ptr<DeltaBlock>>& deltaBlocks_,
-			 bool reverseSnapshot_)
+			 bool reverseSnapshot_, bool inlineBlobs_ = false)
 		: lastDeltaBlocks(lastDeltaBlocks_)
 		, deltaBlocks(deltaBlocks_)
 		, reverseSnapshot(reverseSnapshot_)
+		, inlineBlobs(inlineBlobs_)
 	{
 	}
 
@@ -754,15 +757,18 @@ private:
 	LastDeltaBlocks& lastDeltaBlocks;
 	std::vector<std::shared_ptr<DeltaBlock>>& deltaBlocks;
 	const bool reverseSnapshot;
+	const bool inlineBlobs;
 };
 
 class MemInputArchive final : public InputArchiveBase<MemInputArchive>
 {
 public:
 	MemInputArchive(std::span<const uint8_t> buf_,
-	                std::span<const std::shared_ptr<DeltaBlock>> deltaBlocks_)
+	                std::span<const std::shared_ptr<DeltaBlock>> deltaBlocks_,
+	                bool inlineBlobs_ = false)
 		: buffer(buf_)
 		, deltaBlocks(deltaBlocks_)
+		, inlineBlobs(inlineBlobs_)
 	{
 	}
 
@@ -836,6 +842,7 @@ private:
 private:
 	InputBuffer buffer;
 	std::span<const std::shared_ptr<DeltaBlock>> deltaBlocks;
+	const bool inlineBlobs;
 };
 
 ////

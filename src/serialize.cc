@@ -150,7 +150,7 @@ void MemOutputArchive::serialize_blob(const char* /*tag*/, std::span<const uint8
                                       bool diff)
 {
 	// Delta-compress in-memory blobs, see DeltaBlock.hh for more details.
-	if (data.size() > SMALL_SIZE) {
+	if (!inlineBlobs && data.size() > SMALL_SIZE) {
 		auto deltaBlockIdx = unsigned(deltaBlocks.size());
 		save(deltaBlockIdx); // see comment below in MemInputArchive
 		deltaBlocks.push_back(diff
@@ -165,7 +165,7 @@ void MemOutputArchive::serialize_blob(const char* /*tag*/, std::span<const uint8
 void MemInputArchive::serialize_blob(const char* /*tag*/, std::span<uint8_t> data,
                                      bool /*diff*/)
 {
-	if (data.size() > SMALL_SIZE) {
+	if (!inlineBlobs && data.size() > SMALL_SIZE) {
 		// Usually blobs are saved in the same order as they are loaded
 		// (via the serialize_blob() methods in respectively
 		// MemOutputArchive and MemInputArchive). In that case keeping

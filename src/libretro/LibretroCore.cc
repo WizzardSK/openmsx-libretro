@@ -10,6 +10,7 @@
 #include "LibretroVideoSystem.hh"
 
 #include "CommandLineParser.hh"
+#include "DeltaBlock.hh"
 #include "Display.hh"
 #include "Event.hh"
 #include "EventDistributor.hh"
@@ -17,6 +18,7 @@
 #include "GLUtil.hh"
 #include "GlobalCommandController.hh"
 #include "JoystickDevice.hh"
+#include "MSXCliComm.hh"
 #include "MSXException.hh"
 #include "MSXMotherBoard.hh"
 #include "Reactor.hh"
@@ -25,7 +27,9 @@
 #include "StateChangeDistributor.hh"
 #include "Thread.hh"
 #include "VDP.hh"
+#include "Version.hh"
 #include "random.hh"
+#include "serialize.hh"
 
 #include "libretro.h"
 
@@ -35,6 +39,7 @@
 #include <cmath>
 #include <cstdarg>
 #include <cstdio>
+#include <cstring>
 #include <cstdlib>
 #include <memory>
 #include <string>
@@ -61,6 +66,8 @@ constexpr double NTSC_FPS = 59.9227434;
 // The fps declared to the frontend; follows the VDP between 60 and 50 Hz
 double declaredFps = NTSC_FPS;
 int frameTicks = 0;
+// The savestate size given to the frontend, the largest seen yet
+size_t stateSizeMax = 0;
 constexpr unsigned BASE_WIDTH = 640, BASE_HEIGHT = 480;
 constexpr unsigned MAX_WIDTH = 1920, MAX_HEIGHT = 1440;
 
@@ -780,6 +787,7 @@ RETRO_API void retro_unload_game()
 	portState = {};
 	declaredFps = NTSC_FPS;
 	frameTicks = 0;
+	stateSizeMax = 0;
 	gl::context.reset();
 	SDL_Quit();
 }
@@ -840,9 +848,124 @@ RETRO_API void retro_run()
 	}
 }
 
-RETRO_API size_t retro_serialize_size() { return 0; }
-RETRO_API bool retro_serialize(void* /*data*/, size_t /*size*/) { return false; }
-RETRO_API bool retro_unserialize(const void* /*data*/, size_t /*size*/) { return false; }
+// A savestate: magic, the openMSX version it was made with, the length of
+// the state and the state, a MemOutputArchive of the board with every blob
+// inline. That archive has no versioning, so a state loads only into the
+// build that made it.
+namespace {
+
+constexpr char STATE_MAGIC[8] = {'O', 'M', 'S', 'X', 'L', 'R', '0', '1'};
+
+std::string stateVersion()
+{
+	return std::string(Version::full());
+}
+
+MemBuffer<uint8_t> saveBoard(MSXMotherBoard& board)
+{
+	LastDeltaBlocks lastDeltaBlocks;
+	std::vector<std::shared_ptr<DeltaBlock>> deltaBlocks;
+	MemOutputArchive out(lastDeltaBlocks, deltaBlocks, false, true);
+	out.serialize("machine", board);
+	return std::move(out).releaseBuffer();
+}
+
+size_t headerSize()
+{
+	return sizeof(STATE_MAGIC) + sizeof(uint32_t) + stateVersion().size() + sizeof(uint64_t);
+}
+
+} // namespace
+
+RETRO_API size_t retro_serialize_size()
+{
+	auto* board = reactor ? reactor->getMotherBoard() : nullptr;
+	if (!board) return stateSizeMax;
+	try {
+		// The state grows and shrinks a little with the machine's
+		// state; the frontend wants one size, so the largest yet, with
+		// room to spare, in 64 kB steps
+		size_t need = headerSize() + saveBoard(*board).size() + 0x10000;
+		need = (need + 0xFFFF) & ~size_t(0xFFFF);
+		if (need > stateSizeMax) stateSizeMax = need;
+	} catch (MSXException& e) {
+		log(RETRO_LOG_ERROR, "savestate: %s\n", std::string(e.getMessage()).c_str());
+	}
+	return stateSizeMax;
+}
+
+RETRO_API bool retro_serialize(void* data, size_t size)
+{
+	auto* board = reactor ? reactor->getMotherBoard() : nullptr;
+	if (!board) return false;
+	try {
+		auto state = saveBoard(*board);
+		auto version = stateVersion();
+		if (headerSize() + state.size() > size) {
+			log(RETRO_LOG_ERROR, "savestate: %zu bytes do not fit in %zu\n", headerSize() + state.size(), size);
+			return false;
+		}
+		auto* out = static_cast<uint8_t*>(data);
+		memcpy(out, STATE_MAGIC, sizeof(STATE_MAGIC)); out += sizeof(STATE_MAGIC);
+		uint32_t versionSize = uint32_t(version.size());
+		memcpy(out, &versionSize, sizeof(versionSize)); out += sizeof(versionSize);
+		memcpy(out, version.data(), version.size()); out += version.size();
+		uint64_t stateSize = state.size();
+		memcpy(out, &stateSize, sizeof(stateSize)); out += sizeof(stateSize);
+		memcpy(out, state.data(), state.size()); out += state.size();
+		memset(out, 0, size - size_t(out - static_cast<uint8_t*>(data)));
+		return true;
+	} catch (MSXException& e) {
+		log(RETRO_LOG_ERROR, "savestate: %s\n", std::string(e.getMessage()).c_str());
+	}
+	return false;
+}
+
+RETRO_API bool retro_unserialize(const void* data, size_t size)
+{
+	auto* board = reactor ? reactor->getMotherBoard() : nullptr;
+	if (!board) return false;
+	const auto* in = static_cast<const uint8_t*>(data);
+	const auto* end = in + size;
+	auto version = stateVersion();
+	uint32_t versionSize = 0;
+	uint64_t stateSize = 0;
+	if (size < sizeof(STATE_MAGIC) + sizeof(versionSize)
+	    || memcmp(in, STATE_MAGIC, sizeof(STATE_MAGIC)) != 0) {
+		log(RETRO_LOG_ERROR, "savestate: not an openMSX core savestate\n");
+		return false;
+	}
+	in += sizeof(STATE_MAGIC);
+	memcpy(&versionSize, in, sizeof(versionSize)); in += sizeof(versionSize);
+	if (size_t(end - in) < versionSize + sizeof(stateSize)
+	    || std::string_view(reinterpret_cast<const char*>(in), versionSize) != version) {
+		log(RETRO_LOG_ERROR, "savestate: made by another build of the core, %s needed\n", version.c_str());
+		return false;
+	}
+	in += versionSize;
+	memcpy(&stateSize, in, sizeof(stateSize)); in += sizeof(stateSize);
+	if (stateSize > size_t(end - in)) {
+		log(RETRO_LOG_ERROR, "savestate: cut short\n");
+		return false;
+	}
+	try {
+		// as openMSX's reverse does: a new board from the state, which
+		// then replaces the running one
+		auto newBoard = reactor->createEmptyMotherBoard();
+		newBoard->getMSXCliComm().setSuppressMessages(true);
+		MemInputArchive archive(std::span{in, size_t(stateSize)}, {}, true);
+		archive.serialize("machine", *newBoard);
+		newBoard->getMSXCliComm().setSuppressMessages(false);
+		// the state holds the input of its moment; the MSX should see
+		// what is held now, which pollInput sends again
+		newBoard->getStateChangeDistributor().stopReplay(newBoard->getCurrentTime());
+		reactor->replaceBoard(*board, newBoard);
+		return true;
+	} catch (MSXException& e) {
+		log(RETRO_LOG_ERROR, "savestate: %s\n", std::string(e.getMessage()).c_str());
+	}
+	return false;
+}
 RETRO_API void retro_cheat_reset() {}
 RETRO_API void retro_cheat_set(unsigned /*index*/, bool /*enabled*/, const char* /*code*/) {}
 RETRO_API unsigned retro_get_region() { return declaredFps < 55.0 ? RETRO_REGION_PAL : RETRO_REGION_NTSC; }
