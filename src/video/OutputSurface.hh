@@ -47,6 +47,9 @@ protected:
 	// These two _must_ be called from (each) subclass constructor.
 	void calculateViewPort(gl::ivec2 logSize, gl::ivec2 physSize);
 
+	/** Moves the view by 'offset' pixels, after calculateViewPort(). */
+	void moveViewPort(gl::ivec2 offset) { m_viewOffset += offset; }
+
 private:
 	gl::ivec2 m_logicalSize;
 	gl::ivec2 m_physSize;

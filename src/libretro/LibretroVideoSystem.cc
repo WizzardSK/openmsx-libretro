@@ -185,11 +185,10 @@ void LibretroVideoSystem::repaint()
 	// framebuffer and hands it over, so nothing is drawn here.
 }
 
-void LibretroVideoSystem::paintTo(unsigned fbo, gl::ivec2 size)
+void LibretroVideoSystem::paintTo(unsigned fbo, gl::ivec2 size, gl::ivec2 offset)
 {
-	if (size != surface->getPhysicalSize()) {
-		surface->resize(display.getWindowSize(), size);
-	}
+	surface->resize(display.getWindowSize(), size);
+	surface->moveViewPort(offset);
 	glBindFramebuffer(GL_FRAMEBUFFER, fbo);
 	glViewport(0, 0, size.x, size.y);
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);

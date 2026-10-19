@@ -23,6 +23,7 @@
 #include "MSXMotherBoard.hh"
 #include "Reactor.hh"
 #include "RenderSettings.hh"
+#include "SDLRasterizer.hh"
 #include "StateChange.hh"
 #include "StateChangeDistributor.hh"
 #include "TclObject.hh"
@@ -37,6 +38,7 @@
 
 #include <SDL.h>
 
+#include <algorithm>
 #include <array>
 #include <cctype>
 #include <cmath>
@@ -72,7 +74,13 @@ double declaredFps = NTSC_FPS;
 int frameTicks = 0;
 // The savestate size given to the frontend, the largest seen yet
 size_t stateSizeMax = 0;
-constexpr unsigned BASE_WIDTH = 640, BASE_HEIGHT = 480;
+// The frame as it goes to the frontend: openMSX's whole picture at the
+// chosen scale, or with Crop Overscan the part of it the MSX displays on
+unsigned scale = 2;
+bool cropOverscan = false;
+unsigned frameWidth = 640, frameHeight = 480;
+gl::ivec2 frameOffset;
+float frameAspect = 4.0f / 3.0f;
 constexpr unsigned MAX_WIDTH = 1920, MAX_HEIGHT = 1440;
 
 void log(retro_log_level level, const char* fmt, ...)
@@ -300,6 +308,7 @@ void showMessage(const char* text)
 
 retro_core_option_v2_category optionCategories[] = {
 	{"system", "System", "The MSX machine and the cartridges in its slots. Changes take effect when the content is loaded again."},
+	{"video", "Video", "The size of the picture and its border."},
 	{nullptr, nullptr, nullptr},
 };
 
@@ -337,6 +346,20 @@ retro_core_option_v2_definition optionDefinitions[] = {
 			{nullptr, nullptr},
 		},
 		DEFAULT_MACHINE
+	},
+	{
+		"openmsx_scale", "Resolution", nullptr,
+		"The size openMSX draws the picture at, borders included: 320x240 times this.",
+		nullptr, "video",
+		{{"1", "1x (320x240)"}, {"2", "2x (640x480)"}, {"3", "3x (960x720)"}, {"4", "4x (1280x960)"}, {nullptr, nullptr}},
+		"2"
+	},
+	{
+		"openmsx_crop_overscan", "Crop Overscan", nullptr,
+		"Shows only the part of the screen the MSX displays on, without its border; the size follows the screen mode.",
+		nullptr, "video",
+		{{"disabled", nullptr}, {"enabled", nullptr}, {nullptr, nullptr}},
+		"disabled"
 	},
 	EXTENSION_OPTION("openmsx_ext_scc", "Konami SCC (Restart)",
 		"A cartridge with Konami's SCC sound chip, for music that would otherwise need an SCC game cartridge."),
@@ -382,6 +405,62 @@ void setCoreOptions()
 	environ_cb(RETRO_ENVIRONMENT_SET_VARIABLES, variables.data());
 }
 
+void readVideoOptions()
+{
+	unsigned newScale = unsigned(std::clamp(atoi(optionValue("openmsx_scale", "2").c_str()), 1, 4));
+	cropOverscan = optionValue("openmsx_crop_overscan", "disabled") == "enabled";
+	if (newScale != scale && reactor) {
+		runCommand("set scale_factor " + std::to_string(newScale));
+	}
+	scale = newScale;
+}
+
+/** Where openMSX's picture is cut for the frontend this frame: all of it,
+  * or the MSX's display area. In output pixels, y up from the bottom. */
+void updateFrameGeometry()
+{
+	const int w = int(320 * scale), h = int(240 * scale);
+	int x0 = 0, x1 = w, y0 = 0, y1 = h;
+	auto* board = reactor ? reactor->getMotherBoard() : nullptr;
+	auto* vdp = board ? dynamic_cast<VDP*>(board->findDevice("VDP")) : nullptr;
+	if (cropOverscan && vdp) {
+		// The VDP's ticks to openMSX's 320 wide picture, as the
+		// rasterizer places them, then the horizontal stretch that
+		// widens the middle of it over the whole output
+		auto toPicture = [](int ticks) {
+			constexpr int origin = 100 + 102 + (VDP::TICKS_PER_LINE - 100 - 102 - 27) / 2 - 1;
+			return float(ticks - origin) / 4.0f + 160.0f;
+		};
+		float stretch = reactor->getDisplay().getRenderSettings().getHorizontalStretch();
+		auto toOutput = [&](float x) {
+			return int(std::lround((x - (320.0f - stretch) / 2.0f) * float(w) / stretch));
+		};
+		x0 = std::clamp(toOutput(toPicture(vdp->getLeftSprites())), 0, w);
+		x1 = std::clamp(toOutput(toPicture(vdp->getRightBorder())), 0, w);
+		int top = vdp->getLineZero() - SDLRasterizer::getLineRenderTop(vdp->isPalTiming());
+		int lines = vdp->getNumberOfLines();
+		int top0 = std::clamp(top, 0, 240), bottom0 = std::clamp(top + lines, 0, 240);
+		y1 = h - top0 * int(scale);
+		y0 = h - bottom0 * int(scale);
+		if (x1 <= x0 || y1 <= y0) { x0 = 0; x1 = w; y0 = 0; y1 = h; }
+	}
+	unsigned newWidth = unsigned(x1 - x0), newHeight = unsigned(y1 - y0);
+	frameOffset = gl::ivec2(-x0, -y0);
+	if (newWidth != frameWidth || newHeight != frameHeight) {
+		frameWidth = newWidth;
+		frameHeight = newHeight;
+		retro_game_geometry geometry = {};
+		geometry.base_width = frameWidth;
+		geometry.base_height = frameHeight;
+		geometry.max_width = MAX_WIDTH;
+		geometry.max_height = MAX_HEIGHT;
+		// the whole picture is 4:3, a part of it in proportion
+		frameAspect = (4.0f / 3.0f) * (float(frameWidth) / float(w)) / (float(frameHeight) / float(h));
+		geometry.aspect_ratio = frameAspect;
+		environ_cb(RETRO_ENVIRONMENT_SET_GEOMETRY, &geometry);
+	}
+}
+
 bool startEmulator(bool useOptions)
 {
 	try {
@@ -420,6 +499,7 @@ bool startEmulator(bool useOptions)
 		runCommand("set throttle off");
 		runCommand("set minframeskip 0");
 		runCommand("set maxframeskip 0");
+		runCommand("set scale_factor " + std::to_string(scale));
 
 		auto& render = reactor->getDisplay().getRenderSettings().getRendererSetting();
 		if (render.getEnum() == RenderSettings::RendererID::UNINITIALIZED) {
@@ -878,11 +958,11 @@ RETRO_API void retro_get_system_info(retro_system_info* info)
 RETRO_API void retro_get_system_av_info(retro_system_av_info* info)
 {
 	*info = {};
-	info->geometry.base_width = BASE_WIDTH;
-	info->geometry.base_height = BASE_HEIGHT;
+	info->geometry.base_width = frameWidth;
+	info->geometry.base_height = frameHeight;
 	info->geometry.max_width = MAX_WIDTH;
 	info->geometry.max_height = MAX_HEIGHT;
-	info->geometry.aspect_ratio = 4.0f / 3.0f;
+	info->geometry.aspect_ratio = frameAspect;
 	info->timing.fps = declaredFps;
 	info->timing.sample_rate = LibretroSoundDriver::FREQUENCY;
 }
@@ -931,6 +1011,10 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 	environ_cb(RETRO_ENVIRONMENT_SET_KEYBOARD_CALLBACK, &keyboard);
 	setInputDescriptors();
 
+	readVideoOptions();
+	frameWidth = 320 * scale;
+	frameHeight = 240 * scale;
+	frameAspect = 4.0f / 3.0f;
 	setupDirectories();
 	// openMSX starts in context_reset, once there is a GL context
 	return true;
@@ -958,8 +1042,12 @@ RETRO_API void retro_run()
 {
 	input_poll_cb();
 	if (!reactor || !contextAlive) {
-		video_cb(nullptr, BASE_WIDTH, BASE_HEIGHT, 0);
+		video_cb(nullptr, frameWidth, frameHeight, 0);
 		return;
+	}
+	bool updated = false;
+	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE_UPDATE, &updated) && updated) {
+		readVideoOptions();
 	}
 
 	try {
@@ -989,11 +1077,12 @@ RETRO_API void retro_run()
 
 	auto* video = dynamic_cast<LibretroVideoSystem*>(&reactor->getDisplay().getVideoSystem());
 	if (video) {
+		updateFrameGeometry();
 		video->paintTo(unsigned(hw_render.get_current_framebuffer()),
-		               gl::ivec2(int(BASE_WIDTH), int(BASE_HEIGHT)));
-		video_cb(RETRO_HW_FRAME_BUFFER_VALID, BASE_WIDTH, BASE_HEIGHT, 0);
+		               gl::ivec2(int(320 * scale), int(240 * scale)), frameOffset);
+		video_cb(RETRO_HW_FRAME_BUFFER_VALID, frameWidth, frameHeight, 0);
 	} else {
-		video_cb(nullptr, BASE_WIDTH, BASE_HEIGHT, 0);
+		video_cb(nullptr, frameWidth, frameHeight, 0);
 	}
 
 	if (auto* sound = LibretroSoundDriver::current()) {

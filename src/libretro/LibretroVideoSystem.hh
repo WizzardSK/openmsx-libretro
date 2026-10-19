@@ -21,6 +21,7 @@ class LibretroSurface final : public OutputSurface
 public:
 	LibretroSurface(gl::ivec2 logicalSize, gl::ivec2 physicalSize);
 	void resize(gl::ivec2 logicalSize, gl::ivec2 physicalSize);
+	using OutputSurface::moveViewPort;
 	void saveScreenshot(const std::string& filename) override;
 };
 
@@ -56,9 +57,11 @@ public:
 	void setWindowPosition(gl::ivec2 pos) override;
 	void repaint() override;
 
-	/** Paints the current frame into the framebuffer the frontend gave
-	  * (fbo) of the given size. */
-	void paintTo(unsigned fbo, gl::ivec2 size);
+	/** Paints the current frame, 'size' pixels in all, into the
+	  * framebuffer the frontend gave (fbo), moved by 'offset': a part of
+	  * the frame that starts at -offset then lands in the bottom-left
+	  * corner, which is what the frontend shows of a smaller frame. */
+	void paintTo(unsigned fbo, gl::ivec2 size, gl::ivec2 offset);
 
 private:
 	Reactor& reactor;
