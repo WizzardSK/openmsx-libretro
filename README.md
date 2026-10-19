@@ -26,7 +26,7 @@ The core is preliminary. Builds of it are in the [releases](https://github.com/W
 
 ## Installing
 
-- Put the core from the zip for your platform in RetroArch's cores folder.
+- Put the core from the zip for your platform in RetroArch's cores folder, and `openmsx_libretro.info` in its info folder (RetroArch then shows the core's name, its content types and these notes).
 - Extract `openmsx-system.zip` into RetroArch's system folder, so that it ends up as `system/openmsx/share`. It holds openMSX's machines, extensions and scripts, with the C-BIOS ROMs, so games start without any other BIOS.
 - Real machines and some extensions need their system ROMs in `system/openmsx/share/systemroms`.
 - The core draws with OpenGL, so RetroArch's video driver has to be `gl`.

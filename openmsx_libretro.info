@@ -1,0 +1,36 @@
+# Software Information
+display_name = "Microsoft - MSX/MSX2/MSX2+/turbo R (openMSX)"
+authors = "openMSX team|WizzardSK"
+supported_extensions = "rom|ri|mx1|mx2|col|sg|sc|dsk|di1|di2|dmk|xsa|cas|wav|m3u|zip|gz"
+corename = "openMSX"
+categories = "Emulator"
+license = "GPLv2"
+permissions = ""
+display_version = "21.0"
+
+# Hardware Information
+manufacturer = "Microsoft"
+systemname = "MSX/MSX2/MSX2+/turbo R"
+systemid = "msx"
+
+# Libretro Features
+database = "Microsoft - MSX|Microsoft - MSX2"
+supports_no_game = "false"
+savestate = "true"
+savestate_features = "basic"
+cheats = "false"
+input_descriptors = "true"
+memory_descriptors = "false"
+libretro_saves = "false"
+core_options = "true"
+core_options_version = "2.0"
+load_subsystem = "false"
+hw_render = "true"
+required_hw_api = "OpenGL >= 2.1"
+needs_fullpath = "true"
+block_extract = "true"
+disk_control = "true"
+is_experimental = "true"
+
+notes = "(!) Extract openmsx-system.zip from the releases into the system folder, so that it ends up as system/openmsx/share: openMSX's machines, extensions and the C-BIOS ROMs. Games then start without any other BIOS.|(!) A real MSX machine (core option System > Machine) needs its system ROMs in system/openmsx/share/systemroms; without them the core starts C-BIOS MSX2+.|(!) The video driver has to be gl.|(!) Disk images need a machine with a disk drive; the C-BIOS machines have none.|(!) A savestate loads only into the build of the core that made it."
+description = "openMSX, the MSX emulator that aims for perfection, as a libretro core. It emulates the MSX1, MSX2, MSX2+ and turbo R computers, with C-BIOS machines that need no other BIOS and many real machines with their own ROMs, and extensions such as Konami's SCC, the FM-PAC, MSX-Audio, MoonSound and the GFX9000. Drawn with OpenGL; MSX joystick, cursor keys or mouse per port, the keyboard, savestates, disk swapping and 50 Hz machines."
