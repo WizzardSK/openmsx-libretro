@@ -307,7 +307,9 @@ MAKEVAR_OVERRIDE_GLEW:=CC="$(_CC) $(_CFLAGS)" LD="$(_CC) $(_LDFLAGS)"
 ifeq ($(TRIPLE_OS),mingw32)
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=linux-mingw64
 else
-ifeq ($(LIBRETRO),true)
+# The libretro core on Linux gets its GL functions through EGL (see above);
+# macOS keeps GLEW's own way, CGL
+ifeq ($(LIBRETRO)$(OPENMSX_TARGET_OS),truelinux)
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=linux-egl
 else
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=$(TRIPLE_OS)
