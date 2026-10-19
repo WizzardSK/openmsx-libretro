@@ -25,6 +25,7 @@
 #include "RenderSettings.hh"
 #include "StateChange.hh"
 #include "StateChangeDistributor.hh"
+#include "TclObject.hh"
 #include "Thread.hh"
 #include "VDP.hh"
 #include "Version.hh"
@@ -37,11 +38,13 @@
 #include <SDL.h>
 
 #include <array>
+#include <cctype>
 #include <cmath>
 #include <cstdarg>
 #include <cstdio>
-#include <cstring>
 #include <cstdlib>
+#include <cstring>
+#include <fstream>
 #include <memory>
 #include <string>
 #include <vector>
@@ -111,6 +114,162 @@ void runCommand(const std::string& command)
 	} catch (MSXException& e) {
 		log(RETRO_LOG_WARN, "'%s': %s\n", command.c_str(), std::string(e.getMessage()).c_str());
 	}
+}
+
+// Disk control: the disks of the content (one, or the list of an .m3u) for
+// the frontend to swap in drive A. A machine needs a disk drive of its own;
+// the C-BIOS machines have none.
+std::vector<std::string> diskImages;
+unsigned diskIndex = 0;
+bool diskEjected = false;
+unsigned initialDiskIndex = 0;
+std::string initialDiskPath;
+
+bool hasExtension(const std::string& path, std::initializer_list<const char*> extensions)
+{
+	auto dot = path.rfind('.');
+	if (dot == std::string::npos) return false;
+	std::string ext = path.substr(dot + 1);
+	for (auto& c : ext) c = char(tolower(c));
+	for (const auto* e : extensions) {
+		if (ext == e) return true;
+	}
+	return false;
+}
+
+bool isDiskImage(const std::string& path)
+{
+	return hasExtension(path, {"dsk", "di1", "di2", "dmk", "xsa"});
+}
+
+/** The disks an .m3u lists, relative to it; empty lines and comments skipped. */
+std::vector<std::string> readM3u(const std::string& path)
+{
+	std::vector<std::string> result;
+	std::ifstream file(path);
+	auto slash = path.find_last_of("/\\");
+	std::string dir = slash == std::string::npos ? "" : path.substr(0, slash + 1);
+	std::string line;
+	while (std::getline(file, line)) {
+		while (!line.empty() && (line.back() == '\r' || line.back() == ' ')) line.pop_back();
+		if (line.empty() || line[0] == '#') continue;
+		bool absolute = line[0] == '/' || line[0] == '\\' || (line.size() > 1 && line[1] == ':');
+		result.push_back(absolute ? line : dir + line);
+	}
+	return result;
+}
+
+void insertDisk()
+{
+	if (!reactor) return;
+	if (diskEjected || diskIndex >= diskImages.size() || diskImages[diskIndex].empty()) {
+		runCommand("diska eject");
+	} else {
+		runCommand(std::string(makeTclList("diska", diskImages[diskIndex]).getString()));
+	}
+}
+
+bool RETRO_CALLCONV diskSetEjectState(bool ejected)
+{
+	if (ejected == diskEjected) return true;
+	diskEjected = ejected;
+	insertDisk();
+	return true;
+}
+
+bool RETRO_CALLCONV diskGetEjectState() { return diskEjected; }
+
+unsigned RETRO_CALLCONV diskGetImageIndex() { return diskIndex; }
+
+bool RETRO_CALLCONV diskSetImageIndex(unsigned index)
+{
+	// the frontend swaps with the drive open; an index past the end is no disk
+	if (!diskEjected) return false;
+	diskIndex = index;
+	return true;
+}
+
+unsigned RETRO_CALLCONV diskGetNumImages() { return unsigned(diskImages.size()); }
+
+bool RETRO_CALLCONV diskReplaceImageIndex(unsigned index, const retro_game_info* info)
+{
+	if (index >= diskImages.size()) return false;
+	if (!info || !info->path) {
+		diskImages.erase(diskImages.begin() + index);
+		if (diskIndex > index || diskIndex >= diskImages.size()) {
+			if (diskIndex > 0) --diskIndex;
+		}
+	} else {
+		diskImages[index] = info->path;
+	}
+	return true;
+}
+
+bool RETRO_CALLCONV diskAddImageIndex()
+{
+	diskImages.emplace_back();
+	return true;
+}
+
+bool RETRO_CALLCONV diskSetInitialImage(unsigned index, const char* path)
+{
+	initialDiskIndex = index;
+	initialDiskPath = path ? path : "";
+	return true;
+}
+
+bool RETRO_CALLCONV diskGetImagePath(unsigned index, char* path, size_t len)
+{
+	if (index >= diskImages.size() || diskImages[index].empty() || len == 0) return false;
+	snprintf(path, len, "%s", diskImages[index].c_str());
+	return true;
+}
+
+bool RETRO_CALLCONV diskGetImageLabel(unsigned index, char* label, size_t len)
+{
+	if (index >= diskImages.size() || diskImages[index].empty() || len == 0) return false;
+	const auto& image = diskImages[index];
+	auto slash = image.find_last_of("/\\");
+	snprintf(label, len, "%s", image.c_str() + (slash == std::string::npos ? 0 : slash + 1));
+	return true;
+}
+
+void setDiskControl()
+{
+	retro_disk_control_ext_callback ext = {
+		diskSetEjectState, diskGetEjectState, diskGetImageIndex, diskSetImageIndex,
+		diskGetNumImages, diskReplaceImageIndex, diskAddImageIndex,
+		diskSetInitialImage, diskGetImagePath, diskGetImageLabel,
+	};
+	unsigned version = 0;
+	if (environ_cb(RETRO_ENVIRONMENT_GET_DISK_CONTROL_INTERFACE_VERSION, &version) && version >= 1) {
+		environ_cb(RETRO_ENVIRONMENT_SET_DISK_CONTROL_EXT_INTERFACE, &ext);
+	} else {
+		retro_disk_control_callback basic = {
+			diskSetEjectState, diskGetEjectState, diskGetImageIndex, diskSetImageIndex,
+			diskGetNumImages, diskReplaceImageIndex, diskAddImageIndex,
+		};
+		environ_cb(RETRO_ENVIRONMENT_SET_DISK_CONTROL_INTERFACE, &basic);
+	}
+}
+
+/** The content's disks, and the one to start with: the content itself, or
+  * the frontend's remembered disk of an .m3u. Returns the path to start. */
+std::string setupDisks(const std::string& path)
+{
+	diskImages.clear();
+	diskIndex = 0;
+	diskEjected = false;
+	if (hasExtension(path, {"m3u"})) {
+		diskImages = readM3u(path);
+		if (diskImages.empty()) return path;
+		if (initialDiskIndex < diskImages.size() && diskImages[initialDiskIndex] == initialDiskPath) {
+			diskIndex = initialDiskIndex;
+		}
+		return diskImages[diskIndex];
+	}
+	if (isDiskImage(path)) diskImages.push_back(path);
+	return path;
 }
 
 constexpr const char* DEFAULT_MACHINE = "C-BIOS_MSX2+";
@@ -691,6 +850,7 @@ RETRO_API void retro_set_environment(retro_environment_t cb)
 	}
 	setControllerInfo();
 	setCoreOptions();
+	setDiskControl();
 }
 
 RETRO_API void retro_set_video_refresh(retro_video_refresh_t cb) { video_cb = cb; }
@@ -710,7 +870,7 @@ RETRO_API void retro_get_system_info(retro_system_info* info)
 	*info = {};
 	info->library_name = "openMSX";
 	info->library_version = "21.0 " OPENMSX_LIBRETRO_COMMIT;
-	info->valid_extensions = "rom|ri|mx1|mx2|col|sg|sc|dsk|di1|di2|dmk|xsa|cas|wav|zip|gz";
+	info->valid_extensions = "rom|ri|mx1|mx2|col|sg|sc|dsk|di1|di2|dmk|xsa|cas|wav|m3u|zip|gz";
 	info->need_fullpath = true;
 	info->block_extract = true;
 }
@@ -747,7 +907,7 @@ RETRO_API void retro_reset()
 
 RETRO_API bool retro_load_game(const retro_game_info* game)
 {
-	contentPath = (game && game->path) ? game->path : "";
+	contentPath = setupDisks((game && game->path) ? game->path : "");
 
 	retro_pixel_format fmt = RETRO_PIXEL_FORMAT_XRGB8888;
 	environ_cb(RETRO_ENVIRONMENT_SET_PIXEL_FORMAT, &fmt);
