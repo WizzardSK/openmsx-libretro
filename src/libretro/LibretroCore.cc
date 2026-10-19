@@ -24,6 +24,7 @@
 #include "StateChange.hh"
 #include "StateChangeDistributor.hh"
 #include "Thread.hh"
+#include "VDP.hh"
 #include "random.hh"
 
 #include "libretro.h"
@@ -31,6 +32,7 @@
 #include <SDL.h>
 
 #include <array>
+#include <cmath>
 #include <cstdarg>
 #include <cstdio>
 #include <cstdlib>
@@ -56,6 +58,9 @@ bool frameDone = false;
 bool contextAlive = false;
 
 constexpr double NTSC_FPS = 59.9227434;
+// The fps declared to the frontend; follows the VDP between 60 and 50 Hz
+double declaredFps = NTSC_FPS;
+int frameTicks = 0;
 constexpr unsigned BASE_WIDTH = 640, BASE_HEIGHT = 480;
 constexpr unsigned MAX_WIDTH = 1920, MAX_HEIGHT = 1440;
 
@@ -100,7 +105,117 @@ void runCommand(const std::string& command)
 	}
 }
 
-bool startEmulator()
+constexpr const char* DEFAULT_MACHINE = "C-BIOS_MSX2+";
+
+struct ExtensionOption { const char* key; const char* name; };
+constexpr ExtensionOption extensionOptions[] = {
+	{"openmsx_ext_scc", "scc"},
+	{"openmsx_ext_sccplus", "scc+"},
+	{"openmsx_ext_fmpac", "fmpac"},
+	{"openmsx_ext_msxaudio", "audio"},
+	{"openmsx_ext_moonsound", "moonsound"},
+	{"openmsx_ext_gfx9000", "gfx9000"},
+};
+
+std::string optionValue(const char* key, const char* fallback)
+{
+	retro_variable var = {key, nullptr};
+	if (environ_cb && environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value) return var.value;
+	return fallback;
+}
+
+void showMessage(const char* text)
+{
+	log(RETRO_LOG_WARN, "%s\n", text);
+	retro_message msg = {text, 600};
+	environ_cb(RETRO_ENVIRONMENT_SET_MESSAGE, &msg);
+}
+
+retro_core_option_v2_category optionCategories[] = {
+	{"system", "System", "The MSX machine and the cartridges in its slots. Changes take effect when the content is loaded again."},
+	{nullptr, nullptr, nullptr},
+};
+
+#define EXTENSION_OPTION(key, label, info) \
+	{key, label, nullptr, info, nullptr, "system", \
+	 {{"disabled", nullptr}, {"enabled", nullptr}, {nullptr, nullptr}}, "disabled"}
+
+retro_core_option_v2_definition optionDefinitions[] = {
+	{
+		"openmsx_machine", "Machine (Restart)", "Machine",
+		"The MSX computer to emulate. The C-BIOS machines need nothing else; a real machine needs its system ROMs in <system>/openmsx/share/systemroms, otherwise C-BIOS MSX2+ starts instead. Europe and the UK run at 50 Hz.",
+		nullptr, "system",
+		{
+			{"C-BIOS_MSX1", "C-BIOS MSX1"},
+			{"C-BIOS_MSX1_EU", "C-BIOS MSX1 (Europe)"},
+			{"C-BIOS_MSX1_JP", "C-BIOS MSX1 (Japan)"},
+			{"C-BIOS_MSX2", "C-BIOS MSX2"},
+			{"C-BIOS_MSX2_EU", "C-BIOS MSX2 (Europe)"},
+			{"C-BIOS_MSX2_JP", "C-BIOS MSX2 (Japan)"},
+			{"C-BIOS_MSX2+", "C-BIOS MSX2+"},
+			{"C-BIOS_MSX2+_EU", "C-BIOS MSX2+ (Europe)"},
+			{"C-BIOS_MSX2+_JP", "C-BIOS MSX2+ (Japan)"},
+			{"Philips_VG_8020", "Philips VG-8020 (MSX1, Europe)"},
+			{"Sony_HB-75P", "Sony HB-75P (MSX1, Europe)"},
+			{"Toshiba_HX-10", "Toshiba HX-10 (MSX1, UK)"},
+			{"Yamaha_CX5M", "Yamaha CX5M (MSX1, Europe)"},
+			{"Philips_NMS_8245", "Philips NMS 8245 (MSX2, Europe)"},
+			{"Philips_NMS_8250", "Philips NMS 8250 (MSX2, Europe)"},
+			{"Sony_HB-F700P", "Sony HB-F700P (MSX2, Europe)"},
+			{"Sony_HB-F1XD", "Sony HB-F1XD (MSX2, Japan)"},
+			{"Sony_HB-F1XV", "Sony HB-F1XV (MSX2+, Japan)"},
+			{"Panasonic_FS-A1WSX", "Panasonic FS-A1WSX (MSX2+, Japan)"},
+			{"Panasonic_FS-A1ST", "Panasonic FS-A1ST (turbo R, Japan)"},
+			{"Panasonic_FS-A1GT", "Panasonic FS-A1GT (turbo R, Japan)"},
+			{nullptr, nullptr},
+		},
+		DEFAULT_MACHINE
+	},
+	EXTENSION_OPTION("openmsx_ext_scc", "Konami SCC (Restart)",
+		"A cartridge with Konami's SCC sound chip, for music that would otherwise need an SCC game cartridge."),
+	EXTENSION_OPTION("openmsx_ext_sccplus", "Konami SCC+ (Restart)",
+		"Konami's Sound Cartridge (SCC+), as with Snatcher and SD Snatcher."),
+	EXTENSION_OPTION("openmsx_ext_fmpac", "Panasonic FM-PAC (Restart)",
+		"MSX-MUSIC (FM sound) with battery-backed SRAM. Needs its ROM in <system>/openmsx/share/systemroms."),
+	EXTENSION_OPTION("openmsx_ext_msxaudio", "Philips MSX-Audio (Restart)",
+		"The Philips NMS 1205 Music Module (MSX-AUDIO). Needs its ROM in <system>/openmsx/share/systemroms."),
+	EXTENSION_OPTION("openmsx_ext_moonsound", "MoonSound (Restart)",
+		"The OPL4 sound cartridge. Needs its sample ROM in <system>/openmsx/share/systemroms."),
+	EXTENSION_OPTION("openmsx_ext_gfx9000", "GFX9000 (Restart)",
+		"The V9990 video cartridge, for the software written for it."),
+	{nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, {{nullptr, nullptr}}, nullptr},
+};
+#undef EXTENSION_OPTION
+
+void setCoreOptions()
+{
+	retro_core_options_v2 options = {optionCategories, optionDefinitions};
+	unsigned version = 0;
+	if (environ_cb(RETRO_ENVIRONMENT_GET_CORE_OPTIONS_VERSION, &version) && version >= 2) {
+		environ_cb(RETRO_ENVIRONMENT_SET_CORE_OPTIONS_V2, &options);
+		return;
+	}
+	// a frontend without options v2: "Label; first|second|..." with the default first
+	static std::vector<std::string> strings;
+	static std::vector<retro_variable> variables;
+	strings.clear();
+	variables.clear();
+	for (const auto* def = optionDefinitions; def->key; ++def) {
+		std::string text = std::string(def->desc) + "; " + def->default_value;
+		for (const auto* v = def->values; v->value; ++v) {
+			if (std::string(v->value) != def->default_value) text += std::string("|") + v->value;
+		}
+		strings.push_back(std::move(text));
+	}
+	size_t i = 0;
+	for (const auto* def = optionDefinitions; def->key; ++def) {
+		variables.push_back({def->key, strings[i++].c_str()});
+	}
+	variables.push_back({nullptr, nullptr});
+	environ_cb(RETRO_ENVIRONMENT_SET_VARIABLES, variables.data());
+}
+
+bool startEmulator(bool useOptions)
 {
 	try {
 		randomize();
@@ -112,6 +227,14 @@ bool startEmulator()
 		reactor = std::make_unique<Reactor>();
 
 		std::vector<std::string> args = {"openmsx"};
+		if (useOptions) {
+			args.insert(args.end(), {"-machine", optionValue("openmsx_machine", DEFAULT_MACHINE)});
+			for (const auto& ext : extensionOptions) {
+				if (optionValue(ext.key, "disabled") == "enabled") {
+					args.insert(args.end(), {"-ext", ext.name});
+				}
+			}
+		}
 		if (!contentPath.empty()) args.push_back(contentPath);
 		std::vector<char*> argv;
 		for (auto& a : args) argv.push_back(a.data());
@@ -120,6 +243,7 @@ bool startEmulator()
 		auto status = parser.getParseStatus();
 		if (status == one_of(CommandLineParser::Status::EXIT, CommandLineParser::Status::TEST)) {
 			log(RETRO_LOG_ERROR, "the content was not accepted\n");
+			reactor.reset();
 			return false;
 		}
 		reactor->runStartupScripts(parser);
@@ -133,6 +257,11 @@ bool startEmulator()
 		if (render.getEnum() == RenderSettings::RendererID::UNINITIALIZED) {
 			render.setValue(render.getDefaultValue());
 			reactor->getEventDistributor().deliverEvents(0);
+		}
+		if (!reactor->getMotherBoard()) {
+			log(RETRO_LOG_ERROR, "no MSX machine was started\n");
+			reactor.reset();
+			return false;
 		}
 		if (parser.getParseStatus() == CommandLineParser::Status::RUN) {
 			reactor->powerOn();
@@ -161,7 +290,14 @@ void contextReset()
 	contextAlive = true;
 	if (!reactor) {
 		gl::context.emplace();
-		if (!startEmulator()) {
+		bool started = startEmulator(true);
+		if (!started) {
+			// most often a real machine whose system ROMs are not there
+			showMessage("openMSX: the chosen machine or extension could not start (see the log); starting C-BIOS without extensions");
+			SDL_Quit();
+			started = startEmulator(false);
+		}
+		if (!started) {
 			environ_cb(RETRO_ENVIRONMENT_SHUTDOWN, nullptr);
 		}
 	} else {
@@ -525,9 +661,10 @@ void setInputDescriptors()
 
 namespace openmsx {
 
-void libretroFrameEnd(MSXMotherBoard& motherBoard)
+void libretroFrameEnd(MSXMotherBoard& motherBoard, int ticksPerFrame)
 {
 	frameDone = true;
+	frameTicks = ticksPerFrame;
 	motherBoard.exitCPULoopSync();
 }
 
@@ -541,6 +678,7 @@ RETRO_API void retro_set_environment(retro_environment_t cb)
 		log_cb = logging.log;
 	}
 	setControllerInfo();
+	setCoreOptions();
 }
 
 RETRO_API void retro_set_video_refresh(retro_video_refresh_t cb) { video_cb = cb; }
@@ -573,7 +711,7 @@ RETRO_API void retro_get_system_av_info(retro_system_av_info* info)
 	info->geometry.max_width = MAX_WIDTH;
 	info->geometry.max_height = MAX_HEIGHT;
 	info->geometry.aspect_ratio = 4.0f / 3.0f;
-	info->timing.fps = NTSC_FPS;
+	info->timing.fps = declaredFps;
 	info->timing.sample_rate = LibretroSoundDriver::FREQUENCY;
 }
 
@@ -609,6 +747,9 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 	hw_render.context_reset = contextReset;
 	hw_render.context_destroy = contextDestroy;
 	hw_render.bottom_left_origin = true;
+	// A video reinit (refresh rate switching on a 50/60 Hz change) keeps
+	// the context, and with it every GL object openMSX made
+	hw_render.cache_context = true;
 	if (!environ_cb(RETRO_ENVIRONMENT_SET_HW_RENDER, &hw_render)) {
 		log(RETRO_LOG_ERROR, "the frontend has no OpenGL context for the core\n");
 		return false;
@@ -634,6 +775,8 @@ RETRO_API void retro_unload_game()
 	pluggedBoard = nullptr;
 	portsChanged = true;
 	portState = {};
+	declaredFps = NTSC_FPS;
+	frameTicks = 0;
 	gl::context.reset();
 	SDL_Quit();
 }
@@ -658,6 +801,15 @@ RETRO_API void retro_run()
 			if (!board || !board->execute()) break;
 		}
 		distributor.deliverEvents(0);
+		if (frameTicks > 0) {
+			double fps = double(VDP::TICKS_PER_SECOND) / frameTicks;
+			if (std::abs(fps - declaredFps) > 0.5) {
+				declaredFps = fps;
+				retro_system_av_info av;
+				retro_get_system_av_info(&av);
+				environ_cb(RETRO_ENVIRONMENT_SET_SYSTEM_AV_INFO, &av);
+			}
+		}
 	} catch (MSXException& e) {
 		log(RETRO_LOG_ERROR, "%s\n", std::string(e.getMessage()).c_str());
 	}
@@ -690,6 +842,6 @@ RETRO_API bool retro_serialize(void* /*data*/, size_t /*size*/) { return false; 
 RETRO_API bool retro_unserialize(const void* /*data*/, size_t /*size*/) { return false; }
 RETRO_API void retro_cheat_reset() {}
 RETRO_API void retro_cheat_set(unsigned /*index*/, bool /*enabled*/, const char* /*code*/) {}
-RETRO_API unsigned retro_get_region() { return RETRO_REGION_NTSC; }
+RETRO_API unsigned retro_get_region() { return declaredFps < 55.0 ? RETRO_REGION_PAL : RETRO_REGION_NTSC; }
 RETRO_API void* retro_get_memory_data(unsigned /*id*/) { return nullptr; }
 RETRO_API size_t retro_get_memory_size(unsigned /*id*/) { return 0; }

@@ -266,7 +266,7 @@ void PixelRenderer::frameEnd(EmuTime time)
 		}
 	}
 #ifdef OPENMSX_LIBRETRO
-	libretroFrameEnd(vdp.getMotherBoard());
+	libretroFrameEnd(vdp.getMotherBoard(), vdp.getTicksPerFrame());
 #endif
 	if (vdp.getMotherBoard().isActive() &&
 	    !vdp.getMotherBoard().isFastForwarding()) {
