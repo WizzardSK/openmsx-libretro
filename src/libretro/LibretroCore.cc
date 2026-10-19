@@ -269,6 +269,9 @@ bool startEmulator(bool useOptions)
 		return true;
 	} catch (MSXException& e) {
 		log(RETRO_LOG_ERROR, "%s\n", std::string(e.getMessage()).c_str());
+	} catch (FatalError& e) {
+		// the parser's way of saying a machine or extension did not load
+		log(RETRO_LOG_ERROR, "%s\n", std::string(e.getMessage()).c_str());
 	} catch (std::exception& e) {
 		log(RETRO_LOG_ERROR, "%s\n", e.what());
 	}
