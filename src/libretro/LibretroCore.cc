@@ -16,10 +16,13 @@
 #include "GLContext.hh"
 #include "GLUtil.hh"
 #include "GlobalCommandController.hh"
+#include "JoystickDevice.hh"
 #include "MSXException.hh"
 #include "MSXMotherBoard.hh"
 #include "Reactor.hh"
 #include "RenderSettings.hh"
+#include "StateChange.hh"
+#include "StateChangeDistributor.hh"
 #include "Thread.hh"
 #include "random.hh"
 
@@ -27,6 +30,7 @@
 
 #include <SDL.h>
 
+#include <array>
 #include <cstdarg>
 #include <cstdio>
 #include <cstdlib>
@@ -243,26 +247,278 @@ constexpr KeyMap keyMap[] = {
 	{RETROK_LALT, SDL_SCANCODE_LALT, SDLK_LALT},
 };
 
+void sendKey(bool down, SDL_Scancode scan, SDL_Keycode sym)
+{
+	SDL_Event evt;
+	evt.key = SDL_KeyboardEvent{};
+	evt.key.type = down ? SDL_KEYDOWN : SDL_KEYUP;
+	evt.key.timestamp = SDL_GetTicks();
+	evt.key.state = down ? SDL_PRESSED : SDL_RELEASED;
+	evt.key.keysym.scancode = scan;
+	evt.key.keysym.sym = sym;
+	auto& distributor = reactor->getEventDistributor();
+	if (down) {
+		distributor.distributeEvent(KeyDownEvent(evt));
+	} else {
+		distributor.distributeEvent(KeyUpEvent(evt));
+	}
+}
+
 void RETRO_CALLCONV keyboardEvent(bool down, unsigned keycode, uint32_t /*character*/, uint16_t /*mods*/)
 {
 	if (!reactor) return;
 	for (const auto& k : keyMap) {
 		if (k.retro != keycode) continue;
-		SDL_Event evt;
-		evt.key = SDL_KeyboardEvent{};
-		evt.key.type = down ? SDL_KEYDOWN : SDL_KEYUP;
-		evt.key.timestamp = SDL_GetTicks();
-		evt.key.state = down ? SDL_PRESSED : SDL_RELEASED;
-		evt.key.keysym.scancode = k.scan;
-		evt.key.keysym.sym = k.sym;
-		auto& distributor = reactor->getEventDistributor();
-		if (down) {
-			distributor.distributeEvent(KeyDownEvent(evt));
-		} else {
-			distributor.distributeEvent(KeyUpEvent(evt));
-		}
+		sendKey(down, k.scan, k.sym);
 		return;
 	}
+}
+
+// What is plugged into the MSX's two joystick ports
+constexpr unsigned DEVICE_MSX_JOYSTICK = RETRO_DEVICE_JOYPAD;
+constexpr unsigned DEVICE_CURSOR_KEYS = RETRO_DEVICE_SUBCLASS(RETRO_DEVICE_JOYPAD, 0);
+constexpr unsigned DEVICE_MSX_MOUSE = RETRO_DEVICE_MOUSE;
+constexpr unsigned NUM_PORTS = 2;
+
+std::array<unsigned, NUM_PORTS> portDevice = {DEVICE_MSX_JOYSTICK, DEVICE_MSX_JOYSTICK};
+bool portsChanged = true;
+MSXMotherBoard* pluggedBoard = nullptr;
+
+struct PortState {
+	uint8_t joy = 0;      // MSX joystick bits held (JOY_UP ... JOY_BUTTONB)
+	uint32_t keys = 0;    // keys held: padKeys, then cursorKeys
+	unsigned mouseButtons = 0;
+};
+std::array<PortState, NUM_PORTS> portState;
+
+// RetroPad buttons that press MSX keys, with an MSX joystick and with the
+// cursor keys alike. Konami's games pause on F1 and ask for Space to start.
+struct PadKey { unsigned id; SDL_Scancode scan; SDL_Keycode sym; };
+constexpr PadKey padKeys[] = {
+	{RETRO_DEVICE_ID_JOYPAD_X, SDL_SCANCODE_SPACE, SDLK_SPACE},
+	{RETRO_DEVICE_ID_JOYPAD_Y, SDL_SCANCODE_RETURN, SDLK_RETURN},
+	{RETRO_DEVICE_ID_JOYPAD_START, SDL_SCANCODE_F1, SDLK_F1},
+	{RETRO_DEVICE_ID_JOYPAD_SELECT, SDL_SCANCODE_F5, SDLK_F5},
+	{RETRO_DEVICE_ID_JOYPAD_L, SDL_SCANCODE_ESCAPE, SDLK_ESCAPE},
+	{RETRO_DEVICE_ID_JOYPAD_R, SDL_SCANCODE_LSHIFT, SDLK_LSHIFT},
+};
+// With the cursor keys, the D-pad and A/B as the keyboard games read them:
+// trigger A is Space, trigger B is M
+constexpr PadKey cursorKeys[] = {
+	{RETRO_DEVICE_ID_JOYPAD_UP, SDL_SCANCODE_UP, SDLK_UP},
+	{RETRO_DEVICE_ID_JOYPAD_DOWN, SDL_SCANCODE_DOWN, SDLK_DOWN},
+	{RETRO_DEVICE_ID_JOYPAD_LEFT, SDL_SCANCODE_LEFT, SDLK_LEFT},
+	{RETRO_DEVICE_ID_JOYPAD_RIGHT, SDL_SCANCODE_RIGHT, SDLK_RIGHT},
+	{RETRO_DEVICE_ID_JOYPAD_A, SDL_SCANCODE_SPACE, SDLK_SPACE},
+	{RETRO_DEVICE_ID_JOYPAD_B, SDL_SCANCODE_M, SDLK_m},
+};
+
+/** Plugs into the MSX's joystick ports what the frontend's ports hold. */
+void plugPorts(MSXMotherBoard& board)
+{
+	static constexpr const char* connectors[NUM_PORTS] = {"joyporta", "joyportb"};
+	static constexpr const char* joysticks[NUM_PORTS] = {"msxjoystick1", "msxjoystick2"};
+	// An MSX joystick keeps its state while unplugged: let go of what it
+	// held, unless the machine is new
+	if (&board == pluggedBoard) {
+		for (unsigned port = 0; port < NUM_PORTS; ++port) {
+			if (uint8_t held = portState[port].joy) {
+				board.getStateChangeDistributor().distributeNew<MSXJoyState>(
+					board.getCurrentTime(), uint8_t(port + 1), uint8_t(0), held);
+			}
+		}
+	}
+	// unplug everything first, so the mouse can move from one port to the other
+	for (auto* connector : connectors) runCommand(std::string("unplug ") + connector);
+	for (unsigned port = 0; port < NUM_PORTS; ++port) {
+		portState[port] = {};
+		switch (portDevice[port]) {
+		case DEVICE_MSX_JOYSTICK:
+			runCommand(std::string("plug ") + connectors[port] + ' ' + joysticks[port]);
+			break;
+		case DEVICE_MSX_MOUSE:
+			runCommand(std::string("plug ") + connectors[port] + " mouse");
+			break;
+		default: // the cursor keys or nothing: the port stays empty
+			break;
+		}
+	}
+	pluggedBoard = &board;
+	portsChanged = false;
+}
+
+bool padButton(unsigned port, unsigned id)
+{
+	return input_state_cb(port, RETRO_DEVICE_JOYPAD, 0, id) != 0;
+}
+
+/** The D-pad, or the left stick pushed beyond a third of its range. */
+bool padDirection(unsigned port, unsigned id)
+{
+	if (padButton(port, id)) return true;
+	constexpr int THRESHOLD = 0x2AAA;
+	bool vertical = id == one_of(RETRO_DEVICE_ID_JOYPAD_UP, RETRO_DEVICE_ID_JOYPAD_DOWN);
+	int value = input_state_cb(port, RETRO_DEVICE_ANALOG, RETRO_DEVICE_INDEX_ANALOG_LEFT,
+		vertical ? RETRO_DEVICE_ID_ANALOG_Y : RETRO_DEVICE_ID_ANALOG_X);
+	bool negative = id == one_of(RETRO_DEVICE_ID_JOYPAD_UP, RETRO_DEVICE_ID_JOYPAD_LEFT);
+	return negative ? value < -THRESHOLD : value > THRESHOLD;
+}
+
+/** Presses and releases the keys in 'map' that changed since the last frame. */
+template<size_t N>
+void updateKeys(uint32_t now, uint32_t& held, const PadKey (&map)[N], uint32_t shift)
+{
+	for (size_t i = 0; i < N; ++i) {
+		uint32_t bit = 1u << (shift + i);
+		if ((now & bit) != (held & bit)) {
+			sendKey((now & bit) != 0, map[i].scan, map[i].sym);
+		}
+	}
+	held = (held & ~(((1u << N) - 1) << shift)) | (now & (((1u << N) - 1) << shift));
+}
+
+void pollJoystick(MSXMotherBoard& board, unsigned port, PortState& state)
+{
+	static constexpr unsigned dirs[4] = {
+		RETRO_DEVICE_ID_JOYPAD_UP, RETRO_DEVICE_ID_JOYPAD_DOWN,
+		RETRO_DEVICE_ID_JOYPAD_LEFT, RETRO_DEVICE_ID_JOYPAD_RIGHT,
+	};
+	uint8_t now = 0;
+	for (unsigned i = 0; i < 4; ++i) {
+		if (padDirection(port, dirs[i])) now |= uint8_t(1 << i);
+	}
+	if (padButton(port, RETRO_DEVICE_ID_JOYPAD_A)) now |= JoystickDevice::JOY_BUTTONA;
+	if (padButton(port, RETRO_DEVICE_ID_JOYPAD_B)) now |= JoystickDevice::JOY_BUTTONB;
+	if (now != state.joy) {
+		// MSXJoystick takes the same state change from its own bindings
+		board.getStateChangeDistributor().distributeNew<MSXJoyState>(
+			board.getCurrentTime(), uint8_t(port + 1),
+			uint8_t(now & ~state.joy), uint8_t(state.joy & ~now));
+		state.joy = now;
+	}
+}
+
+void pollCursorKeys(unsigned port, PortState& state)
+{
+	uint32_t now = 0;
+	for (size_t i = 0; i < std::size(cursorKeys); ++i) {
+		bool down = i < 4 ? padDirection(port, cursorKeys[i].id)
+		                  : padButton(port, cursorKeys[i].id);
+		if (down) now |= 1u << (std::size(padKeys) + i);
+	}
+	updateKeys(now, state.keys, cursorKeys, std::size(padKeys));
+}
+
+void pollPadKeys(unsigned port, PortState& state)
+{
+	uint32_t now = 0;
+	for (size_t i = 0; i < std::size(padKeys); ++i) {
+		if (padButton(port, padKeys[i].id)) now |= 1u << i;
+	}
+	updateKeys(now, state.keys, padKeys, 0);
+}
+
+void pollMouse(unsigned port, PortState& state)
+{
+	auto& distributor = reactor->getEventDistributor();
+	int dx = input_state_cb(port, RETRO_DEVICE_MOUSE, 0, RETRO_DEVICE_ID_MOUSE_X);
+	int dy = input_state_cb(port, RETRO_DEVICE_MOUSE, 0, RETRO_DEVICE_ID_MOUSE_Y);
+	if (dx || dy) {
+		SDL_Event evt;
+		evt.motion = SDL_MouseMotionEvent{};
+		evt.motion.type = SDL_MOUSEMOTION;
+		evt.motion.timestamp = SDL_GetTicks();
+		evt.motion.xrel = dx;
+		evt.motion.yrel = dy;
+		distributor.distributeEvent(MouseMotionEvent(evt));
+	}
+	static constexpr struct { unsigned id; uint8_t sdl; } buttons[] = {
+		{RETRO_DEVICE_ID_MOUSE_LEFT, SDL_BUTTON_LEFT},
+		{RETRO_DEVICE_ID_MOUSE_RIGHT, SDL_BUTTON_RIGHT},
+	};
+	for (unsigned i = 0; i < std::size(buttons); ++i) {
+		bool down = input_state_cb(port, RETRO_DEVICE_MOUSE, 0, buttons[i].id) != 0;
+		if (down == bool(state.mouseButtons & (1u << i))) continue;
+		state.mouseButtons ^= 1u << i;
+		SDL_Event evt;
+		evt.button = SDL_MouseButtonEvent{};
+		evt.button.type = down ? SDL_MOUSEBUTTONDOWN : SDL_MOUSEBUTTONUP;
+		evt.button.timestamp = SDL_GetTicks();
+		evt.button.button = buttons[i].sdl;
+		evt.button.state = down ? SDL_PRESSED : SDL_RELEASED;
+		if (down) {
+			distributor.distributeEvent(MouseButtonDownEvent(evt));
+		} else {
+			distributor.distributeEvent(MouseButtonUpEvent(evt));
+		}
+	}
+}
+
+void pollInput()
+{
+	auto* board = reactor->getMotherBoard();
+	if (!board) return;
+	if (portsChanged || board != pluggedBoard) plugPorts(*board);
+	for (unsigned port = 0; port < NUM_PORTS; ++port) {
+		auto& state = portState[port];
+		switch (portDevice[port]) {
+		case DEVICE_MSX_JOYSTICK:
+			pollJoystick(*board, port, state);
+			pollPadKeys(port, state);
+			break;
+		case DEVICE_CURSOR_KEYS:
+			pollCursorKeys(port, state);
+			pollPadKeys(port, state);
+			break;
+		case DEVICE_MSX_MOUSE:
+			pollMouse(port, state);
+			break;
+		default:
+			break;
+		}
+	}
+}
+
+void setControllerInfo()
+{
+	static const retro_controller_description types[] = {
+		{"MSX Joystick", DEVICE_MSX_JOYSTICK},
+		{"Cursor Keys", DEVICE_CURSOR_KEYS},
+		{"MSX Mouse", DEVICE_MSX_MOUSE},
+		{"None", RETRO_DEVICE_NONE},
+	};
+	static const retro_controller_info ports[] = {
+		{types, std::size(types)},
+		{types, std::size(types)},
+		{nullptr, 0},
+	};
+	environ_cb(RETRO_ENVIRONMENT_SET_CONTROLLER_INFO, const_cast<retro_controller_info*>(ports));
+}
+
+void setInputDescriptors()
+{
+	static const retro_input_descriptor descriptors[] = {
+#define PORT_DESCRIPTORS(p) \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_UP, "Up"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_DOWN, "Down"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_LEFT, "Left"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_RIGHT, "Right"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_A, "Trigger A"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_B, "Trigger B"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X, "Space"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y, "Return"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_START, "F1"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT, "F5"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_L, "Esc"}, \
+		{p, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_R, "Shift"}, \
+		{p, RETRO_DEVICE_ANALOG, RETRO_DEVICE_INDEX_ANALOG_LEFT, RETRO_DEVICE_ID_ANALOG_X, "Left Stick X"}, \
+		{p, RETRO_DEVICE_ANALOG, RETRO_DEVICE_INDEX_ANALOG_LEFT, RETRO_DEVICE_ID_ANALOG_Y, "Left Stick Y"},
+		PORT_DESCRIPTORS(0)
+		PORT_DESCRIPTORS(1)
+#undef PORT_DESCRIPTORS
+		{0, 0, 0, 0, nullptr},
+	};
+	environ_cb(RETRO_ENVIRONMENT_SET_INPUT_DESCRIPTORS, const_cast<retro_input_descriptor*>(descriptors));
 }
 
 } // namespace
@@ -284,6 +540,7 @@ RETRO_API void retro_set_environment(retro_environment_t cb)
 	if (cb(RETRO_ENVIRONMENT_GET_LOG_INTERFACE, &logging)) {
 		log_cb = logging.log;
 	}
+	setControllerInfo();
 }
 
 RETRO_API void retro_set_video_refresh(retro_video_refresh_t cb) { video_cb = cb; }
@@ -320,7 +577,18 @@ RETRO_API void retro_get_system_av_info(retro_system_av_info* info)
 	info->timing.sample_rate = LibretroSoundDriver::FREQUENCY;
 }
 
-RETRO_API void retro_set_controller_port_device(unsigned /*port*/, unsigned /*device*/) {}
+RETRO_API void retro_set_controller_port_device(unsigned port, unsigned device)
+{
+	if (port >= NUM_PORTS) return;
+	// releases what the previous device held, before its port changes
+	if (reactor) {
+		auto& state = portState[port];
+		if (portDevice[port] == DEVICE_CURSOR_KEYS) updateKeys(0, state.keys, cursorKeys, std::size(padKeys));
+		updateKeys(0, state.keys, padKeys, 0);
+	}
+	portDevice[port] = device;
+	portsChanged = true;
+}
 
 RETRO_API void retro_reset()
 {
@@ -348,6 +616,7 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 
 	retro_keyboard_callback keyboard = {keyboardEvent};
 	environ_cb(RETRO_ENVIRONMENT_SET_KEYBOARD_CALLBACK, &keyboard);
+	setInputDescriptors();
 
 	setupDirectories();
 	// openMSX starts in context_reset, once there is a GL context
@@ -362,6 +631,9 @@ RETRO_API bool retro_load_game_special(unsigned /*type*/, const retro_game_info*
 RETRO_API void retro_unload_game()
 {
 	reactor.reset();
+	pluggedBoard = nullptr;
+	portsChanged = true;
+	portState = {};
 	gl::context.reset();
 	SDL_Quit();
 }
@@ -377,6 +649,7 @@ RETRO_API void retro_run()
 	try {
 		// Emulate until the VDP finishes a frame. The bound keeps a
 		// machine whose VDP produces no frames from hanging the frontend.
+		pollInput();
 		frameDone = false;
 		auto& distributor = reactor->getEventDistributor();
 		for (int i = 0; !frameDone && i < 64; ++i) {
