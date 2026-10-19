@@ -1,0 +1,151 @@
+# DESCRIPTION: GitLab CI/CD for libRetro (NOT FOR GitLab-proper)
+#
+# This recipe is consumed by the Libretro buildbot so the openMSX core can be
+# distributed through RetroArch's Online Updater > Core Downloader.
+#
+# Linux x64/aarch64, Windows x64 and macOS arm64/x86_64. openMSX builds with
+# its own make (build/main.mk, LIBRETRO=true) against static libraries it
+# builds first (make 3rdparty: SDL2, Tcl, FreeType, GLEW, libpng, zlib), and
+# it is C++23. That rules out the buildbot's own Linux images and the MXE
+# toolchain names openMSX's build does not know, so the Linux and Windows jobs
+# run on Ubuntu and pull their own compiler, as the project's GitHub CI
+# (.github/workflows/libretro.yml) does. The data the core reads from
+# <system>/openmsx (machines, extensions, C-BIOS) is not part of the core.
+
+# Core definitions
+.core-defs:
+  variables:
+    CORENAME: openmsx
+
+# Overriding before_script drops the template's NUMPROC, hence the re-export.
+.core-deps-linux:
+  image: ubuntu:22.04
+  before_script:
+    - export NUMPROC=$(($(nproc)/5))
+    - export NUMPROC=$((NUMPROC > 0 ? NUMPROC : 1))
+    - apt-get update -qq
+    - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
+        software-properties-common ca-certificates git make python3 pkg-config
+        libopengl-dev libegl-dev libgl-dev
+    - add-apt-repository -y ppa:ubuntu-toolchain-r/test
+    - apt-get update -qq
+    - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends gcc-13 g++-13
+  variables:
+    # glibc 2.35, GCC 13 with its libstdc++ linked into the core
+    CC: gcc-13
+    CXX: g++-13
+    LIBRETRO: "true"
+  script:
+    - make 3rdparty OPENMSX_TARGET_CPU=${OPENMSX_CPU} OPENMSX_TARGET_OS=linux
+        OPENMSX_FLAVOUR=opt PYTHON=python3 -j${NUMPROC}
+    - make OPENMSX_TARGET_CPU=${OPENMSX_CPU} OPENMSX_TARGET_OS=linux
+        OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j${NUMPROC}
+    - mv derived/${OPENMSX_CPU}-linux-opt-3rd/lib/${CORENAME}_libretro.so ${CORENAME}_libretro.so
+
+include:
+  ################################## DESKTOP ##################################
+  # Linux
+  - project: 'libretro-infrastructure/ci-templates'
+    file: '/linux-x64.yml'
+  - project: 'libretro-infrastructure/ci-templates'
+    file: '/linux-aarch64.yml'
+
+  # Windows
+  - project: 'libretro-infrastructure/ci-templates'
+    file: '/windows-x64-mingw.yml'
+
+  # macOS
+  - project: 'libretro-infrastructure/ci-templates'
+    file: '/osx-arm64.yml'
+  - project: 'libretro-infrastructure/ci-templates'
+    file: '/osx-x64.yml'
+
+# Stages for building
+stages:
+  - build-prepare
+  - build-shared
+  - build-static
+
+##############################################################################
+#################################### STAGES ##################################
+##############################################################################
+#
+################################### DESKTOP ##################################
+# Linux 64-bit
+libretro-build-linux-x64:
+  extends:
+    - .libretro-linux-x64
+    - .core-deps-linux
+    - .core-defs
+  variables:
+    OPENMSX_CPU: x86_64
+  after_script:
+    - strip --strip-unneeded ${CORENAME}_libretro.so
+
+# Linux aarch64
+libretro-build-linux-aarch64:
+  extends:
+    - .libretro-linux-aarch64
+    - .core-deps-linux
+    - .core-defs
+  variables:
+    OPENMSX_CPU: aarch64
+  after_script:
+    - strip --strip-unneeded ${CORENAME}_libretro.so
+
+# Windows 64-bit, cross-built with MinGW (POSIX threads), as openMSX's own
+# Windows build is
+libretro-build-windows-x64:
+  extends:
+    - .libretro-windows-x64-mingw
+    - .core-defs
+  image: ubuntu:24.04
+  variables:
+    LIBRETRO: "true"
+  before_script:
+    - export NUMPROC=$(($(nproc)/5))
+    - export NUMPROC=$((NUMPROC > 0 ? NUMPROC : 1))
+    - apt-get update -qq
+    - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
+        ca-certificates git make python3 tcl mingw-w64
+    - update-alternatives --set x86_64-w64-mingw32-gcc /usr/bin/x86_64-w64-mingw32-gcc-posix
+    - update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
+  script:
+    - make 3rdparty OPENMSX_TARGET_CPU=x86_64 OPENMSX_TARGET_OS=mingw-w64
+        OPENMSX_FLAVOUR=opt PYTHON=python3 -j${NUMPROC}
+    - make OPENMSX_TARGET_CPU=x86_64 OPENMSX_TARGET_OS=mingw-w64
+        OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j${NUMPROC}
+    - mv derived/x86_64-mingw-w64-opt-3rd/lib/${CORENAME}_libretro.dll ${CORENAME}_libretro.dll
+    - x86_64-w64-mingw32-strip --strip-unneeded ${CORENAME}_libretro.dll
+
+# macOS: Apple clang and openMSX's own deployment target (13.3, for the
+# C++23 library it uses; build/platform-darwin.mk)
+.core-osx:
+  extends: .core-defs
+  variables:
+    LIBRETRO: "true"
+    MACOSX_DEPLOYMENT_TARGET: "13.3"
+  script:
+    - make 3rdparty OPENMSX_TARGET_CPU=${OPENMSX_CPU} OPENMSX_TARGET_OS=darwin
+        OPENMSX_FLAVOUR=opt PYTHON=python3 -j${NUMPROC}
+    - make OPENMSX_TARGET_CPU=${OPENMSX_CPU} OPENMSX_TARGET_OS=darwin
+        OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j${NUMPROC}
+    - mv derived/${OPENMSX_CPU}-darwin-opt-3rd/lib/${CORENAME}_libretro.dylib ${CORENAME}_libretro.dylib
+    - strip -x ${CORENAME}_libretro.dylib
+    - lipo -info ${CORENAME}_libretro.dylib
+
+# macOS 64-bit (ARM)
+libretro-build-osx-arm64:
+  extends:
+    - .libretro-osx-arm64
+    - .core-osx
+  variables:
+    OPENMSX_CPU: aarch64
+
+# macOS 64-bit (Intel)
+libretro-build-osx-x64:
+  extends:
+    - .libretro-osx-x64
+    - .core-osx
+  variables:
+    OPENMSX_CPU: x86_64
