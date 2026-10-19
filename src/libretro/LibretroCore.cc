@@ -30,6 +30,7 @@
 #include "Version.hh"
 #include "random.hh"
 #include "serialize.hh"
+#include "strCat.hh"
 
 #include "libretro.h"
 
@@ -225,6 +226,7 @@ void setCoreOptions()
 bool startEmulator(bool useOptions)
 {
 	try {
+		log(RETRO_LOG_INFO, "core built from %s\n", OPENMSX_LIBRETRO_COMMIT);
 		randomize();
 		if (SDL_Init(SDL_INIT_EVENTS | SDL_INIT_TIMER) < 0) {
 			log(RETRO_LOG_ERROR, "SDL_Init: %s\n", SDL_GetError());
@@ -707,7 +709,7 @@ RETRO_API void retro_get_system_info(retro_system_info* info)
 {
 	*info = {};
 	info->library_name = "openMSX";
-	info->library_version = "21.0-git";
+	info->library_version = "21.0 " OPENMSX_LIBRETRO_COMMIT;
 	info->valid_extensions = "rom|ri|mx1|mx2|col|sg|sc|dsk|di1|di2|dmk|xsa|cas|wav|zip|gz";
 	info->need_fullpath = true;
 	info->block_extract = true;
@@ -848,17 +850,18 @@ RETRO_API void retro_run()
 	}
 }
 
-// A savestate: magic, the openMSX version it was made with, the length of
-// the state and the state, a MemOutputArchive of the board with every blob
-// inline. That archive has no versioning, so a state loads only into the
-// build that made it.
+// A savestate: magic, the openMSX version and core commit it was made with,
+// the length of the state and the state, a MemOutputArchive of the board with
+// every blob inline. That archive has no versioning, so a state loads only
+// into the build that made it.
 namespace {
 
 constexpr char STATE_MAGIC[8] = {'O', 'M', 'S', 'X', 'L', 'R', '0', '1'};
 
 std::string stateVersion()
 {
-	return std::string(Version::full());
+	// openMSX's own version names no revision in a shallow checkout
+	return strCat(Version::full(), ' ', OPENMSX_LIBRETRO_COMMIT);
 }
 
 MemBuffer<uint8_t> saveBoard(MSXMotherBoard& board)

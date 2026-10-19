@@ -101,7 +101,10 @@ endif
 # that exports only retro_*, resolves its own symbols first (the frontend may
 # have its own SDL loaded) and carries its C++ runtime.
 ifeq ($(LIBRETRO),true)
-COMPILE_FLAGS+=-fPIC -DOPENMSX_LIBRETRO
+# The commit the core is built from: its version, and the check that a
+# savestate comes from the same build
+LIBRETRO_COMMIT?=$(shell git rev-parse --short=10 HEAD 2>/dev/null || echo unknown)
+COMPILE_FLAGS+=-fPIC -DOPENMSX_LIBRETRO -DOPENMSX_LIBRETRO_COMMIT='"$(LIBRETRO_COMMIT)"'
 LINK_FLAGS+=-Wl,--version-script=src/libretro/link.T -Wl,-Bsymbolic \
 	-Wl,--no-undefined -static-libstdc++ -static-libgcc
 endif
