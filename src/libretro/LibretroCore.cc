@@ -515,6 +515,11 @@ bool startEmulator(bool useOptions)
 		runCommand("set minframeskip 0");
 		runCommand("set maxframeskip 0");
 		runCommand("set scale_factor " + std::to_string(scale));
+		// The picture as the VDP draws it: openMSX's own blur (50) and
+		// scanlines (20) are on by default, and left the frame soft next to
+		// blueMSX's (Tatsuya79); RetroArch's shaders do those
+		runCommand("set blur 0");
+		runCommand("set scanline 0");
 
 		auto& render = reactor->getDisplay().getRenderSettings().getRendererSetting();
 		if (render.getEnum() == RenderSettings::RendererID::UNINITIALIZED) {
