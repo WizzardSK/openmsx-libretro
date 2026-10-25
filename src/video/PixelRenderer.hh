@@ -40,6 +40,9 @@ public:
 	void reInit() override;
 	void frameStart(EmuTime time) override;
 	void frameEnd(EmuTime time) override;
+#ifdef OPENMSX_LIBRETRO
+	void libretroDisplayEnd(EmuTime time) override;
+#endif
 	void updateHorizontalScrollLow(uint8_t scroll, EmuTime time) override;
 	void updateHorizontalScrollHigh(uint8_t scroll, EmuTime time) override;
 	void updateBorderMask(bool masked, EmuTime time) override;
@@ -176,6 +179,16 @@ private:
 	  * while paintFrame may not.
 	  */
 	bool paintFrame;
+
+#ifdef OPENMSX_LIBRETRO
+	/** Loaded mid-frame (a savestate is taken just after a frame start):
+	  * the frame is rendered from its start once the rasterizer is active,
+	  * rather than skipped, which showed black in the frontend (run-ahead,
+	  * Tatsuya79).
+	  */
+	bool resumeFrame = false;
+	void resumeLoadedFrame();
+#endif
 
 	/** Timestamp (us, like Timer::getTime()) at which we last painted a frame.
 	  * Used to force a minimal paint rate when throttle is off.

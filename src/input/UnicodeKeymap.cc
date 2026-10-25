@@ -1,4 +1,7 @@
 #include "UnicodeKeymap.hh"
+#ifdef OPENMSX_LIBRETRO
+#include "LibretroHooks.hh"
+#endif
 
 #include "File.hh"
 #include "FileContext.hh"
@@ -89,8 +92,12 @@ UnicodeKeymap::UnicodeKeymap(std::string_view keyboardType)
 	auto filename = systemFileContext().resolve(
 		tmpStrCat("unicodemaps/unicodemap.", keyboardType));
 	try {
+#ifdef OPENMSX_LIBRETRO
+		parseUnicodeKeyMapFile(libretroSystemFile(filename));
+#else
 		auto buf = File(filename).mmap<const char>();
 		parseUnicodeKeyMapFile(std::string_view(buf.data(), buf.size())); // TODO c++23
+#endif
 		// TODO in the future we'll require the presence of
 		//      "MSX-Video-Characterset" in the keyboard information
 		//      file, then we don't need this fallback.

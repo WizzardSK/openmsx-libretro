@@ -61,13 +61,16 @@ jobs:
         env:
           LIBRETRO: 'true'
         run: |
+          # not stripped at the link: Collect keeps a copy with symbols
           make OPENMSX_TARGET_CPU=${{ matrix.cpu }} OPENMSX_TARGET_OS=linux \
-            OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j"$(nproc)"
+            OPENMSX_FLAVOUR=opt OPENMSX_STRIP=false 3RDPARTY_FLAG=true PYTHON=python3 -j"$(nproc)"
 
       - name: Collect
         run: |
           mkdir -p out
+          mkdir -p symbols
           cp derived/${{ matrix.cpu }}-linux-opt-3rd/lib/openmsx_libretro.so out/
+          cp out/openmsx_libretro.so symbols/
           strip out/openmsx_libretro.so
           file out/openmsx_libretro.so
           nm -D --defined-only out/openmsx_libretro.so | grep -c ' T retro_'
@@ -82,6 +85,12 @@ jobs:
         with:
           name: openmsx_libretro-${{ matrix.arch }}
           path: out/
+
+      # The core before strip, to read a backtrace or a profile against
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openmsx_libretro-${{ matrix.arch }}-symbols
+          path: symbols/
 
   windows:
     name: libretro core (windows-x86_64)

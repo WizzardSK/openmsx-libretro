@@ -12,8 +12,11 @@
 #include "CommandLineParser.hh"
 #include "DeltaBlock.hh"
 #include "Display.hh"
+#include "File.hh"
+#include "PostProcessor.hh"
 #include "Event.hh"
 #include "EventDistributor.hh"
+#include "FrameSource.hh"
 #include "GLContext.hh"
 #include "GLUtil.hh"
 #include "GlobalCommandController.hh"
@@ -47,7 +50,9 @@
 #include <cstdlib>
 #include <cstring>
 #include <fstream>
+#include <map>
 #include <memory>
+#include <span>
 #include <string>
 #include <vector>
 
@@ -66,6 +71,10 @@ retro_hw_render_callback hw_render;
 std::unique_ptr<Reactor> reactor;
 std::string contentPath;
 bool frameDone = false;
+// The frame's display area has ended and it was handed over: its end (the
+// VDP's next frame start) is not where retro_run stops then
+bool displayDone = false;
+bool stateLoad = false;
 bool contextAlive = false;
 
 constexpr double NTSC_FPS = 59.9227434;
@@ -78,6 +87,11 @@ size_t stateSizeMax = 0;
 // chosen scale, or with Crop Overscan the part of it the MSX displays on
 unsigned scale = 2;
 bool cropOverscan = false;
+// Video Output: Software, no GL context; the frame as pixels (swFrame), at
+// 320x240 times the Resolution, filled as each frame finishes
+bool softwareOutput = false;
+std::vector<uint32_t> swFrame;
+unsigned swWidth = 0, swHeight = 0;
 unsigned frameWidth = 640, frameHeight = 480;
 gl::ivec2 frameOffset;
 // openMSX's 320 wide picture, borders included, on a 4:3 screen: its
@@ -371,6 +385,17 @@ retro_core_option_v2_definition optionDefinitions[] = {
 		{{"1", "1x (320x240)"}, {"2", "2x (640x480)"}, {"3", "3x (960x720)"}, {"4", "4x (1280x960)"}, {nullptr, nullptr}},
 		"2"
 	},
+	// Software by default, unlike openMSX, which has only its OpenGL
+	// renderer: it works with any video driver, RetroArch's shaders do what
+	// openMSX's scalers and effects would, and run-ahead's state loads are
+	// cheapest there (Tatsuya79)
+	{
+		"openmsx_video_output", "Video Output (Restart)", nullptr,
+		"Software hands RetroArch the picture as pixels, for any video driver. OpenGL draws through RetroArch's OpenGL context (the gl or glcore video driver), with openMSX's own scalers and effects.",
+		nullptr, "video",
+		{{"software", "Software"}, {"opengl", "OpenGL"}, {nullptr, nullptr}},
+		"software"
+	},
 	{
 		"openmsx_crop_overscan", "Crop Overscan", nullptr,
 		"Shows only the part of the screen the MSX displays on, without its border; the size follows the screen mode.",
@@ -574,6 +599,21 @@ bool startEmulator(bool useOptions)
 	return false;
 }
 
+/** The emulator with the core options, else C-BIOS without extensions */
+void startWithFallback()
+{
+	bool started = startEmulator(true);
+	if (!started) {
+		// most often a real machine whose system ROMs are not there
+		showMessage("openMSX: the chosen machine or extension could not start (see the log); starting C-BIOS without extensions");
+		SDL_Quit();
+		started = startEmulator(false);
+	}
+	if (!started) {
+		environ_cb(RETRO_ENVIRONMENT_SHUTDOWN, nullptr);
+	}
+}
+
 void contextReset()
 {
 	glewExperimental = GL_TRUE;
@@ -588,16 +628,7 @@ void contextReset()
 	contextAlive = true;
 	if (!reactor) {
 		gl::context.emplace();
-		bool started = startEmulator(true);
-		if (!started) {
-			// most often a real machine whose system ROMs are not there
-			showMessage("openMSX: the chosen machine or extension could not start (see the log); starting C-BIOS without extensions");
-			SDL_Quit();
-			started = startEmulator(false);
-		}
-		if (!started) {
-			environ_cb(RETRO_ENVIRONMENT_SHUTDOWN, nullptr);
-		}
+		startWithFallback();
 	} else {
 		// a new context after a lost one: openMSX makes its GL objects again
 		gl::context.emplace();
@@ -614,6 +645,7 @@ void contextDestroy()
 	if (reactor) {
 		reactor->getDisplay().releaseVideoSystem();
 	}
+	PostProcessor::libretroDropSpareGL();
 	gl::context.reset();
 }
 
@@ -967,10 +999,75 @@ void setInputDescriptors()
 
 namespace openmsx {
 
+bool libretroSoftwareOutput()
+{
+	return softwareOutput;
+}
+
+void libretroSoftwareFrame(const FrameSource& frame)
+{
+	// openMSX's 640x480 view of the frame (hi-res modes keep their pixels),
+	// sampled to the output size with the horizontal stretch the GL path
+	// applies: the middle `stretch` of openMSX's 320 wide picture fills it
+	const unsigned w = 320 * scale, h = 240 * scale;
+	swFrame.resize(size_t(w) * h);
+	swWidth = w;
+	swHeight = h;
+	const float stretch = reactor->getDisplay().getRenderSettings().getHorizontalStretch();
+	const float left = (320.0f - stretch) / 2.0f;
+	std::vector<unsigned> srcX(w);
+	for (unsigned x = 0; x < w; ++x) {
+		float sx = (left + (float(x) + 0.5f) * stretch / float(w)) * 2.0f;
+		srcX[x] = unsigned(std::clamp(int(sx), 0, 639));
+	}
+	std::array<FrameSource::Pixel, 640> line;
+	unsigned lastSy = ~0u;
+	std::span<const FrameSource::Pixel> src;
+	for (unsigned y = 0; y < h; ++y) {
+		unsigned sy = std::min(y * 480 / h, 479u);
+		if (sy != lastSy) {
+			src = frame.getLinePtr640_480(sy, line);
+			lastSy = sy;
+		}
+		uint32_t* out = &swFrame[size_t(y) * w];
+		for (unsigned x = 0; x < w; ++x) {
+			uint32_t p = src[srcX[x]];
+			// openMSX's pixels are R in the low byte, RetroArch's XRGB8888
+			out[x] = ((p & 0xFF) << 16) | (p & 0xFF00) | ((p >> 16) & 0xFF);
+		}
+	}
+}
+
 void libretroFrameEnd(MSXMotherBoard& motherBoard, int ticksPerFrame)
 {
-	frameDone = true;
 	frameTicks = ticksPerFrame;
+	if (!displayDone) {
+		frameDone = true;
+		motherBoard.exitCPULoopSync();
+	}
+	displayDone = false;
+}
+
+bool libretroStateLoad()
+{
+	return stateLoad;
+}
+
+std::string_view libretroSystemFile(const std::string& filename)
+{
+	static std::map<std::string, std::string, std::less<>> files;
+	auto it = files.find(filename);
+	if (it == files.end()) {
+		auto buf = File(filename).mmap<const char>();
+		it = files.emplace(filename, std::string(buf.data(), buf.size())).first;
+	}
+	return it->second;
+}
+
+void libretroDisplayDone(MSXMotherBoard& motherBoard)
+{
+	displayDone = true;
+	frameDone = true;
 	motherBoard.exitCPULoopSync();
 }
 
@@ -1062,6 +1159,25 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 	retro_pixel_format fmt = RETRO_PIXEL_FORMAT_XRGB8888;
 	environ_cb(RETRO_ENVIRONMENT_SET_PIXEL_FORMAT, &fmt);
 
+	readVideoOptions();
+	frameWidth = 320 * scale;
+	frameHeight = 240 * scale;
+	frameAspect = pictureAspect();
+
+	retro_keyboard_callback keyboard = {keyboardEvent};
+	environ_cb(RETRO_ENVIRONMENT_SET_KEYBOARD_CALLBACK, &keyboard);
+	setInputDescriptors();
+	setupDirectories();
+
+	// Software: no GL context to wait for, openMSX starts now
+	softwareOutput = optionValue("openmsx_video_output", "software") == "software";
+	if (softwareOutput) {
+		log(RETRO_LOG_INFO, "video output: software\n");
+		contextAlive = true;
+		startWithFallback();
+		return reactor != nullptr;
+	}
+
 	hw_render = {};
 	hw_render.context_type = RETRO_HW_CONTEXT_OPENGL;
 	hw_render.version_major = 2;
@@ -1077,15 +1193,6 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 		return false;
 	}
 
-	retro_keyboard_callback keyboard = {keyboardEvent};
-	environ_cb(RETRO_ENVIRONMENT_SET_KEYBOARD_CALLBACK, &keyboard);
-	setInputDescriptors();
-
-	readVideoOptions();
-	frameWidth = 320 * scale;
-	frameHeight = 240 * scale;
-	frameAspect = pictureAspect();
-	setupDirectories();
 	// openMSX starts in context_reset, once there is a GL context
 	return true;
 }
@@ -1104,6 +1211,8 @@ RETRO_API void retro_unload_game()
 	declaredFps = NTSC_FPS;
 	frameTicks = 0;
 	stateSizeMax = 0;
+	libretroClearRomCache();
+	PostProcessor::libretroDropSpareGL();
 	gl::context.reset();
 	SDL_Quit();
 }
@@ -1146,7 +1255,19 @@ RETRO_API void retro_run()
 	}
 
 	auto* video = dynamic_cast<LibretroVideoSystem*>(&reactor->getDisplay().getVideoSystem());
-	if (video) {
+	if (softwareOutput) {
+		// the part of the picture shown, as the GL path cuts it (y up)
+		updateFrameGeometry();
+		const unsigned w = 320 * scale;
+		if (swWidth == w && !swFrame.empty()) {
+			unsigned x0 = unsigned(-frameOffset.x);
+			unsigned top = swHeight - unsigned(-frameOffset.y) - frameHeight;
+			video_cb(&swFrame[size_t(top) * swWidth + x0], frameWidth, frameHeight,
+			         swWidth * sizeof(uint32_t));
+		} else {
+			video_cb(nullptr, frameWidth, frameHeight, 0);
+		}
+	} else if (video) {
 		updateFrameGeometry();
 		video->paintTo(unsigned(hw_render.get_current_framebuffer()),
 		               gl::ivec2(int(320 * scale), int(240 * scale)), frameOffset);
@@ -1270,6 +1391,9 @@ RETRO_API bool retro_unserialize(const void* data, size_t size)
 		log(RETRO_LOG_ERROR, "savestate: cut short\n");
 		return false;
 	}
+	// (libretroStateLoad, for the SRAMs of both machines)
+	stateLoad = true;
+	struct StateLoadEnd { ~StateLoadEnd() { stateLoad = false; } } stateLoadEnd;
 	try {
 		// as openMSX's reverse does: a new board from the state, which
 		// then replaces the running one

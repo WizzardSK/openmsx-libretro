@@ -173,7 +173,19 @@ void PixelRenderer::reInit()
 
 	rasterizer->reset();
 	displayEnabled = vdp.isDisplayEnabled();
+#ifdef OPENMSX_LIBRETRO
+	resumeFrame = true;
+#endif
 }
+
+#ifdef OPENMSX_LIBRETRO
+void PixelRenderer::resumeLoadedFrame()
+{
+	if (!resumeFrame || !rasterizer->isActive()) return;
+	resumeFrame = false;
+	frameStart(vdp.getFrameStartTime());
+}
+#endif
 
 void PixelRenderer::updateDisplayEnabled(bool enabled, EmuTime time)
 {
@@ -183,6 +195,9 @@ void PixelRenderer::updateDisplayEnabled(bool enabled, EmuTime time)
 
 void PixelRenderer::frameStart(EmuTime time)
 {
+#ifdef OPENMSX_LIBRETRO
+	resumeFrame = false;
+#endif
 	// A scroll change still in flight at the end of the previous frame has
 	// taken effect by now; also resyncs after e.g. loading a savestate.
 	renderScroll = vdp.getVerticalScroll();
@@ -250,6 +265,9 @@ void PixelRenderer::frameStart(EmuTime time)
 
 void PixelRenderer::frameEnd(EmuTime time)
 {
+#ifdef OPENMSX_LIBRETRO
+	resumeLoadedFrame();
+#endif
 	if (renderFrame) {
 		// Render changes from this last frame.
 		sync(time, true);
@@ -284,6 +302,18 @@ void PixelRenderer::frameEnd(EmuTime time)
 			!paintFrame));
 	}
 }
+
+#ifdef OPENMSX_LIBRETRO
+void PixelRenderer::libretroDisplayEnd(EmuTime time)
+{
+	resumeLoadedFrame();
+	if (renderFrame) {
+		sync(time, true);
+		rasterizer->libretroPresent(time);
+	}
+	libretroDisplayDone(vdp.getMotherBoard());
+}
+#endif
 
 void PixelRenderer::updateHorizontalScrollLow(
 	uint8_t scroll, EmuTime time)
@@ -585,6 +615,9 @@ void PixelRenderer::updateWindow(bool /*enabled*/, EmuTime /*time*/)
 
 void PixelRenderer::sync(EmuTime time, bool force)
 {
+#ifdef OPENMSX_LIBRETRO
+	resumeLoadedFrame();
+#endif
 	if (!renderFrame) return;
 
 	// Synchronisation is done in two phases:

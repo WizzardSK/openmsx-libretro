@@ -43,6 +43,13 @@ public:
 	  */
 	virtual void frameEnd() = 0;
 
+#ifdef OPENMSX_LIBRETRO
+	/** libretro: hands the frame drawn so far over as finished (see
+	  * Renderer::libretroDisplayEnd); the next frameStart does not again.
+	  */
+	virtual void libretroPresent(EmuTime /*time*/) {}
+#endif
+
 	/** Precalc several values that depend on the display mode.
 	  * @param mode The new display mode.
 	  */

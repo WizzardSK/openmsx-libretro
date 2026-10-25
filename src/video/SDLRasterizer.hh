@@ -47,6 +47,9 @@ public:
 	void reset() override;
 	void frameStart(EmuTime time) override;
 	void frameEnd() override;
+#ifdef OPENMSX_LIBRETRO
+	void libretroPresent(EmuTime time) override;
+#endif
 	void setDisplayMode(DisplayMode mode) override;
 	void setPalette(unsigned index, int grb) override;
 	void setBackgroundColor(uint8_t index) override;
@@ -116,6 +119,11 @@ private:
 	/** The next frame as it is delivered by the VDP, work in progress.
 	  */
 	std::unique_ptr<RawFrame> workFrame;
+#ifdef OPENMSX_LIBRETRO
+	/** The frame was handed over at the end of its display area: the rest
+	  * of it (the bottom border) goes into the next one's buffer. */
+	bool presented = false;
+#endif
 
 	/** The current renderer settings (gamma, brightness, contrast)
 	  */

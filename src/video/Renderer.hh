@@ -49,6 +49,15 @@ public:
 	  */
 	virtual void frameEnd(EmuTime time) = 0;
 
+#ifdef OPENMSX_LIBRETRO
+	/** libretro: the display area ends (VSCAN, before the VBLANK IRQ).
+	  * The frame is handed over here, its display area complete, and
+	  * retro_run stops: what the game reads in its VBLANK handler shows in
+	  * the very next frame rather than one later (Tatsuya79).
+	  */
+	virtual void libretroDisplayEnd(EmuTime /*time*/) {}
+#endif
+
 	/** Informs the renderer of a VDP transparency enable/disable change.
 	  * @param enabled The new transparency state.
 	  * @param time The moment in emulated time this change occurs.

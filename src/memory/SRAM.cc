@@ -10,6 +10,9 @@
 
 #include "serialize.hh"
 #include "small_buffer.hh"
+#ifdef OPENMSX_LIBRETRO
+#include "LibretroHooks.hh"
+#endif
 
 #include <algorithm>
 
@@ -58,6 +61,9 @@ SRAM::~SRAM()
 {
 	if (schedulable && schedulable->isPendingRT()) {
 		schedulable->cancelRT();
+#ifdef OPENMSX_LIBRETRO
+		if (libretroStateLoad()) return;
+#endif
 		save();
 	}
 }
@@ -84,6 +90,9 @@ void SRAM::load(bool* loaded)
 {
 	assert(config.getXML());
 	if (loaded) *loaded = false;
+#ifdef OPENMSX_LIBRETRO
+	if (libretroStateLoad()) return; // the state's content comes next
+#endif
 	const auto& filename = config.getChildData("sramname");
 	try {
 		bool headerOk = true;

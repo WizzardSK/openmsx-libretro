@@ -40,6 +40,12 @@ public:
 		unsigned maxWidth, unsigned height, bool canDoInterlace);
 	~PostProcessor() override;
 
+#ifdef OPENMSX_LIBRETRO
+	/** Deletes the GL objects kept for the next PostProcessor, while the
+	  * context is still current (it is lost, or the core unloads). */
+	static void libretroDropSpareGL();
+#endif
+
 	// Layer interface:
 	void paint(OutputSurface& output) override;
 
@@ -177,30 +183,57 @@ private:
 	const bool canDoInterlace;
 
 	EmuTime lastRotate;
-	/** The currently active scaler.
-	  */
-	std::unique_ptr<GLScaler> currScaler;
+	/** Everything of openMSX's GL output: not made with the libretro core's
+	  * Software output, where there is no GL context. */
+	struct GLObjects {
+		/** The currently active scaler.
+		  */
+		std::unique_ptr<GLScaler> currScaler;
 
-	struct StoredFrame {
-		gl::ivec2 size; // (re)allocate when window size changes
-		gl::Texture tex;
-		gl::FrameBufferObject fbo;
+		struct StoredFrame {
+			gl::ivec2 size; // (re)allocate when window size changes
+			gl::Texture tex;
+			gl::FrameBufferObject fbo;
+		};
+		std::array<StoredFrame, 2> renderedFrames;
+
+		// Noise effect:
+		gl::Texture noiseTextureA{true, true}; // interpolate + wrap
+		gl::Texture noiseTextureB{true, true};
+		float noiseX = 0.0f, noiseY = 0.0f;
+
+		struct TextureData {
+			gl::ColorTexture tex;
+			[[nodiscard]] unsigned width() const { return tex.getWidth(); }
+		};
+		std::vector<TextureData> textures;
+		gl::PixelBuffer<unsigned> pbo;
+
+		gl::ColorTexture superImposeTex;
+
+		gl::ShaderProgram monitor3DProg;
+		gl::BufferObject arrayBuffer;
+		gl::BufferObject elementBuffer;
+		gl::BufferObject vbo;
+		gl::BufferObject stretchVBO;
+
+		bool storedFrame = false;
+#ifdef OPENMSX_LIBRETRO
+		// what they were made for, to be taken over by a PostProcessor
+		// of the same size, and the scaler in currScaler
+		unsigned maxWidth = 0, height = 0;
+		RenderSettings::ScaleAlgorithm scaleAlgorithm = RenderSettings::ScaleAlgorithm::NO;
+#endif
 	};
-	std::array<StoredFrame, 2> renderedFrames;
-
-	// Noise effect:
-	gl::Texture noiseTextureA{true, true}; // interpolate + wrap
-	gl::Texture noiseTextureB{true, true};
-	float noiseX = 0.0f, noiseY = 0.0f;
-
-	struct TextureData {
-		gl::ColorTexture tex;
-		[[nodiscard]] unsigned width() const { return tex.getWidth(); }
-	};
-	std::vector<TextureData> textures;
-	gl::PixelBuffer<unsigned> pbo;
-
-	gl::ColorTexture superImposeTex;
+	std::unique_ptr<GLObjects> glo;
+#ifdef OPENMSX_LIBRETRO
+	/** A savestate load makes a new machine, and with it a new
+	  * PostProcessor, while the old one is still there; run-ahead loads
+	  * one each frame or each change of input. The GL objects of the one
+	  * that went - its shaders above all, compiled again otherwise - are
+	  * kept for the next one (Tatsuya79). */
+	static std::vector<std::unique_ptr<GLObjects>> spareGlo;
+#endif
 
 	struct Region {
 		Region(unsigned srcStartY_, unsigned srcEndY_,
@@ -226,13 +259,6 @@ private:
 	  */
 	RenderSettings::ScaleAlgorithm scaleAlgorithm = RenderSettings::ScaleAlgorithm::NO;
 
-	gl::ShaderProgram monitor3DProg;
-	gl::BufferObject arrayBuffer;
-	gl::BufferObject elementBuffer;
-	gl::BufferObject vbo;
-	gl::BufferObject stretchVBO;
-
-	bool storedFrame = false;
 };
 
 } // namespace openmsx

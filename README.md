@@ -9,6 +9,7 @@ The core is preliminary. Builds of it are in the [releases](https://github.com/W
 | Area | Status |
 |---|---|
 | Video (OpenGL, drawn into the frontend's framebuffer) | ✅ working |
+| Video Output: Software (the picture as pixels, any video driver), the default | ✅ working (Tatsuya79) |
 | Sound | ✅ working |
 | Keyboard | ✅ working |
 | MSX joystick, cursor keys on the RetroPad | ✅ working |
@@ -29,7 +30,7 @@ The core is preliminary. Builds of it are in the [releases](https://github.com/W
 - Put the core from the zip for your platform in RetroArch's cores folder, and `openmsx_libretro.info` in its info folder (RetroArch then shows the core's name, its content types and these notes).
 - Extract `openmsx-system.zip` into RetroArch's system folder, so that it ends up as `system/openmsx/share`. It holds openMSX's machines, extensions and scripts, with the C-BIOS ROMs, so games start without any other BIOS.
 - Real machines and some extensions need their system ROMs in `system/openmsx/share/systemroms`.
-- The core draws with OpenGL, so RetroArch's video driver has to be `gl`.
+- The core hands RetroArch the picture as pixels by default, with any video driver; with Video > Video Output set to OpenGL it draws through RetroArch's OpenGL context, so the video driver has to be `gl` (or `glcore`).
 
 Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk images (`.dsk`, `.di1`, `.di2`, `.dmk`, `.xsa`), cassettes (`.cas`, `.wav`), `.m3u` lists of disks, and any of them zipped or gzipped.
 
@@ -40,6 +41,7 @@ Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk 
 | System > Machine | C-BIOS MSX1, MSX2, MSX2+ (international, Europe, Japan); Philips, Sony, Toshiba, Yamaha and Panasonic MSX1, MSX2, MSX2+ and turbo R machines | at the next start of the content; without a real machine's ROMs the core starts C-BIOS MSX2+ and says so |
 | System > Konami SCC, Konami SCC+, Panasonic FM-PAC, Philips MSX-Audio, MoonSound, GFX9000 | on / off | at the next start of the content; FM-PAC, MSX-Audio and MoonSound need their ROMs |
 | Video > Resolution | 1x (320x240) to 4x (1280x960) | on the fly |
+| Video > Video Output | Software / OpenGL | at the next start of the content; Software (the default) hands RetroArch the picture as pixels, with no GL context, for any video driver (no openMSX OSD, screenshots through RetroArch); OpenGL adds openMSX's own scalers and effects |
 | Video > Crop Overscan | on / off | only the part of the screen the MSX displays on, without its border; the size follows the screen mode |
 | Video > Pixel Aspect Ratio | TV / Square | TV: the picture as wide as on a TV, as openMSX shows it; Square: each pixel as wide as it is tall |
 

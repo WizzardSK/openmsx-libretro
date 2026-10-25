@@ -179,6 +179,11 @@ void SDLRasterizer::setSuperimposeVideoFrame(const RawFrame* videoSource)
 
 void SDLRasterizer::frameStart(EmuTime time)
 {
+#ifdef OPENMSX_LIBRETRO
+	if (presented) {
+		presented = false;
+	} else
+#endif
 	workFrame = postProcessor->rotateFrames(std::move(workFrame), time);
 	workFrame->init(
 	    vdp.isInterlaced() ? (vdp.getEvenOdd() ? FrameSource::FieldType::ODD
@@ -196,6 +201,16 @@ void SDLRasterizer::frameStart(EmuTime time)
 void SDLRasterizer::frameEnd()
 {
 }
+
+#ifdef OPENMSX_LIBRETRO
+void SDLRasterizer::libretroPresent(EmuTime time)
+{
+	auto field = workFrame->getField();
+	workFrame = postProcessor->rotateFrames(std::move(workFrame), time);
+	workFrame->init(field);
+	presented = true;
+}
+#endif
 
 void SDLRasterizer::setDisplayMode(DisplayMode mode)
 {

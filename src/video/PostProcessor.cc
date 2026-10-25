@@ -21,6 +21,9 @@
 #include "Reactor.hh"
 #include "RenderSettings.hh"
 #include "SuperImposedFrame.hh"
+#ifdef OPENMSX_LIBRETRO
+#include "LibretroHooks.hh"
+#endif
 
 #include "MemBuffer.hh"
 #include "aligned.hh"
@@ -69,23 +72,43 @@ PostProcessor::PostProcessor(
 		// work buffer, for partially rendered frames).
 	}
 
+	renderSettings.getNoiseSetting().attach(*this);
+	renderSettings.getHorizontalStretchSetting().attach(*this);
+
+	// The GL output; the libretro core's Software output has no GL context
+#ifdef OPENMSX_LIBRETRO
+	if (libretroSoftwareOutput()) return;
+	if (auto it = std::ranges::find_if(spareGlo, [&](const auto& g) {
+	        return g->maxWidth == maxWidth && g->height == height; });
+	    it != spareGlo.end()) {
+		glo = std::move(*it);
+		spareGlo.erase(it);
+		scaleAlgorithm = glo->scaleAlgorithm;
+		glo->storedFrame = false;
+		preCalcNoise(renderSettings.getNoise());
+		preCalcMonitor3D(renderSettings.getHorizontalStretch());
+		return;
+	}
+#endif
+	glo = std::make_unique<GLObjects>();
+#ifdef OPENMSX_LIBRETRO
+	glo->maxWidth = maxWidth;
+	glo->height = height;
+#endif
 	preCalcNoise(renderSettings.getNoise());
 	initBuffers();
 
 	VertexShader   vertexShader  ("monitor3D.vert");
 	FragmentShader fragmentShader("monitor3D.frag");
-	monitor3DProg.attach(vertexShader);
-	monitor3DProg.attach(fragmentShader);
-	monitor3DProg.bindAttribLocation(0, "a_position");
-	monitor3DProg.bindAttribLocation(1, "a_normal");
-	monitor3DProg.bindAttribLocation(2, "a_texCoord");
-	monitor3DProg.link();
+	glo->monitor3DProg.attach(vertexShader);
+	glo->monitor3DProg.attach(fragmentShader);
+	glo->monitor3DProg.bindAttribLocation(0, "a_position");
+	glo->monitor3DProg.bindAttribLocation(1, "a_normal");
+	glo->monitor3DProg.bindAttribLocation(2, "a_texCoord");
+	glo->monitor3DProg.link();
 	preCalcMonitor3D(renderSettings.getHorizontalStretch());
 
-	pbo.allocate(maxWidth * height * 2); // *2 for interlace    TODO only when 'canDoInterlace'
-
-	renderSettings.getNoiseSetting().attach(*this);
-	renderSettings.getHorizontalStretchSetting().attach(*this);
+	glo->pbo.allocate(maxWidth * height * 2); // *2 for interlace    TODO only when 'canDoInterlace'
 }
 
 PostProcessor::~PostProcessor()
@@ -100,7 +123,24 @@ PostProcessor::~PostProcessor()
 			"during recording.");
 		recorder->stop();
 	}
+#ifdef OPENMSX_LIBRETRO
+	if (glo) {
+		glo->scaleAlgorithm = scaleAlgorithm;
+		spareGlo.push_back(std::move(glo));
+		// one for each machine that can be there at once
+		if (spareGlo.size() > 2) spareGlo.erase(spareGlo.begin());
+	}
+#endif
 }
+
+#ifdef OPENMSX_LIBRETRO
+std::vector<std::unique_ptr<PostProcessor::GLObjects>> PostProcessor::spareGlo;
+
+void PostProcessor::libretroDropSpareGL()
+{
+	spareGlo.clear();
+}
+#endif
 
 void PostProcessor::initBuffers()
 {
@@ -109,7 +149,7 @@ void PostProcessor::initBuffers()
 		vec2(-1, 1), vec2(-1,-1), vec2( 1,-1), vec2( 1, 1), // pos
 		vec2( 0, 1), vec2( 0, 0), vec2( 1, 0), vec2( 1, 1), // tex
 	};
-	glBindBuffer(GL_ARRAY_BUFFER, vbo.get());
+	glBindBuffer(GL_ARRAY_BUFFER, glo->vbo.get());
 	glBufferData(GL_ARRAY_BUFFER, sizeof(pos_tex), pos_tex.data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
@@ -222,6 +262,7 @@ void PostProcessor::createRegions()
 
 void PostProcessor::paint(OutputSurface& /*output*/)
 {
+	if (!glo) return;
 	if (renderSettings.getInterleaveBlackFrame()) {
 		interleaveCount ^= 1;
 		if (interleaveCount) {
@@ -251,7 +292,7 @@ void PostProcessor::paint(OutputSurface& /*output*/)
 	if (auto algo = renderSettings.getScaleAlgorithm();
 	    scaleAlgorithm != algo) {
 		scaleAlgorithm = algo;
-		currScaler = GLScalerFactory::createScaler(renderSettings, maxWidth, height * 2); // *2 for interlace   TODO only when canDoInterlace
+		glo->currScaler = GLScalerFactory::createScaler(renderSettings, maxWidth, height * 2); // *2 for interlace   TODO only when canDoInterlace
 		needReUpload = true;
 	}
 
@@ -270,7 +311,7 @@ void PostProcessor::paint(OutputSurface& /*output*/)
 
 	glViewport(0, 0, size.x, size.y);
 	glBindTexture(GL_TEXTURE_2D, 0);
-	auto& renderedFrame = renderedFrames[frameCounter & 1];
+	auto& renderedFrame = glo->renderedFrames[frameCounter & 1];
 	if (renderedFrame.size != size) {
 		renderedFrame.tex.bind();
 		renderedFrame.tex.setInterpolation(true);
@@ -288,10 +329,10 @@ void PostProcessor::paint(OutputSurface& /*output*/)
 	renderedFrame.fbo.push();
 
 	for (const auto& r : regions) {
-		auto it = find_unguarded(textures, r.lineWidth, &TextureData::width);
+		auto it = find_unguarded(glo->textures, r.lineWidth, &GLObjects::TextureData::width);
 		auto* superImpose = superImposeVideoFrame
-		                  ? &superImposeTex : nullptr;
-		currScaler->scaleImage(
+		                  ? &glo->superImposeTex : nullptr;
+		glo->currScaler->scaleImage(
 			it->tex, superImpose,
 			r.srcStartY, r.srcEndY, r.lineWidth, // src
 			r.dstStartY, r.dstEndY, size.x,   // dst
@@ -329,11 +370,11 @@ void PostProcessor::paint(OutputSurface& /*output*/)
 		mat4 I;
 		glUniformMatrix4fv(glContext.unifTexMvp, 1, GL_FALSE, I.data());
 
-		glBindBuffer(GL_ARRAY_BUFFER, vbo.get());
+		glBindBuffer(GL_ARRAY_BUFFER, glo->vbo.get());
 		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, nullptr);
 		glEnableVertexAttribArray(0);
 
-		glBindBuffer(GL_ARRAY_BUFFER, stretchVBO.get());
+		glBindBuffer(GL_ARRAY_BUFFER, glo->stretchVBO.get());
 		glBufferData(GL_ARRAY_BUFFER, sizeof(tex), tex.data(), GL_STREAM_DRAW);
 		glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, nullptr);
 		glEnableVertexAttribArray(1);
@@ -344,7 +385,7 @@ void PostProcessor::paint(OutputSurface& /*output*/)
 		glDisableVertexAttribArray(0);
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 	}
-	storedFrame = true;
+	glo->storedFrame = true;
 	//gl::checkGLError("PostProcessor::paint");
 }
 
@@ -461,16 +502,24 @@ std::unique_ptr<RawFrame> PostProcessor::rotateFrames(
 		}
 	}();
 
-	uploadFrame();
 	++frameCounter;
-	noiseX = random_float(0.0f, 1.0f);
-	noiseY = random_float(0.0f, 1.0f);
+	if (!glo) {
+#ifdef OPENMSX_LIBRETRO
+		// the frame as pixels, straight to the frontend
+		if (needRender()) libretroSoftwareFrame(*paintFrame);
+#endif
+		return reuseFrame;
+	}
+	uploadFrame();
+	glo->noiseX = random_float(0.0f, 1.0f);
+	glo->noiseY = random_float(0.0f, 1.0f);
 	return reuseFrame;
 }
 
 void PostProcessor::update(const Setting& setting) noexcept
 {
 	VideoLayer::update(setting);
+	if (!glo) return;
 	const auto& noiseSetting = renderSettings.getNoiseSetting();
 	const auto& horizontalStretch = renderSettings.getHorizontalStretchSetting();
 	if (&setting == &noiseSetting) {
@@ -498,12 +547,12 @@ void PostProcessor::uploadFrame()
 	if (superImposeVideoFrame) {
 		int w = narrow<GLsizei>(superImposeVideoFrame->getWidth());
 		int h = narrow<GLsizei>(superImposeVideoFrame->getHeight());
-		if (superImposeTex.getWidth()  != w ||
-		    superImposeTex.getHeight() != h) {
-			superImposeTex.resize(w, h);
-			superImposeTex.setInterpolation(true);
+		if (glo->superImposeTex.getWidth()  != w ||
+		    glo->superImposeTex.getHeight() != h) {
+			glo->superImposeTex.resize(w, h);
+			glo->superImposeTex.setInterpolation(true);
 		}
-		superImposeTex.bind();
+		glo->superImposeTex.bind();
 		glTexSubImage2D(
 			GL_TEXTURE_2D,     // target
 			0,                 // level
@@ -521,13 +570,13 @@ void PostProcessor::uploadBlock(
 	unsigned srcStartY, unsigned srcEndY, unsigned lineWidth)
 {
 	// create texture on demand
-	auto it = std::ranges::find(textures, lineWidth, &TextureData::width);
-	if (it == end(textures)) {
-		TextureData textureData;
+	auto it = std::ranges::find(glo->textures, lineWidth, &GLObjects::TextureData::width);
+	if (it == end(glo->textures)) {
+		GLObjects::TextureData textureData;
 		textureData.tex.resize(narrow<GLsizei>(lineWidth),
 		                       narrow<GLsizei>(height * 2)); // *2 for interlace   TODO only when canDoInterlace
-		textures.push_back(std::move(textureData));
-		it = end(textures) - 1;
+		glo->textures.push_back(std::move(textureData));
+		it = end(glo->textures) - 1;
 	}
 	auto& tex = it->tex;
 
@@ -535,8 +584,8 @@ void PostProcessor::uploadBlock(
 	tex.bind();
 
 	// upload data
-	pbo.bind();
-	auto mapped = pbo.mapWrite();
+	glo->pbo.bind();
+	auto mapped = glo->pbo.mapWrite();
 	auto numLines = srcEndY - srcStartY;
 	for (auto yy : xrange(numLines)) {
 		auto dest = mapped.subspan(yy * size_t(lineWidth), lineWidth);
@@ -545,7 +594,7 @@ void PostProcessor::uploadBlock(
 			copy_to_range(line, dest);
 		}
 	}
-	pbo.unmap();
+	glo->pbo.unmap();
 #ifdef __APPLE__
 	// The nVidia GL driver for the GeForce 8000/9000 series seems to hang
 	// on texture data replacements that are 1 pixel wide and start on a
@@ -564,29 +613,29 @@ void PostProcessor::uploadBlock(
 		GL_RGBA,                  // format
 		GL_UNSIGNED_BYTE,         // type
 		mapped.data());           // data
-	pbo.unbind();
+	glo->pbo.unbind();
 
 	// possibly upload scaler specific data
-	if (currScaler) {
-		currScaler->uploadBlock(srcStartY, srcEndY, lineWidth, *paintFrame);
+	if (glo->currScaler) {
+		glo->currScaler->uploadBlock(srcStartY, srcEndY, lineWidth, *paintFrame);
 	}
 }
 
 void PostProcessor::drawGlow(int glow)
 {
-	if ((glow == 0) || !storedFrame) return;
+	if ((glow == 0) || !glo->storedFrame) return;
 
 	const auto& glContext = *gl::context;
 	glContext.progTex.activate();
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	renderedFrames[(frameCounter & 1) ^ 1].tex.bind();
+	glo->renderedFrames[(frameCounter & 1) ^ 1].tex.bind();
 	glUniform4f(glContext.unifTexColor,
 	            1.0f, 1.0f, 1.0f, narrow<float>(glow) * (31.0f / 3200.0f));
 	mat4 I;
 	glUniformMatrix4fv(glContext.unifTexMvp, 1, GL_FALSE, I.data());
 
-	glBindBuffer(GL_ARRAY_BUFFER, vbo.get());
+	glBindBuffer(GL_ARRAY_BUFFER, glo->vbo.get());
 
 	const vec2* offset = nullptr;
 	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, offset); // pos
@@ -619,7 +668,7 @@ void PostProcessor::preCalcNoise(float factor)
 
 	// GL_LUMINANCE is no longer supported in newer openGL versions
 	auto format = (OPENGL_VERSION >= OPENGL_3_3) ? GL_RED : GL_LUMINANCE;
-	noiseTextureA.bind();
+	glo->noiseTextureA.bind();
 	glTexImage2D(
 		GL_TEXTURE_2D,    // target
 		0,                // level
@@ -635,7 +684,7 @@ void PostProcessor::preCalcNoise(float factor)
 	glTexParameteriv(GL_TEXTURE_2D, GL_TEXTURE_SWIZZLE_RGBA, swizzleMask1);
 #endif
 
-	noiseTextureB.bind();
+	glo->noiseTextureB.bind();
 	glTexImage2D(
 		GL_TEXTURE_2D,    // target
 		0,                // level
@@ -668,7 +717,7 @@ void PostProcessor::drawNoise() const
 		std::array{vec2{ 1, -1}, vec2{ 1,  1}, vec2{-1,  1}, vec2{-1, -1}},
 		std::array{vec2{-1, -1}, vec2{-1,  1}, vec2{ 1,  1}, vec2{ 1, -1}},
 	};
-	vec2 noise(noiseX, noiseY);
+	vec2 noise(glo->noiseX, glo->noiseY);
 	const std::array tex = {
 		noise + vec2(0.0f, 1.875f),
 		noise + vec2(2.0f, 1.875f),
@@ -691,10 +740,10 @@ void PostProcessor::drawNoise() const
 	glEnableVertexAttribArray(0);
 	glEnableVertexAttribArray(1);
 
-	noiseTextureA.bind();
+	glo->noiseTextureA.bind();
 	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 	glBlendEquation(GL_FUNC_REVERSE_SUBTRACT);
-	noiseTextureB.bind();
+	glo->noiseTextureB.bind();
 	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 
 	glDisableVertexAttribArray(1);
@@ -755,10 +804,10 @@ void PostProcessor::preCalcMonitor3D(float width)
 	});
 
 	// upload calculated values to buffers
-	glBindBuffer(GL_ARRAY_BUFFER, arrayBuffer.get());
+	glBindBuffer(GL_ARRAY_BUFFER, glo->arrayBuffer.get());
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices.data(),
 	             GL_STATIC_DRAW);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementBuffer.get());
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, glo->elementBuffer.get());
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices.data(),
 	             GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -769,21 +818,21 @@ void PostProcessor::preCalcMonitor3D(float width)
 	mat4 mvp = monitor3d::mvpMatrix();
 
 	// set uniforms
-	monitor3DProg.activate();
-	glUniform1i(monitor3DProg.getUniformLocation("u_tex"), 0);
-	glUniformMatrix4fv(monitor3DProg.getUniformLocation("u_mvpMatrix"),
+	glo->monitor3DProg.activate();
+	glUniform1i(glo->monitor3DProg.getUniformLocation("u_tex"), 0);
+	glUniformMatrix4fv(glo->monitor3DProg.getUniformLocation("u_mvpMatrix"),
 		1, GL_FALSE, mvp.data());
-	glUniformMatrix3fv(monitor3DProg.getUniformLocation("u_normalMatrix"),
+	glUniformMatrix3fv(glo->monitor3DProg.getUniformLocation("u_normalMatrix"),
 		1, GL_FALSE, normal.data());
 }
 
 void PostProcessor::drawMonitor3D() const
 {
-	monitor3DProg.activate();
+	glo->monitor3DProg.activate();
 
 	char* base = nullptr;
-	glBindBuffer(GL_ARRAY_BUFFER, arrayBuffer.get());
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementBuffer.get());
+	glBindBuffer(GL_ARRAY_BUFFER, glo->arrayBuffer.get());
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, glo->elementBuffer.get());
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex),
 	                      base);
 	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex),

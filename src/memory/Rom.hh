@@ -21,6 +21,10 @@ class MSXMotherBoard;
 class XMLElement;
 class DeviceConfig;
 class FileContext;
+#ifdef OPENMSX_LIBRETRO
+struct LibretroRom;
+#endif
+
 class RomDebuggable;
 class TclObject;
 
@@ -65,6 +69,10 @@ private:
 
 	std::string filename;
 	std::optional<MappedFile<uint8_t>> mmap; // non-const to allow patching
+#ifdef OPENMSX_LIBRETRO
+	// the content, when it came from the core's cache of ROM files (Rom.cc)
+	std::shared_ptr<const LibretroRom> libretroCached;
+#endif
 
 	mutable Sha1Sum originalSha1;
 	mutable Sha1Sum actualSha1;

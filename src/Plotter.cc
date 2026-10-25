@@ -63,7 +63,12 @@ MSXPlotter::MSXPlotter(MSXMotherBoard& motherBoard)
 			{"thick",    PenThickness::Thick}})
 {
 	resetSettings();
+#ifndef OPENMSX_LIBRETRO
 	ensurePrintPage();
+#endif
+	// (libretro: the page, an A4 bitmap at print resolution, is made when
+	// the plotter first draws; making it with every machine was most of a
+	// savestate load, which run-ahead does every frame - Tatsuya79)
 }
 
 MSXPlotter::~MSXPlotter()

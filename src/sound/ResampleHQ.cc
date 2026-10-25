@@ -125,9 +125,21 @@ void ResampleCoeffs::releaseCoeffs(double ratio)
 {
 	auto it = rfind_unguarded(cache, ratio, &Element::ratio);
 	it->count--;
+#ifdef OPENMSX_LIBRETRO
+	// Kept for the next machine (a savestate load builds one, every frame
+	// under run-ahead), up to a few unused tables, the oldest going first
+	if (it->count == 0) {
+		static constexpr size_t MAX_UNUSED = 8;
+		if (std::ranges::count(cache, 0u, &Element::count) > MAX_UNUSED) {
+			auto old = std::ranges::find(cache, 0u, &Element::count);
+			cache.erase(old);
+		}
+	}
+#else
 	if (it->count == 0) {
 		move_pop_back(cache, it);
 	}
+#endif
 }
 
 // -- Permutation stuff --

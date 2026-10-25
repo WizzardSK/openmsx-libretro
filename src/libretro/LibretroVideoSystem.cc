@@ -17,6 +17,7 @@
 #include "VisibleSurface.hh"
 
 #include "Reactor.hh"
+#include "LibretroHooks.hh"
 
 #if COMPONENT_LASERDISC
 #include "LaserdiscPlayer.hh"
@@ -36,7 +37,8 @@ LibretroSurface::LibretroSurface(gl::ivec2 logicalSize, gl::ivec2 physicalSize)
 void LibretroSurface::resize(gl::ivec2 logicalSize, gl::ivec2 physicalSize)
 {
 	calculateViewPort(logicalSize, physicalSize);
-	gl::context->setupMvpMatrix(gl::vec2(logicalSize));
+	// no GL context with the Software output
+	if (gl::context) gl::context->setupMvpMatrix(gl::vec2(logicalSize));
 }
 
 void LibretroSurface::saveScreenshot(const std::string& filename)
@@ -54,7 +56,9 @@ LibretroVideoSystem::LibretroVideoSystem(Reactor& reactor_)
 	surface = std::make_unique<LibretroSurface>(size, size);
 
 	// The snow and the OSD (console, icons) as with the SDL video system;
-	// ImGui needs a platform back-end that the core does not have yet.
+	// ImGui needs a platform back-end that the core does not have yet. Both
+	// are drawn with GL, which the Software output does not have.
+	if (libretroSoftwareOutput()) return;
 	snowLayer = std::make_unique<GLSnow>(display);
 	osdGuiLayer = std::make_unique<OSDGUILayer>(display.getOSDGUI());
 	display.addLayer(*snowLayer);
@@ -63,8 +67,8 @@ LibretroVideoSystem::LibretroVideoSystem(Reactor& reactor_)
 
 LibretroVideoSystem::~LibretroVideoSystem()
 {
-	display.removeLayer(*osdGuiLayer);
-	display.removeLayer(*snowLayer);
+	if (osdGuiLayer) display.removeLayer(*osdGuiLayer);
+	if (snowLayer) display.removeLayer(*snowLayer);
 }
 
 std::unique_ptr<Rasterizer> LibretroVideoSystem::createRasterizer(VDP& vdp)
@@ -129,6 +133,9 @@ void LibretroVideoSystem::flush()
 
 void LibretroVideoSystem::takeScreenShot(const std::string& filename, bool /*withOsd*/)
 {
+	if (libretroSoftwareOutput()) {
+		throw MSXException("No screenshot with the Software output; use RetroArch's");
+	}
 	surface->saveScreenshot(filename);
 }
 

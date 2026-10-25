@@ -1,4 +1,7 @@
 #include "MsxChar2Unicode.hh"
+#ifdef OPENMSX_LIBRETRO
+#include "LibretroHooks.hh"
+#endif
 
 #include "File.hh"
 #include "FileContext.hh"
@@ -28,8 +31,12 @@ MsxChar2Unicode::MsxChar2Unicode(std::string_view mappingName)
 		throw MSXException("Couldn't find MSX character mapping file that was specified in unicodemap: ", mappingName, " (", e.getMessage(), ")");
 	}
 	try {
+#ifdef OPENMSX_LIBRETRO
+		parseVid(libretroSystemFile(filename));
+#else
 		auto buf = File(filename).mmap<const char>();
 		parseVid(std::string_view(buf.data(), buf.size()));
+#endif
 	} catch (FileException&) {
 		throw MSXException("Couldn't load MSX character mapping file that was specified in unicodemap: ", filename);
 	} catch (MSXException& e) {

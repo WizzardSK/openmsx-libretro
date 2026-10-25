@@ -481,6 +481,9 @@ void VDP::execVScan(EmuTime time)
 		vram->updateDisplayEnabled(false, time);
 	}
 	isDisplayArea = false;
+#ifdef OPENMSX_LIBRETRO
+	renderer->libretroDisplayEnd(time);
+#endif
 
 	// Vertical scanning occurs.
 	statusReg0 |= 0x80;

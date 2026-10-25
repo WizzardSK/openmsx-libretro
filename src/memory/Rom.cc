@@ -20,6 +20,9 @@
 #include "RomDatabase.hh"
 #include "RomInfo.hh"
 #include "XMLElement.hh"
+#ifdef OPENMSX_LIBRETRO
+#include "LibretroHooks.hh"
+#endif
 
 #include "narrow.hh"
 #include "ranges.hh"
@@ -28,6 +31,10 @@
 
 #include <algorithm>
 #include <memory>
+#ifdef OPENMSX_LIBRETRO
+#include <map>
+#include <vector>
+#endif
 
 namespace openmsx {
 
@@ -84,6 +91,36 @@ Rom::Rom(std::string name_, static_string_view description_,
 	}
 }
 
+#ifdef OPENMSX_LIBRETRO
+// libretro: each ROM file read, kept by its resolved name and by its sha1,
+// for the machines savestate loads build (run-ahead: each frame or input
+// change): no file opened, no zip unpacked, no checksum again. On Windows
+// those opens were most of a load (Tatsuya79).
+struct LibretroRom {
+	std::vector<uint8_t> data;
+	Sha1Sum sha1;
+};
+static std::map<std::string, std::shared_ptr<const LibretroRom>, std::less<>> libretroRoms;
+
+void libretroClearRomCache()
+{
+	libretroRoms.clear();
+}
+
+static std::shared_ptr<const LibretroRom> libretroCachedRom(const XMLElement& config)
+{
+	if (config.findChild("patches")) return nullptr; // patched in place
+	for (const char* tag : {"resolvedFilename", "resolvedSha1"}) {
+		if (const auto* elem = config.findChild(tag)) {
+			if (auto it = libretroRoms.find(elem->getData()); it != libretroRoms.end()) {
+				return it->second;
+			}
+		}
+	}
+	return nullptr;
+}
+#endif
+
 void Rom::init(MSXMotherBoard& motherBoard, XMLElement& config,
                const FileContext& context)
 {
@@ -116,6 +153,14 @@ void Rom::init(MSXMotherBoard& motherBoard, XMLElement& config,
 		// Part of a bigger (already checked) rom, no need to check.
 		checkResolvedSha1 = false;
 
+#ifdef OPENMSX_LIBRETRO
+	} else if (auto cached = libretroCachedRom(config)) {
+		libretroCached = cached;
+		rom = std::span{cached->data};
+		originalSha1 = cached->sha1;
+		if (resolvedFilenameElem) filename = resolvedFilenameElem->getData();
+		checkResolvedSha1 = true;
+#endif
 	} else if (resolvedFilenameElem || resolvedSha1Elem ||
 	           !std::ranges::empty(sums) || !std::ranges::empty(filenames)) {
 		auto& filePool = motherBoard.getReactor().getFilePool();
@@ -212,6 +257,16 @@ void Rom::init(MSXMotherBoard& motherBoard, XMLElement& config,
 				"' does not match with sum of '",
 				filename, "'.");
 		}
+#ifdef OPENMSX_LIBRETRO
+		if (!config.findChild("patches")) {
+			auto entry = std::make_shared<LibretroRom>();
+			entry->data.assign(rom.begin(), rom.end());
+			entry->sha1 = originalSha1;
+			std::array<char, 40> buf;
+			libretroRoms[filename] = entry;
+			libretroRoms[std::string(originalSha1.toString(buf))] = entry;
+		}
+#endif
 
 		// We loaded an external file, so check.
 		checkResolvedSha1 = true;
@@ -339,6 +394,9 @@ Rom::Rom(Rom&& r) noexcept
 	, extendedRom  (std::move(r.extendedRom))
 	, filename     (std::move(r.filename))
 	, mmap         (std::move(r.mmap))
+#ifdef OPENMSX_LIBRETRO
+	, libretroCached(std::move(r.libretroCached))
+#endif
 	, originalSha1 (r.originalSha1)
 	, actualSha1   (r.actualSha1)
 	, name         (std::move(r.name))
