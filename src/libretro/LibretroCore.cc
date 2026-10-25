@@ -80,7 +80,12 @@ unsigned scale = 2;
 bool cropOverscan = false;
 unsigned frameWidth = 640, frameHeight = 480;
 gl::ivec2 frameOffset;
-float frameAspect = 4.0f / 3.0f;
+// openMSX's 320 wide picture, borders included, on a 4:3 screen: its
+// default horizontal stretch (284) spreads 284 of the 320 over the whole
+// width; the core shows all 320 unstretched, so the picture is that much
+// wider than 4:3
+constexpr float PICTURE_ASPECT = (4.0f / 3.0f) * (320.0f / 284.0f);
+float frameAspect = PICTURE_ASPECT;
 constexpr unsigned MAX_WIDTH = 1920, MAX_HEIGHT = 1440;
 
 void log(retro_log_level level, const char* fmt, ...)
@@ -469,8 +474,8 @@ void updateFrameGeometry()
 		geometry.base_height = frameHeight;
 		geometry.max_width = MAX_WIDTH;
 		geometry.max_height = MAX_HEIGHT;
-		// the whole picture is 4:3, a part of it in proportion
-		frameAspect = (4.0f / 3.0f) * (float(frameWidth) / float(w)) / (float(frameHeight) / float(h));
+		// the whole picture is PICTURE_ASPECT, a part of it in proportion
+		frameAspect = PICTURE_ASPECT * (float(frameWidth) / float(w)) / (float(frameHeight) / float(h));
 		geometry.aspect_ratio = frameAspect;
 		environ_cb(RETRO_ENVIRONMENT_SET_GEOMETRY, &geometry);
 	}
@@ -520,6 +525,11 @@ bool startEmulator(bool useOptions)
 		// blueMSX's (Tatsuya79); RetroArch's shaders do those
 		runCommand("set blur 0");
 		runCommand("set scanline 0");
+		// Each MSX pixel the same width: openMSX stretches 284 of its 320
+		// wide picture over the output by default, which at 320 wide gave
+		// uneven pixels next to blueMSX's (Tatsuya79); RetroArch scales to
+		// the aspect ratio
+		runCommand("set horizontal_stretch 320");
 
 		auto& render = reactor->getDisplay().getRenderSettings().getRendererSetting();
 		if (render.getEnum() == RenderSettings::RendererID::UNINITIALIZED) {
@@ -1057,7 +1067,7 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 	readVideoOptions();
 	frameWidth = 320 * scale;
 	frameHeight = 240 * scale;
-	frameAspect = 4.0f / 3.0f;
+	frameAspect = PICTURE_ASPECT;
 	setupDirectories();
 	// openMSX starts in context_reset, once there is a GL context
 	return true;
