@@ -1008,9 +1008,24 @@ RETRO_API void retro_reset()
 	if (reactor) runCommand("reset");
 }
 
+// RetroArch names a file inside an archive "archive.zip#member": a playlist
+// made by its scanner, or a ROM picked inside the zip in the file browser.
+// openMSX opens a zip (or gz) itself, by the archive's own name, and tells
+// the type by the file inside (Tatsuya79: "Invalid ROM file" for every zip)
+std::string archivePath(const std::string& path)
+{
+	for (const char* ext : {".zip#", ".gz#"}) {
+		std::string lower = path;
+		std::transform(lower.begin(), lower.end(), lower.begin(), [](unsigned char c) { return std::tolower(c); });
+		auto pos = lower.find(ext);
+		if (pos != std::string::npos) return path.substr(0, pos + strlen(ext) - 1);
+	}
+	return path;
+}
+
 RETRO_API bool retro_load_game(const retro_game_info* game)
 {
-	contentPath = setupDisks((game && game->path) ? game->path : "");
+	contentPath = setupDisks(archivePath((game && game->path) ? game->path : ""));
 
 	retro_pixel_format fmt = RETRO_PIXEL_FORMAT_XRGB8888;
 	environ_cb(RETRO_ENVIRONMENT_SET_PIXEL_FORMAT, &fmt);
