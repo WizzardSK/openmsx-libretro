@@ -41,6 +41,7 @@ Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk 
 | System > Konami SCC, Konami SCC+, Panasonic FM-PAC, Philips MSX-Audio, MoonSound, GFX9000 | on / off | at the next start of the content; FM-PAC, MSX-Audio and MoonSound need their ROMs |
 | Video > Resolution | 1x (320x240) to 4x (1280x960) | on the fly |
 | Video > Crop Overscan | on / off | only the part of the screen the MSX displays on, without its border; the size follows the screen mode |
+| Video > Pixel Aspect Ratio | TV / Square | TV: the picture as wide as on a TV, as openMSX shows it; Square: each pixel as wide as it is tall |
 
 ## Controls
 

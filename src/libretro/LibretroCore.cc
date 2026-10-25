@@ -85,6 +85,10 @@ gl::ivec2 frameOffset;
 // width; the core shows all 320 unstretched, so the picture is that much
 // wider than 4:3
 constexpr float PICTURE_ASPECT = (4.0f / 3.0f) * (320.0f / 284.0f);
+// Pixel Aspect Ratio Square: the 320x240 picture as it is, 4:3 (Tatsuya79)
+bool squarePixels = false;
+bool aspectChanged = false;
+float pictureAspect() { return squarePixels ? 4.0f / 3.0f : PICTURE_ASPECT; }
 float frameAspect = PICTURE_ASPECT;
 constexpr unsigned MAX_WIDTH = 1920, MAX_HEIGHT = 1440;
 
@@ -374,6 +378,13 @@ retro_core_option_v2_definition optionDefinitions[] = {
 		{{"disabled", nullptr}, {"enabled", nullptr}, {nullptr, nullptr}},
 		"disabled"
 	},
+	{
+		"openmsx_pixel_aspect", "Pixel Aspect Ratio", nullptr,
+		"TV: the picture as wide as on a TV, as openMSX shows it. Square: each pixel as wide as it is tall.",
+		nullptr, "video",
+		{{"tv", "TV"}, {"square", "Square"}, {nullptr, nullptr}},
+		"tv"
+	},
 	EXTENSION_OPTION("openmsx_ext_scc", "Konami SCC (Restart)",
 		"A cartridge with Konami's SCC sound chip, for music that would otherwise need an SCC game cartridge."),
 	EXTENSION_OPTION("openmsx_ext_sccplus", "Konami SCC+ (Restart)",
@@ -422,6 +433,11 @@ void readVideoOptions()
 {
 	unsigned newScale = unsigned(std::clamp(atoi(optionValue("openmsx_scale", "2").c_str()), 1, 4));
 	cropOverscan = optionValue("openmsx_crop_overscan", "disabled") == "enabled";
+	bool newSquare = optionValue("openmsx_pixel_aspect", "tv") == "square";
+	if (newSquare != squarePixels) {
+		squarePixels = newSquare;
+		aspectChanged = true; // to the frontend with the next frame
+	}
 	if (newScale != scale && reactor) {
 		runCommand("set scale_factor " + std::to_string(newScale));
 	}
@@ -464,7 +480,8 @@ void updateFrameGeometry()
 	}
 	unsigned newWidth = unsigned(x1 - x0), newHeight = unsigned(y1 - y0);
 	frameOffset = gl::ivec2(-x0, -y0);
-	if (newWidth != frameWidth || newHeight != frameHeight) {
+	if (newWidth != frameWidth || newHeight != frameHeight || aspectChanged) {
+		aspectChanged = false;
 		log(RETRO_LOG_INFO, "picture %ux%u from %d,%d of %dx%d (crop %s, VDP %s)\n",
 		    newWidth, newHeight, x0, y0, w, h, cropOverscan ? "on" : "off", vdp ? "found" : "not found");
 		frameWidth = newWidth;
@@ -474,8 +491,8 @@ void updateFrameGeometry()
 		geometry.base_height = frameHeight;
 		geometry.max_width = MAX_WIDTH;
 		geometry.max_height = MAX_HEIGHT;
-		// the whole picture is PICTURE_ASPECT, a part of it in proportion
-		frameAspect = PICTURE_ASPECT * (float(frameWidth) / float(w)) / (float(frameHeight) / float(h));
+		// the whole picture is pictureAspect(), a part of it in proportion
+		frameAspect = pictureAspect() * (float(frameWidth) / float(w)) / (float(frameHeight) / float(h));
 		geometry.aspect_ratio = frameAspect;
 		environ_cb(RETRO_ENVIRONMENT_SET_GEOMETRY, &geometry);
 	}
@@ -1067,7 +1084,7 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 	readVideoOptions();
 	frameWidth = 320 * scale;
 	frameHeight = 240 * scale;
-	frameAspect = PICTURE_ASPECT;
+	frameAspect = pictureAspect();
 	setupDirectories();
 	// openMSX starts in context_reset, once there is a GL context
 	return true;
