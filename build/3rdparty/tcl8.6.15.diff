@@ -1,0 +1,27 @@
+--- tcl8.6.15.orig/win/tclWinInit.c
++++ tcl8.6.15/win/tclWinInit.c
+@@ -103,10 +103,22 @@
+     /*
+      * If we are in a statically linked executable, then we need to explicitly
+      * initialize the Windows function tables here since DllMain() will not be
+-     * invoked.
++     * invoked. The module is the one holding this code, not the process's
++     * executable: two copies of a statically linked DLL in one process would
++     * otherwise register the TclNotifier window class for the same instance,
++     * and the second copy's registration fails.
+      */
+ 
+-    TclWinInit(GetModuleHandleW(NULL));
++    {
++	HMODULE self = NULL;
++
++	if (!GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS
++		| GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,
++		(LPCWSTR) &TclpInitPlatform, &self)) {
++	    self = GetModuleHandleW(NULL);
++	}
++	TclWinInit(self);
++    }
+ #endif
+ 
+     /*
