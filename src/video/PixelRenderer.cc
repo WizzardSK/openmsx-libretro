@@ -201,6 +201,14 @@ void PixelRenderer::frameStart(EmuTime time)
 			&& vdp.getEvenOdd() && vdp.isEvenOddEnabled()) {
 		// Deinterlaced odd frame: do same as even frame.
 		paintFrame = prevRenderFrame;
+#ifdef OPENMSX_LIBRETRO
+	} else if (true) {
+		// The frontend paces the frames and takes every one: the core runs
+		// with throttling off, where openMSX painted a frame only every
+		// 100 ms, so most of RetroArch's frames repeated an old picture
+		// (Tatsuya79: 30 fps under frame advance, and the input lag)
+		paintFrame = true;
+#endif
 	} else if (throttleManager.isThrottled()) {
 		// Note: min/maxFrameSkip control the number of skipped frames, but
 		//       for every series of skipped frames there is also one painted
