@@ -380,9 +380,9 @@ retro_core_option_v2_definition optionDefinitions[] = {
 	},
 	{
 		"openmsx_scale", "Resolution", nullptr,
-		"The size openMSX draws the picture at, borders included: 320x240 times this.",
+		"The size openMSX draws the picture at, borders included: 320x240 times this. Auto follows the screen mode: 1x for the 256 pixel wide modes, 2x for the 512 wide and interlaced ones.",
 		nullptr, "video",
-		{{"1", "1x (320x240)"}, {"2", "2x (640x480)"}, {"3", "3x (960x720)"}, {"4", "4x (1280x960)"}, {nullptr, nullptr}},
+		{{"auto", "Auto"}, {"1", "1x (320x240)"}, {"2", "2x (640x480)"}, {"3", "3x (960x720)"}, {"4", "4x (1280x960)"}, {nullptr, nullptr}},
 		"2"
 	},
 	// Software by default, unlike openMSX, which has only its OpenGL
@@ -454,9 +454,41 @@ void setCoreOptions()
 	environ_cb(RETRO_ENVIRONMENT_SET_VARIABLES, variables.data());
 }
 
+// Resolution Auto: the scale the screen mode wants, taken once it has held
+// for a few frames, so a game switching modes for a frame or two does not
+// make openMSX draw at another size each time (Tatsuya79)
+bool autoScale = false;
+unsigned autoWanted = 0, autoFrames = 0;
+constexpr unsigned AUTO_SCALE_FRAMES = 10;
+
+void updateAutoScale()
+{
+	if (!autoScale || !reactor) return;
+	auto* board = reactor->getMotherBoard();
+	auto* vdp = board ? dynamic_cast<VDP*>(board->findDevice("VDP")) : nullptr;
+	if (!vdp) return;
+	unsigned want = (vdp->getDisplayMode().getLineWidth() > 256 || vdp->isInterlaced()) ? 2 : 1;
+	if (want == scale) {
+		autoFrames = 0;
+		return;
+	}
+	if (want != autoWanted) {
+		autoWanted = want;
+		autoFrames = 0;
+	}
+	if (++autoFrames < AUTO_SCALE_FRAMES) return;
+	autoFrames = 0;
+	scale = want;
+	runCommand("set scale_factor " + std::to_string(scale));
+}
+
 void readVideoOptions()
 {
-	unsigned newScale = unsigned(std::clamp(atoi(optionValue("openmsx_scale", "2").c_str()), 1, 4));
+	std::string scaleValue = optionValue("openmsx_scale", "2");
+	autoScale = scaleValue == "auto";
+	autoFrames = 0;
+	// Auto starts from the size there is and follows the machine from there
+	unsigned newScale = autoScale ? scale : unsigned(std::clamp(atoi(scaleValue.c_str()), 1, 4));
 	cropOverscan = optionValue("openmsx_crop_overscan", "disabled") == "enabled";
 	bool newSquare = optionValue("openmsx_pixel_aspect", "tv") == "square";
 	if (newSquare != squarePixels) {
@@ -752,6 +784,12 @@ void RETRO_CALLCONV keyboardEvent(bool down, unsigned keycode, uint32_t /*charac
 constexpr unsigned DEVICE_MSX_JOYSTICK = RETRO_DEVICE_JOYPAD;
 constexpr unsigned DEVICE_CURSOR_KEYS = RETRO_DEVICE_SUBCLASS(RETRO_DEVICE_JOYPAD, 0);
 constexpr unsigned DEVICE_MSX_MOUSE = RETRO_DEVICE_MOUSE;
+// Arkanoid's paddle, turned by the mouse's horizontal motion: with the MSX
+// mouse the bat jumps across the screen, in standalone too (Tatsuya79)
+constexpr unsigned DEVICE_ARKANOID_PAD = RETRO_DEVICE_SUBCLASS(RETRO_DEVICE_MOUSE, 0);
+// Nothing in the MSX port; RetroArch then offers the keyboard's keys in the
+// port's remap list, so a pad button can press F8 and the like (Tatsuya79)
+constexpr unsigned DEVICE_KEYBOARD = RETRO_DEVICE_KEYBOARD;
 constexpr unsigned NUM_PORTS = 2;
 
 std::array<unsigned, NUM_PORTS> portDevice = {DEVICE_MSX_JOYSTICK, DEVICE_MSX_JOYSTICK};
@@ -762,6 +800,7 @@ struct PortState {
 	uint8_t joy = 0;      // MSX joystick bits held (JOY_UP ... JOY_BUTTONB)
 	uint32_t keys = 0;    // keys held: padKeys, then cursorKeys
 	unsigned mouseButtons = 0;
+	int paddleRest = 0;   // the Vaus Paddle's motion not handed over yet
 };
 std::array<PortState, NUM_PORTS> portState;
 
@@ -813,7 +852,10 @@ void plugPorts(MSXMotherBoard& board)
 		case DEVICE_MSX_MOUSE:
 			runCommand(std::string("plug ") + connectors[port] + " mouse");
 			break;
-		default: // the cursor keys or nothing: the port stays empty
+		case DEVICE_ARKANOID_PAD:
+			runCommand(std::string("plug ") + connectors[port] + " arkanoidpad");
+			break;
+		default: // the cursor keys, the keyboard or nothing: the port stays empty
 			break;
 		}
 	}
@@ -892,11 +934,22 @@ void pollPadKeys(unsigned port, PortState& state)
 	updateKeys(now, state.keys, padKeys, 0);
 }
 
-void pollMouse(unsigned port, PortState& state)
+/** The Vaus Paddle turns by half the motion of each event and drops the
+ * rest (ArkanoidPad.cc, SCALE): fine for standalone's many small events,
+ * but RetroArch's one motion a frame lost a slow move altogether, which
+ * felt like lag. The rest is kept here for the next frame. */
+constexpr int PADDLE_SCALE = 2;
+
+void pollMouse(unsigned port, PortState& state, bool paddle)
 {
 	auto& distributor = reactor->getEventDistributor();
 	int dx = input_state_cb(port, RETRO_DEVICE_MOUSE, 0, RETRO_DEVICE_ID_MOUSE_X);
 	int dy = input_state_cb(port, RETRO_DEVICE_MOUSE, 0, RETRO_DEVICE_ID_MOUSE_Y);
+	if (paddle) {
+		dx += state.paddleRest;
+		state.paddleRest = dx % PADDLE_SCALE;
+		dx -= state.paddleRest;
+	}
 	if (dx || dy) {
 		SDL_Event evt;
 		evt.motion = SDL_MouseMotionEvent{};
@@ -945,7 +998,10 @@ void pollInput()
 			pollPadKeys(port, state);
 			break;
 		case DEVICE_MSX_MOUSE:
-			pollMouse(port, state);
+			pollMouse(port, state, false);
+			break;
+		case DEVICE_ARKANOID_PAD:
+			pollMouse(port, state, true);
 			break;
 		default:
 			break;
@@ -959,6 +1015,8 @@ void setControllerInfo()
 		{"MSX Joystick", DEVICE_MSX_JOYSTICK},
 		{"Cursor Keys", DEVICE_CURSOR_KEYS},
 		{"MSX Mouse", DEVICE_MSX_MOUSE},
+		{"Arkanoid Vaus Paddle", DEVICE_ARKANOID_PAD},
+		{"Keyboard", DEVICE_KEYBOARD},
 		{"None", RETRO_DEVICE_NONE},
 	};
 	static const retro_controller_info ports[] = {
@@ -1241,6 +1299,7 @@ RETRO_API void retro_run()
 			if (!board || !board->execute()) break;
 		}
 		distributor.deliverEvents(0);
+		updateAutoScale();
 		if (frameTicks > 0) {
 			double fps = double(VDP::TICKS_PER_SECOND) / frameTicks;
 			if (std::abs(fps - declaredFps) > 0.5) {

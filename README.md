@@ -40,7 +40,7 @@ Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk 
 |---|---|---|
 | System > Machine | C-BIOS MSX1, MSX2, MSX2+ (international, Europe, Japan); Philips, Sony, Toshiba, Yamaha and Panasonic MSX1, MSX2, MSX2+ and turbo R machines | at the next start of the content; without a real machine's ROMs the core starts C-BIOS MSX2+ and says so |
 | System > Konami SCC, Konami SCC+, Panasonic FM-PAC, Philips MSX-Audio, MoonSound, GFX9000 | on / off | at the next start of the content; FM-PAC, MSX-Audio and MoonSound need their ROMs |
-| Video > Resolution | 1x (320x240) to 4x (1280x960) | on the fly |
+| Video > Resolution | Auto (1x for the 256 pixel wide screen modes, 2x for the 512 wide and interlaced ones, switching with the mode), or 1x (320x240) to 4x (1280x960) | on the fly |
 | Video > Video Output | Software / OpenGL | at the next start of the content; Software (the default) hands RetroArch the picture as pixels, with no GL context, for any video driver (no openMSX OSD, screenshots through RetroArch); OpenGL adds openMSX's own scalers and effects |
 | Video > Crop Overscan | on / off | only the part of the screen the MSX displays on, without its border; the size follows the screen mode |
 | Video > Pixel Aspect Ratio | TV / Square | TV: the picture as wide as on a TV, as openMSX shows it; Square: each pixel as wide as it is tall |
@@ -54,6 +54,8 @@ The device for each port is chosen in Controls > Port 1/2 Controls > Device Type
 | MSX Joystick (default) | D-pad or left stick, A and B are triggers A and B; ports 1 and 2 are the MSX's two joystick ports |
 | Cursor Keys | for games played on the keyboard: the D-pad presses the cursor keys, A presses Space and B presses M |
 | MSX Mouse | RetroArch's mouse |
+| Arkanoid Vaus Paddle | Arkanoid's paddle, turned by the mouse's horizontal motion, the left button fires; Arkanoid games need it, with the MSX mouse the bat jumps across the screen |
+| Keyboard | nothing in the MSX port; the port's pad buttons can be remapped to keyboard keys (Quick Menu > Controls), such as F8 |
 | None | nothing in that port |
 
 With either RetroPad device, X presses Space, Y Return, Start F1, Select F5, L Esc and R Shift. A keyboard works as the MSX keyboard.
