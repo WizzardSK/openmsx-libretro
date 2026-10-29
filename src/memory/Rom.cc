@@ -99,6 +99,7 @@ Rom::Rom(std::string name_, static_string_view description_,
 struct LibretroRom {
 	std::vector<uint8_t> data;
 	Sha1Sum sha1;
+	std::string originalName; // the file's, for a ROM the database does not know
 };
 static std::map<std::string, std::shared_ptr<const LibretroRom>, std::less<>> libretroRoms;
 
@@ -262,6 +263,7 @@ void Rom::init(MSXMotherBoard& motherBoard, XMLElement& config,
 			auto entry = std::make_shared<LibretroRom>();
 			entry->data.assign(rom.begin(), rom.end());
 			entry->sha1 = originalSha1;
+			entry->originalName = file.getOriginalName();
 			std::array<char, 40> buf;
 			libretroRoms[filename] = entry;
 			libretroRoms[std::string(originalSha1.toString(buf))] = entry;
@@ -328,6 +330,14 @@ void Rom::init(MSXMotherBoard& motherBoard, XMLElement& config,
 			name = title;
 		} else {
 			// unknown ROM, use file name
+#ifdef OPENMSX_LIBRETRO
+			// a ROM from the core's cache has no file opened: the name
+			// noted with it (Tatsuya79, a ROM conversion of Aleste Gaiden
+			// crashed every state load)
+			if (!file.is_open()) {
+				name = libretroCached ? libretroCached->originalName : std::string{};
+			} else
+#endif
 			name = file.getOriginalName();
 			if (name.empty()) name = filename;
 		}
