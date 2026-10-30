@@ -127,13 +127,16 @@ jobs:
         env:
           LIBRETRO: 'true'
         run: |
+          # not stripped at the link: Collect keeps a copy with symbols, for
+          # naming the functions in a crash report's stack (Tatsuya79)
           make OPENMSX_TARGET_CPU=x86_64 OPENMSX_TARGET_OS=mingw-w64 \
-            OPENMSX_FLAVOUR=opt 3RDPARTY_FLAG=true PYTHON=python3 -j"$(nproc)"
+            OPENMSX_FLAVOUR=opt OPENMSX_STRIP=false 3RDPARTY_FLAG=true PYTHON=python3 -j"$(nproc)"
 
       - name: Collect
         run: |
-          mkdir -p out
+          mkdir -p out symbols
           cp derived/x86_64-mingw-w64-opt-3rd/lib/openmsx_libretro.dll out/
+          cp out/openmsx_libretro.dll symbols/
           x86_64-w64-mingw32-strip out/openmsx_libretro.dll
           file out/openmsx_libretro.dll
           x86_64-w64-mingw32-objdump -p out/openmsx_libretro.dll | grep -c '\] retro_'
@@ -147,6 +150,11 @@ jobs:
         with:
           name: openmsx_libretro-windows-x86_64
           path: out/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openmsx_libretro-windows-x86_64-symbols
+          path: symbols/
 
   macos:
     name: libretro core (macos-${{ matrix.cpu }})

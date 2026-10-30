@@ -13,6 +13,7 @@
 #include "DeltaBlock.hh"
 #include "Display.hh"
 #include "File.hh"
+#include "FileContext.hh"
 #include "PostProcessor.hh"
 #include "Event.hh"
 #include "EventDistributor.hh"
@@ -29,9 +30,16 @@
 #include "SDLRasterizer.hh"
 #include "StateChange.hh"
 #include "StateChangeDistributor.hh"
+#include "TTFFont.hh"
 #include "TclObject.hh"
 #include "Thread.hh"
 #include "VDP.hh"
+#include "VDPVRAM.hh"
+#include "Debuggable.hh"
+#include "Debugger.hh"
+#include "RealDrive.hh"
+#include "CartridgeSlotManager.hh"
+#include "one_of.hh"
 #include "Version.hh"
 #include "random.hh"
 #include "serialize.hh"
@@ -313,15 +321,13 @@ std::string setupDisks(const std::string& path)
 
 constexpr const char* DEFAULT_MACHINE = "C-BIOS_MSX2+";
 
-struct ExtensionOption { const char* key; const char* name; };
-constexpr ExtensionOption extensionOptions[] = {
-	{"openmsx_ext_scc", "scc"},
-	{"openmsx_ext_sccplus", "scc+"},
-	{"openmsx_ext_fmpac", "fmpac"},
-	{"openmsx_ext_msxaudio", "audio"},
-	{"openmsx_ext_moonsound", "moonsound"},
-	{"openmsx_ext_gfx9000", "gfx9000"},
+// Extension 1 to 10: as many shown as there are cartridge slots for them
+// (showExtensionOptions)
+constexpr const char* extensionOptions[] = {
+	"openmsx_ext1", "openmsx_ext2", "openmsx_ext3", "openmsx_ext4", "openmsx_ext5",
+	"openmsx_ext6", "openmsx_ext7", "openmsx_ext8", "openmsx_ext9", "openmsx_ext10",
 };
+constexpr int EXTENSIONS_BEFORE_START = 2;
 
 std::string optionValue(const char* key, const char* fallback)
 {
@@ -337,15 +343,410 @@ void showMessage(const char* text)
 	environ_cb(RETRO_ENVIRONMENT_SET_MESSAGE, &msg);
 }
 
+std::string evalCommand(const std::string& command)
+{
+	try {
+		return std::string(reactor->getGlobalCommandController().executeCommand(command).getString());
+	} catch (MSXException& e) {
+		log(RETRO_LOG_WARN, "'%s': %s\n", command.c_str(), std::string(e.getMessage()).c_str());
+		return {};
+	}
+}
+
+/** What is in the cartridge slots on screen, the whole slot map in the log
+ * (Tatsuya79) */
+void showSlots()
+{
+	std::string text = evalCommand(
+		"set r {}; foreach s [machine_info external_slot] {"
+		" set n [lindex [machine_info external_slot $s] 2];"
+		" lappend r \"Slot [string toupper [string index $s 4]]: [expr {$n eq {} ? {empty} : $n}]\" };"
+		" join $r {, }");
+	if (!text.empty()) {
+		log(RETRO_LOG_INFO, "%s\n", text.c_str());
+		retro_message msg = {text.c_str(), 300};
+		environ_cb(RETRO_ENVIRONMENT_SET_MESSAGE, &msg);
+	}
+	log(RETRO_LOG_INFO, "slot map:\n%s", evalCommand("slotmap").c_str());
+}
+
+/** Machine Info (L3 on port 1, Tatsuya79): the game stops and the machine,
+ * its description and what is in its slots are drawn into the picture,
+ * wrapped to its width, a page at a time; each press shows the next page,
+ * and the one after the last returns to the game. At least openMSX's high
+ * resolution (640x480), more at a Resolution above 2. Software video output
+ * only: the pages are pixels for the frontend. */
+struct MachineInfo {
+	bool active = false;
+	bool held = false;
+	unsigned page = 0;
+	unsigned width = 0, height = 0;
+	std::vector<std::vector<std::string>> pages;
+	std::vector<uint32_t> pixels;
+} info;
+
+/** A field of the machine's <info> (openmsx_info machines <name>), or "" */
+std::string machineField(const char* key)
+{
+	return evalCommand(strCat(
+		"set i [openmsx_info machines [machine_info config_name]];"
+		" if {[dict exists $i ", key, "]} { dict get $i ", key, " }"));
+}
+
+/** As standalone's Machine > Current setup shows it (Tatsuya79): maker and
+ * model, the machine's details and sizes, its description, and what is in
+ * the cartridge slots */
+std::string machineInfoText()
+{
+	std::vector<std::pair<std::string, std::string>> rows;
+	auto add = [&](const char* label, std::string value) {
+		if (!value.empty()) rows.emplace_back(label, std::move(value));
+	};
+	std::string manufacturer = machineField("manufacturer"), code = machineField("code");
+	add("Manufacturer", manufacturer);
+	add("Product code", code);
+	add("Release year", machineField("release_year"));
+	add("Type", machineField("type"));
+	add("Region", machineField("region"));
+	if (auto* board = reactor->getMotherBoard()) {
+		// as ImGuiMachine's amendConfigInfo counts them
+		unsigned ramSize = 0;
+		for (const auto& [name, debuggable] : board->getDebugger().getDebuggables()) {
+			if (debuggable->getDescription() == one_of("memory mapper", "ram")) {
+				ramSize += debuggable->getSize();
+			}
+		}
+		add("RAM size", strCat(ramSize / 1024, "kB"));
+		if (auto* vdp = dynamic_cast<VDP*>(board->findDevice("VDP"))) {
+			add("VRAM size", strCat(vdp->getVRAM().getSize() / 1024, "kB"));
+			add("VDP version", std::string(vdp->getVersionString()));
+		}
+		if (auto drives = RealDrive::getDrivesInUse(*board)) {
+			add("Disk drives", strCat(drives->count()));
+		}
+		add("Cartridge slots", strCat(board->getSlotManager().getNumberOfSlots()));
+	}
+	size_t labelWidth = 0;
+	for (const auto& row : rows) labelWidth = std::max(labelWidth, row.first.size());
+
+	std::string title = strCat(manufacturer, manufacturer.empty() || code.empty() ? "" : " ", code);
+	std::string text = title.empty() ? evalCommand("machine_info config_name") : title;
+	text += "\n";
+	for (const auto& [label, value] : rows) {
+		text += strCat('\n', label, std::string(labelWidth + 2 - label.size(), ' '), value);
+	}
+	if (std::string description = machineField("description"); !description.empty()) {
+		text += strCat("\n\n", description);
+	}
+	text += "\n\nSlots";
+	text += evalCommand(
+		"set r {}; foreach s [machine_info external_slot] {"
+		" set n [lindex [machine_info external_slot $s] 2];"
+		" append r \"\nSlot [string toupper [string index $s 4]]: [expr {$n eq {} ? {empty} : $n}]\" };"
+		" set r");
+	return text;
+}
+
+/** The text in lines no wider than 'width' pixels, broken between words */
+std::vector<std::string> wrapText(const TTFFont& font, const std::string& text, int width)
+{
+	std::vector<std::string> lines;
+	size_t start = 0;
+	while (start <= text.size()) {
+		size_t end = text.find('\n', start);
+		if (end == std::string::npos) end = text.size();
+		std::string paragraph = text.substr(start, end - start);
+		std::string line;
+		size_t pos = 0;
+		while (pos < paragraph.size()) {
+			size_t next = paragraph.find(' ', pos);
+			if (next == std::string::npos) next = paragraph.size();
+			std::string word = paragraph.substr(pos, next - pos);
+			std::string candidate = line.empty() ? word : line + ' ' + word;
+			if (!line.empty() && font.getSize(candidate).x > width) {
+				lines.push_back(line);
+				line = word;
+			} else {
+				line = candidate;
+			}
+			pos = next + 1;
+		}
+		lines.push_back(line);
+		start = end + 1;
+	}
+	return lines;
+}
+
+constexpr uint32_t INFO_BACKGROUND = 0x101830, INFO_TEXT = 0xF0F0F0, INFO_FOOTER = 0x90A0C0;
+
+void drawText(const TTFFont& font, const std::string& text, int x, int y, uint32_t color)
+{
+	if (text.empty()) return;
+	SDLSurfacePtr surface = font.render(text, uint8_t(color >> 16), uint8_t(color >> 8), uint8_t(color));
+	SDL_Surface* s = surface.get();
+	if (!s) return;
+	SDL_LockSurface(s);
+	for (int sy = 0; sy < s->h; ++sy) {
+		int py = y + sy;
+		if (py < 0 || py >= int(info.height)) continue;
+		const auto* row = static_cast<const uint8_t*>(s->pixels) + size_t(sy) * s->pitch;
+		for (int sx = 0; sx < s->w; ++sx) {
+			int px = x + sx;
+			if (px < 0 || px >= int(info.width)) continue;
+			uint32_t value;
+			std::memcpy(&value, row + size_t(sx) * 4, 4);
+			uint8_t r, g, b, a;
+			SDL_GetRGBA(value, s->format, &r, &g, &b, &a);
+			uint32_t& out = info.pixels[size_t(py) * info.width + px];
+			auto mix = [&](unsigned shift, uint8_t c) {
+				unsigned bg = (out >> shift) & 0xFF;
+				return ((bg * (255 - a) + c * a) / 255) << shift;
+			};
+			out = mix(16, r) | mix(8, g) | mix(0, b);
+		}
+	}
+	SDL_UnlockSurface(s);
+}
+
+/** The pages laid out for the picture's size; false without a font */
+bool layOutMachineInfo()
+{
+	const unsigned s = std::max(scale, 2u);
+	info.width = 320 * s;
+	info.height = 240 * s;
+	info.pages.clear();
+	try {
+		TTFFont font(systemFileContext().resolve("skins/DejaVuSansMono.ttf.gz"), int(7 * s), 0);
+		const int margin = int(8 * s), lineHeight = font.getHeight();
+		const int perPage = std::max(1, (int(info.height) - 2 * margin) / lineHeight - 2);
+		auto lines = wrapText(font, machineInfoText(), int(info.width) - 2 * margin);
+		for (size_t i = 0; i < lines.size(); i += perPage) {
+			info.pages.emplace_back(lines.begin() + i, lines.begin() + std::min(lines.size(), i + perPage));
+		}
+	} catch (MSXException& e) {
+		log(RETRO_LOG_WARN, "Machine Info: %s\n", std::string(e.getMessage()).c_str());
+		return false;
+	}
+	return !info.pages.empty();
+}
+
+void drawMachineInfoPage()
+{
+	const unsigned s = std::max(scale, 2u);
+	info.pixels.assign(size_t(info.width) * info.height, INFO_BACKGROUND);
+	try {
+		TTFFont font(systemFileContext().resolve("skins/DejaVuSansMono.ttf.gz"), int(7 * s), 0);
+		const int margin = int(8 * s), lineHeight = font.getHeight();
+		int y = margin;
+		for (const auto& line : info.pages[info.page]) {
+			drawText(font, line, margin, y, INFO_TEXT);
+			y += lineHeight;
+		}
+		// by the name Quick Menu > Controls lists: the frontend does not tell a
+		// core which button a remap put it on (Tatsuya79)
+		std::string footer = strCat("Page ", info.page + 1, '/', info.pages.size(), " - Machine Info button: ",
+			info.page + 1 < info.pages.size() ? "next page" : "back to the game");
+		drawText(font, footer, margin, int(info.height) - margin - lineHeight, INFO_FOOTER);
+	} catch (MSXException& e) {
+		log(RETRO_LOG_WARN, "Machine Info: %s\n", std::string(e.getMessage()).c_str());
+	}
+	retro_game_geometry geometry = {};
+	geometry.base_width = info.width;
+	geometry.base_height = info.height;
+	geometry.max_width = MAX_WIDTH;
+	geometry.max_height = MAX_HEIGHT;
+	geometry.aspect_ratio = 4.0f / 3.0f;
+	environ_cb(RETRO_ENVIRONMENT_SET_GEOMETRY, &geometry);
+}
+
+/** L3 on port 1 pressed: into the pages, to the next one, or back to the
+ * game; true while the pages are shown */
+bool updateMachineInfo()
+{
+	bool down = input_state_cb(0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_L3) != 0;
+	bool pressed = down && !info.held;
+	info.held = down;
+	if (!pressed) return info.active;
+	if (!info.active) {
+		if (!softwareOutput) {
+			showMessage("Machine Info needs Video Output Software");
+			return false;
+		}
+		if (!layOutMachineInfo()) return false;
+		info.active = true;
+		info.page = 0;
+	} else if (++info.page >= info.pages.size()) {
+		info.active = false;
+		info.pixels.clear();
+		frameWidth = 0; // the game's geometry to the frontend again
+		return false;
+	}
+	drawMachineInfoPage();
+	return true;
+}
+
+/** Extension 1 to n shown, the others hidden (Tatsuya79) */
+void showExtensionOptions(int n)
+{
+	int i = 0;
+	for (const auto* key : extensionOptions) {
+		retro_core_option_display display = {key, i++ < n};
+		environ_cb(RETRO_ENVIRONMENT_SET_CORE_OPTIONS_DISPLAY, &display);
+	}
+}
+
+/** After a start, as many Extension options as there are in use and empty
+ * cartridge slots, the content's cartridge and a Slot Expander's slots
+ * counted; up to the last one in use, so that it can be changed */
+void showExtensionOptionsForMachine()
+{
+	int used = 0, last = 0, i = 0;
+	for (const auto* key : extensionOptions) {
+		++i;
+		if (optionValue(key, "none") != "none") {
+			++used;
+			last = i;
+		}
+	}
+	int empty = std::atoi(evalCommand(
+		"set n 0; foreach s [machine_info external_slot] {"
+		" if {[lindex [machine_info external_slot $s] 2] eq {}} {incr n} }; set n").c_str());
+	showExtensionOptions(std::max(last, used + empty));
+}
+
 retro_core_option_v2_category optionCategories[] = {
 	{"system", "System", "The MSX machine and the cartridges in its slots. Changes take effect when the content is loaded again."},
 	{"video", "Video", "The size of the picture and its border."},
 	{nullptr, nullptr, nullptr},
 };
 
-#define EXTENSION_OPTION(key, label, info) \
-	{key, label, nullptr, info, nullptr, "system", \
-	 {{"disabled", nullptr}, {"enabled", nullptr}, {nullptr, nullptr}}, "disabled"}
+// Every extension in share/extensions, by its maker and name
+#define EXTENSION_OPTION(key, label) \
+	{key, label, nullptr, \
+	 "A cartridge or device in a free slot, as openMSX's -ext. Some need their ROMs in <system>/openmsx/share/systemroms.", \
+	 nullptr, "system", \
+	 { \
+		{"none", "None"}, \
+		{"2nd_PSG", "2nd PSG"}, \
+		{"advram", "Ademir Carchano ADVRAM"}, \
+		{"MegaRAM_2MB", "Ademir Carchano MegaRAM (anniversary ed.)"}, \
+		{"ASCII_MSX-DOS2", "ASCII Japanese MSX-DOS2"}, \
+		{"ASCII_Japanese_MSX-Write", "ASCII Japanese MSX-Write"}, \
+		{"ASCII_Japanese_MSX-Write_II", "ASCII Japanese MSX-Write II"}, \
+		{"msxdos2", "ASCII MSX-DOS 2"}, \
+		{"AVT_DPF-550", "AVT Floppy Disk Drive DPF-550"}, \
+		{"mu-PACK", "Bit²/ASCII μ·PACK BM-117"}, \
+		{"Casio_KB-10", "Casio Docking station KB-10"}, \
+		{"Casio_KB-7", "Casio Docking station KB-7"}, \
+		{"Checkmark_FM_Stereo_PAK", "Checkmark FM Stereo PAK"}, \
+		{"Computer_Mates_Disk_Interface", "Computer Mates Disk Interface"}, \
+		{"ROM_Hunter_Mk2", "Daito Micom System ROM Hunter Mk2"}, \
+		{"debugdevice", "Debug Device"}, \
+		{"DDX_3.0", "Digital Design DDX 3.0"}, \
+		{"megaram", "Digital Design MegaRAM"}, \
+		{"MegaRAM_Disk", "Digital Design MegaRAM DISK"}, \
+		{"smxwifi", "DucaSP SM-X WiFi"}, \
+		{"Epson_Chakkari_Copy", "Epson Chakkari Copy"}, \
+		{"ESE_Ramdisk", "ESE Artists' Factory ESE Ramdisk"}, \
+		{"ESE_SCC", "ESE Artists' Factory ESE SCC"}, \
+		{"ESE_WAVE-SCSI", "ESE Artists' Factory ESE WAVE-SCSI"}, \
+		{"ESE_MEGA-SCSI", "ESE Artists' Factory MEGA SCSI"}, \
+		{"FAC_MIDI_Interface", "FAC MIDI Interface"}, \
+		{"rs232", "Generic MSX RS-232C"}, \
+		{"audio", "Generic MSX-AUDIO"}, \
+		{"audio2", "Generic MSX-AUDIO 2 (alternative ports)"}, \
+		{"Gradiente_CT-80E", "Gradiente Cartão 80 Colunas CT-80E"}, \
+		{"ASCII16-X_Mapper_XL", "Grauw ASCII16-X Mapper XL"}, \
+		{"hirestimer", "hirestimer"}, \
+		{"Hitachi_MPC-310H", "Hitachi 2DD Micro Floppydisk Drive + Controller MPC-310H"}, \
+		{"Jun_Soft_DalSoRi_R2", "Jun Soft DalSoRi R2"}, \
+		{"JVC_MSX_MIDI", "JVC MSX MIDI"}, \
+		{"Konami_EC-701", "Konami Japanese Word Processor Cartridge EC-701"}, \
+		{"Konami_EC-702", "Konami Kanji ROM Cartridge EC-702"}, \
+		{"scc", "Konami SCC"}, \
+		{"scc+", "Konami SCC+"}, \
+		{"Konami_SD-Snatcher_Sound_Cartridge", "Konami SD-Snatcher Sound Cartridge RA-011"}, \
+		{"Konami_Snatcher_Sound_Cartridge", "Konami Snatcher Sound Cartridge RA-004"}, \
+		{"Lascom_Kanji", "Lascom Kanji ROM Cartridge"}, \
+		{"OPL3Cartridge_Moonsound_compatible", "Luciano Sturaro OPL3 Cartridge (Moonsound compatible)"}, \
+		{"OPL3Cartridge", "Luciano Sturaro OPL3 Cartridge (MSX-Audio compatible)"}, \
+		{"MIDI_Interface_3", "M. Fujimoto MIDI Interface 3"}, \
+		{"Konami_Ultimate_Collection", "Manuel Pazos Konami Ultimate Collection version 3"}, \
+		{"MegaFlashROM_SCC", "Manuel Pazos MegaFlashROM SCC"}, \
+		{"MegaFlashROM_SCC+", "Manuel Pazos MegaFlashROM SCC+"}, \
+		{"MegaFlashROM_SCC+_SD", "Manuel Pazos MegaFlashROM SCC+ SD"}, \
+		{"ram1mb", "Memory Mapper (1 MB)"}, \
+		{"ram2mb", "Memory Mapper (2 MB)"}, \
+		{"ram4mb", "Memory Mapper (4 MB)"}, \
+		{"ram512k", "Memory Mapper (512 kB)"}, \
+		{"Microsol_CDX-2", "Microsol Disk Drive CDX-2"}, \
+		{"Mitsubishi_ML-30DC_ML-30FD", "Mitsubishi Micro Floppy Disk Controller/Drives ML-30DC/ML-30FD"}, \
+		{"mbstereo", "Moonblaster Stereo"}, \
+		{"Gouda_SCSI", "MSX Club Gouda Gouda Novaxis SCSI"}, \
+		{"MSXPi", "MSXPi"}, \
+		{"OPL3Cartridge2_mono", "MSXpro OPL3 Cartridge v2 (mono)"}, \
+		{"OPL3Cartridge2_stereo", "MSXpro OPL3 Cartridge v2 (stereo)"}, \
+		{"National_CF-SM003", "National Kanji Word Processor Unit CF-SM003"}, \
+		{"Neos_MA-20R", "Neos Version Up Adapter MSX BASIC Vev. 2.0 MA-20 (R)"}, \
+		{"Neos_MA-20V", "Neos Version Up Adapter V MA-20 (V)"}, \
+		{"unapinet", "openMSXnet UnapiNet"}, \
+		{"fmpac", "Panasoft FMPAC SW-M004"}, \
+		{"pac", "Panasoft PAC SW-M001"}, \
+		{"Panasonic_FS-FD1A", "Panasonic 3.5 inch Floppy Disk Drive FS-FD1A"}, \
+		{"Panasonic_FS-CA1", "Panasonic MSX-AUDIO Unit FS-CA1"}, \
+		{"Panasonic_FS-PW1", "Panasonic Word Processor with Kanji ROM Cartridge FS-PW1"}, \
+		{"Password_Cartridge", "Password Cartridge"}, \
+		{"Philips_NMS_1200", "Philips 2DD Micro Floppydisk Drive NMS 1200"}, \
+		{"Philips_VY_0010", "Philips 3.5\" Disk Drive VY-0010"}, \
+		{"Philips_NMS_1205", "Philips Music-Module NMS-1205"}, \
+		{"Philips_VU_0040", "Philips Parallel Printer Interface VU 0040"}, \
+		{"Boosted_audio", "Philips/MSXPro MSX-Audio"}, \
+		{"Musical_Memory_Mapper", "Popolon + Repro Factory Musical Memory Mapper (1 MB)"}, \
+		{"Popolon_Sound_Cartridge", "Popolon Sound Cartridge"}, \
+		{"programmabledevice", "PVM Programmable Device"}, \
+		{"ram16k", "RAM (16 kB)"}, \
+		{"ram32k", "RAM (32 kB)"}, \
+		{"ram64k", "RAM (64 kB)"}, \
+		{"Carnivore2", "RBSC Carnivore2"}, \
+		{"Sanyo_MFD-001", "Sanyo MSX Floppy Disk Unit MFD-001"}, \
+		{"Sanyo_MRS-001", "Sanyo MSX RS-232C Interface Unit MRS-001"}, \
+		{"Sharp_HB-4000", "Sharp Cartão 80 Colunas HB-4000"}, \
+		{"Sharp_HB-3600", "Sharp Dual Disk Drive Controller HB-3600"}, \
+		{"slotexpander", "Slot Expander"}, \
+		{"Beer_IDE", "SOLiD Beer IDE"}, \
+		{"Sony_HBD-20W", "Sony 2DD Micro Floppydisk Drive HBD-20W"}, \
+		{"Sony_HBD-F1", "Sony 2DD Micro Floppydisk Drive HBD-F1"}, \
+		{"Sony_HBI-55", "Sony Data Cartridge 4KBytes HBI-55"}, \
+		{"Sony_HBI-J1", "Sony Kanji ROM Cartridge HBI-J1"}, \
+		{"Sony_HBD-50", "Sony Micro Floppydisk Drive HBD-50"}, \
+		{"Sony_HBK-30", "Sony Micro Floppydisk Drive HBK-30"}, \
+		{"Sony_HBI-232", "Sony RS-232C Interface Cartridge HBI-232"}, \
+		{"SensorKid", "Sony Sensor Kid Cartridge HBJ-H081C"}, \
+		{"Spectravideo_SVI-707", "Spectravideo MSX Disk Drive (320K) SVI-707"}, \
+		{"SunriseIDE_Nextor", "Sunrise ATA-IDE with Nextor"}, \
+		{"ide", "Sunrise ATA-IDE"}, \
+		{"gfx9000", "Sunrise GFX9000"}, \
+		{"moonsound", "Sunrise MoonSound"}, \
+		{"nowind", "Sunrise Nowind USB Interface"}, \
+		{"video9000", "Sunrise Video9000"}, \
+		{"Makoto", "SuperSoniqs / Electric River Hardware Makoto"}, \
+		{"franky-ntsc", "SuperSoniqs Franky NTSC"}, \
+		{"franky-pal", "SuperSoniqs Franky PAL"}, \
+		{"Talent_TDC-600", "Talent disk drive TDC-600"}, \
+		{"Talent_DPF-550", "Talent Floppy Disk Drive DPF-550"}, \
+		{"Tecall_MSX_RAMFILE_TM220", "Tecall MSX RAMFILE TM220"}, \
+		{"SN76489", "Texas Instruments Digital Complex Sound Generator SN76489"}, \
+		{"The_SCC_Alliance_Yamanooto", "The SCC Alliance Yamanooto"}, \
+		{"Toshiba_HX-F101PE", "Toshiba Micro Floppydisk Unit HX-F101PE"}, \
+		{"Toshiba_HX-MU900", "Toshiba MSX Music System HX-MU900"}, \
+		{"Yamaha_FD-03", "Yamaha 3.5inch Floppydisk Drive 1DD FD-03"}, \
+		{"Yamaha_FD-05", "Yamaha 3.5Inch MSX Micro FDD FD-05/FD-051"}, \
+		{"Yamaha_SFG-05", "Yamaha FM Sound Synthesizer Unit mark II SFG-05"}, \
+		{"Yamaha_SFG-01", "Yamaha FM Sound Synthesizer Unit SFG-01"}, \
+		{"Yamaha_SKW-05_embedded", "Yamaha Kanji Word Processor Unit (embedded) SKW-05"}, \
+		{"Yamaha_SKW-01", "Yamaha Kanji Word Processor Unit SKW-01"}, \
+		{nullptr, nullptr}, \
+	 }, "none"}
 
 retro_core_option_v2_definition optionDefinitions[] = {
 	{
@@ -410,18 +811,16 @@ retro_core_option_v2_definition optionDefinitions[] = {
 		{{"tv", "TV"}, {"square", "Square"}, {nullptr, nullptr}},
 		"tv"
 	},
-	EXTENSION_OPTION("openmsx_ext_scc", "Konami SCC (Restart)",
-		"A cartridge with Konami's SCC sound chip, for music that would otherwise need an SCC game cartridge."),
-	EXTENSION_OPTION("openmsx_ext_sccplus", "Konami SCC+ (Restart)",
-		"Konami's Sound Cartridge (SCC+), as with Snatcher and SD Snatcher."),
-	EXTENSION_OPTION("openmsx_ext_fmpac", "Panasonic FM-PAC (Restart)",
-		"MSX-MUSIC (FM sound) with battery-backed SRAM. Needs its ROM in <system>/openmsx/share/systemroms."),
-	EXTENSION_OPTION("openmsx_ext_msxaudio", "Philips MSX-Audio (Restart)",
-		"The Philips NMS 1205 Music Module (MSX-AUDIO). Needs its ROM in <system>/openmsx/share/systemroms."),
-	EXTENSION_OPTION("openmsx_ext_moonsound", "MoonSound (Restart)",
-		"The OPL4 sound cartridge. Needs its sample ROM in <system>/openmsx/share/systemroms."),
-	EXTENSION_OPTION("openmsx_ext_gfx9000", "GFX9000 (Restart)",
-		"The V9990 video cartridge, for the software written for it."),
+	EXTENSION_OPTION("openmsx_ext1", "Extension 1 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext2", "Extension 2 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext3", "Extension 3 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext4", "Extension 4 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext5", "Extension 5 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext6", "Extension 6 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext7", "Extension 7 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext8", "Extension 8 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext9", "Extension 9 (Restart)"),
+	EXTENSION_OPTION("openmsx_ext10", "Extension 10 (Restart)"),
 	{nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, {{nullptr, nullptr}}, nullptr},
 };
 #undef EXTENSION_OPTION
@@ -432,6 +831,7 @@ void setCoreOptions()
 	unsigned version = 0;
 	if (environ_cb(RETRO_ENVIRONMENT_GET_CORE_OPTIONS_VERSION, &version) && version >= 2) {
 		environ_cb(RETRO_ENVIRONMENT_SET_CORE_OPTIONS_V2, &options);
+		showExtensionOptions(EXTENSIONS_BEFORE_START);
 		return;
 	}
 	// a frontend without options v2: "Label; first|second|..." with the default first
@@ -570,9 +970,9 @@ bool startEmulator(bool useOptions)
 		std::vector<std::string> args = {"openmsx"};
 		if (useOptions) {
 			args.insert(args.end(), {"-machine", optionValue("openmsx_machine", DEFAULT_MACHINE)});
-			for (const auto& ext : extensionOptions) {
-				if (optionValue(ext.key, "disabled") == "enabled") {
-					args.insert(args.end(), {"-ext", ext.name});
+			for (const auto* key : extensionOptions) {
+				if (auto ext = optionValue(key, "none"); ext != "none") {
+					args.insert(args.end(), {"-ext", ext});
 				}
 			}
 		}
@@ -643,7 +1043,10 @@ void startWithFallback()
 	}
 	if (!started) {
 		environ_cb(RETRO_ENVIRONMENT_SHUTDOWN, nullptr);
+		return;
 	}
+	showSlots();
+	showExtensionOptionsForMachine();
 }
 
 void contextReset()
@@ -1046,6 +1449,7 @@ void setInputDescriptors()
 		{p, RETRO_DEVICE_ANALOG, RETRO_DEVICE_INDEX_ANALOG_LEFT, RETRO_DEVICE_ID_ANALOG_X, "Left Stick X"}, \
 		{p, RETRO_DEVICE_ANALOG, RETRO_DEVICE_INDEX_ANALOG_LEFT, RETRO_DEVICE_ID_ANALOG_Y, "Left Stick Y"},
 		PORT_DESCRIPTORS(0)
+		{0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_L3, "Machine Info"},
 		PORT_DESCRIPTORS(1)
 #undef PORT_DESCRIPTORS
 		{0, 0, 0, 0, nullptr},
@@ -1285,6 +1689,12 @@ RETRO_API void retro_run()
 	bool updated = false;
 	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE_UPDATE, &updated) && updated) {
 		readVideoOptions();
+	}
+
+	// the game stands still while Machine Info's pages are shown
+	if (updateMachineInfo()) {
+		video_cb(info.pixels.data(), info.width, info.height, info.width * sizeof(uint32_t));
+		return;
 	}
 
 	try {

@@ -39,7 +39,7 @@ Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk 
 | Option | Values | Notes |
 |---|---|---|
 | System > Machine | C-BIOS MSX1, MSX2, MSX2+ (international, Europe, Japan); Philips, Sony, Toshiba, Yamaha and Panasonic MSX1, MSX2, MSX2+ and turbo R machines | at the next start of the content; without a real machine's ROMs the core starts C-BIOS MSX2+ and says so |
-| System > Konami SCC, Konami SCC+, Panasonic FM-PAC, Philips MSX-Audio, MoonSound, GFX9000 | on / off | at the next start of the content; FM-PAC, MSX-Audio and MoonSound need their ROMs |
+| System > Extension 1 to 10 | None, or any of openMSX's extensions (sound, video, disk, RAM and other cartridges) | at the next start of the content; some need their ROMs; after a start as many are shown as there are in use and empty cartridge slots (a Slot Expander's too), before it two; after a start the core shows what is in the cartridge slots, the log has the whole slot map |
 | Video > Resolution | Auto (1x for the 256 pixel wide screen modes, 2x for the 512 wide and interlaced ones, switching with the mode), or 1x (320x240) to 4x (1280x960) | on the fly |
 | Video > Video Output | Software / OpenGL | at the next start of the content; Software (the default) hands RetroArch the picture as pixels, with no GL context, for any video driver (no openMSX OSD, screenshots through RetroArch); OpenGL adds openMSX's own scalers and effects |
 | Video > Crop Overscan | on / off | only the part of the screen the MSX displays on, without its border; the size follows the screen mode |
@@ -59,6 +59,8 @@ The device for each port is chosen in Controls > Port 1/2 Controls > Device Type
 | None | nothing in that port |
 
 With either RetroPad device, X presses Space, Y Return, Start F1, Select F5, L Esc and R Shift. A keyboard works as the MSX keyboard.
+
+L3 on port 1 is Machine Info (remappable in Quick Menu > Controls): the game stops and the machine is shown in the picture as standalone's Machine > Current setup has it: maker, model, year, type, region, RAM and VRAM size, VDP version, disk drives and cartridge slots, its description, and what is in each slot, at least at 640x480, a page at a time. The same button shows the next page, and after the last one returns to the game; the pages name it Machine Info button, as RetroArch does not tell the core which button it is remapped to. It needs Video Output at Software, the default.
 
 ## Building
 
