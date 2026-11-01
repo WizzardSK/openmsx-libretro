@@ -25,7 +25,7 @@
     - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
     - apt-get update -qq
     - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
-        software-properties-common ca-certificates git make python3 pkg-config
+        software-properties-common gpg-agent ca-certificates git make python3 pkg-config
         libopengl-dev libegl-dev libgl-dev
     - add-apt-repository -y ppa:ubuntu-toolchain-r/test
     - apt-get update -qq
@@ -107,7 +107,7 @@ libretro-build-windows-x64:
     - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
     - apt-get update -qq
     - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
-        ca-certificates git make python3 tcl mingw-w64
+        ca-certificates git make gcc libc6-dev python3 tcl mingw-w64
     - update-alternatives --set x86_64-w64-mingw32-gcc /usr/bin/x86_64-w64-mingw32-gcc-posix
     - update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
   script:
