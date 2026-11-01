@@ -22,7 +22,7 @@
   image: ubuntu:22.04
   before_script:
     - export NUMPROC=$(($(nproc)/5))
-    - export NUMPROC=$((NUMPROC > 0 ? NUMPROC : 1))
+    - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
     - apt-get update -qq
     - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
         software-properties-common ca-certificates git make python3 pkg-config
@@ -104,7 +104,7 @@ libretro-build-windows-x64:
     LIBRETRO: "true"
   before_script:
     - export NUMPROC=$(($(nproc)/5))
-    - export NUMPROC=$((NUMPROC > 0 ? NUMPROC : 1))
+    - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
     - apt-get update -qq
     - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
         ca-certificates git make python3 tcl mingw-w64
