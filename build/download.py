@@ -81,11 +81,20 @@ def downloadURL(url, localDir):
 
 if __name__ == '__main__':
 	if len(sys.argv) == 3:
-		try:
-			downloadURL(*sys.argv[1 : ])
-		except OSError as ex:
-			print(ex, file=sys.stderr)
-			sys.exit(1)
+		# A server that drops the connection now and then (CI builds fetch
+		# every package each time): a few tries, a pause between them
+		from time import sleep
+		tries = 5
+		for attempt in range(1, tries + 1):
+			try:
+				downloadURL(*sys.argv[1 : ])
+				break
+			except OSError as ex:
+				print(ex, file=sys.stderr)
+				if attempt == tries:
+					sys.exit(1)
+				print('Trying again (%d of %d)...' % (attempt + 1, tries), file=sys.stderr)
+				sleep(5 * attempt)
 	else:
 		print('Usage: python3 download.py url localdir', file=sys.stderr)
 		sys.exit(2)

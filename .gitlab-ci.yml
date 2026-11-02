@@ -142,10 +142,12 @@ libretro-build-osx-arm64:
   variables:
     OPENMSX_CPU: aarch64
 
-# macOS 64-bit (Intel)
+# macOS 64-bit (Intel): built on the Apple Silicon runner for x86_64 (the
+# 3rdparty packages configured with --host), as the Intel runner's Xcode
+# has no C++23 (-std=c++2b)
 libretro-build-osx-x64:
   extends:
-    - .libretro-osx-x64
+    - .libretro-osx-arm64
     - .core-osx
   variables:
     OPENMSX_CPU: x86_64
