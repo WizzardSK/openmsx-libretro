@@ -300,7 +300,7 @@ static speed_t baudToSpeedExact(unsigned baud)
 	return B0;
 }
 
-#ifndef __linux__
+#if !defined(__linux__) || defined(__ANDROID__)
 static speed_t baudToSpeedNearest(unsigned baud)
 {
 	speed_t bestSpeed = B115200;
@@ -324,7 +324,8 @@ static void set_termios_baud(struct termios& tio, unsigned baud)
 		cfsetispeed(&tio, speed);
 		cfsetospeed(&tio, speed);
 	} else {
-#ifdef __linux__
+#if defined(__linux__) && !defined(__ANDROID__)
+		// (Android's termios has no c_ispeed/c_ospeed: the nearest one there)
 		cfsetispeed(&tio, BOTHER);
 		cfsetospeed(&tio, BOTHER);
 		tio.c_ispeed = static_cast<speed_t>(baud);

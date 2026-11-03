@@ -3,7 +3,7 @@
 # This recipe is consumed by the Libretro buildbot so the openMSX core can be
 # distributed through RetroArch's Online Updater > Core Downloader.
 #
-# Linux x64/aarch64, Windows x64 and macOS arm64/x86_64. openMSX builds with
+# Linux x64/aarch64, Windows x64, macOS arm64/x86_64 and Android arm64-v8a. openMSX builds with
 # its own make (build/main.mk, LIBRETRO=true) against static libraries it
 # builds first (make 3rdparty: SDL2, Tcl, FreeType, GLEW, libpng, zlib), and
 # it is C++23. That rules out the buildbot's own Linux images and the MXE
@@ -59,6 +59,11 @@ include:
     file: '/osx-arm64.yml'
   - project: 'libretro-infrastructure/ci-templates'
     file: '/osx-x64.yml'
+
+  ################################## CELLULAR #################################
+  # Android
+  - project: 'libretro-infrastructure/ci-templates'
+    file: '/android-jni.yml'
 
 # Stages for building
 stages:
@@ -151,3 +156,40 @@ libretro-build-osx-x64:
     - .core-osx
   variables:
     OPENMSX_CPU: x86_64
+
+################################### CELLULAR #################################
+# Android: openMSX's own make with the NDK's clang (API 24), not ndk-build, as
+# the project's GitHub CI builds it; the core draws with its software output
+# there (no desktop GL core context on Android). NDK 29.0 of the image, for
+# C++23; where it is missing (the GitHub preflight) the NDK NDK_ROOT names.
+.core-android:
+  extends: .core-defs
+  variables:
+    LIBRETRO: "true"
+  before_script:
+    - export NUMPROC=$(($(nproc)/5))
+    - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
+    - if ! command -v tclsh >/dev/null || ! command -v pkg-config >/dev/null; then
+        apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends tcl pkg-config make python3;
+      fi
+    - if [ -d "${ANDROID_HOME}/ndk/29.0.14206865" ]; then export NDK_ROOT="${ANDROID_HOME}/ndk/29.0.14206865"; fi
+    - export TC="$NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64"
+    - export PATH="$TC/bin:$PATH"
+    - export CC=${OPENMSX_TRIPLE}24-clang CXX=${OPENMSX_TRIPLE}24-clang++
+    - export AR=$TC/bin/llvm-ar RANLIB=$TC/bin/llvm-ranlib STRIP=$TC/bin/llvm-strip
+  script:
+    - make 3rdparty OPENMSX_TARGET_CPU=${OPENMSX_CPU} OPENMSX_TARGET_OS=android
+        OPENMSX_FLAVOUR=opt PYTHON=python3 -j${NUMPROC}
+    - make OPENMSX_TARGET_CPU=${OPENMSX_CPU} OPENMSX_TARGET_OS=android
+        OPENMSX_FLAVOUR=opt OPENMSX_STRIP=false 3RDPARTY_FLAG=true PYTHON=python3 -j${NUMPROC}
+    - mv derived/${OPENMSX_CPU}-android-opt-3rd/lib/${CORENAME}_libretro*.so ${CORENAME}_libretro_android.so
+    - $STRIP --strip-unneeded ${CORENAME}_libretro_android.so
+
+# Android ARMv8a
+android-arm64-v8a:
+  extends:
+    - .libretro-android-jni-arm64-v8a
+    - .core-android
+  variables:
+    OPENMSX_CPU: aarch64
+    OPENMSX_TRIPLE: aarch64-linux-android

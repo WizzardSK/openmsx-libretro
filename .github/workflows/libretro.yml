@@ -92,6 +92,72 @@ jobs:
           name: openmsx_libretro-${{ matrix.arch }}-symbols
           path: symbols/
 
+  android:
+    name: libretro core (android-${{ matrix.abi }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - abi: arm64-v8a
+            cpu: aarch64
+            triple: aarch64-linux-android
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends make python3 pkg-config tcl
+
+      - name: NDK toolchain
+        run: |
+          TC="$ANDROID_NDK_LATEST_HOME/toolchains/llvm/prebuilt/linux-x86_64"
+          echo "$TC/bin" >> "$GITHUB_PATH"
+          echo "CC=${{ matrix.triple }}24-clang" >> "$GITHUB_ENV"
+          echo "CXX=${{ matrix.triple }}24-clang++" >> "$GITHUB_ENV"
+          echo "AR=$TC/bin/llvm-ar" >> "$GITHUB_ENV"
+          echo "RANLIB=$TC/bin/llvm-ranlib" >> "$GITHUB_ENV"
+          echo "STRIP=$TC/bin/llvm-strip" >> "$GITHUB_ENV"
+
+      - name: Static libraries (cache)
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            derived/${{ matrix.cpu }}-android-opt-3rd/3rdparty/install
+            derived/${{ matrix.cpu }}-android-opt-3rd/3rdparty/tools
+          key: 3rdparty-tools-android-${{ matrix.abi }}-${{ hashFiles('build/3rdparty.mk', 'build/packages.py', 'build/3rdparty/*.diff', 'build/platform-android.mk') }}
+
+      - name: Static libraries
+        if: steps.cache.outputs.cache-hit != 'true'
+        env:
+          LIBRETRO: 'true'
+        run: |
+          make 3rdparty OPENMSX_TARGET_CPU=${{ matrix.cpu }} OPENMSX_TARGET_OS=android \
+            OPENMSX_FLAVOUR=opt PYTHON=python3 -j"$(nproc)"
+
+      - name: Build
+        env:
+          LIBRETRO: 'true'
+        run: |
+          make OPENMSX_TARGET_CPU=${{ matrix.cpu }} OPENMSX_TARGET_OS=android \
+            OPENMSX_FLAVOUR=opt OPENMSX_STRIP=false 3RDPARTY_FLAG=true PYTHON=python3 -j"$(nproc)"
+
+      - name: Collect
+        run: |
+          mkdir -p out
+          cp derived/${{ matrix.cpu }}-android-opt-3rd/lib/openmsx_libretro*.so out/openmsx_libretro_android.so
+          "$STRIP" out/openmsx_libretro_android.so
+          file out/openmsx_libretro_android.so
+          llvm-readelf -d out/openmsx_libretro_android.so | grep NEEDED
+          llvm-nm -D --undefined-only out/openmsx_libretro_android.so | grep -v '@' | head -50 || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openmsx_libretro-android-${{ matrix.abi }}
+          path: out/
+
   windows:
     name: libretro core (windows-x86_64)
     runs-on: ubuntu-24.04

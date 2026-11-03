@@ -205,6 +205,9 @@ class GL(Library):
 	def getHeaders(cls, platform):
 		if platform == 'darwin':
 			return ('<OpenGL/gl.h>', )
+		elif platform == 'android':
+			# no desktop GL headers in the NDK: GLEW's (the libretro core)
+			return ('<GL/glew.h>', )
 		else:
 			return ('<GL/gl.h>', )
 
@@ -225,6 +228,10 @@ class GL(Library):
 			return '-lopengl32'
 		elif platform in ('netbsd', 'openbsd'):
 			return '-L/usr/X11R6/lib -L/usr/X11R7/lib -lGL'
+		elif platform == 'android':
+			# the libretro core: GL 1.1 entry points from Android's GLES
+			# (never called: its Android build has only the Software output)
+			return '-lGLESv3 -lEGL'
 		elif environ.get('LIBRETRO') == 'true':
 			# The libretro core: libGL would pull in GLX and X11. libOpenGL
 			# and libEGL (glvnd) dispatch to the frontend's context, and

@@ -1632,7 +1632,13 @@ RETRO_API bool retro_load_game(const retro_game_info* game)
 	setupDirectories();
 
 	// Software: no GL context to wait for, openMSX starts now
+#ifdef __ANDROID__
+	// Android: RetroArch has OpenGL ES there, which openMSX's OpenGL
+	// renderer does not draw with; the Software output works everywhere
+	softwareOutput = true;
+#else
 	softwareOutput = optionValue("openmsx_video_output", "software") == "software";
+#endif
 	if (softwareOutput) {
 		log(RETRO_LOG_INFO, "video output: software\n");
 		contextAlive = true;

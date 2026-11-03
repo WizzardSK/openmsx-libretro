@@ -91,6 +91,13 @@ export LD:=$(shell $(CC) -print-prog-name=ld)
 export AR:=$(shell $(CC) -print-prog-name=ar)
 export RANLIB:=$(shell $(CC) -print-prog-name=ranlib)
 export STRIP:=$(shell $(CC) -print-prog-name=strip)
+ifeq ($(OPENMSX_TARGET_OS),android)
+# the NDK's clang names the host's binutils; its own LLVM tools handle the
+# target's objects (GLEW strips its shared library)
+export AR:=llvm-ar
+export RANLIB:=llvm-ranlib
+export STRIP:=llvm-strip
+endif
 ifeq ($(TRIPLE_OS),mingw32)
 # SDL calls it WINDRES, Tcl calls it RC; provide both.
 export WINDRES
@@ -131,6 +138,10 @@ SDL2_LIBRETRO_FLAGS:=\
 	--disable-ime \
 	--disable-ibus \
 	--disable-fcitx
+endif
+ifeq ($(OPENMSX_TARGET_OS),android)
+# SDL's Android glue (SDL_android.c) calls its joystick and haptic code
+SDL2_LIBRETRO_FLAGS:=$(filter-out --disable-joystick --disable-haptic,$(SDL2_LIBRETRO_FLAGS))
 endif
 
 ifeq ($(OPENMSX_TARGET_OS),android)
@@ -309,8 +320,13 @@ MAKEVAR_OVERRIDE_GLEW+=SYSTEM=linux-mingw64
 else
 # The libretro core on Linux gets its GL functions through EGL (see above);
 # macOS keeps GLEW's own way, CGL
-ifeq ($(LIBRETRO)$(OPENMSX_TARGET_OS),truelinux)
+ifneq ($(filter truelinux trueandroid,$(LIBRETRO)$(OPENMSX_TARGET_OS)),)
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=linux-egl
+ifeq ($(OPENMSX_TARGET_OS),android)
+# no libGL in the NDK: GLEW's own shared library (built beside the static
+# one the core takes) links Android's EGL and GLES
+MAKEVAR_OVERRIDE_GLEW+=LDFLAGS.GL="-lEGL -lGLESv3"
+endif
 else
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=$(TRIPLE_OS)
 endif

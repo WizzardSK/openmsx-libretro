@@ -43,6 +43,10 @@ void* mallocAligned(size_t alignment, size_t size)
 	assert(alignment >= sizeof(void*));
 #ifdef _WIN32
 	void* result = _aligned_malloc(size, alignment);
+#elif defined(__ANDROID__)
+	// aligned_alloc() is in Android's libc from API level 28 on only
+	void* result = nullptr;
+	if (posix_memalign(&result, alignment, size) != 0) result = nullptr;
 #else
 	// Ensure size is a multiple of alignment for std::aligned_alloc()
 	size = (size + alignment - 1) & ~(alignment - 1);

@@ -4,6 +4,7 @@ from outpututils import rewriteIfChanged
 
 from os.path import dirname, join as joinpath
 import sys
+from os import environ
 
 def iterBuildInfoHeader(targetPlatform, cpuName, flavour, installShareDir, installDocDir):
 	platformVars = extractMakeVariables(
@@ -20,7 +21,10 @@ def iterBuildInfoHeader(targetPlatform, cpuName, flavour, installShareDir, insta
 
 	# TODO: Add support for device-specific configuration.
 	platformPandora = targetPlatform == 'pandora'
-	platformAndroid = targetPlatform == 'android'
+	# The libretro core on Android is a libretro core first: openMSX's code
+	# for its SDL app on Android (key release delays, scale factor limits) is
+	# not for it, and RetroArch does those parts
+	platformAndroid = targetPlatform == 'android' and environ.get('LIBRETRO') != 'true'
 
 	# Defaults.
 	minScaleFactor = 2
