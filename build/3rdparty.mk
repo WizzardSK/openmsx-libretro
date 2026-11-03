@@ -326,6 +326,10 @@ ifeq ($(OPENMSX_TARGET_OS),android)
 # no libGL in the NDK: GLEW's own shared library (built beside the static
 # one the core takes) links Android's EGL and GLES
 MAKEVAR_OVERRIDE_GLEW+=LDFLAGS.GL="-lEGL -lGLESv3"
+# and no stripping: the NDK 29 llvm-strip refuses GLEW's static library ("not
+# stripping symbol ... because it is named in a relocation"); the core is
+# stripped as a whole
+MAKEVAR_OVERRIDE_GLEW+=STRIP=
 endif
 else
 MAKEVAR_OVERRIDE_GLEW+=SYSTEM=$(TRIPLE_OS)
