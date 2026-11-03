@@ -6,6 +6,7 @@
  * framebuffer. Each retro_run emulates until the VDP finishes a frame.
  */
 #include "LibretroHooks.hh"
+#include "LibretroShare.hh"
 #include "LibretroSoundDriver.hh"
 #include "LibretroVideoSystem.hh"
 
@@ -136,8 +137,10 @@ std::string directory(unsigned cmd)
 }
 
 /** openMSX's data (machines, extensions, scripts, ROMs) is the 'share'
-  * folder of an openMSX release, in <system>/openmsx/share; its user folder
-  * (settings, SRAM, saved states) is <saves>/openmsx. */
+  * folder of an openMSX release, in <system>/openmsx/share, which the core
+  * carries (with C-BIOS) and writes there itself when it is new or other than
+  * what is there; its user folder (settings, SRAM, saved states) is
+  * <saves>/openmsx. */
 void setupDirectories()
 {
 	std::string system = directory(RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY) + "/openmsx";
@@ -152,6 +155,13 @@ void setupDirectories()
 	};
 	setVariable("OPENMSX_SYSTEM_DATA", system + "/share");
 	setVariable("OPENMSX_HOME", saves);
+	try {
+		if (int written = installShare(system + "/share")) {
+			log(RETRO_LOG_INFO, "%d files of share written to %s/share\n", written, system.c_str());
+		}
+	} catch (MSXException& e) {
+		log(RETRO_LOG_ERROR, "share could not be written to %s/share: %s\n", system.c_str(), std::string(e.getMessage()).c_str());
+	}
 }
 
 void runCommand(const std::string& command)

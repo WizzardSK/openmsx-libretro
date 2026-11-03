@@ -2,7 +2,7 @@
 
 A libretro core of [openMSX](https://openmsx.org), the MSX emulator that aims for perfection, for RetroArch and other libretro frontends. This fork adds the core on the `libretro` branch and keeps openMSX itself as upstream has it; openMSX's own documentation is in [README](README) and `doc/`.
 
-The core is preliminary. Builds of it are in the [releases](https://github.com/WizzardSK/openmsx-libretro/releases/tag/libretro-latest).
+The core is preliminary. The libretro buildbot builds it.
 
 ## Status
 
@@ -22,13 +22,14 @@ The core is preliminary. Builds of it are in the [releases](https://github.com/W
 | A lost OpenGL context (another video driver, Android) | ⚠️ untested |
 | Linux x86_64, aarch64 | ✅ aarch64 tested in RetroArch |
 | Windows x86_64, macOS x86_64 and arm64 | ⚠️ built, untested |
-| Android | ❌ openMSX draws with desktop OpenGL only, there is no GLES renderer |
-| libretro buildbot | ❌ not yet |
+| Android arm64-v8a | ⚠️ built, untested; Software video output only (openMSX draws with desktop OpenGL, there is no GLES renderer) |
+| libretro buildbot | ✅ nightly builds for Linux, Windows and macOS, Android to come; core info not in RetroArch yet |
 
 ## Installing
 
-- Put the core from the zip for your platform in RetroArch's cores folder, and `openmsx_libretro.info` in its info folder (RetroArch then shows the core's name, its content types and these notes).
-- Extract `openmsx-system.zip` into RetroArch's system folder, so that it ends up as `system/openmsx/share`. It holds openMSX's machines, extensions and scripts, with the C-BIOS ROMs, so games start without any other BIOS.
+- In RetroArch: Main Menu > Online Updater > Core Downloader > openMSX. Until its core info is part of RetroArch's (libretro/libretro-super#2183), also put [`openmsx_libretro.info`](openmsx_libretro.info) in RetroArch's info folder, so that RetroArch shows the core's name, its content types and these notes.
+- Or by hand: the nightly core for your platform from the [libretro buildbot](https://buildbot.libretro.com/nightly/) (for example `linux/x86_64/latest/openmsx_libretro.so.zip`, `windows/x86_64/latest/openmsx_libretro.dll.zip`), unzipped into RetroArch's cores folder.
+- Nothing else to download: the core carries openMSX's machines, extensions and scripts, with the C-BIOS ROMs, and writes them to `system/openmsx/share` at its first start (and again after an update of the core, over its own files only), so games start without any other BIOS.
 - Real machines and some extensions need their system ROMs in `system/openmsx/share/systemroms`.
 - The core hands RetroArch the picture as pixels by default, with any video driver; with Video > Video Output set to OpenGL it draws through RetroArch's OpenGL context, so the video driver has to be `gl` (or `glcore`).
 
@@ -78,4 +79,4 @@ The libretro frontend is in `src/libretro/`; the build switches are in `build/ma
 
 ## License
 
-GPL-2.0, as openMSX. C-BIOS, in the system files, has its own license, in `system/openmsx/share/cbios.txt`.
+GPL-2.0, as openMSX. C-BIOS, carried in the core, has its own license, in `system/openmsx/share/cbios.txt`.

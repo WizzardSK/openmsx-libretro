@@ -270,6 +270,13 @@ COMPONENTS_DEFS_SCRIPT:=build/components2defs.py
 COMPONENTS_HEADER:=$(BUILD_PATH)/config/components.hh
 COMPONENTS_DEFS:=$(BUILD_PATH)/config/components_defs.mk
 GENERATED_HEADERS:=$(VERSION_HEADER) $(CONFIG_HEADER) $(COMPONENTS_HEADER)
+ifeq ($(LIBRETRO),true)
+# The libretro core carries share (with C-BIOS) and writes it to its system
+# folder itself
+SHARE_SCRIPT:=build/libretro_share.py
+SHARE_HEADER:=$(BUILD_PATH)/config/libretro_share.ii
+GENERATED_HEADERS+=$(SHARE_HEADER)
+endif
 
 
 # Configuration
@@ -449,6 +456,14 @@ $(CONFIG_HEADER): $(BUILDINFO_SCRIPT) \
 forceversionextraction:
 $(VERSION_HEADER): forceversionextraction
 	$(CMD)$(PYTHON) $(VERSION_SCRIPT) $@
+
+# Generate the libretro core's share data.
+ifeq ($(LIBRETRO),true)
+$(SHARE_HEADER): $(SHARE_SCRIPT) Contrib/README.cbios \
+		$(shell find share Contrib/cbios Contrib/cbios-old -type f)
+	$(CMD)mkdir -p $(@D)
+	$(CMD)$(PYTHON) $(SHARE_SCRIPT) $@
+endif
 
 # Generate components header.
 $(COMPONENTS_HEADER): $(COMPONENTS_HEADER_SCRIPT) $(PROBE_MAKE) \
