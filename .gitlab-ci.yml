@@ -12,6 +12,13 @@
 # (.github/workflows/libretro.yml) does. The data the core reads from
 # <system>/openmsx (machines, extensions, C-BIOS) is not part of the core.
 
+# The Linux and Windows jobs fetch their compiler from Ubuntu's archive, and
+# a connection to it that drops (security.ubuntu.com, pipeline 133736) failed
+# the job with nothing wrong in the recipe: apt retries each download, and a
+# failed job runs again before the pipeline gives up on it.
+default:
+  retry: 2
+
 # Core definitions
 .core-defs:
   variables:
@@ -23,13 +30,13 @@
   before_script:
     - export NUMPROC=$(($(nproc)/5))
     - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
-    - apt-get update -qq
-    - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
+    - apt-get -o Acquire::Retries=5 update -qq
+    - DEBIAN_FRONTEND=noninteractive apt-get -o Acquire::Retries=5 install -yqq --no-install-recommends
         software-properties-common gpg-agent ca-certificates git make gcc libc6-dev python3 pkg-config
         libopengl-dev libegl-dev libgl-dev
     - add-apt-repository -y ppa:ubuntu-toolchain-r/test
-    - apt-get update -qq
-    - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends gcc-13 g++-13
+    - apt-get -o Acquire::Retries=5 update -qq
+    - DEBIAN_FRONTEND=noninteractive apt-get -o Acquire::Retries=5 install -yqq --no-install-recommends gcc-13 g++-13
   variables:
     # glibc 2.35, GCC 13 with its libstdc++ linked into the core
     CC: gcc-13
@@ -110,8 +117,8 @@ libretro-build-windows-x64:
   before_script:
     - export NUMPROC=$(($(nproc)/5))
     - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
-    - apt-get update -qq
-    - DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends
+    - apt-get -o Acquire::Retries=5 update -qq
+    - DEBIAN_FRONTEND=noninteractive apt-get -o Acquire::Retries=5 install -yqq --no-install-recommends
         ca-certificates git make gcc libc6-dev python3 tcl mingw-w64
     - update-alternatives --set x86_64-w64-mingw32-gcc /usr/bin/x86_64-w64-mingw32-gcc-posix
     - update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
@@ -170,7 +177,7 @@ libretro-build-osx-x64:
     - export NUMPROC=$(($(nproc)/5))
     - '[ "$NUMPROC" -ge 1 ] || NUMPROC=1'
     - if ! command -v tclsh >/dev/null || ! command -v pkg-config >/dev/null; then
-        apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends tcl pkg-config make python3;
+        apt-get -o Acquire::Retries=5 update -qq && DEBIAN_FRONTEND=noninteractive apt-get -o Acquire::Retries=5 install -yqq --no-install-recommends tcl pkg-config make python3;
       fi
     - if [ -d "${ANDROID_HOME}/ndk/29.0.14206865" ]; then export NDK_ROOT="${ANDROID_HOME}/ndk/29.0.14206865"; fi
     - export TC="$NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64"
