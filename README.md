@@ -37,6 +37,8 @@ Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk 
 
 ## Core options
 
+The option texts are translated through libretro's Crowdin project: the English ones live in `src/libretro/libretro_core_options.h`, a change there is uploaded to Crowdin (`crowdin_source_upload.yml`), and the translations come back weekly into `src/libretro/libretro_core_options_intl.h` (`crowdin_translation_sync.yml`, scripts in `intl/`). RetroArch shows them in its own language.
+
 | Option | Values | Notes |
 |---|---|---|
 | System > Machine | C-BIOS MSX1, MSX2, MSX2+ (international, Europe, Japan); Philips, Sony, Toshiba, Yamaha and Panasonic MSX1, MSX2, MSX2+ and turbo R machines | at the next start of the content; without a real machine's ROMs the core starts C-BIOS MSX2+ and says so |
