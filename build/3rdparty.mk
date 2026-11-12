@@ -114,7 +114,10 @@ ifeq ($(filter mingw%,$(OPENMSX_TARGET_OS)),)
 override _CFLAGS+=-fPIC
 CMAKE_LIBRETRO_FLAGS:=-DCMAKE_POSITION_INDEPENDENT_CODE=ON
 endif
+# SDL_UNIX_CONSOLE_BUILD: SDL3 refuses to configure on Linux without X11 or
+# Wayland otherwise, which is what the core wants.
 SDL3_LIBRETRO_FLAGS:=\
+	-DSDL_UNIX_CONSOLE_BUILD=ON \
 	-DSDL_X11=OFF \
 	-DSDL_WAYLAND=OFF \
 	-DSDL_KMSDRM=OFF \
