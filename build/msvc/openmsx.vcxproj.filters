@@ -540,6 +540,15 @@
     <ClCompile Include="$(OpenMSXSrcDir)\ide\WD33C93.cc">
       <Filter>ide</Filter>
     </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\BitmapDecoder.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\BitmapDecoderSettings.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\DebuggableBitmapViewer.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\imgui\DebuggableEditor.cc">
       <Filter>imgui</Filter>
     </ClCompile>
@@ -627,6 +636,18 @@
     <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiSlotMap.cc">
       <Filter>imgui</Filter>
     </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPRegs.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPSprites.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPTiles.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPUtils.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiSoundChip.cc">
       <Filter>imgui</Filter>
     </ClCompile>
@@ -652,6 +673,21 @@
       <Filter>imgui</Filter>
     </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiUtils.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Bitmap.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Regs.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Sprites.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Tiles.cc">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiVDPUtils.cc">
       <Filter>imgui</Filter>
     </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\imgui\ImGuiWatchExpr.cc">
@@ -1596,6 +1632,9 @@
     <ClCompile Include="$(OpenMSXSrcDir)\memory\MegaFlashRomSCCPlusSD.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\memory\ROMHunterMk2.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\memory\SdCard.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\SdMapperV1.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\memory\Yamanooto.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\video\scalers\GLDefaultScaler.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\video\GLContext.cc" />
@@ -2126,6 +2165,15 @@
     <None Include="$(OpenMSXSrcDir)\ide\WD33C93.hh">
       <Filter>ide</Filter>
     </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\BitmapDecoder.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\BitmapDecoderSettings.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\DebuggableBitmapViewer.hh">
+      <Filter>imgui</Filter>
+    </None>
     <None Include="$(OpenMSXSrcDir)\imgui\DebuggableEditor.hh">
       <Filter>imgui</Filter>
     </None>
@@ -2219,6 +2267,18 @@
     <None Include="$(OpenMSXSrcDir)\imgui\ImGuiSlotMap.hh">
       <Filter>imgui</Filter>
     </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPRegs.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPSprites.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPTiles.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiSMSVDPUtils.hh">
+      <Filter>imgui</Filter>
+    </None>
     <None Include="$(OpenMSXSrcDir)\imgui\ImGuiSoundChip.hh">
       <Filter>imgui</Filter>
     </None>
@@ -2246,6 +2306,24 @@
     <None Include="$(OpenMSXSrcDir)\imgui\ImGuiUtils.hh">
       <Filter>imgui</Filter>
     </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Bitmap.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Regs.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Sprites.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Tiles.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiV9990Utils.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\ImGuiVDPUtils.hh">
+      <Filter>imgui</Filter>
+    </None>
     <None Include="$(OpenMSXSrcDir)\imgui\ImGuiWatchExpr.hh">
       <Filter>imgui</Filter>
     </None>
@@ -2253,6 +2331,9 @@
       <Filter>imgui</Filter>
     </None>
     <None Include="$(OpenMSXSrcDir)\imgui\Shortcuts.hh">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\imgui\VDPRegisterViewer.hh">
       <Filter>imgui</Filter>
     </None>
     <None Include="$(OpenMSXSrcDir)\input\ArkanoidPad.hh">
@@ -3372,6 +3453,9 @@
     <None Include="$(OpenMSXSrcDir)\memory\ReproCartridgeV2.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\KonamiUltimateCollection.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\MegaFlashRomSCCPlusSD.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\SdMapperV1.hh">
+      <Filter>memory</Filter>
+    </None>
     <None Include="$(OpenMSXSrcDir)\memory\ROMHunterMk2.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\SdCard.cc.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\Yamanooto.hh" />

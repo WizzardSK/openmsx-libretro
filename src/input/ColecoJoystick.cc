@@ -67,10 +67,12 @@ ColecoJoystick::ColecoJoystick(CommandController& commandController_,
 	} catch (MSXException& /*e*/) {
 		configSetting.setValue(getDefaultConfig(JoystickId(id - 1), joystickManager));
 	}
+	joystickManager.attach(*this);
 }
 
 ColecoJoystick::~ColecoJoystick()
 {
+	joystickManager.detach(*this);
 	if (isPluggedIn()) {
 		ColecoJoystick::unplugHelper(EmuTime::dummy());
 	}
@@ -138,7 +140,7 @@ void ColecoJoystick::unplugHelper(EmuTime /*time*/)
 
 
 // JoystickDevice
-uint8_t ColecoJoystick::read(EmuTime /*time*/)
+uint8_t ColecoJoystick::peek(EmuTime /*time*/) const
 {
 	return pin8 ? 0x3F : (status & 0x3F);
 }
@@ -190,6 +192,13 @@ void ColecoJoystick::stopReplay(EmuTime time) noexcept
 		stateChangeDistributor.distributeNew<ColecoJoyState>(
 			time, id, 0u, release);
 	}
+}
+
+// Observer<JoystickManager>
+void ColecoJoystick::update(const JoystickManager& /*manager*/) noexcept
+{
+	// A host joystick was added or removed: the default mapping may change.
+	configSetting.setDefaultValue(getDefaultConfig(JoystickId(id - 1), joystickManager));
 }
 
 

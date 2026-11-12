@@ -398,19 +398,20 @@ void ImGuiSettings::showMenu(MSXMotherBoard* motherBoard)
 			});
 			ImGui::MenuItem("Configure messages", nullptr, &manager.messages->configureWindow.open);
 		});
-		im::Menu("MSX Plotter", motherBoard != nullptr, [&]{
-			// Find the MSXPlotter in the pluggables
-			MSXPlotter* plotter = nullptr;
+		// Only show the plotter settings when the MSXPlotter is plugged in
+		auto* plotter = [&] -> MSXPlotter* {
+			if (!motherBoard) return nullptr;
 			for (const auto& plug : motherBoard->getPluggingController().getPluggables()) {
-				if (auto* p = dynamic_cast<MSXPlotter*>(plug.get())) {
-					plotter = p;
-					break;
+				if (auto* p = dynamic_cast<MSXPlotter*>(plug.get()); p && p->isPluggedIn()) {
+					return p;
 				}
 			}
-
+			return nullptr;
+		}();
+		if (plotter) im::Menu("MSX Plotter", [&]{
 			// Character Set dropdown
 			static constexpr std::array charSetNames = { // must be in sync with Plotter
-				"International", "Japanese", "DIN (German)"
+				"International", "DIN (German)"
 			};
 			auto currentCharSet = int(plotter->getCharacterSet());
 			if (ImGui::Combo("Character set", &currentCharSet, charSetNames.data(), int(charSetNames.size()))) {
@@ -1707,8 +1708,8 @@ void ImGuiSettings::paintCalibrate(JoystickManager& joystickManager)
 					                  : joystickManager.getDisplayName(joysticks[selectedJoystick]);
 					im::Combo("Joystick", selectedName.c_str(), [&]{
 						for (auto i : xrange(joysticks.size())) {
-							auto name = joystickManager.getDisplayName(joysticks[selectedJoystick]);
-							if (ImGui::Selectable(tmpStrCat(name, "##", i).c_str()), selectedJoystick == i) {
+							auto name = joystickManager.getDisplayName(joysticks[i]);
+							if (ImGui::Selectable(tmpStrCat(name, "##", i).c_str(), selectedJoystick == i)) {
 								selectedJoystick = unsigned(i);
 							}
 						}

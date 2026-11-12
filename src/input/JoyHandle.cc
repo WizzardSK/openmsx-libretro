@@ -63,10 +63,12 @@ JoyHandle::JoyHandle(CommandController& commandController_,
 	} catch (MSXException& /*e*/) {
 		configSetting.setValue(getDefaultConfig(JoystickId(id - 1), joystickManager));
 	}
+	joystickManager.attach(*this);
 }
 
 JoyHandle::~JoyHandle()
 {
+	joystickManager.detach(*this);
 	if (isPluggedIn()) {
 		JoyHandle::unplugHelper(EmuTime::dummy());
 	}
@@ -153,7 +155,7 @@ void JoyHandle::resetWheelCache()
 }
 
 // MSXJoystickDevice
-uint8_t JoyHandle::read(EmuTime time)
+uint8_t JoyHandle::peek(EmuTime time) const
 {
 	Clock<2> clock(EmuTime::zero()); // ticks at 2Hz
 	uint8_t cycle = clock.getTicksTill(time) & 1;
@@ -234,6 +236,13 @@ void JoyHandle::stopReplay(EmuTime time) noexcept
 		stateChangeDistributor.distributeNew<JoyHandleState>(
 			time, id, uint8_t(0), release, 0.0f);
 	}
+}
+
+// Observer<JoystickManager>
+void JoyHandle::update(const JoystickManager& /*manager*/) noexcept
+{
+	// A host joystick was added or removed: the default mapping may change.
+	configSetting.setDefaultValue(getDefaultConfig(JoystickId(id - 1), joystickManager));
 }
 
 
