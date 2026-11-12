@@ -209,6 +209,24 @@ CMAKE_COMMON_FLAGS:=-G "Unix Makefiles" \
 	-DCMAKE_C_FLAGS="$(CMAKE_COMPILE_FLAGS)" \
 	-DCMAKE_OBJC_FLAGS="$(CMAKE_COMPILE_FLAGS)" \
 	$(CMAKE_TARGET_FLAGS) $(CMAKE_LIBRETRO_FLAGS)
+ifeq ($(OPENMSX_TARGET_OS),android)
+# Android: the libraries built with CMake (SDL3, SDL3_ttf) need the NDK's toolchain
+# file, or CMake configures them for the build machine: the NDK is found from
+# the compiler on the PATH (<ndk>/toolchains/llvm/prebuilt/<host>/bin/clang).
+# Here and not in platform-android.mk: buildinfo2code.py reads that one with
+# its own make parser, which knows no $(shell).
+ANDROID_NDK_DIR:=$(abspath $(dir $(shell command -v $(firstword $(CC))))/../../../../..)
+ANDROID_ABI_NAME:=$(if $(filter aarch64,$(OPENMSX_TARGET_CPU)),arm64-v8a,$(if $(filter arm,$(OPENMSX_TARGET_CPU)),armeabi-v7a,$(OPENMSX_TARGET_CPU)))
+CMAKE_COMMON_FLAGS+=\
+	-DCMAKE_TOOLCHAIN_FILE=$(ANDROID_NDK_DIR)/build/cmake/android.toolchain.cmake \
+	-DANDROID_ABI=$(ANDROID_ABI_NAME) \
+	-DANDROID_PLATFORM=24 \
+	-DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=BOTH \
+	-DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=BOTH \
+	-DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=BOTH
+# (the toolchain file looks only inside the NDK's sysroot; SDL3_ttf has to
+# find SDL3 and FreeType in the 3rdparty install prefix, CMAKE_PREFIX_PATH)
+endif
 ifeq ($(TRIPLE_OS),mingw32)
 # SDL3 and SDL3_ttf both contain this toolchain file (relative to the source).
 CMAKE_COMMON_FLAGS+=-DCMAKE_TOOLCHAIN_FILE=build-scripts/cmake-toolchain-mingw64-$(TRIPLE_MACHINE).cmake
