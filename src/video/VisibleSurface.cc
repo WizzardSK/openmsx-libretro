@@ -8,6 +8,7 @@
 #include "OffScreenSurface.hh"
 #include "PixelOperations.hh"
 #include "RenderSettings.hh"
+#include "SDLProperties.hh"
 #include "VideoSystem.hh"
 
 #include "BooleanSetting.hh"
@@ -23,6 +24,7 @@
 #include "MemBuffer.hh"
 #include "OSDGUILayer.hh"
 #include "PNG.hh"
+#include "Timer.hh"
 
 #include "narrow.hh"
 #include "outer.hh"
@@ -32,14 +34,27 @@
 
 #include <imgui.h>
 #include <imgui_impl_opengl3.h>
-#include <imgui_impl_sdl2.h>
+#include <imgui_impl_sdl3.h>
 
+#include <algorithm>
 #include <bit>
 #include <cassert>
 #include <memory>
 #include <ranges>
 
 namespace openmsx {
+
+// A buffer swap normally takes at most a few tens of milliseconds, and less
+// than 200 ms under a heavy CPU and I/O load, while a blocked swap of a hidden
+// window takes about a second. So a buffer swap of more than this (in
+// microseconds) means that vsync blocks it (see vSyncSuspended).
+static constexpr uint64_t SLOW_SWAP_TIME = 500'000;
+// The number of consecutive slow buffer swaps that suspend vsync. While
+// probing, a single slow swap is enough.
+static constexpr int SLOW_SWAPS_TO_SUSPEND = 2;
+// The number of consecutive fast buffer swaps after which probing ends: the
+// window is visible again.
+static constexpr int FAST_SWAPS_TO_RESUME = 10;
 
 VisibleSurface::VisibleSurface(
 		Display& display_,
@@ -83,7 +98,7 @@ VisibleSurface::VisibleSurface(
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
 #endif
 
-	int flags = SDL_WINDOW_OPENGL;
+	SDL_WindowFlags flags = SDL_WINDOW_OPENGL;
 	//flags |= SDL_RESIZABLE;
 	auto size = display.getWindowSize();
 	createSurface(size, flags);
@@ -96,7 +111,7 @@ VisibleSurface::VisibleSurface(
 	}
 
 	// Setup ImGui Platform/Renderer backends
-	ImGui_ImplSDL2_InitForOpenGL(window.get(), glContext);
+	ImGui_ImplSDL3_InitForOpenGL(window.get(), glContext);
 	ImGui_ImplOpenGL3_Init(glsl_version);
 
 	// From the glew documentation:
@@ -155,7 +170,8 @@ VisibleSurface::VisibleSurface(
 	for (auto type : {EventType::MOUSE_MOTION,
 	                  EventType::MOUSE_BUTTON_DOWN,
 	                  EventType::MOUSE_BUTTON_UP,
-	                  EventType::IMGUI_ACTIVE}) {
+	                  EventType::IMGUI_ACTIVE,
+	                  EventType::WINDOW}) {
 		eventDistributor.registerEventListener(type, *this);
 	}
 }
@@ -166,10 +182,10 @@ VisibleSurface::~VisibleSurface()
 	renderSettings.getVSyncSetting().detach(vSyncObserver);
 
 	ImGui_ImplOpenGL3_Shutdown();
-	ImGui_ImplSDL2_Shutdown();
+	ImGui_ImplSDL3_Shutdown();
 
 	gl::context.reset();
-	SDL_GL_DeleteContext(glContext);
+	SDL_GL_DestroyContext(glContext);
 
 	// store last known position for when we recreate it
 	// the window gets recreated when changing renderers, for instance.
@@ -178,7 +194,8 @@ VisibleSurface::~VisibleSurface()
 		display.storeWindowPosition(*pos);
 	}
 
-	for (auto type : {EventType::IMGUI_ACTIVE,
+	for (auto type : {EventType::WINDOW,
+	                  EventType::IMGUI_ACTIVE,
 	                  EventType::MOUSE_BUTTON_UP,
 	                  EventType::MOUSE_BUTTON_DOWN,
 	                  EventType::MOUSE_MOTION}) {
@@ -208,32 +225,35 @@ void VisibleSurface::setWindowPosition(gl::ivec2 pos)
 // TODO: The video subsystem is not de-initialized on errors.
 //       While it would be consistent to do so, doing it in this class is
 //       not ideal since the init doesn't happen here.
-void VisibleSurface::createSurface(gl::ivec2 size, unsigned flags)
+void VisibleSurface::createSurface(gl::ivec2 size, SDL_WindowFlags flags)
 {
 	if (getDisplay().getRenderSettings().getFullScreen()) {
-		flags |= SDL_WINDOW_FULLSCREEN_DESKTOP;
+		flags |= SDL_WINDOW_FULLSCREEN;
 	}
 #ifdef __APPLE__
 	// See VisibleSurface::setViewPort() for why only macos (for now).
-	flags |= SDL_WINDOW_ALLOW_HIGHDPI;
+	flags |= SDL_WINDOW_HIGH_PIXEL_DENSITY;
 #endif
 
 	assert(!window);
 	auto pos = display.retrieveWindowPosition();
-	window.reset(SDL_CreateWindow(
-			getDisplay().getWindowTitle().c_str(),
-			pos.x, pos.y,
-			size.x, size.y,
-			flags));
+	SDLProperties props;
+	SDL_SetStringProperty(props.get(), SDL_PROP_WINDOW_CREATE_TITLE_STRING, getDisplay().getWindowTitle().c_str());
+	SDL_SetNumberProperty(props.get(), SDL_PROP_WINDOW_CREATE_X_NUMBER, pos.x);
+	SDL_SetNumberProperty(props.get(), SDL_PROP_WINDOW_CREATE_Y_NUMBER, pos.y);
+	SDL_SetNumberProperty(props.get(), SDL_PROP_WINDOW_CREATE_WIDTH_NUMBER, size.x);
+	SDL_SetNumberProperty(props.get(), SDL_PROP_WINDOW_CREATE_HEIGHT_NUMBER, size.y);
+	SDL_SetNumberProperty(props.get(), SDL_PROP_WINDOW_CREATE_FLAGS_NUMBER, flags);
+	window.reset(SDL_CreateWindowWithProperties(props.get()));
 	if (!window) {
 		std::string err = SDL_GetError();
 		throw InitException("Could not create window: ", err);
 	}
+	// SDL3 may apply the window state (e.g. fullscreen) asynchronously,
+	// but we need the final size right away (see setViewPort()).
+	SDL_SyncWindow(window.get());
 
 	updateWindowTitle();
-
-	// prefer linear filtering (instead of nearest neighbour)
-	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
 
 	// set icon
 	if constexpr (OPENMSX_SET_WINDOW_ICON) {
@@ -248,20 +268,21 @@ void VisibleSurface::createSurface(gl::ivec2 size, unsigned flags)
 				e.getMessage());
 #endif
 			PixelOperations pixelOps;
-			iconSurf.reset(SDL_CreateRGBSurfaceFrom(
-				const_cast<char*>(openMSX_icon.pixel_data),
+			iconSurf.reset(SDL_CreateSurfaceFrom(
 				narrow<int>(openMSX_icon.width),
 				narrow<int>(openMSX_icon.height),
-				narrow<int>(openMSX_icon.bytes_per_pixel * 8),
-				narrow<int>(openMSX_icon.bytes_per_pixel * openMSX_icon.width),
-				pixelOps.getRmask(),
-				pixelOps.getGmask(),
-				pixelOps.getBmask(),
-				pixelOps.getAmask()));
+				SDL_GetPixelFormatForMasks(
+					narrow<int>(openMSX_icon.bytes_per_pixel * 8),
+					pixelOps.getRmask(),
+					pixelOps.getGmask(),
+					pixelOps.getBmask(),
+					pixelOps.getAmask()),
+				const_cast<char*>(openMSX_icon.pixel_data),
+				narrow<int>(openMSX_icon.bytes_per_pixel * openMSX_icon.width)));
 #ifndef _WIN32
 		}
 #endif
-		SDL_SetColorKey(iconSurf.get(), SDL_TRUE, 0);
+		SDL_SetSurfaceColorKey(iconSurf.get(), true, 0);
 		SDL_SetWindowIcon(window.get(), iconSurf.get());
 	}
 }
@@ -280,6 +301,36 @@ void VisibleSurface::executeRT()
 
 bool VisibleSurface::signalEvent(const Event& event)
 {
+	if (getType(event) == EventType::WINDOW) {
+		const auto& e = get_event<WindowEvent>(event);
+		if (e.isMainWindow()) {
+			switch (e.getSdlWindowEvent().type) {
+			case SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED:
+				// SDL3 may report the final size of the window only
+				// later, even after SDL_SyncWindow() (e.g. when
+				// switching to fullscreen on GNOME it first reports
+				// the size without the top bar), so update the
+				// viewport when it changes.
+				fullScreenUpdated((SDL_GetWindowFlags(window.get()) & SDL_WINDOW_FULLSCREEN) != 0);
+				break;
+			case SDL_EVENT_WINDOW_MINIMIZED:
+			case SDL_EVENT_WINDOW_OCCLUDED:
+				suspendVSyncForEvent();
+				break;
+			case SDL_EVENT_WINDOW_RESTORED:
+			case SDL_EVENT_WINDOW_EXPOSED:
+			case SDL_EVENT_WINDOW_FOCUS_GAINED:
+			case SDL_EVENT_WINDOW_MOUSE_ENTER:
+				// (when the window isn't visible after all, slow
+				// buffer swaps suspend vsync again)
+				resumeVSyncForEvent();
+				break;
+			default:
+				break;
+			}
+		}
+		return false;
+	}
 	if (getType(event) == EventType::IMGUI_ACTIVE) {
 		guiActive = get_event<ImGuiActiveEvent>(event).getActive();
 	}
@@ -323,17 +374,27 @@ void VisibleSurface::updateCursor()
 bool VisibleSurface::setFullScreen(bool fullscreen)
 {
 	auto flags = SDL_GetWindowFlags(window.get());
-	// Note: SDL_WINDOW_FULLSCREEN_DESKTOP also has the SDL_WINDOW_FULLSCREEN
-	//       bit set.
 	if (bool currentState = (flags & SDL_WINDOW_FULLSCREEN) != 0;
 	    currentState == fullscreen) {
 		// already wanted stated
 		return true;
 	}
 
-	if (SDL_SetWindowFullscreen(window.get(),
-			fullscreen ? SDL_WINDOW_FULLSCREEN_DESKTOP : 0) != 0) {
+	// Note: without a fullscreen display mode (SDL_SetWindowFullscreenMode())
+	//       this is a borderless window covering the desktop, like SDL2's
+	//       SDL_WINDOW_FULLSCREEN_DESKTOP.
+	if (!SDL_SetWindowFullscreen(window.get(), fullscreen)) {
 		return false; // error, try re-creating the window
+	}
+	// SDL3 may apply this asynchronously, wait for it (see setViewPort()).
+	SDL_SyncWindow(window.get());
+	if (!fullscreen) {
+		// While fullscreen, SDL3 ignores size changes (e.g. from
+		// resize()). SDL2 applied them when leaving fullscreen, so set
+		// the size again.
+		auto size = display.getWindowSize();
+		SDL_SetWindowSize(window.get(), size.x, size.y);
+		SDL_SyncWindow(window.get());
 	}
 	fullScreenUpdated(fullscreen);
 	return true; // success
@@ -343,6 +404,7 @@ void VisibleSurface::resize()
 {
 	auto size = display.getWindowSize();
 	SDL_SetWindowSize(window.get(), size.x, size.y);
+	SDL_SyncWindow(window.get()); // see setFullScreen()
 
 	bool fullScreen = display.getRenderSettings().getFullScreen();
 	setViewPort(size, fullScreen);
@@ -358,9 +420,11 @@ std::optional<gl::ivec2> VisibleSurface::getMouseCoord() const
 {
 	if (SDL_GetMouseFocus() != window.get()) return {};
 
-	int mouseX, mouseY;
+	float mouseX, mouseY;
 	SDL_GetMouseState(&mouseX, &mouseY);
-	return gl::ivec2{mouseX, mouseY};
+	// KEEP-SDL2: SDL3 uses float coordinates, SDL2 used whole window
+	// coordinates
+	return gl::ivec2{int(mouseX), int(mouseY)};
 }
 
 gl::vec2 VisibleSurface::getMsxPixelSize() const
@@ -408,7 +472,74 @@ void VisibleSurface::saveScreenshotGL(
 
 void VisibleSurface::finish()
 {
+	auto start = Timer::getTime();
 	SDL_GL_SwapWindow(window.get());
+	checkSwapTime(start);
+}
+
+void VisibleSurface::checkSwapTime(uint64_t start)
+{
+	auto now = Timer::getTime();
+	if (vSyncSuspended) {
+		if (vSyncRetryTime && (now >= vSyncRetryTime)) {
+			// Switch vsync on again, to see whether the window is
+			// visible again. Mesa (DRI3) waits for the pending buffer
+			// swap before it changes the swap interval, so if that
+			// takes long, the window is still hidden.
+			vSyncRetryTime = 0;
+			vSyncProbing = true;
+			slowSwaps = fastSwaps = 0;
+			setVSyncSuspended(false);
+			if ((Timer::getTime() - now) > SLOW_SWAP_TIME) {
+				suspendVSyncForSlowSwaps();
+			}
+		}
+	} else if ((now - start) > SLOW_SWAP_TIME) {
+		fastSwaps = 0;
+		if (++slowSwaps >= (vSyncProbing ? 1 : SLOW_SWAPS_TO_SUSPEND)) {
+			suspendVSyncForSlowSwaps();
+		}
+	} else {
+		slowSwaps = 0;
+		if (vSyncProbing && (++fastSwaps >= FAST_SWAPS_TO_RESUME)) {
+			vSyncProbing = false;
+			vSyncRetryDelay = VSYNC_RETRY_DELAY_MIN;
+		}
+	}
+}
+
+void VisibleSurface::suspendVSyncForSlowSwaps()
+{
+	// (this can take as long as a slow buffer swap, see above)
+	setVSyncSuspended(true);
+	slowSwaps = 0;
+	vSyncProbing = false;
+	vSyncRetryTime = Timer::getTime() + vSyncRetryDelay;
+	vSyncRetryDelay = std::min(2 * vSyncRetryDelay, VSYNC_RETRY_DELAY_MAX);
+}
+
+void VisibleSurface::setVSyncSuspended(bool suspend)
+{
+	if (suspend == vSyncSuspended) return;
+	vSyncSuspended = suspend;
+	updateSwapInterval();
+}
+
+void VisibleSurface::suspendVSyncForEvent()
+{
+	setVSyncSuspended(true);
+	vSyncProbing = false;
+	slowSwaps = fastSwaps = 0;
+	vSyncRetryTime = 0; // an event will resume it
+}
+
+void VisibleSurface::resumeVSyncForEvent()
+{
+	setVSyncSuspended(false);
+	vSyncProbing = false;
+	slowSwaps = fastSwaps = 0;
+	vSyncRetryTime = 0;
+	vSyncRetryDelay = VSYNC_RETRY_DELAY_MIN;
 }
 
 std::unique_ptr<Layer> VisibleSurface::createSnowLayer()
@@ -433,15 +564,20 @@ std::unique_ptr<OutputSurface> VisibleSurface::createOffScreenSurface()
 
 void VisibleSurface::VSyncObserver::update(const Setting& setting) noexcept
 {
-	const auto& visSurface = OUTER(VisibleSurface, vSyncObserver);
-	const auto& syncSetting = visSurface.getDisplay().getRenderSettings().getVSyncSetting();
-	assert(&setting == &syncSetting); (void)setting;
+	auto& visSurface = OUTER(VisibleSurface, vSyncObserver);
+	assert(&setting == &visSurface.getDisplay().getRenderSettings().getVSyncSetting()); (void)setting;
+	visSurface.updateSwapInterval();
+}
 
+void VisibleSurface::updateSwapInterval()
+{
 	// for now, we assume that adaptive vsync is the best kind of vsync, so when
 	// vsync is enabled, we attempt adaptive vsync.
-	int interval = syncSetting.getBoolean() ? -1 : 0;
+	int interval = (!vSyncSuspended &&
+	                getDisplay().getRenderSettings().getVSyncSetting().getBoolean())
+	             ? -1 : 0;
 
-	if ((SDL_GL_SetSwapInterval(interval) < 0) && (interval == -1)) {
+	if (!SDL_GL_SetSwapInterval(interval) && (interval == -1)) {
 		// "Adaptive vsync" is not supported by all drivers. SDL
 		// documentation suggests to fallback to "regular vsync" in
 		// that case.
@@ -453,12 +589,12 @@ void VisibleSurface::setViewPort(gl::ivec2 logicalSize, bool fullScreen)
 {
 	gl::ivec2 physicalSize = [&] {
 #ifndef __APPLE__
-		// On macos we set 'SDL_WINDOW_ALLOW_HIGHDPI', and in that case
-		// it's required to use SDL_GL_GetDrawableSize(), but then this
+		// On macos we set 'SDL_WINDOW_HIGH_PIXEL_DENSITY', and in that case
+		// it's required to use SDL_GetWindowSizeInPixels(), but then this
 		// 'full screen'-workaround/hack is counter-productive.
 		if (!fullScreen) {
 			// ??? When switching  back from full screen to windowed mode,
-			// SDL_GL_GetDrawableSize() still returns the dimensions of the
+			// SDL_GetWindowSizeInPixels() still returns the dimensions of the
 			// full screen window ??? Is this a bug ???
 			// But we know that in windowed mode, physical and logical size
 			// must be the same, so enforce that.
@@ -467,7 +603,7 @@ void VisibleSurface::setViewPort(gl::ivec2 logicalSize, bool fullScreen)
 #endif
 		(void)fullScreen;
 		int w, h;
-		SDL_GL_GetDrawableSize(window.get(), &w, &h);
+		SDL_GetWindowSizeInPixels(window.get(), &w, &h);
 		return gl::ivec2(w, h);
 	}();
 

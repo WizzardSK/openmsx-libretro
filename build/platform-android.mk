@@ -9,9 +9,21 @@ USE_SYMLINK:=false
 EXEEXT:=
 LIBRARYEXT:=.so
 
-TARGET_FLAGS:=-DANDROID -fPIC
+ANDROID_TARGET_FLAGS:=-DANDROID -fPIC
+TARGET_FLAGS+=$(ANDROID_TARGET_FLAGS)
+CMAKE_COMPILE_FLAGS+=$(ANDROID_TARGET_FLAGS)
 
 LINK_FLAGS+=-llog
+
+# The libraries built with CMake (SDL3, SDL3_ttf) need the NDK's toolchain
+# file, or CMake configures them for the build machine: the NDK is found from
+# the compiler on the PATH (<ndk>/toolchains/llvm/prebuilt/<host>/bin/clang).
+ANDROID_NDK_DIR:=$(abspath $(dir $(shell command -v $(firstword $(CC))))/../../../../..)
+ANDROID_ABI_NAME:=$(if $(filter aarch64,$(OPENMSX_TARGET_CPU)),arm64-v8a,$(if $(filter arm,$(OPENMSX_TARGET_CPU)),armeabi-v7a,$(OPENMSX_TARGET_CPU)))
+CMAKE_TARGET_FLAGS+=\
+	-DCMAKE_TOOLCHAIN_FILE=$(ANDROID_NDK_DIR)/build/cmake/android.toolchain.cmake \
+	-DANDROID_ABI=$(ANDROID_ABI_NAME) \
+	-DANDROID_PLATFORM=24
 #LDFLAGS+=--no-undefined
 
 # Build a maximum set of components.

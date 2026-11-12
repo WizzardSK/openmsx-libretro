@@ -56,10 +56,10 @@
 #include <CustomFont.ii> // icons for ImGuiFileDialog
 #include <imgui.h>
 #include <imgui_impl_opengl3.h>
-#include <imgui_impl_sdl2.h>
+#include <imgui_impl_sdl3.h>
 #include <imgui_internal.h>
 
-#include <SDL.h>
+#include <SDL3/SDL.h>
 
 #include <algorithm>
 
@@ -137,6 +137,11 @@ void ImGuiManager::initializeImGui()
 	                  //ImGuiConfigFlags_NavEnableGamepad | // TODO revisit this later
 	                  ImGuiConfigFlags_DockingEnable |
 	                  ImGuiConfigFlags_ViewportsEnable;
+	// KEEP-SDL2: The SDL3 backend can make the ImGui windows outside the
+	// main window children of the main window (always on top of it and
+	// minimized together with it). Keep them independent windows, like
+	// with SDL2.
+	io.ConfigViewportsNoDefaultParent = true;
 	static auto iniFilename = systemFileContext().resolveCreate("imgui.ini");
 	io.IniFilename = iniFilename.c_str();
 
@@ -318,7 +323,7 @@ static gl::ivec2 ensureVisible(gl::ivec2 windowPos, gl::ivec2 windowSize)
 	if (const auto& monitors = ImGui::GetPlatformIO().Monitors;
 	    !monitors.empty() && std::ranges::none_of(monitors, overlaps)) {
 		// window isn't visible in any of the monitors
-		// -> place centered on primary monitor
+		// -> place centered on the nearest monitor
 		return gl::ivec2(SDL_WINDOWPOS_CENTERED);
 	}
 	return windowPos; // current placement is fine
@@ -395,12 +400,12 @@ bool ImGuiManager::signalEvent(const Event& event)
 			return false;
 		}
 		const SDL_Event& sdlEvent = evt->getSdlEvent();
-		ImGui_ImplSDL2_ProcessEvent(&sdlEvent);
+		ImGui_ImplSDL3_ProcessEvent(&sdlEvent);
 		if ((io.WantCaptureMouse &&
-		     sdlEvent.type == one_of(SDL_MOUSEMOTION, SDL_MOUSEWHEEL,
-		                             SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONUP)) ||
+		     sdlEvent.type == one_of(SDL_EVENT_MOUSE_MOTION, SDL_EVENT_MOUSE_WHEEL,
+		                             SDL_EVENT_MOUSE_BUTTON_DOWN, SDL_EVENT_MOUSE_BUTTON_UP)) ||
 		    (io.WantCaptureKeyboard &&
-		     sdlEvent.type == one_of(SDL_KEYDOWN, SDL_KEYUP, SDL_TEXTINPUT))) {
+		     sdlEvent.type == one_of(SDL_EVENT_KEY_DOWN, SDL_EVENT_KEY_UP, SDL_EVENT_TEXT_INPUT))) {
 			return true; // block event for lower priority listeners
 		}
 	} else {
@@ -514,6 +519,11 @@ void ImGuiManager::paintImGui(bool msxDisplayAreaFocused)
 	updateParts();
 
 	auto* motherBoard = reactor.getMotherBoard();
+	if (motherBoard && !motherBoard->getMachineConfig()) {
+		// An empty machine (made by 'create_machine', without a
+		// machine loaded in it) has no devices: show it as no machine.
+		motherBoard = nullptr;
+	}
 	for (auto* part : parts) {
 		part->paint(motherBoard);
 	}

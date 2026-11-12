@@ -11,9 +11,14 @@ namespace openmsx {
 {
 	return {
 		{"RALT",        SDLK_RALT},
-		{"MENU",        SDLK_MENU},
+		// The context menu key of PC keyboards. SDL calls it "Menu" too (on
+		// most platforms), but its keycode is SDLK_APPLICATION. SDLK_MENU is
+		// a different key, which PC keyboards don't have.
+		{"MENU",        SDLK_APPLICATION},
 		{"RCTRL",       SDLK_RCTRL},
-		//{"HENKAN_MODE", Keys::K_HENKAN_MODE},
+		{"HENKAN",      SDLK_HENKAN},
+		{"MUHENKAN",    SDLK_MUHENKAN},
+		{"HENKAN_MODE", SDLK_HENKAN}, // bw-compat
 		{"RSHIFT",      SDLK_RSHIFT},
 		{"RGUI",        SDLK_RGUI},
 		{"LGUI",        SDLK_LGUI},

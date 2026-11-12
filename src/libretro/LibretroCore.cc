@@ -49,7 +49,7 @@
 #include "libretro.h"
 #include "libretro_core_options.h"
 
-#include <SDL.h>
+#include <SDL3/SDL.h>
 
 #include <algorithm>
 #include <array>
@@ -508,7 +508,8 @@ void drawText(const TTFFont& font, const std::string& text, int x, int y, uint32
 			uint32_t value;
 			std::memcpy(&value, row + size_t(sx) * 4, 4);
 			uint8_t r, g, b, a;
-			SDL_GetRGBA(value, s->format, &r, &g, &b, &a);
+			SDL_GetRGBA(value, SDL_GetPixelFormatDetails(s->format),
+			            SDL_GetSurfacePalette(s), &r, &g, &b, &a);
 			uint32_t& out = info.pixels[size_t(py) * info.width + px];
 			auto mix = [&](unsigned shift, uint8_t c) {
 				unsigned bg = (out >> shift) & 0xFF;
@@ -743,7 +744,7 @@ bool startEmulator(bool useOptions)
 	try {
 		log(RETRO_LOG_INFO, "core built from %s\n", OPENMSX_LIBRETRO_COMMIT);
 		randomize();
-		if (SDL_Init(SDL_INIT_EVENTS | SDL_INIT_TIMER) < 0) {
+		if (!SDL_Init(SDL_INIT_EVENTS)) {
 			log(RETRO_LOG_ERROR, "SDL_Init: %s\n", SDL_GetError());
 			return false;
 		}
@@ -877,7 +878,7 @@ constexpr KeyMap keyMap[] = {
 	{RETROK_PAUSE, SDL_SCANCODE_PAUSE, SDLK_PAUSE},
 	{RETROK_ESCAPE, SDL_SCANCODE_ESCAPE, SDLK_ESCAPE},
 	{RETROK_SPACE, SDL_SCANCODE_SPACE, SDLK_SPACE},
-	{RETROK_QUOTE, SDL_SCANCODE_APOSTROPHE, SDLK_QUOTE},
+	{RETROK_QUOTE, SDL_SCANCODE_APOSTROPHE, SDLK_APOSTROPHE},
 	{RETROK_COMMA, SDL_SCANCODE_COMMA, SDLK_COMMA},
 	{RETROK_MINUS, SDL_SCANCODE_MINUS, SDLK_MINUS},
 	{RETROK_PERIOD, SDL_SCANCODE_PERIOD, SDLK_PERIOD},
@@ -892,20 +893,20 @@ constexpr KeyMap keyMap[] = {
 	{RETROK_LEFTBRACKET, SDL_SCANCODE_LEFTBRACKET, SDLK_LEFTBRACKET},
 	{RETROK_BACKSLASH, SDL_SCANCODE_BACKSLASH, SDLK_BACKSLASH},
 	{RETROK_RIGHTBRACKET, SDL_SCANCODE_RIGHTBRACKET, SDLK_RIGHTBRACKET},
-	{RETROK_BACKQUOTE, SDL_SCANCODE_GRAVE, SDLK_BACKQUOTE},
-	{RETROK_a, SDL_SCANCODE_A, SDLK_a}, {RETROK_b, SDL_SCANCODE_B, SDLK_b},
-	{RETROK_c, SDL_SCANCODE_C, SDLK_c}, {RETROK_d, SDL_SCANCODE_D, SDLK_d},
-	{RETROK_e, SDL_SCANCODE_E, SDLK_e}, {RETROK_f, SDL_SCANCODE_F, SDLK_f},
-	{RETROK_g, SDL_SCANCODE_G, SDLK_g}, {RETROK_h, SDL_SCANCODE_H, SDLK_h},
-	{RETROK_i, SDL_SCANCODE_I, SDLK_i}, {RETROK_j, SDL_SCANCODE_J, SDLK_j},
-	{RETROK_k, SDL_SCANCODE_K, SDLK_k}, {RETROK_l, SDL_SCANCODE_L, SDLK_l},
-	{RETROK_m, SDL_SCANCODE_M, SDLK_m}, {RETROK_n, SDL_SCANCODE_N, SDLK_n},
-	{RETROK_o, SDL_SCANCODE_O, SDLK_o}, {RETROK_p, SDL_SCANCODE_P, SDLK_p},
-	{RETROK_q, SDL_SCANCODE_Q, SDLK_q}, {RETROK_r, SDL_SCANCODE_R, SDLK_r},
-	{RETROK_s, SDL_SCANCODE_S, SDLK_s}, {RETROK_t, SDL_SCANCODE_T, SDLK_t},
-	{RETROK_u, SDL_SCANCODE_U, SDLK_u}, {RETROK_v, SDL_SCANCODE_V, SDLK_v},
-	{RETROK_w, SDL_SCANCODE_W, SDLK_w}, {RETROK_x, SDL_SCANCODE_X, SDLK_x},
-	{RETROK_y, SDL_SCANCODE_Y, SDLK_y}, {RETROK_z, SDL_SCANCODE_Z, SDLK_z},
+	{RETROK_BACKQUOTE, SDL_SCANCODE_GRAVE, SDLK_GRAVE},
+	{RETROK_a, SDL_SCANCODE_A, SDLK_A}, {RETROK_b, SDL_SCANCODE_B, SDLK_B},
+	{RETROK_c, SDL_SCANCODE_C, SDLK_C}, {RETROK_d, SDL_SCANCODE_D, SDLK_D},
+	{RETROK_e, SDL_SCANCODE_E, SDLK_E}, {RETROK_f, SDL_SCANCODE_F, SDLK_F},
+	{RETROK_g, SDL_SCANCODE_G, SDLK_G}, {RETROK_h, SDL_SCANCODE_H, SDLK_H},
+	{RETROK_i, SDL_SCANCODE_I, SDLK_I}, {RETROK_j, SDL_SCANCODE_J, SDLK_J},
+	{RETROK_k, SDL_SCANCODE_K, SDLK_K}, {RETROK_l, SDL_SCANCODE_L, SDLK_L},
+	{RETROK_m, SDL_SCANCODE_M, SDLK_M}, {RETROK_n, SDL_SCANCODE_N, SDLK_N},
+	{RETROK_o, SDL_SCANCODE_O, SDLK_O}, {RETROK_p, SDL_SCANCODE_P, SDLK_P},
+	{RETROK_q, SDL_SCANCODE_Q, SDLK_Q}, {RETROK_r, SDL_SCANCODE_R, SDLK_R},
+	{RETROK_s, SDL_SCANCODE_S, SDLK_S}, {RETROK_t, SDL_SCANCODE_T, SDLK_T},
+	{RETROK_u, SDL_SCANCODE_U, SDLK_U}, {RETROK_v, SDL_SCANCODE_V, SDLK_V},
+	{RETROK_w, SDL_SCANCODE_W, SDLK_W}, {RETROK_x, SDL_SCANCODE_X, SDLK_X},
+	{RETROK_y, SDL_SCANCODE_Y, SDLK_Y}, {RETROK_z, SDL_SCANCODE_Z, SDLK_Z},
 	{RETROK_DELETE, SDL_SCANCODE_DELETE, SDLK_DELETE},
 	{RETROK_KP0, SDL_SCANCODE_KP_0, SDLK_KP_0}, {RETROK_KP1, SDL_SCANCODE_KP_1, SDLK_KP_1},
 	{RETROK_KP2, SDL_SCANCODE_KP_2, SDLK_KP_2}, {RETROK_KP3, SDL_SCANCODE_KP_3, SDLK_KP_3},
@@ -943,11 +944,11 @@ void sendKey(bool down, SDL_Scancode scan, SDL_Keycode sym)
 {
 	SDL_Event evt;
 	evt.key = SDL_KeyboardEvent{};
-	evt.key.type = down ? SDL_KEYDOWN : SDL_KEYUP;
-	evt.key.timestamp = SDL_GetTicks();
-	evt.key.state = down ? SDL_PRESSED : SDL_RELEASED;
-	evt.key.keysym.scancode = scan;
-	evt.key.keysym.sym = sym;
+	evt.key.type = down ? SDL_EVENT_KEY_DOWN : SDL_EVENT_KEY_UP;
+	evt.key.timestamp = SDL_GetTicksNS();
+	evt.key.down = down;
+	evt.key.scancode = scan;
+	evt.key.key = sym;
 	auto& distributor = reactor->getEventDistributor();
 	if (down) {
 		distributor.distributeEvent(KeyDownEvent(evt));
@@ -1009,7 +1010,7 @@ constexpr PadKey cursorKeys[] = {
 	{RETRO_DEVICE_ID_JOYPAD_LEFT, SDL_SCANCODE_LEFT, SDLK_LEFT},
 	{RETRO_DEVICE_ID_JOYPAD_RIGHT, SDL_SCANCODE_RIGHT, SDLK_RIGHT},
 	{RETRO_DEVICE_ID_JOYPAD_A, SDL_SCANCODE_SPACE, SDLK_SPACE},
-	{RETRO_DEVICE_ID_JOYPAD_B, SDL_SCANCODE_M, SDLK_m},
+	{RETRO_DEVICE_ID_JOYPAD_B, SDL_SCANCODE_M, SDLK_M},
 };
 
 /** Plugs into the MSX's joystick ports what the frontend's ports hold. */
@@ -1139,10 +1140,10 @@ void pollMouse(unsigned port, PortState& state, bool paddle)
 	if (dx || dy) {
 		SDL_Event evt;
 		evt.motion = SDL_MouseMotionEvent{};
-		evt.motion.type = SDL_MOUSEMOTION;
-		evt.motion.timestamp = SDL_GetTicks();
-		evt.motion.xrel = dx;
-		evt.motion.yrel = dy;
+		evt.motion.type = SDL_EVENT_MOUSE_MOTION;
+		evt.motion.timestamp = SDL_GetTicksNS();
+		evt.motion.xrel = float(dx);
+		evt.motion.yrel = float(dy);
 		distributor.distributeEvent(MouseMotionEvent(evt));
 	}
 	static constexpr struct { unsigned id; uint8_t sdl; } buttons[] = {
@@ -1155,10 +1156,10 @@ void pollMouse(unsigned port, PortState& state, bool paddle)
 		state.mouseButtons ^= 1u << i;
 		SDL_Event evt;
 		evt.button = SDL_MouseButtonEvent{};
-		evt.button.type = down ? SDL_MOUSEBUTTONDOWN : SDL_MOUSEBUTTONUP;
-		evt.button.timestamp = SDL_GetTicks();
+		evt.button.type = down ? SDL_EVENT_MOUSE_BUTTON_DOWN : SDL_EVENT_MOUSE_BUTTON_UP;
+		evt.button.timestamp = SDL_GetTicksNS();
 		evt.button.button = buttons[i].sdl;
-		evt.button.state = down ? SDL_PRESSED : SDL_RELEASED;
+		evt.button.down = down;
 		if (down) {
 			distributor.distributeEvent(MouseButtonDownEvent(evt));
 		} else {
