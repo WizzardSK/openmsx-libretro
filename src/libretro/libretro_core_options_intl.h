@@ -39,9 +39,9 @@ extern "C" {
 */
 /* RETRO_LANGUAGE_AR */
 
-#define CATEGORY_SYSTEM_LABEL_AR NULL
+#define CATEGORY_SYSTEM_LABEL_AR "نظام"
 #define CATEGORY_SYSTEM_INFO_0_AR NULL
-#define CATEGORY_VIDEO_LABEL_AR NULL
+#define CATEGORY_VIDEO_LABEL_AR "الفيديو"
 #define CATEGORY_VIDEO_INFO_0_AR NULL
 #define OPENMSX_MACHINE_LABEL_AR NULL
 #define OPENMSX_MACHINE_LABEL_CAT_AR NULL
@@ -69,7 +69,7 @@ extern "C" {
 #define OPTION_VAL_PANASONIC_FS_A1GT_AR NULL
 #define OPENMSX_SCALE_LABEL_AR NULL
 #define OPENMSX_SCALE_INFO_0_AR NULL
-#define OPTION_VAL_AUTO_AR NULL
+#define OPTION_VAL_AUTO_AR "تلقائي"
 #define OPTION_VAL_1_AR NULL
 #define OPTION_VAL_2_AR NULL
 #define OPTION_VAL_3_AR NULL
@@ -82,11 +82,11 @@ extern "C" {
 #define OPENMSX_CROP_OVERSCAN_INFO_0_AR NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_AR NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_AR NULL
-#define OPTION_VAL_TV_AR NULL
+#define OPTION_VAL_TV_AR "التلفاز"
 #define OPTION_VAL_SQUARE_AR NULL
 #define OPENMSX_EXT1_LABEL_AR NULL
 #define OPENMSX_EXT1_INFO_0_AR NULL
-#define OPTION_VAL_NONE_AR NULL
+#define OPTION_VAL_NONE_AR "لاشيء"
 #define OPTION_VAL_2ND_PSG_AR NULL
 #define OPTION_VAL_ADVRAM_AR NULL
 #define OPTION_VAL_MEGARAM_2MB_AR NULL
@@ -1572,9 +1572,9 @@ struct retro_core_options_v2 options_ar = {
 
 /* RETRO_LANGUAGE_AST */
 
-#define CATEGORY_SYSTEM_LABEL_AST NULL
+#define CATEGORY_SYSTEM_LABEL_AST "Sistema"
 #define CATEGORY_SYSTEM_INFO_0_AST NULL
-#define CATEGORY_VIDEO_LABEL_AST NULL
+#define CATEGORY_VIDEO_LABEL_AST "Videu"
 #define CATEGORY_VIDEO_INFO_0_AST NULL
 #define OPENMSX_MACHINE_LABEL_AST NULL
 #define OPENMSX_MACHINE_LABEL_CAT_AST NULL
@@ -1600,7 +1600,7 @@ struct retro_core_options_v2 options_ar = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_AST NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_AST NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_AST NULL
-#define OPENMSX_SCALE_LABEL_AST NULL
+#define OPENMSX_SCALE_LABEL_AST "Resolución"
 #define OPENMSX_SCALE_INFO_0_AST NULL
 #define OPTION_VAL_AUTO_AST NULL
 #define OPTION_VAL_1_AST NULL
@@ -3105,9 +3105,9 @@ struct retro_core_options_v2 options_ast = {
 
 /* RETRO_LANGUAGE_BE */
 
-#define CATEGORY_SYSTEM_LABEL_BE NULL
+#define CATEGORY_SYSTEM_LABEL_BE "Сістэма"
 #define CATEGORY_SYSTEM_INFO_0_BE NULL
-#define CATEGORY_VIDEO_LABEL_BE NULL
+#define CATEGORY_VIDEO_LABEL_BE "Відэа"
 #define CATEGORY_VIDEO_INFO_0_BE NULL
 #define OPENMSX_MACHINE_LABEL_BE NULL
 #define OPENMSX_MACHINE_LABEL_CAT_BE NULL
@@ -3135,24 +3135,24 @@ struct retro_core_options_v2 options_ast = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_BE NULL
 #define OPENMSX_SCALE_LABEL_BE NULL
 #define OPENMSX_SCALE_INFO_0_BE NULL
-#define OPTION_VAL_AUTO_BE NULL
+#define OPTION_VAL_AUTO_BE "Аўта"
 #define OPTION_VAL_1_BE NULL
 #define OPTION_VAL_2_BE NULL
 #define OPTION_VAL_3_BE NULL
 #define OPTION_VAL_4_BE NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_BE NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_BE NULL
-#define OPTION_VAL_SOFTWARE_BE NULL
+#define OPTION_VAL_SOFTWARE_BE "Праграмнае забеспячэнне"
 #define OPTION_VAL_OPENGL_BE NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_BE NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_BE "Кадраванне вылетаў разгорткі"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_BE NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_BE NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_BE NULL
-#define OPTION_VAL_TV_BE NULL
+#define OPTION_VAL_TV_BE "ТВ"
 #define OPTION_VAL_SQUARE_BE NULL
 #define OPENMSX_EXT1_LABEL_BE NULL
 #define OPENMSX_EXT1_INFO_0_BE NULL
-#define OPTION_VAL_NONE_BE NULL
+#define OPTION_VAL_NONE_BE "Няма"
 #define OPTION_VAL_2ND_PSG_BE NULL
 #define OPTION_VAL_ADVRAM_BE NULL
 #define OPTION_VAL_MEGARAM_2MB_BE NULL
@@ -4636,11 +4636,1544 @@ struct retro_core_options_v2 options_be = {
    option_defs_be
 };
 
+/* RETRO_LANGUAGE_BG */
+
+#define CATEGORY_SYSTEM_LABEL_BG NULL
+#define CATEGORY_SYSTEM_INFO_0_BG NULL
+#define CATEGORY_VIDEO_LABEL_BG "Видео"
+#define CATEGORY_VIDEO_INFO_0_BG NULL
+#define OPENMSX_MACHINE_LABEL_BG NULL
+#define OPENMSX_MACHINE_LABEL_CAT_BG NULL
+#define OPENMSX_MACHINE_INFO_0_BG NULL
+#define OPTION_VAL_C_BIOS_MSX1_BG NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_BG NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_BG NULL
+#define OPTION_VAL_C_BIOS_MSX2_BG NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_BG NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_BG NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_BG NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_BG NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_BG NULL
+#define OPTION_VAL_PHILIPS_VG_8020_BG NULL
+#define OPTION_VAL_SONY_HB_75P_BG NULL
+#define OPTION_VAL_TOSHIBA_HX_10_BG NULL
+#define OPTION_VAL_YAMAHA_CX5M_BG NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_BG NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_BG NULL
+#define OPTION_VAL_SONY_HB_F700P_BG NULL
+#define OPTION_VAL_SONY_HB_F1XD_BG NULL
+#define OPTION_VAL_SONY_HB_F1XV_BG NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_BG NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_BG NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_BG NULL
+#define OPENMSX_SCALE_LABEL_BG NULL
+#define OPENMSX_SCALE_INFO_0_BG NULL
+#define OPTION_VAL_AUTO_BG NULL
+#define OPTION_VAL_1_BG NULL
+#define OPTION_VAL_2_BG NULL
+#define OPTION_VAL_3_BG NULL
+#define OPTION_VAL_4_BG NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_BG NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_BG NULL
+#define OPTION_VAL_SOFTWARE_BG NULL
+#define OPTION_VAL_OPENGL_BG NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_BG NULL
+#define OPENMSX_CROP_OVERSCAN_INFO_0_BG NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_BG NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_BG NULL
+#define OPTION_VAL_TV_BG NULL
+#define OPTION_VAL_SQUARE_BG NULL
+#define OPENMSX_EXT1_LABEL_BG NULL
+#define OPENMSX_EXT1_INFO_0_BG NULL
+#define OPTION_VAL_NONE_BG NULL
+#define OPTION_VAL_2ND_PSG_BG NULL
+#define OPTION_VAL_ADVRAM_BG NULL
+#define OPTION_VAL_MEGARAM_2MB_BG NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_BG NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG NULL
+#define OPTION_VAL_MSXDOS2_BG NULL
+#define OPTION_VAL_AVT_DPF_550_BG NULL
+#define OPTION_VAL_MU_PACK_BG NULL
+#define OPTION_VAL_CASIO_KB_10_BG NULL
+#define OPTION_VAL_CASIO_KB_7_BG NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_BG NULL
+#define OPTION_VAL_DEBUGDEVICE_BG NULL
+#define OPTION_VAL_DDX_3_0_BG NULL
+#define OPTION_VAL_MEGARAM_BG NULL
+#define OPTION_VAL_MEGARAM_DISK_BG NULL
+#define OPTION_VAL_SMXWIFI_BG NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_BG NULL
+#define OPTION_VAL_ESE_RAMDISK_BG NULL
+#define OPTION_VAL_ESE_SCC_BG NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_BG NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_BG NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_BG NULL
+#define OPTION_VAL_RS232_BG NULL
+#define OPTION_VAL_AUDIO_BG NULL
+#define OPTION_VAL_AUDIO2_BG NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_BG NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_BG NULL
+#define OPTION_VAL_HIRESTIMER_BG NULL
+#define OPTION_VAL_HITACHI_MPC_310H_BG NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_BG NULL
+#define OPTION_VAL_JVC_MSX_MIDI_BG NULL
+#define OPTION_VAL_KONAMI_EC_701_BG NULL
+#define OPTION_VAL_KONAMI_EC_702_BG NULL
+#define OPTION_VAL_SCC_BG NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_BG NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG NULL
+#define OPTION_VAL_LASCOM_KANJI_BG NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG NULL
+#define OPTION_VAL_OPL3CARTRIDGE_BG NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_BG NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_BG NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_BG NULL
+#define OPTION_VAL_RAM1MB_BG NULL
+#define OPTION_VAL_RAM2MB_BG NULL
+#define OPTION_VAL_RAM4MB_BG NULL
+#define OPTION_VAL_RAM512K_BG NULL
+#define OPTION_VAL_MICROSOL_CDX_2_BG NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG NULL
+#define OPTION_VAL_MBSTEREO_BG NULL
+#define OPTION_VAL_GOUDA_SCSI_BG NULL
+#define OPTION_VAL_MSXPI_BG NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_BG NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_BG NULL
+#define OPTION_VAL_NEOS_MA_20R_BG NULL
+#define OPTION_VAL_NEOS_MA_20V_BG NULL
+#define OPTION_VAL_UNAPINET_BG NULL
+#define OPTION_VAL_FMPAC_BG NULL
+#define OPTION_VAL_PAC_BG NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_BG NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_BG NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_BG NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_BG NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_BG NULL
+#define OPTION_VAL_PHILIPS_VY_0010_BG NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_BG NULL
+#define OPTION_VAL_PHILIPS_VU_0040_BG NULL
+#define OPTION_VAL_BOOSTED_AUDIO_BG NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_BG NULL
+#define OPTION_VAL_RAM16K_BG NULL
+#define OPTION_VAL_RAM32K_BG NULL
+#define OPTION_VAL_RAM64K_BG NULL
+#define OPTION_VAL_CARNIVORE2_BG NULL
+#define OPTION_VAL_SANYO_MFD_001_BG NULL
+#define OPTION_VAL_SANYO_MRS_001_BG NULL
+#define OPTION_VAL_SHARP_HB_4000_BG NULL
+#define OPTION_VAL_SHARP_HB_3600_BG NULL
+#define OPTION_VAL_SLOTEXPANDER_BG NULL
+#define OPTION_VAL_BEER_IDE_BG NULL
+#define OPTION_VAL_SONY_HBD_20W_BG NULL
+#define OPTION_VAL_SONY_HBD_F1_BG NULL
+#define OPTION_VAL_SONY_HBI_55_BG NULL
+#define OPTION_VAL_SONY_HBI_J1_BG NULL
+#define OPTION_VAL_SONY_HBD_50_BG NULL
+#define OPTION_VAL_SONY_HBK_30_BG NULL
+#define OPTION_VAL_SONY_HBI_232_BG NULL
+#define OPTION_VAL_SENSORKID_BG NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_BG NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_BG NULL
+#define OPTION_VAL_IDE_BG NULL
+#define OPTION_VAL_GFX9000_BG NULL
+#define OPTION_VAL_MOONSOUND_BG NULL
+#define OPTION_VAL_NOWIND_BG NULL
+#define OPTION_VAL_VIDEO9000_BG NULL
+#define OPTION_VAL_MAKOTO_BG NULL
+#define OPTION_VAL_FRANKY_NTSC_BG NULL
+#define OPTION_VAL_FRANKY_PAL_BG NULL
+#define OPTION_VAL_TALENT_TDC_600_BG NULL
+#define OPTION_VAL_TALENT_DPF_550_BG NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG NULL
+#define OPTION_VAL_SN76489_BG NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_BG NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_BG NULL
+#define OPTION_VAL_YAMAHA_FD_03_BG NULL
+#define OPTION_VAL_YAMAHA_FD_05_BG NULL
+#define OPTION_VAL_YAMAHA_SFG_05_BG NULL
+#define OPTION_VAL_YAMAHA_SFG_01_BG NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG NULL
+#define OPTION_VAL_YAMAHA_SKW_01_BG NULL
+#define OPENMSX_EXT2_LABEL_BG NULL
+#define OPENMSX_EXT3_LABEL_BG NULL
+#define OPENMSX_EXT4_LABEL_BG NULL
+#define OPENMSX_EXT5_LABEL_BG NULL
+#define OPENMSX_EXT6_LABEL_BG NULL
+#define OPENMSX_EXT7_LABEL_BG NULL
+#define OPENMSX_EXT8_LABEL_BG NULL
+#define OPENMSX_EXT9_LABEL_BG NULL
+#define OPENMSX_EXT10_LABEL_BG NULL
+
+struct retro_core_option_v2_category option_cats_bg[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_BG, CATEGORY_SYSTEM_INFO_0_BG},
+    {"video", CATEGORY_VIDEO_LABEL_BG, CATEGORY_VIDEO_INFO_0_BG},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_bg[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_BG, OPENMSX_MACHINE_LABEL_CAT_BG,
+        OPENMSX_MACHINE_INFO_0_BG,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_BG},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_BG},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_BG},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_BG},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_BG},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_BG},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_BG},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_BG},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_BG},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_BG},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_BG},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_BG},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_BG},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_BG},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_BG},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_BG},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_BG},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_BG},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_BG},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_BG},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_BG},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_BG, NULL,
+        OPENMSX_SCALE_INFO_0_BG,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_BG}, {"1", OPTION_VAL_1_BG}, {"2", OPTION_VAL_2_BG}, {"3", OPTION_VAL_3_BG}, {"4", OPTION_VAL_4_BG}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_BG, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_BG,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_BG}, {"opengl", OPTION_VAL_OPENGL_BG}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_BG, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_BG,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_BG, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_BG,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_BG}, {"square", OPTION_VAL_SQUARE_BG}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_BG, NULL,
+        OPENMSX_EXT1_INFO_0_BG,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_BG},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_BG},
+            {"advram", OPTION_VAL_ADVRAM_BG},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_BG},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_BG},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_BG},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_BG},
+            {"msxdos2", OPTION_VAL_MSXDOS2_BG},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_BG},
+            {"mu-PACK", OPTION_VAL_MU_PACK_BG},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_BG},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_BG},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_BG},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_BG},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_BG},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_BG},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_BG},
+            {"megaram", OPTION_VAL_MEGARAM_BG},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_BG},
+            {"smxwifi", OPTION_VAL_SMXWIFI_BG},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_BG},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_BG},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_BG},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_BG},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_BG},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_BG},
+            {"rs232", OPTION_VAL_RS232_BG},
+            {"audio", OPTION_VAL_AUDIO_BG},
+            {"audio2", OPTION_VAL_AUDIO2_BG},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_BG},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_BG},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_BG},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_BG},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_BG},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_BG},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_BG},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_BG},
+            {"scc", OPTION_VAL_SCC_BG},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_BG},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_BG},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_BG},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_BG},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_BG},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_BG},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_BG},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_BG},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_BG},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_BG},
+            {"ram1mb", OPTION_VAL_RAM1MB_BG},
+            {"ram2mb", OPTION_VAL_RAM2MB_BG},
+            {"ram4mb", OPTION_VAL_RAM4MB_BG},
+            {"ram512k", OPTION_VAL_RAM512K_BG},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_BG},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_BG},
+            {"mbstereo", OPTION_VAL_MBSTEREO_BG},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_BG},
+            {"MSXPi", OPTION_VAL_MSXPI_BG},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_BG},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_BG},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_BG},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_BG},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_BG},
+            {"unapinet", OPTION_VAL_UNAPINET_BG},
+            {"fmpac", OPTION_VAL_FMPAC_BG},
+            {"pac", OPTION_VAL_PAC_BG},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_BG},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_BG},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_BG},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_BG},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_BG},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_BG},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_BG},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_BG},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_BG},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_BG},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_BG},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_BG},
+            {"ram16k", OPTION_VAL_RAM16K_BG},
+            {"ram32k", OPTION_VAL_RAM32K_BG},
+            {"ram64k", OPTION_VAL_RAM64K_BG},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_BG},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_BG},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_BG},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_BG},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_BG},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_BG},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_BG},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_BG},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_BG},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_BG},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_BG},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_BG},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_BG},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_BG},
+            {"SensorKid", OPTION_VAL_SENSORKID_BG},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_BG},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_BG},
+            {"ide", OPTION_VAL_IDE_BG},
+            {"gfx9000", OPTION_VAL_GFX9000_BG},
+            {"moonsound", OPTION_VAL_MOONSOUND_BG},
+            {"nowind", OPTION_VAL_NOWIND_BG},
+            {"video9000", OPTION_VAL_VIDEO9000_BG},
+            {"Makoto", OPTION_VAL_MAKOTO_BG},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_BG},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_BG},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_BG},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_BG},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_BG},
+            {"SN76489", OPTION_VAL_SN76489_BG},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_BG},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_BG},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_BG},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_BG},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_BG},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_BG},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_BG},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_BG},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_BG},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_bg = {
+   option_cats_bg,
+   option_defs_bg
+};
+
 /* RETRO_LANGUAGE_CA */
 
-#define CATEGORY_SYSTEM_LABEL_CA NULL
+#define CATEGORY_SYSTEM_LABEL_CA "Sistema"
 #define CATEGORY_SYSTEM_INFO_0_CA NULL
-#define CATEGORY_VIDEO_LABEL_CA NULL
+#define CATEGORY_VIDEO_LABEL_CA "Vídeo"
 #define CATEGORY_VIDEO_INFO_0_CA NULL
 #define OPENMSX_MACHINE_LABEL_CA NULL
 #define OPENMSX_MACHINE_LABEL_CAT_CA NULL
@@ -4666,18 +6199,18 @@ struct retro_core_options_v2 options_be = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_CA NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_CA NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_CA NULL
-#define OPENMSX_SCALE_LABEL_CA NULL
+#define OPENMSX_SCALE_LABEL_CA "Resolució"
 #define OPENMSX_SCALE_INFO_0_CA NULL
-#define OPTION_VAL_AUTO_CA NULL
+#define OPTION_VAL_AUTO_CA "Automàtic"
 #define OPTION_VAL_1_CA NULL
 #define OPTION_VAL_2_CA NULL
 #define OPTION_VAL_3_CA NULL
 #define OPTION_VAL_4_CA NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_CA NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_CA NULL
-#define OPTION_VAL_SOFTWARE_CA NULL
+#define OPTION_VAL_SOFTWARE_CA "Programari"
 #define OPTION_VAL_OPENGL_CA NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_CA NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_CA "Retallar el sobreescaneig"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_CA NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_CA NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_CA NULL
@@ -4685,7 +6218,7 @@ struct retro_core_options_v2 options_be = {
 #define OPTION_VAL_SQUARE_CA NULL
 #define OPENMSX_EXT1_LABEL_CA NULL
 #define OPENMSX_EXT1_INFO_0_CA NULL
-#define OPTION_VAL_NONE_CA NULL
+#define OPTION_VAL_NONE_CA "Cap"
 #define OPTION_VAL_2ND_PSG_CA NULL
 #define OPTION_VAL_ADVRAM_CA NULL
 #define OPTION_VAL_MEGARAM_2MB_CA NULL
@@ -6171,9 +7704,9 @@ struct retro_core_options_v2 options_ca = {
 
 /* RETRO_LANGUAGE_CHS */
 
-#define CATEGORY_SYSTEM_LABEL_CHS NULL
+#define CATEGORY_SYSTEM_LABEL_CHS "系统"
 #define CATEGORY_SYSTEM_INFO_0_CHS NULL
-#define CATEGORY_VIDEO_LABEL_CHS NULL
+#define CATEGORY_VIDEO_LABEL_CHS "视频"
 #define CATEGORY_VIDEO_INFO_0_CHS NULL
 #define OPENMSX_MACHINE_LABEL_CHS NULL
 #define OPENMSX_MACHINE_LABEL_CAT_CHS NULL
@@ -6199,26 +7732,26 @@ struct retro_core_options_v2 options_ca = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_CHS NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_CHS NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_CHS NULL
-#define OPENMSX_SCALE_LABEL_CHS NULL
+#define OPENMSX_SCALE_LABEL_CHS "分辨率"
 #define OPENMSX_SCALE_INFO_0_CHS NULL
-#define OPTION_VAL_AUTO_CHS NULL
+#define OPTION_VAL_AUTO_CHS "自动"
 #define OPTION_VAL_1_CHS NULL
 #define OPTION_VAL_2_CHS NULL
 #define OPTION_VAL_3_CHS NULL
 #define OPTION_VAL_4_CHS NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_CHS NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_CHS NULL
-#define OPTION_VAL_SOFTWARE_CHS NULL
+#define OPTION_VAL_SOFTWARE_CHS "软件"
 #define OPTION_VAL_OPENGL_CHS NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_CHS NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_CHS "裁剪过扫描"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_CHS NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_CHS NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_CHS NULL
-#define OPTION_VAL_TV_CHS NULL
+#define OPTION_VAL_TV_CHS "电视"
 #define OPTION_VAL_SQUARE_CHS NULL
 #define OPENMSX_EXT1_LABEL_CHS NULL
 #define OPENMSX_EXT1_INFO_0_CHS NULL
-#define OPTION_VAL_NONE_CHS NULL
+#define OPTION_VAL_NONE_CHS "无"
 #define OPTION_VAL_2ND_PSG_CHS NULL
 #define OPTION_VAL_ADVRAM_CHS NULL
 #define OPTION_VAL_MEGARAM_2MB_CHS NULL
@@ -7704,9 +9237,9 @@ struct retro_core_options_v2 options_chs = {
 
 /* RETRO_LANGUAGE_CHT */
 
-#define CATEGORY_SYSTEM_LABEL_CHT NULL
+#define CATEGORY_SYSTEM_LABEL_CHT "系統"
 #define CATEGORY_SYSTEM_INFO_0_CHT NULL
-#define CATEGORY_VIDEO_LABEL_CHT NULL
+#define CATEGORY_VIDEO_LABEL_CHT "顯示"
 #define CATEGORY_VIDEO_INFO_0_CHT NULL
 #define OPENMSX_MACHINE_LABEL_CHT NULL
 #define OPENMSX_MACHINE_LABEL_CAT_CHT NULL
@@ -7734,24 +9267,24 @@ struct retro_core_options_v2 options_chs = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_CHT NULL
 #define OPENMSX_SCALE_LABEL_CHT NULL
 #define OPENMSX_SCALE_INFO_0_CHT NULL
-#define OPTION_VAL_AUTO_CHT NULL
+#define OPTION_VAL_AUTO_CHT "自動"
 #define OPTION_VAL_1_CHT NULL
 #define OPTION_VAL_2_CHT NULL
 #define OPTION_VAL_3_CHT NULL
 #define OPTION_VAL_4_CHT NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_CHT NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_CHT NULL
-#define OPTION_VAL_SOFTWARE_CHT NULL
+#define OPTION_VAL_SOFTWARE_CHT "軟體渲染"
 #define OPTION_VAL_OPENGL_CHT NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_CHT NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_CHT "裁剪過度掃描"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_CHT NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_CHT NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_CHT NULL
-#define OPTION_VAL_TV_CHT NULL
+#define OPTION_VAL_TV_CHT "電視"
 #define OPTION_VAL_SQUARE_CHT NULL
 #define OPENMSX_EXT1_LABEL_CHT NULL
 #define OPENMSX_EXT1_INFO_0_CHT NULL
-#define OPTION_VAL_NONE_CHT NULL
+#define OPTION_VAL_NONE_CHT "無"
 #define OPTION_VAL_2ND_PSG_CHT NULL
 #define OPTION_VAL_ADVRAM_CHT NULL
 #define OPTION_VAL_MEGARAM_2MB_CHT NULL
@@ -9237,7 +10770,7 @@ struct retro_core_options_v2 options_cht = {
 
 /* RETRO_LANGUAGE_CS */
 
-#define CATEGORY_SYSTEM_LABEL_CS NULL
+#define CATEGORY_SYSTEM_LABEL_CS "Systém"
 #define CATEGORY_SYSTEM_INFO_0_CS NULL
 #define CATEGORY_VIDEO_LABEL_CS NULL
 #define CATEGORY_VIDEO_INFO_0_CS NULL
@@ -9276,7 +10809,7 @@ struct retro_core_options_v2 options_cht = {
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_CS NULL
 #define OPTION_VAL_SOFTWARE_CS NULL
 #define OPTION_VAL_OPENGL_CS NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_CS NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_CS "Overscan Oříznutí"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_CS NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_CS NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_CS NULL
@@ -9284,7 +10817,7 @@ struct retro_core_options_v2 options_cht = {
 #define OPTION_VAL_SQUARE_CS NULL
 #define OPENMSX_EXT1_LABEL_CS NULL
 #define OPENMSX_EXT1_INFO_0_CS NULL
-#define OPTION_VAL_NONE_CS NULL
+#define OPTION_VAL_NONE_CS "Žádné"
 #define OPTION_VAL_2ND_PSG_CS NULL
 #define OPTION_VAL_ADVRAM_CS NULL
 #define OPTION_VAL_MEGARAM_2MB_CS NULL
@@ -10768,6 +12301,3072 @@ struct retro_core_options_v2 options_cs = {
    option_defs_cs
 };
 
+/* RETRO_LANGUAGE_CY */
+
+#define CATEGORY_SYSTEM_LABEL_CY NULL
+#define CATEGORY_SYSTEM_INFO_0_CY NULL
+#define CATEGORY_VIDEO_LABEL_CY NULL
+#define CATEGORY_VIDEO_INFO_0_CY NULL
+#define OPENMSX_MACHINE_LABEL_CY NULL
+#define OPENMSX_MACHINE_LABEL_CAT_CY NULL
+#define OPENMSX_MACHINE_INFO_0_CY NULL
+#define OPTION_VAL_C_BIOS_MSX1_CY NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_CY NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_CY NULL
+#define OPTION_VAL_C_BIOS_MSX2_CY NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_CY NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_CY NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_CY NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_CY NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_CY NULL
+#define OPTION_VAL_PHILIPS_VG_8020_CY NULL
+#define OPTION_VAL_SONY_HB_75P_CY NULL
+#define OPTION_VAL_TOSHIBA_HX_10_CY NULL
+#define OPTION_VAL_YAMAHA_CX5M_CY NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_CY NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_CY NULL
+#define OPTION_VAL_SONY_HB_F700P_CY NULL
+#define OPTION_VAL_SONY_HB_F1XD_CY NULL
+#define OPTION_VAL_SONY_HB_F1XV_CY NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_CY NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_CY NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_CY NULL
+#define OPENMSX_SCALE_LABEL_CY NULL
+#define OPENMSX_SCALE_INFO_0_CY NULL
+#define OPTION_VAL_AUTO_CY NULL
+#define OPTION_VAL_1_CY NULL
+#define OPTION_VAL_2_CY NULL
+#define OPTION_VAL_3_CY NULL
+#define OPTION_VAL_4_CY NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_CY NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_CY NULL
+#define OPTION_VAL_SOFTWARE_CY NULL
+#define OPTION_VAL_OPENGL_CY NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_CY NULL
+#define OPENMSX_CROP_OVERSCAN_INFO_0_CY NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_CY NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_CY NULL
+#define OPTION_VAL_TV_CY NULL
+#define OPTION_VAL_SQUARE_CY NULL
+#define OPENMSX_EXT1_LABEL_CY NULL
+#define OPENMSX_EXT1_INFO_0_CY NULL
+#define OPTION_VAL_NONE_CY "Dim"
+#define OPTION_VAL_2ND_PSG_CY NULL
+#define OPTION_VAL_ADVRAM_CY NULL
+#define OPTION_VAL_MEGARAM_2MB_CY NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_CY NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY NULL
+#define OPTION_VAL_MSXDOS2_CY NULL
+#define OPTION_VAL_AVT_DPF_550_CY NULL
+#define OPTION_VAL_MU_PACK_CY NULL
+#define OPTION_VAL_CASIO_KB_10_CY NULL
+#define OPTION_VAL_CASIO_KB_7_CY NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_CY NULL
+#define OPTION_VAL_DEBUGDEVICE_CY NULL
+#define OPTION_VAL_DDX_3_0_CY NULL
+#define OPTION_VAL_MEGARAM_CY NULL
+#define OPTION_VAL_MEGARAM_DISK_CY NULL
+#define OPTION_VAL_SMXWIFI_CY NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_CY NULL
+#define OPTION_VAL_ESE_RAMDISK_CY NULL
+#define OPTION_VAL_ESE_SCC_CY NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_CY NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_CY NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_CY NULL
+#define OPTION_VAL_RS232_CY NULL
+#define OPTION_VAL_AUDIO_CY NULL
+#define OPTION_VAL_AUDIO2_CY NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_CY NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_CY NULL
+#define OPTION_VAL_HIRESTIMER_CY NULL
+#define OPTION_VAL_HITACHI_MPC_310H_CY NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_CY NULL
+#define OPTION_VAL_JVC_MSX_MIDI_CY NULL
+#define OPTION_VAL_KONAMI_EC_701_CY NULL
+#define OPTION_VAL_KONAMI_EC_702_CY NULL
+#define OPTION_VAL_SCC_CY NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_CY NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY NULL
+#define OPTION_VAL_LASCOM_KANJI_CY NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY NULL
+#define OPTION_VAL_OPL3CARTRIDGE_CY NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_CY NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_CY NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_CY NULL
+#define OPTION_VAL_RAM1MB_CY NULL
+#define OPTION_VAL_RAM2MB_CY NULL
+#define OPTION_VAL_RAM4MB_CY NULL
+#define OPTION_VAL_RAM512K_CY NULL
+#define OPTION_VAL_MICROSOL_CDX_2_CY NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY NULL
+#define OPTION_VAL_MBSTEREO_CY NULL
+#define OPTION_VAL_GOUDA_SCSI_CY NULL
+#define OPTION_VAL_MSXPI_CY NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_CY NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_CY NULL
+#define OPTION_VAL_NEOS_MA_20R_CY NULL
+#define OPTION_VAL_NEOS_MA_20V_CY NULL
+#define OPTION_VAL_UNAPINET_CY NULL
+#define OPTION_VAL_FMPAC_CY NULL
+#define OPTION_VAL_PAC_CY NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_CY NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_CY NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_CY NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_CY NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_CY NULL
+#define OPTION_VAL_PHILIPS_VY_0010_CY NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_CY NULL
+#define OPTION_VAL_PHILIPS_VU_0040_CY NULL
+#define OPTION_VAL_BOOSTED_AUDIO_CY NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_CY NULL
+#define OPTION_VAL_RAM16K_CY NULL
+#define OPTION_VAL_RAM32K_CY NULL
+#define OPTION_VAL_RAM64K_CY NULL
+#define OPTION_VAL_CARNIVORE2_CY NULL
+#define OPTION_VAL_SANYO_MFD_001_CY NULL
+#define OPTION_VAL_SANYO_MRS_001_CY NULL
+#define OPTION_VAL_SHARP_HB_4000_CY NULL
+#define OPTION_VAL_SHARP_HB_3600_CY NULL
+#define OPTION_VAL_SLOTEXPANDER_CY NULL
+#define OPTION_VAL_BEER_IDE_CY NULL
+#define OPTION_VAL_SONY_HBD_20W_CY NULL
+#define OPTION_VAL_SONY_HBD_F1_CY NULL
+#define OPTION_VAL_SONY_HBI_55_CY NULL
+#define OPTION_VAL_SONY_HBI_J1_CY NULL
+#define OPTION_VAL_SONY_HBD_50_CY NULL
+#define OPTION_VAL_SONY_HBK_30_CY NULL
+#define OPTION_VAL_SONY_HBI_232_CY NULL
+#define OPTION_VAL_SENSORKID_CY NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_CY NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_CY NULL
+#define OPTION_VAL_IDE_CY NULL
+#define OPTION_VAL_GFX9000_CY NULL
+#define OPTION_VAL_MOONSOUND_CY NULL
+#define OPTION_VAL_NOWIND_CY NULL
+#define OPTION_VAL_VIDEO9000_CY NULL
+#define OPTION_VAL_MAKOTO_CY NULL
+#define OPTION_VAL_FRANKY_NTSC_CY NULL
+#define OPTION_VAL_FRANKY_PAL_CY NULL
+#define OPTION_VAL_TALENT_TDC_600_CY NULL
+#define OPTION_VAL_TALENT_DPF_550_CY NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY NULL
+#define OPTION_VAL_SN76489_CY NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_CY NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_CY NULL
+#define OPTION_VAL_YAMAHA_FD_03_CY NULL
+#define OPTION_VAL_YAMAHA_FD_05_CY NULL
+#define OPTION_VAL_YAMAHA_SFG_05_CY NULL
+#define OPTION_VAL_YAMAHA_SFG_01_CY NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY NULL
+#define OPTION_VAL_YAMAHA_SKW_01_CY NULL
+#define OPENMSX_EXT2_LABEL_CY NULL
+#define OPENMSX_EXT3_LABEL_CY NULL
+#define OPENMSX_EXT4_LABEL_CY NULL
+#define OPENMSX_EXT5_LABEL_CY NULL
+#define OPENMSX_EXT6_LABEL_CY NULL
+#define OPENMSX_EXT7_LABEL_CY NULL
+#define OPENMSX_EXT8_LABEL_CY NULL
+#define OPENMSX_EXT9_LABEL_CY NULL
+#define OPENMSX_EXT10_LABEL_CY NULL
+
+struct retro_core_option_v2_category option_cats_cy[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_CY, CATEGORY_SYSTEM_INFO_0_CY},
+    {"video", CATEGORY_VIDEO_LABEL_CY, CATEGORY_VIDEO_INFO_0_CY},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_cy[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_CY, OPENMSX_MACHINE_LABEL_CAT_CY,
+        OPENMSX_MACHINE_INFO_0_CY,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_CY},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_CY},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_CY},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_CY},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_CY},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_CY},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_CY},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_CY},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_CY},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_CY},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_CY},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_CY},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_CY},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_CY},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_CY},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_CY},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_CY},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_CY},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_CY},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_CY},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_CY},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_CY, NULL,
+        OPENMSX_SCALE_INFO_0_CY,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_CY}, {"1", OPTION_VAL_1_CY}, {"2", OPTION_VAL_2_CY}, {"3", OPTION_VAL_3_CY}, {"4", OPTION_VAL_4_CY}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_CY, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_CY,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_CY}, {"opengl", OPTION_VAL_OPENGL_CY}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_CY, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_CY,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_CY, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_CY,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_CY}, {"square", OPTION_VAL_SQUARE_CY}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_CY, NULL,
+        OPENMSX_EXT1_INFO_0_CY,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_CY},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_CY},
+            {"advram", OPTION_VAL_ADVRAM_CY},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_CY},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_CY},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_CY},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_CY},
+            {"msxdos2", OPTION_VAL_MSXDOS2_CY},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_CY},
+            {"mu-PACK", OPTION_VAL_MU_PACK_CY},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_CY},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_CY},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_CY},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_CY},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_CY},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_CY},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_CY},
+            {"megaram", OPTION_VAL_MEGARAM_CY},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_CY},
+            {"smxwifi", OPTION_VAL_SMXWIFI_CY},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_CY},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_CY},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_CY},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_CY},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_CY},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_CY},
+            {"rs232", OPTION_VAL_RS232_CY},
+            {"audio", OPTION_VAL_AUDIO_CY},
+            {"audio2", OPTION_VAL_AUDIO2_CY},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_CY},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_CY},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_CY},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_CY},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_CY},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_CY},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_CY},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_CY},
+            {"scc", OPTION_VAL_SCC_CY},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_CY},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_CY},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_CY},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_CY},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_CY},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_CY},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_CY},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_CY},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_CY},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_CY},
+            {"ram1mb", OPTION_VAL_RAM1MB_CY},
+            {"ram2mb", OPTION_VAL_RAM2MB_CY},
+            {"ram4mb", OPTION_VAL_RAM4MB_CY},
+            {"ram512k", OPTION_VAL_RAM512K_CY},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_CY},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_CY},
+            {"mbstereo", OPTION_VAL_MBSTEREO_CY},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_CY},
+            {"MSXPi", OPTION_VAL_MSXPI_CY},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_CY},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_CY},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_CY},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_CY},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_CY},
+            {"unapinet", OPTION_VAL_UNAPINET_CY},
+            {"fmpac", OPTION_VAL_FMPAC_CY},
+            {"pac", OPTION_VAL_PAC_CY},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_CY},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_CY},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_CY},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_CY},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_CY},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_CY},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_CY},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_CY},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_CY},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_CY},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_CY},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_CY},
+            {"ram16k", OPTION_VAL_RAM16K_CY},
+            {"ram32k", OPTION_VAL_RAM32K_CY},
+            {"ram64k", OPTION_VAL_RAM64K_CY},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_CY},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_CY},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_CY},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_CY},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_CY},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_CY},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_CY},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_CY},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_CY},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_CY},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_CY},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_CY},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_CY},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_CY},
+            {"SensorKid", OPTION_VAL_SENSORKID_CY},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_CY},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_CY},
+            {"ide", OPTION_VAL_IDE_CY},
+            {"gfx9000", OPTION_VAL_GFX9000_CY},
+            {"moonsound", OPTION_VAL_MOONSOUND_CY},
+            {"nowind", OPTION_VAL_NOWIND_CY},
+            {"video9000", OPTION_VAL_VIDEO9000_CY},
+            {"Makoto", OPTION_VAL_MAKOTO_CY},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_CY},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_CY},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_CY},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_CY},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_CY},
+            {"SN76489", OPTION_VAL_SN76489_CY},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_CY},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_CY},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_CY},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_CY},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_CY},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_CY},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_CY},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_CY},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_CY},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_cy = {
+   option_cats_cy,
+   option_defs_cy
+};
+
+/* RETRO_LANGUAGE_DA */
+
+#define CATEGORY_SYSTEM_LABEL_DA NULL
+#define CATEGORY_SYSTEM_INFO_0_DA NULL
+#define CATEGORY_VIDEO_LABEL_DA NULL
+#define CATEGORY_VIDEO_INFO_0_DA NULL
+#define OPENMSX_MACHINE_LABEL_DA NULL
+#define OPENMSX_MACHINE_LABEL_CAT_DA NULL
+#define OPENMSX_MACHINE_INFO_0_DA NULL
+#define OPTION_VAL_C_BIOS_MSX1_DA NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_DA NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_DA NULL
+#define OPTION_VAL_C_BIOS_MSX2_DA NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_DA NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_DA NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_DA NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_DA NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_DA NULL
+#define OPTION_VAL_PHILIPS_VG_8020_DA NULL
+#define OPTION_VAL_SONY_HB_75P_DA NULL
+#define OPTION_VAL_TOSHIBA_HX_10_DA NULL
+#define OPTION_VAL_YAMAHA_CX5M_DA NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_DA NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_DA NULL
+#define OPTION_VAL_SONY_HB_F700P_DA NULL
+#define OPTION_VAL_SONY_HB_F1XD_DA NULL
+#define OPTION_VAL_SONY_HB_F1XV_DA NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_DA NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_DA NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_DA NULL
+#define OPENMSX_SCALE_LABEL_DA NULL
+#define OPENMSX_SCALE_INFO_0_DA NULL
+#define OPTION_VAL_AUTO_DA NULL
+#define OPTION_VAL_1_DA NULL
+#define OPTION_VAL_2_DA NULL
+#define OPTION_VAL_3_DA NULL
+#define OPTION_VAL_4_DA NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_DA NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_DA NULL
+#define OPTION_VAL_SOFTWARE_DA NULL
+#define OPTION_VAL_OPENGL_DA NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_DA NULL
+#define OPENMSX_CROP_OVERSCAN_INFO_0_DA NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_DA NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_DA NULL
+#define OPTION_VAL_TV_DA NULL
+#define OPTION_VAL_SQUARE_DA NULL
+#define OPENMSX_EXT1_LABEL_DA NULL
+#define OPENMSX_EXT1_INFO_0_DA NULL
+#define OPTION_VAL_NONE_DA NULL
+#define OPTION_VAL_2ND_PSG_DA NULL
+#define OPTION_VAL_ADVRAM_DA NULL
+#define OPTION_VAL_MEGARAM_2MB_DA NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_DA NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA NULL
+#define OPTION_VAL_MSXDOS2_DA NULL
+#define OPTION_VAL_AVT_DPF_550_DA NULL
+#define OPTION_VAL_MU_PACK_DA NULL
+#define OPTION_VAL_CASIO_KB_10_DA NULL
+#define OPTION_VAL_CASIO_KB_7_DA NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_DA NULL
+#define OPTION_VAL_DEBUGDEVICE_DA NULL
+#define OPTION_VAL_DDX_3_0_DA NULL
+#define OPTION_VAL_MEGARAM_DA NULL
+#define OPTION_VAL_MEGARAM_DISK_DA NULL
+#define OPTION_VAL_SMXWIFI_DA NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_DA NULL
+#define OPTION_VAL_ESE_RAMDISK_DA NULL
+#define OPTION_VAL_ESE_SCC_DA NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_DA NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_DA NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_DA NULL
+#define OPTION_VAL_RS232_DA NULL
+#define OPTION_VAL_AUDIO_DA NULL
+#define OPTION_VAL_AUDIO2_DA NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_DA NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_DA NULL
+#define OPTION_VAL_HIRESTIMER_DA NULL
+#define OPTION_VAL_HITACHI_MPC_310H_DA NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_DA NULL
+#define OPTION_VAL_JVC_MSX_MIDI_DA NULL
+#define OPTION_VAL_KONAMI_EC_701_DA NULL
+#define OPTION_VAL_KONAMI_EC_702_DA NULL
+#define OPTION_VAL_SCC_DA NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_DA NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA NULL
+#define OPTION_VAL_LASCOM_KANJI_DA NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA NULL
+#define OPTION_VAL_OPL3CARTRIDGE_DA NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_DA NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_DA NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_DA NULL
+#define OPTION_VAL_RAM1MB_DA NULL
+#define OPTION_VAL_RAM2MB_DA NULL
+#define OPTION_VAL_RAM4MB_DA NULL
+#define OPTION_VAL_RAM512K_DA NULL
+#define OPTION_VAL_MICROSOL_CDX_2_DA NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA NULL
+#define OPTION_VAL_MBSTEREO_DA NULL
+#define OPTION_VAL_GOUDA_SCSI_DA NULL
+#define OPTION_VAL_MSXPI_DA NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_DA NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_DA NULL
+#define OPTION_VAL_NEOS_MA_20R_DA NULL
+#define OPTION_VAL_NEOS_MA_20V_DA NULL
+#define OPTION_VAL_UNAPINET_DA NULL
+#define OPTION_VAL_FMPAC_DA NULL
+#define OPTION_VAL_PAC_DA NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_DA NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_DA NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_DA NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_DA NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_DA NULL
+#define OPTION_VAL_PHILIPS_VY_0010_DA NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_DA NULL
+#define OPTION_VAL_PHILIPS_VU_0040_DA NULL
+#define OPTION_VAL_BOOSTED_AUDIO_DA NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_DA NULL
+#define OPTION_VAL_RAM16K_DA NULL
+#define OPTION_VAL_RAM32K_DA NULL
+#define OPTION_VAL_RAM64K_DA NULL
+#define OPTION_VAL_CARNIVORE2_DA NULL
+#define OPTION_VAL_SANYO_MFD_001_DA NULL
+#define OPTION_VAL_SANYO_MRS_001_DA NULL
+#define OPTION_VAL_SHARP_HB_4000_DA NULL
+#define OPTION_VAL_SHARP_HB_3600_DA NULL
+#define OPTION_VAL_SLOTEXPANDER_DA NULL
+#define OPTION_VAL_BEER_IDE_DA NULL
+#define OPTION_VAL_SONY_HBD_20W_DA NULL
+#define OPTION_VAL_SONY_HBD_F1_DA NULL
+#define OPTION_VAL_SONY_HBI_55_DA NULL
+#define OPTION_VAL_SONY_HBI_J1_DA NULL
+#define OPTION_VAL_SONY_HBD_50_DA NULL
+#define OPTION_VAL_SONY_HBK_30_DA NULL
+#define OPTION_VAL_SONY_HBI_232_DA NULL
+#define OPTION_VAL_SENSORKID_DA NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_DA NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_DA NULL
+#define OPTION_VAL_IDE_DA NULL
+#define OPTION_VAL_GFX9000_DA NULL
+#define OPTION_VAL_MOONSOUND_DA NULL
+#define OPTION_VAL_NOWIND_DA NULL
+#define OPTION_VAL_VIDEO9000_DA NULL
+#define OPTION_VAL_MAKOTO_DA NULL
+#define OPTION_VAL_FRANKY_NTSC_DA NULL
+#define OPTION_VAL_FRANKY_PAL_DA NULL
+#define OPTION_VAL_TALENT_TDC_600_DA NULL
+#define OPTION_VAL_TALENT_DPF_550_DA NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA NULL
+#define OPTION_VAL_SN76489_DA NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_DA NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_DA NULL
+#define OPTION_VAL_YAMAHA_FD_03_DA NULL
+#define OPTION_VAL_YAMAHA_FD_05_DA NULL
+#define OPTION_VAL_YAMAHA_SFG_05_DA NULL
+#define OPTION_VAL_YAMAHA_SFG_01_DA NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA NULL
+#define OPTION_VAL_YAMAHA_SKW_01_DA NULL
+#define OPENMSX_EXT2_LABEL_DA NULL
+#define OPENMSX_EXT3_LABEL_DA NULL
+#define OPENMSX_EXT4_LABEL_DA NULL
+#define OPENMSX_EXT5_LABEL_DA NULL
+#define OPENMSX_EXT6_LABEL_DA NULL
+#define OPENMSX_EXT7_LABEL_DA NULL
+#define OPENMSX_EXT8_LABEL_DA NULL
+#define OPENMSX_EXT9_LABEL_DA NULL
+#define OPENMSX_EXT10_LABEL_DA NULL
+
+struct retro_core_option_v2_category option_cats_da[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_DA, CATEGORY_SYSTEM_INFO_0_DA},
+    {"video", CATEGORY_VIDEO_LABEL_DA, CATEGORY_VIDEO_INFO_0_DA},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_da[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_DA, OPENMSX_MACHINE_LABEL_CAT_DA,
+        OPENMSX_MACHINE_INFO_0_DA,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_DA},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_DA},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_DA},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_DA},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_DA},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_DA},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_DA},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_DA},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_DA},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_DA},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_DA},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_DA},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_DA},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_DA},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_DA},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_DA},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_DA},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_DA},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_DA},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_DA},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_DA},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_DA, NULL,
+        OPENMSX_SCALE_INFO_0_DA,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_DA}, {"1", OPTION_VAL_1_DA}, {"2", OPTION_VAL_2_DA}, {"3", OPTION_VAL_3_DA}, {"4", OPTION_VAL_4_DA}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_DA, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_DA,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_DA}, {"opengl", OPTION_VAL_OPENGL_DA}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_DA, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_DA,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_DA, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_DA,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_DA}, {"square", OPTION_VAL_SQUARE_DA}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_DA, NULL,
+        OPENMSX_EXT1_INFO_0_DA,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_DA},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_DA},
+            {"advram", OPTION_VAL_ADVRAM_DA},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_DA},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_DA},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DA},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DA},
+            {"msxdos2", OPTION_VAL_MSXDOS2_DA},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_DA},
+            {"mu-PACK", OPTION_VAL_MU_PACK_DA},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_DA},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_DA},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DA},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DA},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_DA},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_DA},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_DA},
+            {"megaram", OPTION_VAL_MEGARAM_DA},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_DA},
+            {"smxwifi", OPTION_VAL_SMXWIFI_DA},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_DA},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_DA},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_DA},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_DA},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_DA},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_DA},
+            {"rs232", OPTION_VAL_RS232_DA},
+            {"audio", OPTION_VAL_AUDIO_DA},
+            {"audio2", OPTION_VAL_AUDIO2_DA},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_DA},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_DA},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_DA},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_DA},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_DA},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_DA},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_DA},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_DA},
+            {"scc", OPTION_VAL_SCC_DA},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_DA},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_DA},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_DA},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_DA},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_DA},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_DA},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_DA},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_DA},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_DA},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_DA},
+            {"ram1mb", OPTION_VAL_RAM1MB_DA},
+            {"ram2mb", OPTION_VAL_RAM2MB_DA},
+            {"ram4mb", OPTION_VAL_RAM4MB_DA},
+            {"ram512k", OPTION_VAL_RAM512K_DA},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_DA},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_DA},
+            {"mbstereo", OPTION_VAL_MBSTEREO_DA},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_DA},
+            {"MSXPi", OPTION_VAL_MSXPI_DA},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_DA},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_DA},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_DA},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_DA},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_DA},
+            {"unapinet", OPTION_VAL_UNAPINET_DA},
+            {"fmpac", OPTION_VAL_FMPAC_DA},
+            {"pac", OPTION_VAL_PAC_DA},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_DA},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_DA},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_DA},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_DA},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_DA},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_DA},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_DA},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_DA},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_DA},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_DA},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DA},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_DA},
+            {"ram16k", OPTION_VAL_RAM16K_DA},
+            {"ram32k", OPTION_VAL_RAM32K_DA},
+            {"ram64k", OPTION_VAL_RAM64K_DA},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_DA},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_DA},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_DA},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_DA},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_DA},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_DA},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_DA},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_DA},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_DA},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_DA},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_DA},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_DA},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_DA},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_DA},
+            {"SensorKid", OPTION_VAL_SENSORKID_DA},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_DA},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_DA},
+            {"ide", OPTION_VAL_IDE_DA},
+            {"gfx9000", OPTION_VAL_GFX9000_DA},
+            {"moonsound", OPTION_VAL_MOONSOUND_DA},
+            {"nowind", OPTION_VAL_NOWIND_DA},
+            {"video9000", OPTION_VAL_VIDEO9000_DA},
+            {"Makoto", OPTION_VAL_MAKOTO_DA},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_DA},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_DA},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_DA},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_DA},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DA},
+            {"SN76489", OPTION_VAL_SN76489_DA},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DA},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_DA},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_DA},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_DA},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_DA},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_DA},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_DA},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DA},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_DA},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_da = {
+   option_cats_da,
+   option_defs_da
+};
+
 /* RETRO_LANGUAGE_DE */
 
 #define CATEGORY_SYSTEM_LABEL_DE NULL
@@ -10778,27 +15377,27 @@ struct retro_core_options_v2 options_cs = {
 #define OPENMSX_MACHINE_LABEL_CAT_DE NULL
 #define OPENMSX_MACHINE_INFO_0_DE NULL
 #define OPTION_VAL_C_BIOS_MSX1_DE NULL
-#define OPTION_VAL_C_BIOS_MSX1_EU_DE NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_DE "C-BIOS MSX1 (Europa)"
 #define OPTION_VAL_C_BIOS_MSX1_JP_DE NULL
 #define OPTION_VAL_C_BIOS_MSX2_DE NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_DE NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_DE "C-BIOS MSX2 (Europa)"
 #define OPTION_VAL_C_BIOS_MSX2_JP_DE NULL
 #define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_DE NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_DE NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_DE "C-BIOS MSX2+ (Europa)"
 #define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_DE NULL
-#define OPTION_VAL_PHILIPS_VG_8020_DE NULL
-#define OPTION_VAL_SONY_HB_75P_DE NULL
+#define OPTION_VAL_PHILIPS_VG_8020_DE "Philips VG-8020 (MSX1, Europa)"
+#define OPTION_VAL_SONY_HB_75P_DE "Sony HB-75P (MSX1, Europa)"
 #define OPTION_VAL_TOSHIBA_HX_10_DE NULL
-#define OPTION_VAL_YAMAHA_CX5M_DE NULL
-#define OPTION_VAL_PHILIPS_NMS_8245_DE NULL
-#define OPTION_VAL_PHILIPS_NMS_8250_DE NULL
-#define OPTION_VAL_SONY_HB_F700P_DE NULL
+#define OPTION_VAL_YAMAHA_CX5M_DE "Yamaha CX5M (MSX1, Europa)"
+#define OPTION_VAL_PHILIPS_NMS_8245_DE "Philips NMS 8245 (MSX2, Europa)"
+#define OPTION_VAL_PHILIPS_NMS_8250_DE "Philips NMS 8250 (MSX2, Europa)"
+#define OPTION_VAL_SONY_HB_F700P_DE "Sony HB-F700P (MSX2, Europa)"
 #define OPTION_VAL_SONY_HB_F1XD_DE NULL
 #define OPTION_VAL_SONY_HB_F1XV_DE NULL
 #define OPTION_VAL_PANASONIC_FS_A1WSX_DE NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_DE NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_DE NULL
-#define OPENMSX_SCALE_LABEL_DE NULL
+#define OPENMSX_SCALE_LABEL_DE "Auflösung"
 #define OPENMSX_SCALE_INFO_0_DE NULL
 #define OPTION_VAL_AUTO_DE NULL
 #define OPTION_VAL_1_DE NULL
@@ -10809,7 +15408,7 @@ struct retro_core_options_v2 options_cs = {
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_DE NULL
 #define OPTION_VAL_SOFTWARE_DE NULL
 #define OPTION_VAL_OPENGL_DE NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_DE NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_DE "Overscan zuschneiden"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_DE NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_DE NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_DE NULL
@@ -10817,25 +15416,25 @@ struct retro_core_options_v2 options_cs = {
 #define OPTION_VAL_SQUARE_DE NULL
 #define OPENMSX_EXT1_LABEL_DE NULL
 #define OPENMSX_EXT1_INFO_0_DE NULL
-#define OPTION_VAL_NONE_DE NULL
+#define OPTION_VAL_NONE_DE "Nein"
 #define OPTION_VAL_2ND_PSG_DE NULL
 #define OPTION_VAL_ADVRAM_DE NULL
 #define OPTION_VAL_MEGARAM_2MB_DE NULL
 #define OPTION_VAL_ASCII_MSX_DOS2_DE NULL
 #define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_DE NULL
-#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DE NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_DE "ASCII Japanisches MSX-Write II"
 #define OPTION_VAL_MSXDOS2_DE NULL
-#define OPTION_VAL_AVT_DPF_550_DE NULL
-#define OPTION_VAL_MU_PACK_DE NULL
-#define OPTION_VAL_CASIO_KB_10_DE NULL
-#define OPTION_VAL_CASIO_KB_7_DE NULL
-#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DE NULL
-#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DE NULL
+#define OPTION_VAL_AVT_DPF_550_DE "AVT Diskettenlaufwerk DPF-550"
+#define OPTION_VAL_MU_PACK_DE "Bit2/ASCII μ·PACK BM-117"
+#define OPTION_VAL_CASIO_KB_10_DE "Casio Dockingstation KB-10"
+#define OPTION_VAL_CASIO_KB_7_DE "Casio Dockingstation KB-7"
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_DE "Checkmark FM-Stereo-PAK"
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_DE "Computer Mates Diskettenschnittstelle"
 #define OPTION_VAL_ROM_HUNTER_MK2_DE NULL
-#define OPTION_VAL_DEBUGDEVICE_DE NULL
+#define OPTION_VAL_DEBUGDEVICE_DE "Debugginggerät"
 #define OPTION_VAL_DDX_3_0_DE NULL
 #define OPTION_VAL_MEGARAM_DE NULL
-#define OPTION_VAL_MEGARAM_DISK_DE NULL
+#define OPTION_VAL_MEGARAM_DISK_DE "Digital Design MegaRAM-Disk"
 #define OPTION_VAL_SMXWIFI_DE NULL
 #define OPTION_VAL_EPSON_CHAKKARI_COPY_DE NULL
 #define OPTION_VAL_ESE_RAMDISK_DE NULL
@@ -10876,75 +15475,75 @@ struct retro_core_options_v2 options_cs = {
 #define OPTION_VAL_GOUDA_SCSI_DE NULL
 #define OPTION_VAL_MSXPI_DE NULL
 #define OPTION_VAL_OPL3CARTRIDGE2_MONO_DE NULL
-#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_DE NULL
-#define OPTION_VAL_NATIONAL_CF_SM003_DE NULL
-#define OPTION_VAL_NEOS_MA_20R_DE NULL
-#define OPTION_VAL_NEOS_MA_20V_DE NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_DE "MSXpro OPL3-Modul v2 (Stereo)"
+#define OPTION_VAL_NATIONAL_CF_SM003_DE "National Kanji-Textverarbeitungseinheit CF-SM003"
+#define OPTION_VAL_NEOS_MA_20R_DE "Neos Versionierungsadapter MSX BASIC Version 2.0 MA-20 (R)"
+#define OPTION_VAL_NEOS_MA_20V_DE "Neos Versionierungsadapter V MA-20 (V)"
 #define OPTION_VAL_UNAPINET_DE NULL
 #define OPTION_VAL_FMPAC_DE NULL
 #define OPTION_VAL_PAC_DE NULL
-#define OPTION_VAL_PANASONIC_FS_FD1A_DE NULL
-#define OPTION_VAL_PANASONIC_FS_CA1_DE NULL
-#define OPTION_VAL_PANASONIC_FS_PW1_DE NULL
-#define OPTION_VAL_PASSWORD_CARTRIDGE_DE NULL
-#define OPTION_VAL_PHILIPS_NMS_1200_DE NULL
-#define OPTION_VAL_PHILIPS_VY_0010_DE NULL
-#define OPTION_VAL_PHILIPS_NMS_1205_DE NULL
-#define OPTION_VAL_PHILIPS_VU_0040_DE NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_DE "Panasonic 3,5 Zoll Diskettenlaufwerk FS-FD1A"
+#define OPTION_VAL_PANASONIC_FS_CA1_DE "Panasonic MSX-AUDIO-Einheit FS-CA1"
+#define OPTION_VAL_PANASONIC_FS_PW1_DE "Panasonic Textverarbeitung mit Kanji-ROM-Modul FS-PW1"
+#define OPTION_VAL_PASSWORD_CARTRIDGE_DE "Passwortmodul"
+#define OPTION_VAL_PHILIPS_NMS_1200_DE "Philips 2DD-Mikrofloppy-Laufwerk NMS 1200"
+#define OPTION_VAL_PHILIPS_VY_0010_DE "Philips 3,5-Zoll-Diskettenlaufwerk VY-0010"
+#define OPTION_VAL_PHILIPS_NMS_1205_DE "Philips Musikmodul NMS-1205"
+#define OPTION_VAL_PHILIPS_VU_0040_DE "Philips Parallele Druckerschnittstelle VU 0040"
 #define OPTION_VAL_BOOSTED_AUDIO_DE NULL
-#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_DE NULL
-#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DE NULL
-#define OPTION_VAL_PROGRAMMABLEDEVICE_DE NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_DE "Popolon + Repro Factory-Musikspeicher-Mapper (1 MB)"
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_DE "Popolon Soundmodul"
+#define OPTION_VAL_PROGRAMMABLEDEVICE_DE "PVM Programmierbares Gerät"
 #define OPTION_VAL_RAM16K_DE NULL
 #define OPTION_VAL_RAM32K_DE NULL
 #define OPTION_VAL_RAM64K_DE NULL
 #define OPTION_VAL_CARNIVORE2_DE NULL
-#define OPTION_VAL_SANYO_MFD_001_DE NULL
-#define OPTION_VAL_SANYO_MRS_001_DE NULL
-#define OPTION_VAL_SHARP_HB_4000_DE NULL
-#define OPTION_VAL_SHARP_HB_3600_DE NULL
-#define OPTION_VAL_SLOTEXPANDER_DE NULL
+#define OPTION_VAL_SANYO_MFD_001_DE "Sanyo MSX-Diskettenlaufwerk MFD-001"
+#define OPTION_VAL_SANYO_MRS_001_DE "Sanyo MSX-RS-232C-Schnittstelleneinheit MRS-001"
+#define OPTION_VAL_SHARP_HB_4000_DE "Sharp 80-Spalten-Karte HB-4000"
+#define OPTION_VAL_SHARP_HB_3600_DE "Sharp Dual-Diskettenlaufwerk-Controller HB-3600"
+#define OPTION_VAL_SLOTEXPANDER_DE "Steckplatzerweiterung"
 #define OPTION_VAL_BEER_IDE_DE NULL
-#define OPTION_VAL_SONY_HBD_20W_DE NULL
-#define OPTION_VAL_SONY_HBD_F1_DE NULL
-#define OPTION_VAL_SONY_HBI_55_DE NULL
-#define OPTION_VAL_SONY_HBI_J1_DE NULL
-#define OPTION_VAL_SONY_HBD_50_DE NULL
-#define OPTION_VAL_SONY_HBK_30_DE NULL
-#define OPTION_VAL_SONY_HBI_232_DE NULL
-#define OPTION_VAL_SENSORKID_DE NULL
-#define OPTION_VAL_SPECTRAVIDEO_SVI_707_DE NULL
-#define OPTION_VAL_SUNRISEIDE_NEXTOR_DE NULL
+#define OPTION_VAL_SONY_HBD_20W_DE "Sony 2DD-Mikrofloppy-Laufwerk HBD-20W"
+#define OPTION_VAL_SONY_HBD_F1_DE "Sony 2DD-Mikrofloppy-Laufwerk HBD-F1"
+#define OPTION_VAL_SONY_HBI_55_DE "Sony Datenmodul 4 KB HBI-55"
+#define OPTION_VAL_SONY_HBI_J1_DE "Sony Kanji-ROM-Modul HBI-J1"
+#define OPTION_VAL_SONY_HBD_50_DE "Sony Mikrofloppy-Laufwerk HBD-50"
+#define OPTION_VAL_SONY_HBK_30_DE "Sony Mikrofloppy-Laufwerk HBK-30"
+#define OPTION_VAL_SONY_HBI_232_DE "Sony RS-232C-Schnittstellenmodul HBI-232"
+#define OPTION_VAL_SENSORKID_DE "Sony Sensor-Kid-Modul HBJ-H081C"
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_DE "Spectravideo MSX-Diskettenlaufwerk (320 KB) SVI-707"
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_DE "Sunrise ATA-IDE mit Nextor"
 #define OPTION_VAL_IDE_DE NULL
 #define OPTION_VAL_GFX9000_DE NULL
 #define OPTION_VAL_MOONSOUND_DE NULL
-#define OPTION_VAL_NOWIND_DE NULL
+#define OPTION_VAL_NOWIND_DE "Sunrise Nowind-USB-Schnittstelle"
 #define OPTION_VAL_VIDEO9000_DE NULL
-#define OPTION_VAL_MAKOTO_DE NULL
+#define OPTION_VAL_MAKOTO_DE "SuperSoniqs / Electric River-Hardware Makoto"
 #define OPTION_VAL_FRANKY_NTSC_DE NULL
 #define OPTION_VAL_FRANKY_PAL_DE NULL
-#define OPTION_VAL_TALENT_TDC_600_DE NULL
-#define OPTION_VAL_TALENT_DPF_550_DE NULL
-#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DE NULL
-#define OPTION_VAL_SN76489_DE NULL
+#define OPTION_VAL_TALENT_TDC_600_DE "Talent Diskettenlaufwerk TDC-600"
+#define OPTION_VAL_TALENT_DPF_550_DE "Talent Diskettenlaufwerk DPF-550"
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_DE "Tecall MSX-RAMFILE TM220"
+#define OPTION_VAL_SN76489_DE "Texas Instruments Digitalklanggenerator SN76489"
 #define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_DE NULL
-#define OPTION_VAL_TOSHIBA_HX_F101PE_DE NULL
-#define OPTION_VAL_TOSHIBA_HX_MU900_DE NULL
-#define OPTION_VAL_YAMAHA_FD_03_DE NULL
-#define OPTION_VAL_YAMAHA_FD_05_DE NULL
-#define OPTION_VAL_YAMAHA_SFG_05_DE NULL
-#define OPTION_VAL_YAMAHA_SFG_01_DE NULL
-#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DE NULL
-#define OPTION_VAL_YAMAHA_SKW_01_DE NULL
-#define OPENMSX_EXT2_LABEL_DE NULL
-#define OPENMSX_EXT3_LABEL_DE NULL
-#define OPENMSX_EXT4_LABEL_DE NULL
-#define OPENMSX_EXT5_LABEL_DE NULL
-#define OPENMSX_EXT6_LABEL_DE NULL
-#define OPENMSX_EXT7_LABEL_DE NULL
-#define OPENMSX_EXT8_LABEL_DE NULL
-#define OPENMSX_EXT9_LABEL_DE NULL
-#define OPENMSX_EXT10_LABEL_DE NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_DE "Toshiba Mikrofloppy-Laufwerk HX-F101PE"
+#define OPTION_VAL_TOSHIBA_HX_MU900_DE "Toshiba MSX-Musiksystem HX-MU900"
+#define OPTION_VAL_YAMAHA_FD_03_DE "Yamaha 3,5-Zoll-Diskettenlaufwerk 1DD FD-03"
+#define OPTION_VAL_YAMAHA_FD_05_DE "Yamaha 3,5-Zoll-MSX-Mikrofloppy-Laufwerk FD-05/FD-051"
+#define OPTION_VAL_YAMAHA_SFG_05_DE "Yamaha FM-Sound-Synthesizereinheit Mark II SFG-05"
+#define OPTION_VAL_YAMAHA_SFG_01_DE "Yamaha FM-Sound-Synthesizereinheit SFG-01"
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_DE "Yamaha Kanji-Textverarbeitungseinheit (eingebettet) SKW-05"
+#define OPTION_VAL_YAMAHA_SKW_01_DE "Yamaha Kanji-Textverarbeitungseinheit SKW-01"
+#define OPENMSX_EXT2_LABEL_DE "Erweiterung 2 (Neustart)"
+#define OPENMSX_EXT3_LABEL_DE "Erweiterung 3 (Neustart)"
+#define OPENMSX_EXT4_LABEL_DE "Erweiterung 4 (Neustart)"
+#define OPENMSX_EXT5_LABEL_DE "Erweiterung 5 (Neustart)"
+#define OPENMSX_EXT6_LABEL_DE "Erweiterung 6 (Neustart)"
+#define OPENMSX_EXT7_LABEL_DE "Erweiterung 7 (Neustart)"
+#define OPENMSX_EXT8_LABEL_DE "Erweiterung 8 (Neustart)"
+#define OPENMSX_EXT9_LABEL_DE "Erweiterung 9 (Neustart)"
+#define OPENMSX_EXT10_LABEL_DE "Erweiterung 10 (Neustart)"
 
 struct retro_core_option_v2_category option_cats_de[] = {
     {"system", CATEGORY_SYSTEM_LABEL_DE, CATEGORY_SYSTEM_INFO_0_DE},
@@ -12303,9 +16902,9 @@ struct retro_core_options_v2 options_de = {
 
 /* RETRO_LANGUAGE_EL */
 
-#define CATEGORY_SYSTEM_LABEL_EL NULL
+#define CATEGORY_SYSTEM_LABEL_EL "Σύστημα"
 #define CATEGORY_SYSTEM_INFO_0_EL NULL
-#define CATEGORY_VIDEO_LABEL_EL NULL
+#define CATEGORY_VIDEO_LABEL_EL "Βίντεο"
 #define CATEGORY_VIDEO_INFO_0_EL NULL
 #define OPENMSX_MACHINE_LABEL_EL NULL
 #define OPENMSX_MACHINE_LABEL_CAT_EL NULL
@@ -12333,7 +16932,7 @@ struct retro_core_options_v2 options_de = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_EL NULL
 #define OPENMSX_SCALE_LABEL_EL NULL
 #define OPENMSX_SCALE_INFO_0_EL NULL
-#define OPTION_VAL_AUTO_EL NULL
+#define OPTION_VAL_AUTO_EL "Αυτόματο"
 #define OPTION_VAL_1_EL NULL
 #define OPTION_VAL_2_EL NULL
 #define OPTION_VAL_3_EL NULL
@@ -12346,11 +16945,11 @@ struct retro_core_options_v2 options_de = {
 #define OPENMSX_CROP_OVERSCAN_INFO_0_EL NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_EL NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_EL NULL
-#define OPTION_VAL_TV_EL NULL
+#define OPTION_VAL_TV_EL "Τηλεόραση"
 #define OPTION_VAL_SQUARE_EL NULL
 #define OPENMSX_EXT1_LABEL_EL NULL
 #define OPENMSX_EXT1_INFO_0_EL NULL
-#define OPTION_VAL_NONE_EL NULL
+#define OPTION_VAL_NONE_EL "Κανείς"
 #define OPTION_VAL_2ND_PSG_EL NULL
 #define OPTION_VAL_ADVRAM_EL NULL
 #define OPTION_VAL_MEGARAM_2MB_EL NULL
@@ -15369,7 +19968,7 @@ struct retro_core_options_v2 options_en = {
 
 /* RETRO_LANGUAGE_EO */
 
-#define CATEGORY_SYSTEM_LABEL_EO NULL
+#define CATEGORY_SYSTEM_LABEL_EO "Sistemo"
 #define CATEGORY_SYSTEM_INFO_0_EO NULL
 #define CATEGORY_VIDEO_LABEL_EO NULL
 #define CATEGORY_VIDEO_INFO_0_EO NULL
@@ -15399,16 +19998,16 @@ struct retro_core_options_v2 options_en = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_EO NULL
 #define OPENMSX_SCALE_LABEL_EO NULL
 #define OPENMSX_SCALE_INFO_0_EO NULL
-#define OPTION_VAL_AUTO_EO NULL
+#define OPTION_VAL_AUTO_EO "Aŭtomata"
 #define OPTION_VAL_1_EO NULL
 #define OPTION_VAL_2_EO NULL
 #define OPTION_VAL_3_EO NULL
 #define OPTION_VAL_4_EO NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_EO NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_EO NULL
-#define OPTION_VAL_SOFTWARE_EO NULL
+#define OPTION_VAL_SOFTWARE_EO "Programara"
 #define OPTION_VAL_OPENGL_EO NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_EO NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_EO "Forstuci superskanon"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_EO NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_EO NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_EO NULL
@@ -15416,7 +20015,7 @@ struct retro_core_options_v2 options_en = {
 #define OPTION_VAL_SQUARE_EO NULL
 #define OPENMSX_EXT1_LABEL_EO NULL
 #define OPENMSX_EXT1_INFO_0_EO NULL
-#define OPTION_VAL_NONE_EO NULL
+#define OPTION_VAL_NONE_EO "Neniom"
 #define OPTION_VAL_2ND_PSG_EO NULL
 #define OPTION_VAL_ADVRAM_EO NULL
 #define OPTION_VAL_MEGARAM_2MB_EO NULL
@@ -16902,181 +21501,181 @@ struct retro_core_options_v2 options_eo = {
 
 /* RETRO_LANGUAGE_ES */
 
-#define CATEGORY_SYSTEM_LABEL_ES NULL
-#define CATEGORY_SYSTEM_INFO_0_ES NULL
-#define CATEGORY_VIDEO_LABEL_ES NULL
-#define CATEGORY_VIDEO_INFO_0_ES NULL
-#define OPENMSX_MACHINE_LABEL_ES NULL
-#define OPENMSX_MACHINE_LABEL_CAT_ES NULL
-#define OPENMSX_MACHINE_INFO_0_ES NULL
+#define CATEGORY_SYSTEM_LABEL_ES "Sistema"
+#define CATEGORY_SYSTEM_INFO_0_ES "Selecciona el modelo de MSX y los cartuchos introducidos en sus ranuras. Los cambios se aplicarán al volver a cargar un contenido."
+#define CATEGORY_VIDEO_LABEL_ES "Vídeo"
+#define CATEGORY_VIDEO_INFO_0_ES "El tamaño y borde de la imagen."
+#define OPENMSX_MACHINE_LABEL_ES "Máquina (es necesario reiniciar)"
+#define OPENMSX_MACHINE_LABEL_CAT_ES "Máquina"
+#define OPENMSX_MACHINE_INFO_0_ES "Indica qué sistema MSX se emulará. Las máquinas C-BIOS no necesitan nada más, una máquina real necesita que sus ROM de sistema estén en <system>/openmsx/share/systemroms, en caso contrario se ejecutará C-BIOS MSX2+. Los modelos europeo y británico se ejecutarán a 50 Hz."
 #define OPTION_VAL_C_BIOS_MSX1_ES NULL
-#define OPTION_VAL_C_BIOS_MSX1_EU_ES NULL
-#define OPTION_VAL_C_BIOS_MSX1_JP_ES NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_ES "C-BIOS MSX1 (Europa)"
+#define OPTION_VAL_C_BIOS_MSX1_JP_ES "C-BIOS MSX1 (Japón)"
 #define OPTION_VAL_C_BIOS_MSX2_ES NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_ES NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_ES NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_ES "C-BIOS MSX2 (Europa)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_ES "C-BIOS MSX2 (Japón)"
 #define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_ES NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_ES NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_ES NULL
-#define OPTION_VAL_PHILIPS_VG_8020_ES NULL
-#define OPTION_VAL_SONY_HB_75P_ES NULL
-#define OPTION_VAL_TOSHIBA_HX_10_ES NULL
-#define OPTION_VAL_YAMAHA_CX5M_ES NULL
-#define OPTION_VAL_PHILIPS_NMS_8245_ES NULL
-#define OPTION_VAL_PHILIPS_NMS_8250_ES NULL
-#define OPTION_VAL_SONY_HB_F700P_ES NULL
-#define OPTION_VAL_SONY_HB_F1XD_ES NULL
-#define OPTION_VAL_SONY_HB_F1XV_ES NULL
-#define OPTION_VAL_PANASONIC_FS_A1WSX_ES NULL
-#define OPTION_VAL_PANASONIC_FS_A1ST_ES NULL
-#define OPTION_VAL_PANASONIC_FS_A1GT_ES NULL
-#define OPENMSX_SCALE_LABEL_ES NULL
-#define OPENMSX_SCALE_INFO_0_ES NULL
-#define OPTION_VAL_AUTO_ES NULL
-#define OPTION_VAL_1_ES NULL
-#define OPTION_VAL_2_ES NULL
-#define OPTION_VAL_3_ES NULL
-#define OPTION_VAL_4_ES NULL
-#define OPENMSX_VIDEO_OUTPUT_LABEL_ES NULL
-#define OPENMSX_VIDEO_OUTPUT_INFO_0_ES NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_ES "C-BIOS MSX2+ (Europa)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_ES "C-BIOS MSX2+ (Japón)"
+#define OPTION_VAL_PHILIPS_VG_8020_ES "Philips VG-8020 (MSX1, Europa)"
+#define OPTION_VAL_SONY_HB_75P_ES "Sony HB-75P (MSX1, Europa)"
+#define OPTION_VAL_TOSHIBA_HX_10_ES "Toshiba HX-10 (MSX1, Reino Unido)"
+#define OPTION_VAL_YAMAHA_CX5M_ES "Yamaha CX5M (MSX1, Europa)"
+#define OPTION_VAL_PHILIPS_NMS_8245_ES "Philips NMS 8245 (MSX2, Europa)"
+#define OPTION_VAL_PHILIPS_NMS_8250_ES "Philips NMS 8250 (MSX2, Europa)"
+#define OPTION_VAL_SONY_HB_F700P_ES "Sony HB-F700P (MSX2, Europa)"
+#define OPTION_VAL_SONY_HB_F1XD_ES "Sony HB-F1XD (MSX2, Japón)"
+#define OPTION_VAL_SONY_HB_F1XV_ES "Sony HB-F1XV (MSX2+, Japón)"
+#define OPTION_VAL_PANASONIC_FS_A1WSX_ES "Panasonic FS-A1WSX (MSX2+, Japón)"
+#define OPTION_VAL_PANASONIC_FS_A1ST_ES "Panasonic FS-A1ST (turbo R, Japón)"
+#define OPTION_VAL_PANASONIC_FS_A1GT_ES "Panasonic FS-A1GT (turbo R, Japón)"
+#define OPENMSX_SCALE_LABEL_ES "Resolución"
+#define OPENMSX_SCALE_INFO_0_ES "El tamaño con el que renderizará openMSX la imagen, incluyendo sus bordes: 320 × 240 multiplicado por este valor. El valor automático respetará el modo de imagen: × 1 para los modos con un ancho de 256 píxeles, × 2 para los modos de 512 píxeles y entrelazado."
+#define OPTION_VAL_AUTO_ES "Automático"
+#define OPTION_VAL_1_ES "× 1 (320 × 240)"
+#define OPTION_VAL_2_ES "× 2 (640 × 480)"
+#define OPTION_VAL_3_ES "x 3 (960 × 720)"
+#define OPTION_VAL_4_ES "× 4 (1280 × 960)"
+#define OPENMSX_VIDEO_OUTPUT_LABEL_ES "Salida de vídeo (es necesario reiniciar)"
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_ES "Software enviará la imagen a RetroArch píxel a píxel para cualquier controlador de vídeo. OpenGL los dibujará mediante el contexto OpenGL de RetroArch (para el controlador de vídeo gl o glcore), aplicando los escaladores y efectos de openMSX."
 #define OPTION_VAL_SOFTWARE_ES NULL
 #define OPTION_VAL_OPENGL_ES NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_ES NULL
-#define OPENMSX_CROP_OVERSCAN_INFO_0_ES NULL
-#define OPENMSX_PIXEL_ASPECT_LABEL_ES NULL
-#define OPENMSX_PIXEL_ASPECT_INFO_0_ES NULL
-#define OPTION_VAL_TV_ES NULL
-#define OPTION_VAL_SQUARE_ES NULL
-#define OPENMSX_EXT1_LABEL_ES NULL
-#define OPENMSX_EXT1_INFO_0_ES NULL
-#define OPTION_VAL_NONE_ES NULL
-#define OPTION_VAL_2ND_PSG_ES NULL
-#define OPTION_VAL_ADVRAM_ES NULL
-#define OPTION_VAL_MEGARAM_2MB_ES NULL
-#define OPTION_VAL_ASCII_MSX_DOS2_ES NULL
-#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_ES NULL
-#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_ES NULL
-#define OPTION_VAL_MSXDOS2_ES NULL
-#define OPTION_VAL_AVT_DPF_550_ES NULL
-#define OPTION_VAL_MU_PACK_ES NULL
-#define OPTION_VAL_CASIO_KB_10_ES NULL
-#define OPTION_VAL_CASIO_KB_7_ES NULL
-#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_ES NULL
-#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_ES NULL
-#define OPTION_VAL_ROM_HUNTER_MK2_ES NULL
-#define OPTION_VAL_DEBUGDEVICE_ES NULL
-#define OPTION_VAL_DDX_3_0_ES NULL
-#define OPTION_VAL_MEGARAM_ES NULL
-#define OPTION_VAL_MEGARAM_DISK_ES NULL
-#define OPTION_VAL_SMXWIFI_ES NULL
-#define OPTION_VAL_EPSON_CHAKKARI_COPY_ES NULL
-#define OPTION_VAL_ESE_RAMDISK_ES NULL
-#define OPTION_VAL_ESE_SCC_ES NULL
-#define OPTION_VAL_ESE_WAVE_SCSI_ES NULL
-#define OPTION_VAL_ESE_MEGA_SCSI_ES NULL
-#define OPTION_VAL_FAC_MIDI_INTERFACE_ES NULL
-#define OPTION_VAL_RS232_ES NULL
-#define OPTION_VAL_AUDIO_ES NULL
-#define OPTION_VAL_AUDIO2_ES NULL
-#define OPTION_VAL_GRADIENTE_CT_80E_ES NULL
-#define OPTION_VAL_ASCII16_X_MAPPER_XL_ES NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_ES "Recortar sobrebarrido horizontal"
+#define OPENMSX_CROP_OVERSCAN_INFO_0_ES "Muestra únicamente la parte de la pantalla en la que se renderiza el MSX sin bordes, el tamaño respetará el modo de imagen."
+#define OPENMSX_PIXEL_ASPECT_LABEL_ES "Relación de aspecto de píxeles"
+#define OPENMSX_PIXEL_ASPECT_INFO_0_ES "Televisor: muestra la imagen con la misma anchura que un televisor, como lo mostraría openMSX. Cuadrada: muestra los píxeles con el mismo ancho y alto."
+#define OPTION_VAL_TV_ES "Televisor"
+#define OPTION_VAL_SQUARE_ES "Cuadrada"
+#define OPENMSX_EXT1_LABEL_ES "Extensión 1 (es necesario reiniciar)"
+#define OPENMSX_EXT1_INFO_0_ES "Un cartucho o dispositivo introducido en un espacio libre, como haría el argumento -ext de openMSX. Algunos necesitan que sus ROM estén guardadas en <system>/openmsx/share/systemroms."
+#define OPTION_VAL_NONE_ES "No compartir"
+#define OPTION_VAL_2ND_PSG_ES "Segundo PSG"
+#define OPTION_VAL_ADVRAM_ES "ADVRAM de Ademir Carchano"
+#define OPTION_VAL_MEGARAM_2MB_ES "MegaRAM de Ademir Carchano (edición Aniversario)"
+#define OPTION_VAL_ASCII_MSX_DOS2_ES "MSX-DOS2 japonés de ASCII"
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_ES "MSX-Write japonés de ASCII"
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_ES "MSX-Write II japonés de ASCII"
+#define OPTION_VAL_MSXDOS2_ES "MSX-DOS 2 de ASCII"
+#define OPTION_VAL_AVT_DPF_550_ES "Disquetera DPF-550 de AVT"
+#define OPTION_VAL_MU_PACK_ES "μ·PACK BM-117 de Bit²/ASCII"
+#define OPTION_VAL_CASIO_KB_10_ES "Módulo de expansión KB-10 de Casio"
+#define OPTION_VAL_CASIO_KB_7_ES "Módulo de expansión KB-7 de Casio"
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_ES "FM Stereo PAK de Checkmark"
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_ES "Interfaz de disco de Computer Mates"
+#define OPTION_VAL_ROM_HUNTER_MK2_ES "ROM Hunter Mk2 de Daito Micom System"
+#define OPTION_VAL_DEBUGDEVICE_ES "Dispositivo de depuración"
+#define OPTION_VAL_DDX_3_0_ES "DDX 3.0 de Digital Design"
+#define OPTION_VAL_MEGARAM_ES "MegaRAM de Digital Design"
+#define OPTION_VAL_MEGARAM_DISK_ES "MegaRAM DISK de Digital Design"
+#define OPTION_VAL_SMXWIFI_ES "SM-X WiFi de DucaSP"
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_ES "Chakkari Copy de Epson"
+#define OPTION_VAL_ESE_RAMDISK_ES "ESE Ramdisk de ESE Artists' Factory"
+#define OPTION_VAL_ESE_SCC_ES "ESE SSC de ESE Artists' Factory"
+#define OPTION_VAL_ESE_WAVE_SCSI_ES "ESE WAVE-SCSI de ESE Artists' Factory"
+#define OPTION_VAL_ESE_MEGA_SCSI_ES "MEGA SCSI de ESE Artists' Factory"
+#define OPTION_VAL_FAC_MIDI_INTERFACE_ES "Interfaz MIDI de FAC"
+#define OPTION_VAL_RS232_ES "MSX RS-232C genérico"
+#define OPTION_VAL_AUDIO_ES "MSX-AUDIO genérico"
+#define OPTION_VAL_AUDIO2_ES "MSX-AUDIO 2 genérico (conversiones alternativas)"
+#define OPTION_VAL_GRADIENTE_CT_80E_ES "Cartão 80 Colunas CT-80E de Gradiente"
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_ES "ASCII16-X Mapper XL de Grauw"
 #define OPTION_VAL_HIRESTIMER_ES NULL
-#define OPTION_VAL_HITACHI_MPC_310H_ES NULL
-#define OPTION_VAL_JUN_SOFT_DALSORI_R2_ES NULL
-#define OPTION_VAL_JVC_MSX_MIDI_ES NULL
-#define OPTION_VAL_KONAMI_EC_701_ES NULL
-#define OPTION_VAL_KONAMI_EC_702_ES NULL
-#define OPTION_VAL_SCC_ES NULL
-#define OPTION_VAL_SCC_OPENMSX_EXT1_ES NULL
-#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_ES NULL
-#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_ES NULL
-#define OPTION_VAL_LASCOM_KANJI_ES NULL
-#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_ES NULL
-#define OPTION_VAL_OPL3CARTRIDGE_ES NULL
-#define OPTION_VAL_MIDI_INTERFACE_3_ES NULL
-#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_ES NULL
-#define OPTION_VAL_MEGAFLASHROM_SCC_ES NULL
-#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_ES NULL
-#define OPTION_VAL_MEGAFLASHROM_SCC_SD_ES NULL
-#define OPTION_VAL_RAM1MB_ES NULL
-#define OPTION_VAL_RAM2MB_ES NULL
-#define OPTION_VAL_RAM4MB_ES NULL
-#define OPTION_VAL_RAM512K_ES NULL
-#define OPTION_VAL_MICROSOL_CDX_2_ES NULL
-#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_ES NULL
+#define OPTION_VAL_HITACHI_MPC_310H_ES "Disquetera 2DD Micro de Hitachi + Controlador MPC-310H"
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_ES "DalSoRi R2 de Jun Soft"
+#define OPTION_VAL_JVC_MSX_MIDI_ES "MSX MIDI de JVC"
+#define OPTION_VAL_KONAMI_EC_701_ES "Cartucho de procesador de textos en japonés EC-701 de Konami"
+#define OPTION_VAL_KONAMI_EC_702_ES "Cartucho de ROM de kanjis EC-702 de Konami"
+#define OPTION_VAL_SCC_ES "SCC de Konami"
+#define OPTION_VAL_SCC_OPENMSX_EXT1_ES "SCC+ de Konami"
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_ES "Cartucho de sonido RA-011 para SD-Snatcher de Konami"
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_ES "Cartucho de sonido RA-004 para Snatcher de Konami"
+#define OPTION_VAL_LASCOM_KANJI_ES "Cartucho de ROM de kanjis de Lascom"
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_ES "Cartucho OPL3 de Luciano Sturaro (compatible con Moonsound)"
+#define OPTION_VAL_OPL3CARTRIDGE_ES "Cartucho OPL3 de Luciano Sturaro (compatible con MSX-Audio)"
+#define OPTION_VAL_MIDI_INTERFACE_3_ES "Interfaz MIDI 3 de M. Fujimoto"
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_ES "Versión 3 de la Konami Ultimate Collection de Manuel Pazos"
+#define OPTION_VAL_MEGAFLASHROM_SCC_ES "MegaFlashROM SCC de Manuel Pazos"
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_ES "MegaFlashROM SCC+ de Manuel Pazos"
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_ES "MegaFlashROM SCC+ SD de Manuel Pazos"
+#define OPTION_VAL_RAM1MB_ES "Asignador de memoria (1 MB)"
+#define OPTION_VAL_RAM2MB_ES "Asignador de memoria (2 MB)"
+#define OPTION_VAL_RAM4MB_ES "Asignador de memoria (4 MB)"
+#define OPTION_VAL_RAM512K_ES "Asignador de memoria (512 kB)"
+#define OPTION_VAL_MICROSOL_CDX_2_ES "Disquetera CDX-2 de Microsol"
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_ES "Controlador/Unidades de microdisquetera ML-30DC/ML-30FD de Mitsubishi"
 #define OPTION_VAL_MBSTEREO_ES NULL
-#define OPTION_VAL_GOUDA_SCSI_ES NULL
+#define OPTION_VAL_GOUDA_SCSI_ES "Gouda Novaxis SCSI de MSX Club Gouda"
 #define OPTION_VAL_MSXPI_ES NULL
-#define OPTION_VAL_OPL3CARTRIDGE2_MONO_ES NULL
-#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_ES NULL
-#define OPTION_VAL_NATIONAL_CF_SM003_ES NULL
-#define OPTION_VAL_NEOS_MA_20R_ES NULL
-#define OPTION_VAL_NEOS_MA_20V_ES NULL
-#define OPTION_VAL_UNAPINET_ES NULL
-#define OPTION_VAL_FMPAC_ES NULL
-#define OPTION_VAL_PAC_ES NULL
-#define OPTION_VAL_PANASONIC_FS_FD1A_ES NULL
-#define OPTION_VAL_PANASONIC_FS_CA1_ES NULL
-#define OPTION_VAL_PANASONIC_FS_PW1_ES NULL
-#define OPTION_VAL_PASSWORD_CARTRIDGE_ES NULL
-#define OPTION_VAL_PHILIPS_NMS_1200_ES NULL
-#define OPTION_VAL_PHILIPS_VY_0010_ES NULL
-#define OPTION_VAL_PHILIPS_NMS_1205_ES NULL
-#define OPTION_VAL_PHILIPS_VU_0040_ES NULL
-#define OPTION_VAL_BOOSTED_AUDIO_ES NULL
-#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_ES NULL
-#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_ES NULL
-#define OPTION_VAL_PROGRAMMABLEDEVICE_ES NULL
-#define OPTION_VAL_RAM16K_ES NULL
-#define OPTION_VAL_RAM32K_ES NULL
-#define OPTION_VAL_RAM64K_ES NULL
-#define OPTION_VAL_CARNIVORE2_ES NULL
-#define OPTION_VAL_SANYO_MFD_001_ES NULL
-#define OPTION_VAL_SANYO_MRS_001_ES NULL
-#define OPTION_VAL_SHARP_HB_4000_ES NULL
-#define OPTION_VAL_SHARP_HB_3600_ES NULL
-#define OPTION_VAL_SLOTEXPANDER_ES NULL
-#define OPTION_VAL_BEER_IDE_ES NULL
-#define OPTION_VAL_SONY_HBD_20W_ES NULL
-#define OPTION_VAL_SONY_HBD_F1_ES NULL
-#define OPTION_VAL_SONY_HBI_55_ES NULL
-#define OPTION_VAL_SONY_HBI_J1_ES NULL
-#define OPTION_VAL_SONY_HBD_50_ES NULL
-#define OPTION_VAL_SONY_HBK_30_ES NULL
-#define OPTION_VAL_SONY_HBI_232_ES NULL
-#define OPTION_VAL_SENSORKID_ES NULL
-#define OPTION_VAL_SPECTRAVIDEO_SVI_707_ES NULL
-#define OPTION_VAL_SUNRISEIDE_NEXTOR_ES NULL
-#define OPTION_VAL_IDE_ES NULL
-#define OPTION_VAL_GFX9000_ES NULL
-#define OPTION_VAL_MOONSOUND_ES NULL
-#define OPTION_VAL_NOWIND_ES NULL
-#define OPTION_VAL_VIDEO9000_ES NULL
-#define OPTION_VAL_MAKOTO_ES NULL
-#define OPTION_VAL_FRANKY_NTSC_ES NULL
-#define OPTION_VAL_FRANKY_PAL_ES NULL
-#define OPTION_VAL_TALENT_TDC_600_ES NULL
-#define OPTION_VAL_TALENT_DPF_550_ES NULL
-#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_ES NULL
-#define OPTION_VAL_SN76489_ES NULL
-#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_ES NULL
-#define OPTION_VAL_TOSHIBA_HX_F101PE_ES NULL
-#define OPTION_VAL_TOSHIBA_HX_MU900_ES NULL
-#define OPTION_VAL_YAMAHA_FD_03_ES NULL
-#define OPTION_VAL_YAMAHA_FD_05_ES NULL
-#define OPTION_VAL_YAMAHA_SFG_05_ES NULL
-#define OPTION_VAL_YAMAHA_SFG_01_ES NULL
-#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_ES NULL
-#define OPTION_VAL_YAMAHA_SKW_01_ES NULL
-#define OPENMSX_EXT2_LABEL_ES NULL
-#define OPENMSX_EXT3_LABEL_ES NULL
-#define OPENMSX_EXT4_LABEL_ES NULL
-#define OPENMSX_EXT5_LABEL_ES NULL
-#define OPENMSX_EXT6_LABEL_ES NULL
-#define OPENMSX_EXT7_LABEL_ES NULL
-#define OPENMSX_EXT8_LABEL_ES NULL
-#define OPENMSX_EXT9_LABEL_ES NULL
-#define OPENMSX_EXT10_LABEL_ES NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_ES "Cartucho OPL3 v2 (mono) de MSXpro"
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_ES "Cartucho OPL3 v2 (estéreo) de MSXpro"
+#define OPTION_VAL_NATIONAL_CF_SM003_ES "Unidad de procesador de textos con kanjis CF-SM003 de National"
+#define OPTION_VAL_NEOS_MA_20R_ES "Adaptador \"Version Up\" de MSX BASIC Vev 2.0 MA-20 (R) de Neos"
+#define OPTION_VAL_NEOS_MA_20V_ES "Adaptador \"Version Up\" V MA-20 (V) de Neos"
+#define OPTION_VAL_UNAPINET_ES "UnapiNet de openMSXnet"
+#define OPTION_VAL_FMPAC_ES "FMPAC SW-M004 de Panasoft"
+#define OPTION_VAL_PAC_ES "PAC SW-M001 de Panasoft"
+#define OPTION_VAL_PANASONIC_FS_FD1A_ES "Disquetera de 3½″ FS-FD1A de Panasonic"
+#define OPTION_VAL_PANASONIC_FS_CA1_ES "Unidad MSX-AUDIO FS-CA1 de Panasonic"
+#define OPTION_VAL_PANASONIC_FS_PW1_ES "Procesador de textos con cartucho de ROM de kanjis FS-PW1 de Panasonic"
+#define OPTION_VAL_PASSWORD_CARTRIDGE_ES "Cartucho de contraseña"
+#define OPTION_VAL_PHILIPS_NMS_1200_ES "Disquetera 2DD Micro NMS 1200 de Philips"
+#define OPTION_VAL_PHILIPS_VY_0010_ES "Disquetera de 3½″ VY-0010 de Philips"
+#define OPTION_VAL_PHILIPS_NMS_1205_ES "Módulo de música NMS-1205 de Philips"
+#define OPTION_VAL_PHILIPS_VU_0040_ES "Interfaz paralela de impresora VU 0040 de Philips"
+#define OPTION_VAL_BOOSTED_AUDIO_ES "MSX-Audio de Philips/MSXPro"
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_ES "Asignador de memoria musical (1 MB) de Popolon + Repro Factory"
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_ES "Cartucho de sonido de Popolon"
+#define OPTION_VAL_PROGRAMMABLEDEVICE_ES "Dispositivo programable PVM"
+#define OPTION_VAL_RAM16K_ES "RAM (16 kB)"
+#define OPTION_VAL_RAM32K_ES "RAM (32 kB)"
+#define OPTION_VAL_RAM64K_ES "RAM (64 kB)"
+#define OPTION_VAL_CARNIVORE2_ES "Carnivore2 de RBSC"
+#define OPTION_VAL_SANYO_MFD_001_ES "Disquetera MSX MFD-001 de Sanyo"
+#define OPTION_VAL_SANYO_MRS_001_ES "Interfaz MSX RS-232C MRS-001 de Sanyo"
+#define OPTION_VAL_SHARP_HB_4000_ES "Cartão 80 Colunas HB-4000 de Sharp"
+#define OPTION_VAL_SHARP_HB_3600_ES "Controlador de disquetera doble HB-3600 de Sharp"
+#define OPTION_VAL_SLOTEXPANDER_ES "Expansión de ranuras"
+#define OPTION_VAL_BEER_IDE_ES "Beer IDE de SOLiD"
+#define OPTION_VAL_SONY_HBD_20W_ES "Disquetera 2DD Micro HBD-20W de Sony"
+#define OPTION_VAL_SONY_HBD_F1_ES "Disquetera 2DD Micro HBD-F1 de Sony"
+#define OPTION_VAL_SONY_HBI_55_ES "Cartucho de datos de 4KBytes HBI-55 de Sony"
+#define OPTION_VAL_SONY_HBI_J1_ES "Cartucho de ROM de kanjis HBI-J1 de Sony"
+#define OPTION_VAL_SONY_HBD_50_ES "Disquetera Micro HBD-50 de Sony"
+#define OPTION_VAL_SONY_HBK_30_ES "Disquetera Micro HBK-30 de Sony"
+#define OPTION_VAL_SONY_HBI_232_ES "Cartucho de interfaz RS-232C HBI-232 de Sony"
+#define OPTION_VAL_SENSORKID_ES "Cartucho Sensor Kid HBJ-H081C de Sony"
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_ES "Disquetera (320K) MSX SVI-707 de Spectravideo"
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_ES "ATA-IDE con Nextor de Sunrise"
+#define OPTION_VAL_IDE_ES "ATA-IDE de Sunrise"
+#define OPTION_VAL_GFX9000_ES "GFX9000 de Sunrise"
+#define OPTION_VAL_MOONSOUND_ES "MoonSound de Sunrise"
+#define OPTION_VAL_NOWIND_ES "Interfaz USB Nowind de Sunrise"
+#define OPTION_VAL_VIDEO9000_ES "Video9000 de Sunrise"
+#define OPTION_VAL_MAKOTO_ES "Makoto de SuperSoniqs/Electric River Hardware"
+#define OPTION_VAL_FRANKY_NTSC_ES "Franky NTSC de SuperSoniqs"
+#define OPTION_VAL_FRANKY_PAL_ES "Franky PAL de SuperSoniqs"
+#define OPTION_VAL_TALENT_TDC_600_ES "Disquetera TDC-600 de Talent"
+#define OPTION_VAL_TALENT_DPF_550_ES "Disquetera DPF-550 de Talent"
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_ES "RAMFILE MSX TM220 de Tecall"
+#define OPTION_VAL_SN76489_ES "Generador de sonidos digitales complejos SN76489 de Texas Instruments"
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_ES "Yamanooto de The SCC Alliance"
+#define OPTION_VAL_TOSHIBA_HX_F101PE_ES "Disquetera Micro HX-F101PE de Toshiba"
+#define OPTION_VAL_TOSHIBA_HX_MU900_ES "Sistema de música de MSX HY-MU900 de Toshiba"
+#define OPTION_VAL_YAMAHA_FD_03_ES "Disquetera de 3½″ 1DD FD-03 de Yamaha"
+#define OPTION_VAL_YAMAHA_FD_05_ES "Disquetera de 3½″ MSX Micro FDD FD-05/FD-051 de Yamaha"
+#define OPTION_VAL_YAMAHA_SFG_05_ES "Unidad de sintetizado de sonidos FM SFG-05 mark II de Yamaha"
+#define OPTION_VAL_YAMAHA_SFG_01_ES "Unidad de sintetizado de sonidos FM SFG-05 de Yamaha"
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_ES "Unidad de procesador de textos con kanjis (integrada) SKW-05 de Yamaha"
+#define OPTION_VAL_YAMAHA_SKW_01_ES "Unidad de procesador de textos con kanjis SKW-01 de Yamaha"
+#define OPENMSX_EXT2_LABEL_ES "Extensión 2 (es necesario reiniciar)"
+#define OPENMSX_EXT3_LABEL_ES "Extensión 3 (es necesario reiniciar)"
+#define OPENMSX_EXT4_LABEL_ES "Extensión 4 (es necesario reiniciar)"
+#define OPENMSX_EXT5_LABEL_ES "Extensión 5 (es necesario reiniciar)"
+#define OPENMSX_EXT6_LABEL_ES "Extensión 6 (es necesario reiniciar)"
+#define OPENMSX_EXT7_LABEL_ES "Extensión 7 (es necesario reiniciar)"
+#define OPENMSX_EXT8_LABEL_ES "Extensión 8 (es necesario reiniciar)"
+#define OPENMSX_EXT9_LABEL_ES "Extensión 9 (es necesario reiniciar)"
+#define OPENMSX_EXT10_LABEL_ES "Extensión 10 (es necesario reiniciar)"
 
 struct retro_core_option_v2_category option_cats_es[] = {
     {"system", CATEGORY_SYSTEM_LABEL_ES, CATEGORY_SYSTEM_INFO_0_ES},
@@ -18435,9 +23034,9 @@ struct retro_core_options_v2 options_es = {
 
 /* RETRO_LANGUAGE_FA */
 
-#define CATEGORY_SYSTEM_LABEL_FA NULL
+#define CATEGORY_SYSTEM_LABEL_FA "سیستم"
 #define CATEGORY_SYSTEM_INFO_0_FA NULL
-#define CATEGORY_VIDEO_LABEL_FA NULL
+#define CATEGORY_VIDEO_LABEL_FA "ویدیو"
 #define CATEGORY_VIDEO_INFO_0_FA NULL
 #define OPENMSX_MACHINE_LABEL_FA NULL
 #define OPENMSX_MACHINE_LABEL_CAT_FA NULL
@@ -18465,7 +23064,7 @@ struct retro_core_options_v2 options_es = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_FA NULL
 #define OPENMSX_SCALE_LABEL_FA NULL
 #define OPENMSX_SCALE_INFO_0_FA NULL
-#define OPTION_VAL_AUTO_FA NULL
+#define OPTION_VAL_AUTO_FA "خودکار"
 #define OPTION_VAL_1_FA NULL
 #define OPTION_VAL_2_FA NULL
 #define OPTION_VAL_3_FA NULL
@@ -18482,7 +23081,7 @@ struct retro_core_options_v2 options_es = {
 #define OPTION_VAL_SQUARE_FA NULL
 #define OPENMSX_EXT1_LABEL_FA NULL
 #define OPENMSX_EXT1_INFO_0_FA NULL
-#define OPTION_VAL_NONE_FA NULL
+#define OPTION_VAL_NONE_FA "هیچکدام"
 #define OPTION_VAL_2ND_PSG_FA NULL
 #define OPTION_VAL_ADVRAM_FA NULL
 #define OPTION_VAL_MEGARAM_2MB_FA NULL
@@ -19968,7 +24567,7 @@ struct retro_core_options_v2 options_fa = {
 
 /* RETRO_LANGUAGE_FI */
 
-#define CATEGORY_SYSTEM_LABEL_FI NULL
+#define CATEGORY_SYSTEM_LABEL_FI "Järjestelmä"
 #define CATEGORY_SYSTEM_INFO_0_FI NULL
 #define CATEGORY_VIDEO_LABEL_FI NULL
 #define CATEGORY_VIDEO_INFO_0_FI NULL
@@ -19998,14 +24597,14 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_FI NULL
 #define OPENMSX_SCALE_LABEL_FI NULL
 #define OPENMSX_SCALE_INFO_0_FI NULL
-#define OPTION_VAL_AUTO_FI NULL
+#define OPTION_VAL_AUTO_FI "Automaattinen"
 #define OPTION_VAL_1_FI NULL
 #define OPTION_VAL_2_FI NULL
 #define OPTION_VAL_3_FI NULL
 #define OPTION_VAL_4_FI NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_FI NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_FI NULL
-#define OPTION_VAL_SOFTWARE_FI NULL
+#define OPTION_VAL_SOFTWARE_FI "Ohjelmisto"
 #define OPTION_VAL_OPENGL_FI NULL
 #define OPENMSX_CROP_OVERSCAN_LABEL_FI NULL
 #define OPENMSX_CROP_OVERSCAN_INFO_0_FI NULL
@@ -20015,7 +24614,7 @@ struct retro_core_options_v2 options_fa = {
 #define OPTION_VAL_SQUARE_FI NULL
 #define OPENMSX_EXT1_LABEL_FI NULL
 #define OPENMSX_EXT1_INFO_0_FI NULL
-#define OPTION_VAL_NONE_FI NULL
+#define OPTION_VAL_NONE_FI "Ei mitään"
 #define OPTION_VAL_2ND_PSG_FI NULL
 #define OPTION_VAL_ADVRAM_FI NULL
 #define OPTION_VAL_MEGARAM_2MB_FI NULL
@@ -21501,9 +26100,9 @@ struct retro_core_options_v2 options_fi = {
 
 /* RETRO_LANGUAGE_FR */
 
-#define CATEGORY_SYSTEM_LABEL_FR NULL
+#define CATEGORY_SYSTEM_LABEL_FR "Système"
 #define CATEGORY_SYSTEM_INFO_0_FR NULL
-#define CATEGORY_VIDEO_LABEL_FR NULL
+#define CATEGORY_VIDEO_LABEL_FR "Vidéo"
 #define CATEGORY_VIDEO_INFO_0_FR NULL
 #define OPENMSX_MACHINE_LABEL_FR NULL
 #define OPENMSX_MACHINE_LABEL_CAT_FR NULL
@@ -21529,7 +26128,7 @@ struct retro_core_options_v2 options_fi = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_FR NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_FR NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_FR NULL
-#define OPENMSX_SCALE_LABEL_FR NULL
+#define OPENMSX_SCALE_LABEL_FR "Résolution"
 #define OPENMSX_SCALE_INFO_0_FR NULL
 #define OPTION_VAL_AUTO_FR NULL
 #define OPTION_VAL_1_FR NULL
@@ -21538,9 +26137,9 @@ struct retro_core_options_v2 options_fi = {
 #define OPTION_VAL_4_FR NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_FR NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_FR NULL
-#define OPTION_VAL_SOFTWARE_FR NULL
+#define OPTION_VAL_SOFTWARE_FR "Logiciel"
 #define OPTION_VAL_OPENGL_FR NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_FR NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_FR "Recadrage du surbalayage"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_FR NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_FR NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_FR NULL
@@ -21548,7 +26147,7 @@ struct retro_core_options_v2 options_fi = {
 #define OPTION_VAL_SQUARE_FR NULL
 #define OPENMSX_EXT1_LABEL_FR NULL
 #define OPENMSX_EXT1_INFO_0_FR NULL
-#define OPTION_VAL_NONE_FR NULL
+#define OPTION_VAL_NONE_FR "Ne pas partager"
 #define OPTION_VAL_2ND_PSG_FR NULL
 #define OPTION_VAL_ADVRAM_FR NULL
 #define OPTION_VAL_MEGARAM_2MB_FR NULL
@@ -23034,181 +27633,181 @@ struct retro_core_options_v2 options_fr = {
 
 /* RETRO_LANGUAGE_GA */
 
-#define CATEGORY_SYSTEM_LABEL_GA NULL
-#define CATEGORY_SYSTEM_INFO_0_GA NULL
-#define CATEGORY_VIDEO_LABEL_GA NULL
-#define CATEGORY_VIDEO_INFO_0_GA NULL
-#define OPENMSX_MACHINE_LABEL_GA NULL
-#define OPENMSX_MACHINE_LABEL_CAT_GA NULL
-#define OPENMSX_MACHINE_INFO_0_GA NULL
+#define CATEGORY_SYSTEM_LABEL_GA "Córas"
+#define CATEGORY_SYSTEM_INFO_0_GA "An meaisín MSX agus na cartúis ina shliotáin. Tiocfaidh athruithe i bhfeidhm nuair a luchtófar an t-ábhar arís."
+#define CATEGORY_VIDEO_LABEL_GA "Físeán"
+#define CATEGORY_VIDEO_INFO_0_GA "Méid an phictiúir agus a imeall."
+#define OPENMSX_MACHINE_LABEL_GA "Meaisín (Atosaigh)"
+#define OPENMSX_MACHINE_LABEL_CAT_GA "Meaisín"
+#define OPENMSX_MACHINE_INFO_0_GA "An ríomhaire MSX atá le heamulú. Ní gá aon rud eile do na meaisíní C-BIOS; i gcás meaisín fíor, áfach, tá gá leis na ROManna córais a bheith suite i <system>/openmsx/share/systemroms — mura bhfuil siad ann, tosóidh an córas C-BIOS MSX2+ ina n-áit. Ritheann córais san Eoraip agus sa Ríocht Aontaithe ag 50 Hz."
 #define OPTION_VAL_C_BIOS_MSX1_GA NULL
-#define OPTION_VAL_C_BIOS_MSX1_EU_GA NULL
-#define OPTION_VAL_C_BIOS_MSX1_JP_GA NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_GA "C-BIOS MSX1 (An Eoraip)"
+#define OPTION_VAL_C_BIOS_MSX1_JP_GA "C-BIOS MSX1 (An tSeapáin)"
 #define OPTION_VAL_C_BIOS_MSX2_GA NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_GA NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_GA NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_GA "C-BIOS MSX2 (An Eoraip)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_GA "C-BIOS MSX2 (An tSeapáin)"
 #define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_GA NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_GA NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_GA NULL
-#define OPTION_VAL_PHILIPS_VG_8020_GA NULL
-#define OPTION_VAL_SONY_HB_75P_GA NULL
-#define OPTION_VAL_TOSHIBA_HX_10_GA NULL
-#define OPTION_VAL_YAMAHA_CX5M_GA NULL
-#define OPTION_VAL_PHILIPS_NMS_8245_GA NULL
-#define OPTION_VAL_PHILIPS_NMS_8250_GA NULL
-#define OPTION_VAL_SONY_HB_F700P_GA NULL
-#define OPTION_VAL_SONY_HB_F1XD_GA NULL
-#define OPTION_VAL_SONY_HB_F1XV_GA NULL
-#define OPTION_VAL_PANASONIC_FS_A1WSX_GA NULL
-#define OPTION_VAL_PANASONIC_FS_A1ST_GA NULL
-#define OPTION_VAL_PANASONIC_FS_A1GT_GA NULL
-#define OPENMSX_SCALE_LABEL_GA NULL
-#define OPENMSX_SCALE_INFO_0_GA NULL
-#define OPTION_VAL_AUTO_GA NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_GA "C-BIOS MSX2+ (An Eoraip)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_GA "C-BIOS MSX2+ (An tSeapáin)"
+#define OPTION_VAL_PHILIPS_VG_8020_GA "Philips VG-8020 (MSX1, an Eoraip)"
+#define OPTION_VAL_SONY_HB_75P_GA "Sony HB-75P (MSX1, an Eoraip)"
+#define OPTION_VAL_TOSHIBA_HX_10_GA "Toshiba HX-10 (MSX1, an Ríocht Aontaithe)"
+#define OPTION_VAL_YAMAHA_CX5M_GA "Yamaha CX5M (MSX1, an Eoraip)"
+#define OPTION_VAL_PHILIPS_NMS_8245_GA "Philips NMS 8245 (MSX2, an Eoraip)"
+#define OPTION_VAL_PHILIPS_NMS_8250_GA "Philips NMS 8250 (MSX2, an Eoraip)"
+#define OPTION_VAL_SONY_HB_F700P_GA "Sony HB-F700P (MSX2, an Eoraip)"
+#define OPTION_VAL_SONY_HB_F1XD_GA "Sony HB-F1XD (MSX2, an tSeapáin)"
+#define OPTION_VAL_SONY_HB_F1XV_GA "Sony HB-F1XV (MSX2+, an tSeapáin)"
+#define OPTION_VAL_PANASONIC_FS_A1WSX_GA "Panasonic FS-A1WSX (MSX2+, an tSeapáin)"
+#define OPTION_VAL_PANASONIC_FS_A1ST_GA "Panasonic FS-A1ST (Turbo R, an tSeapáin)"
+#define OPTION_VAL_PANASONIC_FS_A1GT_GA "Panasonic FS-A1GT (turbo R, an tSeapáin)"
+#define OPENMSX_SCALE_LABEL_GA "Rún"
+#define OPENMSX_SCALE_INFO_0_GA "An méid a úsáideann openMSX chun an íomhá a tharraingt, teorainneacha san áireamh: 320x240 méadaithe faoin méid seo. Leanann sé mód an scáileáin go huathoibríoch: 1x do na móid atá 256 picteilín ar leithead, agus 2x dóibh siúd atá 512 picteilín ar leithead nó atá idirlíonta."
+#define OPTION_VAL_AUTO_GA "Uathoibríoch"
 #define OPTION_VAL_1_GA NULL
 #define OPTION_VAL_2_GA NULL
 #define OPTION_VAL_3_GA NULL
 #define OPTION_VAL_4_GA NULL
-#define OPENMSX_VIDEO_OUTPUT_LABEL_GA NULL
-#define OPENMSX_VIDEO_OUTPUT_INFO_0_GA NULL
-#define OPTION_VAL_SOFTWARE_GA NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_GA "Aschur Físe (Atosaigh)"
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_GA "Cuireann an bogearra an íomhá ar fáil do RetroArch i bhfoirm picteilíní, is cuma cén tiománaí físe atá in úsáid. Tarraingíonn OpenGL an íomhá trí chomhthéacs OpenGL de chuid RetroArch (an tiománaí físe *gl* nó *glcore*), agus úsáidtear scálaitheoirí agus éifeachtaí atá mar chuid de openMSX féin."
+#define OPTION_VAL_SOFTWARE_GA "Bogearraí"
 #define OPTION_VAL_OPENGL_GA NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_GA NULL
-#define OPENMSX_CROP_OVERSCAN_INFO_0_GA NULL
-#define OPENMSX_PIXEL_ASPECT_LABEL_GA NULL
-#define OPENMSX_PIXEL_ASPECT_INFO_0_GA NULL
-#define OPTION_VAL_TV_GA NULL
-#define OPTION_VAL_SQUARE_GA NULL
-#define OPENMSX_EXT1_LABEL_GA NULL
-#define OPENMSX_EXT1_INFO_0_GA NULL
-#define OPTION_VAL_NONE_GA NULL
-#define OPTION_VAL_2ND_PSG_GA NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_GA "Overscan Barraí"
+#define OPENMSX_CROP_OVERSCAN_INFO_0_GA "Ní thaispeánann sé ach an chuid den scáileán a úsáideann an MSX, gan an teorainn; braitheann an méid ar mhodh an scáileáin."
+#define OPENMSX_PIXEL_ASPECT_LABEL_GA "Cóimheas Gné Picteilín"
+#define OPENMSX_PIXEL_ASPECT_INFO_0_GA "TV: an íomhá chomh leathan is atá sí ar theilifíseán, mar a thaispeánann openMSX í. Cearnógach: gach picteilín chomh leathan is atá sé ard."
+#define OPTION_VAL_TV_GA "Teilifís"
+#define OPTION_VAL_SQUARE_GA "Cearnóg"
+#define OPENMSX_EXT1_LABEL_GA "Síneadh 1 (Atosaigh)"
+#define OPENMSX_EXT1_INFO_0_GA "Cartúis nó gléas i sliotán saor, ar nós an rogha `-ext` in openMSX. Éilíonn cuid acu go mbeadh a gcuid ROManna suite i <system>/openmsx/share/systemroms."
+#define OPTION_VAL_NONE_GA "Dada"
+#define OPTION_VAL_2ND_PSG_GA "An 2ú PSG"
 #define OPTION_VAL_ADVRAM_GA NULL
-#define OPTION_VAL_MEGARAM_2MB_GA NULL
-#define OPTION_VAL_ASCII_MSX_DOS2_GA NULL
-#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_GA NULL
-#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_GA NULL
+#define OPTION_VAL_MEGARAM_2MB_GA "Ademir Carchano MegaRAM (eagrán comórtha)"
+#define OPTION_VAL_ASCII_MSX_DOS2_GA "MSX-DOS2 Seapánach ó ASCII"
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_GA "MSX-Write Seapánach ASCII"
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_GA "ASCII Seapáinis MSX-Write II"
 #define OPTION_VAL_MSXDOS2_GA NULL
-#define OPTION_VAL_AVT_DPF_550_GA NULL
-#define OPTION_VAL_MU_PACK_GA NULL
-#define OPTION_VAL_CASIO_KB_10_GA NULL
-#define OPTION_VAL_CASIO_KB_7_GA NULL
-#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_GA NULL
-#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_GA NULL
-#define OPTION_VAL_ROM_HUNTER_MK2_GA NULL
-#define OPTION_VAL_DEBUGDEVICE_GA NULL
-#define OPTION_VAL_DDX_3_0_GA NULL
-#define OPTION_VAL_MEGARAM_GA NULL
-#define OPTION_VAL_MEGARAM_DISK_GA NULL
-#define OPTION_VAL_SMXWIFI_GA NULL
+#define OPTION_VAL_AVT_DPF_550_GA "Tiomántán Diosca Solúbtha AVT DPF-550"
+#define OPTION_VAL_MU_PACK_GA "Giotán²/ASCII μ·PAC BM-117"
+#define OPTION_VAL_CASIO_KB_10_GA "Stáisiún dugaireachta Casio KB-10"
+#define OPTION_VAL_CASIO_KB_7_GA "Stáisiún dugaireachta Casio KB-7"
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_GA "Pacáiste Steirió FM Checkmark"
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_GA "Comhéadan Diosca Computer Mates"
+#define OPTION_VAL_ROM_HUNTER_MK2_GA "Córas Daito Micom ROM Hunter Mk2"
+#define OPTION_VAL_DEBUGDEVICE_GA "Gléas Dífhabhtaithe"
+#define OPTION_VAL_DDX_3_0_GA "Dearadh Digiteach DDX 3.0"
+#define OPTION_VAL_MEGARAM_GA "Dearadh Digiteach MegaRAM"
+#define OPTION_VAL_MEGARAM_DISK_GA "Diosca MegaRAM Dearaidh Dhigitigh"
+#define OPTION_VAL_SMXWIFI_GA "DucaSP SM-X Wifi"
 #define OPTION_VAL_EPSON_CHAKKARI_COPY_GA NULL
-#define OPTION_VAL_ESE_RAMDISK_GA NULL
-#define OPTION_VAL_ESE_SCC_GA NULL
-#define OPTION_VAL_ESE_WAVE_SCSI_GA NULL
-#define OPTION_VAL_ESE_MEGA_SCSI_GA NULL
-#define OPTION_VAL_FAC_MIDI_INTERFACE_GA NULL
-#define OPTION_VAL_RS232_GA NULL
-#define OPTION_VAL_AUDIO_GA NULL
-#define OPTION_VAL_AUDIO2_GA NULL
-#define OPTION_VAL_GRADIENTE_CT_80E_GA NULL
-#define OPTION_VAL_ASCII16_X_MAPPER_XL_GA NULL
-#define OPTION_VAL_HIRESTIMER_GA NULL
-#define OPTION_VAL_HITACHI_MPC_310H_GA NULL
-#define OPTION_VAL_JUN_SOFT_DALSORI_R2_GA NULL
+#define OPTION_VAL_ESE_RAMDISK_GA "Monarcha Ealaíontóirí ESE Diosca Ram ESE"
+#define OPTION_VAL_ESE_SCC_GA "Monarcha Ealaíontóirí ESE ESE SCC"
+#define OPTION_VAL_ESE_WAVE_SCSI_GA "Monarcha Ealaíontóirí ESE ESE WAVE-SCSI"
+#define OPTION_VAL_ESE_MEGA_SCSI_GA "Monarcha Ealaíontóirí ESE MEGA SCSI"
+#define OPTION_VAL_FAC_MIDI_INTERFACE_GA "Comhéadan MIDI FAC"
+#define OPTION_VAL_RS232_GA "MSX RS-232C cineálach"
+#define OPTION_VAL_AUDIO_GA "MSX-AUDIO cineálach"
+#define OPTION_VAL_AUDIO2_GA "MSX-AUDIO 2 cineálach (foirt mhalartacha)"
+#define OPTION_VAL_GRADIENTE_CT_80E_GA "Grádán Cartão 80 Colonas CT-80E"
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_GA "Léarscáileoir ASCII16-X Liath XL"
+#define OPTION_VAL_HIRESTIMER_GA "amadóir ardtaifigh"
+#define OPTION_VAL_HITACHI_MPC_310H_GA "Tiomántán Micrea-dhiosca Flopaí 2DD Hitachi + Rialaitheoir MPC-310H"
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_GA "Meitheamh Bog DalSoRi R2"
 #define OPTION_VAL_JVC_MSX_MIDI_GA NULL
-#define OPTION_VAL_KONAMI_EC_701_GA NULL
-#define OPTION_VAL_KONAMI_EC_702_GA NULL
+#define OPTION_VAL_KONAMI_EC_701_GA "Cartús Próiseálaí Focal Seapáinise Konami EC-701"
+#define OPTION_VAL_KONAMI_EC_702_GA "Cartús ROM Kanji Konami EC-702"
 #define OPTION_VAL_SCC_GA NULL
 #define OPTION_VAL_SCC_OPENMSX_EXT1_GA NULL
-#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_GA NULL
-#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_GA NULL
-#define OPTION_VAL_LASCOM_KANJI_GA NULL
-#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_GA NULL
-#define OPTION_VAL_OPL3CARTRIDGE_GA NULL
-#define OPTION_VAL_MIDI_INTERFACE_3_GA NULL
-#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_GA NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_GA "Cartús Fuaime Konami SD-Snatcher RA-011"
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_GA "Cartús Fuaime Konami Snatcher RA-004"
+#define OPTION_VAL_LASCOM_KANJI_GA "Cartús ROM Kanji Lascom"
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_GA "Cartús OPL3 Luciano Sturaro (comhoiriúnach le Moonsound)"
+#define OPTION_VAL_OPL3CARTRIDGE_GA "Cartús OPL3 Luciano Sturaro (comhoiriúnach le MSX-Audio)"
+#define OPTION_VAL_MIDI_INTERFACE_3_GA "Comhéadan MIDI M. Fujimoto 3"
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_GA "Bailiúchán deiridh Manuel Pazos Konami leagan 3"
 #define OPTION_VAL_MEGAFLASHROM_SCC_GA NULL
 #define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_GA NULL
 #define OPTION_VAL_MEGAFLASHROM_SCC_SD_GA NULL
-#define OPTION_VAL_RAM1MB_GA NULL
-#define OPTION_VAL_RAM2MB_GA NULL
-#define OPTION_VAL_RAM4MB_GA NULL
-#define OPTION_VAL_RAM512K_GA NULL
-#define OPTION_VAL_MICROSOL_CDX_2_GA NULL
-#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_GA NULL
-#define OPTION_VAL_MBSTEREO_GA NULL
-#define OPTION_VAL_GOUDA_SCSI_GA NULL
+#define OPTION_VAL_RAM1MB_GA "Mapálaí Cuimhne (1 MB)"
+#define OPTION_VAL_RAM2MB_GA "Mapálaí Cuimhne (2 MB)"
+#define OPTION_VAL_RAM4MB_GA "Mapálaí Cuimhne (4 MB)"
+#define OPTION_VAL_RAM512K_GA "Mapálaí Cuimhne (512 kB)"
+#define OPTION_VAL_MICROSOL_CDX_2_GA "Tiomántán Diosca Microsol CDX-2"
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_GA "Rialaitheoir/Tiomántáin Diosca Micrea-Flopaí Mitsubishi ML-30DC/ML-30FD"
+#define OPTION_VAL_MBSTEREO_GA "Steiréó Moonblaster"
+#define OPTION_VAL_GOUDA_SCSI_GA "Club MSX Gouda Gouda Novaxis SCSI"
 #define OPTION_VAL_MSXPI_GA NULL
-#define OPTION_VAL_OPL3CARTRIDGE2_MONO_GA NULL
-#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_GA NULL
-#define OPTION_VAL_NATIONAL_CF_SM003_GA NULL
-#define OPTION_VAL_NEOS_MA_20R_GA NULL
-#define OPTION_VAL_NEOS_MA_20V_GA NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_GA "Cartús MSXpro OPL3 v2 (mona)"
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_GA "Cartús MSXpro OPL3 v2 (steiréó)"
+#define OPTION_VAL_NATIONAL_CF_SM003_GA "Próiseálaí Focal Kanji Náisiúnta Aonad CF-SM003"
+#define OPTION_VAL_NEOS_MA_20R_GA "Cuibheoir Uasghrádaithe Leagan Neos MSX BASIC Leagan 2.0 MA-20 (R)"
+#define OPTION_VAL_NEOS_MA_20V_GA "Cuibheoir Uasghrádaithe Leaganacha Neos V MA-20 (V)"
 #define OPTION_VAL_UNAPINET_GA NULL
 #define OPTION_VAL_FMPAC_GA NULL
 #define OPTION_VAL_PAC_GA NULL
-#define OPTION_VAL_PANASONIC_FS_FD1A_GA NULL
-#define OPTION_VAL_PANASONIC_FS_CA1_GA NULL
-#define OPTION_VAL_PANASONIC_FS_PW1_GA NULL
-#define OPTION_VAL_PASSWORD_CARTRIDGE_GA NULL
-#define OPTION_VAL_PHILIPS_NMS_1200_GA NULL
-#define OPTION_VAL_PHILIPS_VY_0010_GA NULL
-#define OPTION_VAL_PHILIPS_NMS_1205_GA NULL
-#define OPTION_VAL_PHILIPS_VU_0040_GA NULL
-#define OPTION_VAL_BOOSTED_AUDIO_GA NULL
-#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_GA NULL
-#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_GA NULL
-#define OPTION_VAL_PROGRAMMABLEDEVICE_GA NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_GA "Tiomántán Diosca Flopaí 3.5 orlach Panasonic FS-FD1A"
+#define OPTION_VAL_PANASONIC_FS_CA1_GA "Aonad Panasonic MSX-AUDIO FS-CA1"
+#define OPTION_VAL_PANASONIC_FS_PW1_GA "Próiseálaí Focal Panasonic le Cartús ROM Kanji FS-PW1"
+#define OPTION_VAL_PASSWORD_CARTRIDGE_GA "Cartús Pasfhocail"
+#define OPTION_VAL_PHILIPS_NMS_1200_GA "Tiomántán Diosca Flopach Micrea 2DD Philips NMS 1200"
+#define OPTION_VAL_PHILIPS_VY_0010_GA "Tiomántán Diosca Philips 3.5\" VY-0010"
+#define OPTION_VAL_PHILIPS_NMS_1205_GA "Modúl Ceoil Philips NMS-1205"
+#define OPTION_VAL_PHILIPS_VU_0040_GA "Comhéadan Printéara Comhthreomhar Philips VU 0040"
+#define OPTION_VAL_BOOSTED_AUDIO_GA "Philips/MSXPro MSX-Fuaime"
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_GA "Mapálaí Cuimhne Ceoil Popolon + Repro Factory (1 MB)"
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_GA "Cartús Fuaime Popolon"
+#define OPTION_VAL_PROGRAMMABLEDEVICE_GA "Gléas In-ríomhchláraithe PVM"
 #define OPTION_VAL_RAM16K_GA NULL
 #define OPTION_VAL_RAM32K_GA NULL
 #define OPTION_VAL_RAM64K_GA NULL
 #define OPTION_VAL_CARNIVORE2_GA NULL
-#define OPTION_VAL_SANYO_MFD_001_GA NULL
-#define OPTION_VAL_SANYO_MRS_001_GA NULL
-#define OPTION_VAL_SHARP_HB_4000_GA NULL
-#define OPTION_VAL_SHARP_HB_3600_GA NULL
-#define OPTION_VAL_SLOTEXPANDER_GA NULL
-#define OPTION_VAL_BEER_IDE_GA NULL
-#define OPTION_VAL_SONY_HBD_20W_GA NULL
-#define OPTION_VAL_SONY_HBD_F1_GA NULL
-#define OPTION_VAL_SONY_HBI_55_GA NULL
-#define OPTION_VAL_SONY_HBI_J1_GA NULL
-#define OPTION_VAL_SONY_HBD_50_GA NULL
-#define OPTION_VAL_SONY_HBK_30_GA NULL
-#define OPTION_VAL_SONY_HBI_232_GA NULL
-#define OPTION_VAL_SENSORKID_GA NULL
-#define OPTION_VAL_SPECTRAVIDEO_SVI_707_GA NULL
-#define OPTION_VAL_SUNRISEIDE_NEXTOR_GA NULL
-#define OPTION_VAL_IDE_GA NULL
-#define OPTION_VAL_GFX9000_GA NULL
-#define OPTION_VAL_MOONSOUND_GA NULL
-#define OPTION_VAL_NOWIND_GA NULL
-#define OPTION_VAL_VIDEO9000_GA NULL
-#define OPTION_VAL_MAKOTO_GA NULL
+#define OPTION_VAL_SANYO_MFD_001_GA "Aonad Diosca Flapaí Sanyo MSX MFD-001"
+#define OPTION_VAL_SANYO_MRS_001_GA "Aonad Comhéadain Sanyo MSX RS-232C MRS-001"
+#define OPTION_VAL_SHARP_HB_4000_GA "Cartão Sharp 80 Colonas HB-4000"
+#define OPTION_VAL_SHARP_HB_3600_GA "Rialaitheoir Diosca-Thiomántáin Dhúbailte Sharp HB-3600"
+#define OPTION_VAL_SLOTEXPANDER_GA "Leathnaitheoir Sliotán"
+#define OPTION_VAL_BEER_IDE_GA "IDE Beorach SOLiD"
+#define OPTION_VAL_SONY_HBD_20W_GA "Tiomántán Micrea-dhiosca Flopaí Sony 2DD HBD-20W"
+#define OPTION_VAL_SONY_HBD_F1_GA "Tiomántán Diosca Flapaí Micrea Sony 2DD HBD-F1"
+#define OPTION_VAL_SONY_HBI_55_GA "Cartús Sonraí Sony 4KBytes HBI-55"
+#define OPTION_VAL_SONY_HBI_J1_GA "Cartús ROM Kanji Sony HBI-J1"
+#define OPTION_VAL_SONY_HBD_50_GA "Tiomántán Diosca Flopaí Micrea Sony HBD-50"
+#define OPTION_VAL_SONY_HBK_30_GA "Tiomántán Diosca Flopaí Micrea Sony HBK-30"
+#define OPTION_VAL_SONY_HBI_232_GA "Cartús Comhéadain Sony RS-232C HBI-232"
+#define OPTION_VAL_SENSORKID_GA "Cartús Braiteora Sony HBJ-H081C"
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_GA "Tiomántán Diosca Spectravideo MSX (320K) SVI-707"
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_GA "Sunrise ATA-IDE le Nextor"
+#define OPTION_VAL_IDE_GA "Éirí Gréine ATA-IDE"
+#define OPTION_VAL_GFX9000_GA "Éirí Gréine GFX9000"
+#define OPTION_VAL_MOONSOUND_GA "Fuaim na Gealaí ag Éirí na Gréine"
+#define OPTION_VAL_NOWIND_GA "Comhéadan USB Sunrise Nowind"
+#define OPTION_VAL_VIDEO9000_GA "Físeán Éirí Gréine9000"
+#define OPTION_VAL_MAKOTO_GA "SuperSoniqs / Crua-earraí Abhainn Leictreach Makoto"
 #define OPTION_VAL_FRANKY_NTSC_GA NULL
 #define OPTION_VAL_FRANKY_PAL_GA NULL
-#define OPTION_VAL_TALENT_TDC_600_GA NULL
-#define OPTION_VAL_TALENT_DPF_550_GA NULL
-#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_GA NULL
-#define OPTION_VAL_SN76489_GA NULL
-#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_GA NULL
-#define OPTION_VAL_TOSHIBA_HX_F101PE_GA NULL
-#define OPTION_VAL_TOSHIBA_HX_MU900_GA NULL
-#define OPTION_VAL_YAMAHA_FD_03_GA NULL
-#define OPTION_VAL_YAMAHA_FD_05_GA NULL
-#define OPTION_VAL_YAMAHA_SFG_05_GA NULL
-#define OPTION_VAL_YAMAHA_SFG_01_GA NULL
-#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_GA NULL
-#define OPTION_VAL_YAMAHA_SKW_01_GA NULL
-#define OPENMSX_EXT2_LABEL_GA NULL
-#define OPENMSX_EXT3_LABEL_GA NULL
-#define OPENMSX_EXT4_LABEL_GA NULL
-#define OPENMSX_EXT5_LABEL_GA NULL
-#define OPENMSX_EXT6_LABEL_GA NULL
-#define OPENMSX_EXT7_LABEL_GA NULL
-#define OPENMSX_EXT8_LABEL_GA NULL
-#define OPENMSX_EXT9_LABEL_GA NULL
-#define OPENMSX_EXT10_LABEL_GA NULL
+#define OPTION_VAL_TALENT_TDC_600_GA "Tiomántán diosca Talent TDC-600"
+#define OPTION_VAL_TALENT_DPF_550_GA "Tiomántán Diosca Flapaí Talent DPF-550"
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_GA "Aisghabháil RPM Uasta – Comhad TM220"
+#define OPTION_VAL_SN76489_GA "Gineadóir Fuaime Coimpléisí Digiteach Texas Instruments SN76489"
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_GA "Comhghuaillíocht SCC Yamanooto"
+#define OPTION_VAL_TOSHIBA_HX_F101PE_GA "Aonad Micrea-dhiosca Flopa Toshiba HX-F101PE"
+#define OPTION_VAL_TOSHIBA_HX_MU900_GA "Córas Ceoil Toshiba MSX HX-MU900"
+#define OPTION_VAL_YAMAHA_FD_03_GA "Tiomántán diosca flapach 3.5 orlach Yamaha 1DD FD-03"
+#define OPTION_VAL_YAMAHA_FD_05_GA "Diosca-thiomántán Micrea MSX 3.5 orlach ó Yamaha FD-05/FD-051"
+#define OPTION_VAL_YAMAHA_SFG_05_GA "Aonad Sintéiseora Fuaime FM Yamaha, leagan II, SFG-05"
+#define OPTION_VAL_YAMAHA_SFG_01_GA "Aonad Sintéiseora Fuaime FM Yamaha SFG-01"
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_GA "Aonad Próiseála Focal Kanji Yamaha (leabaithe) SKW-05"
+#define OPTION_VAL_YAMAHA_SKW_01_GA "Aonad Próiseálaí Focal Yamaha Kanji SKW-01"
+#define OPENMSX_EXT2_LABEL_GA "Síneadh 2 (Atosaigh)"
+#define OPENMSX_EXT3_LABEL_GA "Síneadh 3 (Atosaigh)"
+#define OPENMSX_EXT4_LABEL_GA "Síneadh 4 (Atosaigh)"
+#define OPENMSX_EXT5_LABEL_GA "Síneadh 5 (Atosaigh)"
+#define OPENMSX_EXT6_LABEL_GA "Síneadh 6 (Atosaigh)"
+#define OPENMSX_EXT7_LABEL_GA "Síneadh 7 (Atosaigh)"
+#define OPENMSX_EXT8_LABEL_GA "Síneadh 8 (Atosaigh)"
+#define OPENMSX_EXT9_LABEL_GA "Síneadh 9 (Atosaigh)"
+#define OPENMSX_EXT10_LABEL_GA "Síneadh 10 (Atosaigh)"
 
 struct retro_core_option_v2_category option_cats_ga[] = {
     {"system", CATEGORY_SYSTEM_LABEL_GA, CATEGORY_SYSTEM_INFO_0_GA},
@@ -24567,9 +29166,9 @@ struct retro_core_options_v2 options_ga = {
 
 /* RETRO_LANGUAGE_GL */
 
-#define CATEGORY_SYSTEM_LABEL_GL NULL
+#define CATEGORY_SYSTEM_LABEL_GL "Sistema"
 #define CATEGORY_SYSTEM_INFO_0_GL NULL
-#define CATEGORY_VIDEO_LABEL_GL NULL
+#define CATEGORY_VIDEO_LABEL_GL "Vídeo"
 #define CATEGORY_VIDEO_INFO_0_GL NULL
 #define OPENMSX_MACHINE_LABEL_GL NULL
 #define OPENMSX_MACHINE_LABEL_CAT_GL NULL
@@ -24595,7 +29194,7 @@ struct retro_core_options_v2 options_ga = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_GL NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_GL NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_GL NULL
-#define OPENMSX_SCALE_LABEL_GL NULL
+#define OPENMSX_SCALE_LABEL_GL "Resolución"
 #define OPENMSX_SCALE_INFO_0_GL NULL
 #define OPTION_VAL_AUTO_GL NULL
 #define OPTION_VAL_1_GL NULL
@@ -24606,7 +29205,7 @@ struct retro_core_options_v2 options_ga = {
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_GL NULL
 #define OPTION_VAL_SOFTWARE_GL NULL
 #define OPTION_VAL_OPENGL_GL NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_GL NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_GL "Recortar Overscan"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_GL NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_GL NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_GL NULL
@@ -24614,7 +29213,7 @@ struct retro_core_options_v2 options_ga = {
 #define OPTION_VAL_SQUARE_GL NULL
 #define OPENMSX_EXT1_LABEL_GL NULL
 #define OPENMSX_EXT1_INFO_0_GL NULL
-#define OPTION_VAL_NONE_GL NULL
+#define OPTION_VAL_NONE_GL "Ningún"
 #define OPTION_VAL_2ND_PSG_GL NULL
 #define OPTION_VAL_ADVRAM_GL NULL
 #define OPTION_VAL_MEGARAM_2MB_GL NULL
@@ -26102,7 +30701,7 @@ struct retro_core_options_v2 options_gl = {
 
 #define CATEGORY_SYSTEM_LABEL_HE NULL
 #define CATEGORY_SYSTEM_INFO_0_HE NULL
-#define CATEGORY_VIDEO_LABEL_HE NULL
+#define CATEGORY_VIDEO_LABEL_HE "וידאו"
 #define CATEGORY_VIDEO_INFO_0_HE NULL
 #define OPENMSX_MACHINE_LABEL_HE NULL
 #define OPENMSX_MACHINE_LABEL_CAT_HE NULL
@@ -27631,11 +32230,1544 @@ struct retro_core_options_v2 options_he = {
    option_defs_he
 };
 
+/* RETRO_LANGUAGE_HR */
+
+#define CATEGORY_SYSTEM_LABEL_HR "Sustav"
+#define CATEGORY_SYSTEM_INFO_0_HR NULL
+#define CATEGORY_VIDEO_LABEL_HR NULL
+#define CATEGORY_VIDEO_INFO_0_HR NULL
+#define OPENMSX_MACHINE_LABEL_HR NULL
+#define OPENMSX_MACHINE_LABEL_CAT_HR NULL
+#define OPENMSX_MACHINE_INFO_0_HR NULL
+#define OPTION_VAL_C_BIOS_MSX1_HR NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_HR NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_HR NULL
+#define OPTION_VAL_C_BIOS_MSX2_HR NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_HR NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_HR NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_HR NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_HR NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_HR NULL
+#define OPTION_VAL_PHILIPS_VG_8020_HR NULL
+#define OPTION_VAL_SONY_HB_75P_HR NULL
+#define OPTION_VAL_TOSHIBA_HX_10_HR NULL
+#define OPTION_VAL_YAMAHA_CX5M_HR NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_HR NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_HR NULL
+#define OPTION_VAL_SONY_HB_F700P_HR NULL
+#define OPTION_VAL_SONY_HB_F1XD_HR NULL
+#define OPTION_VAL_SONY_HB_F1XV_HR NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_HR NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_HR NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_HR NULL
+#define OPENMSX_SCALE_LABEL_HR NULL
+#define OPENMSX_SCALE_INFO_0_HR NULL
+#define OPTION_VAL_AUTO_HR NULL
+#define OPTION_VAL_1_HR NULL
+#define OPTION_VAL_2_HR NULL
+#define OPTION_VAL_3_HR NULL
+#define OPTION_VAL_4_HR NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_HR NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_HR NULL
+#define OPTION_VAL_SOFTWARE_HR NULL
+#define OPTION_VAL_OPENGL_HR NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_HR NULL
+#define OPENMSX_CROP_OVERSCAN_INFO_0_HR NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_HR NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_HR NULL
+#define OPTION_VAL_TV_HR NULL
+#define OPTION_VAL_SQUARE_HR NULL
+#define OPENMSX_EXT1_LABEL_HR NULL
+#define OPENMSX_EXT1_INFO_0_HR NULL
+#define OPTION_VAL_NONE_HR "Ništa"
+#define OPTION_VAL_2ND_PSG_HR NULL
+#define OPTION_VAL_ADVRAM_HR NULL
+#define OPTION_VAL_MEGARAM_2MB_HR NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_HR NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR NULL
+#define OPTION_VAL_MSXDOS2_HR NULL
+#define OPTION_VAL_AVT_DPF_550_HR NULL
+#define OPTION_VAL_MU_PACK_HR NULL
+#define OPTION_VAL_CASIO_KB_10_HR NULL
+#define OPTION_VAL_CASIO_KB_7_HR NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_HR NULL
+#define OPTION_VAL_DEBUGDEVICE_HR NULL
+#define OPTION_VAL_DDX_3_0_HR NULL
+#define OPTION_VAL_MEGARAM_HR NULL
+#define OPTION_VAL_MEGARAM_DISK_HR NULL
+#define OPTION_VAL_SMXWIFI_HR NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_HR NULL
+#define OPTION_VAL_ESE_RAMDISK_HR NULL
+#define OPTION_VAL_ESE_SCC_HR NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_HR NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_HR NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_HR NULL
+#define OPTION_VAL_RS232_HR NULL
+#define OPTION_VAL_AUDIO_HR NULL
+#define OPTION_VAL_AUDIO2_HR NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_HR NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_HR NULL
+#define OPTION_VAL_HIRESTIMER_HR NULL
+#define OPTION_VAL_HITACHI_MPC_310H_HR NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_HR NULL
+#define OPTION_VAL_JVC_MSX_MIDI_HR NULL
+#define OPTION_VAL_KONAMI_EC_701_HR NULL
+#define OPTION_VAL_KONAMI_EC_702_HR NULL
+#define OPTION_VAL_SCC_HR NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_HR NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR NULL
+#define OPTION_VAL_LASCOM_KANJI_HR NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR NULL
+#define OPTION_VAL_OPL3CARTRIDGE_HR NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_HR NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_HR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_HR NULL
+#define OPTION_VAL_RAM1MB_HR NULL
+#define OPTION_VAL_RAM2MB_HR NULL
+#define OPTION_VAL_RAM4MB_HR NULL
+#define OPTION_VAL_RAM512K_HR NULL
+#define OPTION_VAL_MICROSOL_CDX_2_HR NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR NULL
+#define OPTION_VAL_MBSTEREO_HR NULL
+#define OPTION_VAL_GOUDA_SCSI_HR NULL
+#define OPTION_VAL_MSXPI_HR NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_HR NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_HR NULL
+#define OPTION_VAL_NEOS_MA_20R_HR NULL
+#define OPTION_VAL_NEOS_MA_20V_HR NULL
+#define OPTION_VAL_UNAPINET_HR NULL
+#define OPTION_VAL_FMPAC_HR NULL
+#define OPTION_VAL_PAC_HR NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_HR NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_HR NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_HR NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_HR NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_HR NULL
+#define OPTION_VAL_PHILIPS_VY_0010_HR NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_HR NULL
+#define OPTION_VAL_PHILIPS_VU_0040_HR NULL
+#define OPTION_VAL_BOOSTED_AUDIO_HR NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_HR NULL
+#define OPTION_VAL_RAM16K_HR NULL
+#define OPTION_VAL_RAM32K_HR NULL
+#define OPTION_VAL_RAM64K_HR NULL
+#define OPTION_VAL_CARNIVORE2_HR NULL
+#define OPTION_VAL_SANYO_MFD_001_HR NULL
+#define OPTION_VAL_SANYO_MRS_001_HR NULL
+#define OPTION_VAL_SHARP_HB_4000_HR NULL
+#define OPTION_VAL_SHARP_HB_3600_HR NULL
+#define OPTION_VAL_SLOTEXPANDER_HR NULL
+#define OPTION_VAL_BEER_IDE_HR NULL
+#define OPTION_VAL_SONY_HBD_20W_HR NULL
+#define OPTION_VAL_SONY_HBD_F1_HR NULL
+#define OPTION_VAL_SONY_HBI_55_HR NULL
+#define OPTION_VAL_SONY_HBI_J1_HR NULL
+#define OPTION_VAL_SONY_HBD_50_HR NULL
+#define OPTION_VAL_SONY_HBK_30_HR NULL
+#define OPTION_VAL_SONY_HBI_232_HR NULL
+#define OPTION_VAL_SENSORKID_HR NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_HR NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_HR NULL
+#define OPTION_VAL_IDE_HR NULL
+#define OPTION_VAL_GFX9000_HR NULL
+#define OPTION_VAL_MOONSOUND_HR NULL
+#define OPTION_VAL_NOWIND_HR NULL
+#define OPTION_VAL_VIDEO9000_HR NULL
+#define OPTION_VAL_MAKOTO_HR NULL
+#define OPTION_VAL_FRANKY_NTSC_HR NULL
+#define OPTION_VAL_FRANKY_PAL_HR NULL
+#define OPTION_VAL_TALENT_TDC_600_HR NULL
+#define OPTION_VAL_TALENT_DPF_550_HR NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR NULL
+#define OPTION_VAL_SN76489_HR NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_HR NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_HR NULL
+#define OPTION_VAL_YAMAHA_FD_03_HR NULL
+#define OPTION_VAL_YAMAHA_FD_05_HR NULL
+#define OPTION_VAL_YAMAHA_SFG_05_HR NULL
+#define OPTION_VAL_YAMAHA_SFG_01_HR NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR NULL
+#define OPTION_VAL_YAMAHA_SKW_01_HR NULL
+#define OPENMSX_EXT2_LABEL_HR NULL
+#define OPENMSX_EXT3_LABEL_HR NULL
+#define OPENMSX_EXT4_LABEL_HR NULL
+#define OPENMSX_EXT5_LABEL_HR NULL
+#define OPENMSX_EXT6_LABEL_HR NULL
+#define OPENMSX_EXT7_LABEL_HR NULL
+#define OPENMSX_EXT8_LABEL_HR NULL
+#define OPENMSX_EXT9_LABEL_HR NULL
+#define OPENMSX_EXT10_LABEL_HR NULL
+
+struct retro_core_option_v2_category option_cats_hr[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_HR, CATEGORY_SYSTEM_INFO_0_HR},
+    {"video", CATEGORY_VIDEO_LABEL_HR, CATEGORY_VIDEO_INFO_0_HR},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_hr[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_HR, OPENMSX_MACHINE_LABEL_CAT_HR,
+        OPENMSX_MACHINE_INFO_0_HR,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_HR},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_HR},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_HR},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_HR},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_HR},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_HR},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_HR},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_HR},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_HR},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_HR},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_HR},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_HR},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_HR},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_HR},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_HR},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_HR},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_HR},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_HR},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_HR},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_HR},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_HR},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_HR, NULL,
+        OPENMSX_SCALE_INFO_0_HR,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_HR}, {"1", OPTION_VAL_1_HR}, {"2", OPTION_VAL_2_HR}, {"3", OPTION_VAL_3_HR}, {"4", OPTION_VAL_4_HR}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_HR, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_HR,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_HR}, {"opengl", OPTION_VAL_OPENGL_HR}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_HR, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_HR,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_HR, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_HR,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_HR}, {"square", OPTION_VAL_SQUARE_HR}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_HR, NULL,
+        OPENMSX_EXT1_INFO_0_HR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_HR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_HR},
+            {"advram", OPTION_VAL_ADVRAM_HR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_HR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_HR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_HR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_HR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_HR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_HR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_HR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_HR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_HR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_HR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_HR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_HR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_HR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_HR},
+            {"megaram", OPTION_VAL_MEGARAM_HR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_HR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_HR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_HR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_HR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_HR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_HR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_HR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_HR},
+            {"rs232", OPTION_VAL_RS232_HR},
+            {"audio", OPTION_VAL_AUDIO_HR},
+            {"audio2", OPTION_VAL_AUDIO2_HR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_HR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_HR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_HR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_HR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_HR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_HR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_HR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_HR},
+            {"scc", OPTION_VAL_SCC_HR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_HR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_HR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_HR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_HR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_HR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_HR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_HR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_HR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_HR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_HR},
+            {"ram1mb", OPTION_VAL_RAM1MB_HR},
+            {"ram2mb", OPTION_VAL_RAM2MB_HR},
+            {"ram4mb", OPTION_VAL_RAM4MB_HR},
+            {"ram512k", OPTION_VAL_RAM512K_HR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_HR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_HR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_HR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_HR},
+            {"MSXPi", OPTION_VAL_MSXPI_HR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_HR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_HR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_HR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_HR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_HR},
+            {"unapinet", OPTION_VAL_UNAPINET_HR},
+            {"fmpac", OPTION_VAL_FMPAC_HR},
+            {"pac", OPTION_VAL_PAC_HR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_HR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_HR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_HR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_HR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_HR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_HR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_HR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_HR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_HR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_HR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_HR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_HR},
+            {"ram16k", OPTION_VAL_RAM16K_HR},
+            {"ram32k", OPTION_VAL_RAM32K_HR},
+            {"ram64k", OPTION_VAL_RAM64K_HR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_HR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_HR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_HR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_HR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_HR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_HR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_HR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_HR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_HR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_HR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_HR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_HR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_HR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_HR},
+            {"SensorKid", OPTION_VAL_SENSORKID_HR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_HR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_HR},
+            {"ide", OPTION_VAL_IDE_HR},
+            {"gfx9000", OPTION_VAL_GFX9000_HR},
+            {"moonsound", OPTION_VAL_MOONSOUND_HR},
+            {"nowind", OPTION_VAL_NOWIND_HR},
+            {"video9000", OPTION_VAL_VIDEO9000_HR},
+            {"Makoto", OPTION_VAL_MAKOTO_HR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_HR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_HR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_HR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_HR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_HR},
+            {"SN76489", OPTION_VAL_SN76489_HR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_HR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_HR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_HR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_HR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_HR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_HR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_HR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_HR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_HR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_hr = {
+   option_cats_hr,
+   option_defs_hr
+};
+
 /* RETRO_LANGUAGE_HU */
 
-#define CATEGORY_SYSTEM_LABEL_HU NULL
+#define CATEGORY_SYSTEM_LABEL_HU "Rendszer"
 #define CATEGORY_SYSTEM_INFO_0_HU NULL
-#define CATEGORY_VIDEO_LABEL_HU NULL
+#define CATEGORY_VIDEO_LABEL_HU "Kép"
 #define CATEGORY_VIDEO_INFO_0_HU NULL
 #define OPENMSX_MACHINE_LABEL_HU NULL
 #define OPENMSX_MACHINE_LABEL_CAT_HU NULL
@@ -27663,16 +33795,16 @@ struct retro_core_options_v2 options_he = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_HU NULL
 #define OPENMSX_SCALE_LABEL_HU NULL
 #define OPENMSX_SCALE_INFO_0_HU NULL
-#define OPTION_VAL_AUTO_HU NULL
+#define OPTION_VAL_AUTO_HU "Automatikus"
 #define OPTION_VAL_1_HU NULL
 #define OPTION_VAL_2_HU NULL
 #define OPTION_VAL_3_HU NULL
 #define OPTION_VAL_4_HU NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_HU NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_HU NULL
-#define OPTION_VAL_SOFTWARE_HU NULL
+#define OPTION_VAL_SOFTWARE_HU "Szoftveres"
 #define OPTION_VAL_OPENGL_HU NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_HU NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_HU "Overscan levágása"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_HU NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_HU NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_HU NULL
@@ -27680,7 +33812,7 @@ struct retro_core_options_v2 options_he = {
 #define OPTION_VAL_SQUARE_HU NULL
 #define OPENMSX_EXT1_LABEL_HU NULL
 #define OPENMSX_EXT1_INFO_0_HU NULL
-#define OPTION_VAL_NONE_HU NULL
+#define OPTION_VAL_NONE_HU "Nincs"
 #define OPTION_VAL_2ND_PSG_HU NULL
 #define OPTION_VAL_ADVRAM_HU NULL
 #define OPTION_VAL_MEGARAM_2MB_HU NULL
@@ -29166,7 +35298,7 @@ struct retro_core_options_v2 options_hu = {
 
 /* RETRO_LANGUAGE_ID */
 
-#define CATEGORY_SYSTEM_LABEL_ID NULL
+#define CATEGORY_SYSTEM_LABEL_ID "Sistem"
 #define CATEGORY_SYSTEM_INFO_0_ID NULL
 #define CATEGORY_VIDEO_LABEL_ID NULL
 #define CATEGORY_VIDEO_INFO_0_ID NULL
@@ -29196,7 +35328,7 @@ struct retro_core_options_v2 options_hu = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_ID NULL
 #define OPENMSX_SCALE_LABEL_ID NULL
 #define OPENMSX_SCALE_INFO_0_ID NULL
-#define OPTION_VAL_AUTO_ID NULL
+#define OPTION_VAL_AUTO_ID "Otomatis"
 #define OPTION_VAL_1_ID NULL
 #define OPTION_VAL_2_ID NULL
 #define OPTION_VAL_3_ID NULL
@@ -29205,7 +35337,7 @@ struct retro_core_options_v2 options_hu = {
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_ID NULL
 #define OPTION_VAL_SOFTWARE_ID NULL
 #define OPTION_VAL_OPENGL_ID NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_ID NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_ID "Pangkas Lebihan Pindai"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_ID NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_ID NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_ID NULL
@@ -29213,7 +35345,7 @@ struct retro_core_options_v2 options_hu = {
 #define OPTION_VAL_SQUARE_ID NULL
 #define OPENMSX_EXT1_LABEL_ID NULL
 #define OPENMSX_EXT1_INFO_0_ID NULL
-#define OPTION_VAL_NONE_ID NULL
+#define OPTION_VAL_NONE_ID "Tak ada"
 #define OPTION_VAL_2ND_PSG_ID NULL
 #define OPTION_VAL_ADVRAM_ID NULL
 #define OPTION_VAL_MEGARAM_2MB_ID NULL
@@ -30699,7 +36831,7 @@ struct retro_core_options_v2 options_id = {
 
 /* RETRO_LANGUAGE_IT */
 
-#define CATEGORY_SYSTEM_LABEL_IT NULL
+#define CATEGORY_SYSTEM_LABEL_IT "Sistema"
 #define CATEGORY_SYSTEM_INFO_0_IT NULL
 #define CATEGORY_VIDEO_LABEL_IT NULL
 #define CATEGORY_VIDEO_INFO_0_IT NULL
@@ -30727,7 +36859,7 @@ struct retro_core_options_v2 options_id = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_IT NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_IT NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_IT NULL
-#define OPENMSX_SCALE_LABEL_IT NULL
+#define OPENMSX_SCALE_LABEL_IT "Risoluzione"
 #define OPENMSX_SCALE_INFO_0_IT NULL
 #define OPTION_VAL_AUTO_IT NULL
 #define OPTION_VAL_1_IT NULL
@@ -30738,7 +36870,7 @@ struct retro_core_options_v2 options_id = {
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_IT NULL
 #define OPTION_VAL_SOFTWARE_IT NULL
 #define OPTION_VAL_OPENGL_IT NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_IT NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_IT "Taglia Overscan Orizzontale"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_IT NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_IT NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_IT NULL
@@ -30746,7 +36878,7 @@ struct retro_core_options_v2 options_id = {
 #define OPTION_VAL_SQUARE_IT NULL
 #define OPENMSX_EXT1_LABEL_IT NULL
 #define OPENMSX_EXT1_INFO_0_IT NULL
-#define OPTION_VAL_NONE_IT NULL
+#define OPTION_VAL_NONE_IT "Nessuno"
 #define OPTION_VAL_2ND_PSG_IT NULL
 #define OPTION_VAL_ADVRAM_IT NULL
 #define OPTION_VAL_MEGARAM_2MB_IT NULL
@@ -32232,9 +38364,9 @@ struct retro_core_options_v2 options_it = {
 
 /* RETRO_LANGUAGE_JA */
 
-#define CATEGORY_SYSTEM_LABEL_JA NULL
+#define CATEGORY_SYSTEM_LABEL_JA "システム"
 #define CATEGORY_SYSTEM_INFO_0_JA NULL
-#define CATEGORY_VIDEO_LABEL_JA NULL
+#define CATEGORY_VIDEO_LABEL_JA "ビデオ"
 #define CATEGORY_VIDEO_INFO_0_JA NULL
 #define OPENMSX_MACHINE_LABEL_JA NULL
 #define OPENMSX_MACHINE_LABEL_CAT_JA NULL
@@ -32262,16 +38394,16 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_JA NULL
 #define OPENMSX_SCALE_LABEL_JA NULL
 #define OPENMSX_SCALE_INFO_0_JA NULL
-#define OPTION_VAL_AUTO_JA NULL
+#define OPTION_VAL_AUTO_JA "自動"
 #define OPTION_VAL_1_JA NULL
 #define OPTION_VAL_2_JA NULL
 #define OPTION_VAL_3_JA NULL
 #define OPTION_VAL_4_JA NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_JA NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_JA NULL
-#define OPTION_VAL_SOFTWARE_JA NULL
+#define OPTION_VAL_SOFTWARE_JA "ソフトウェア"
 #define OPTION_VAL_OPENGL_JA NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_JA NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_JA "オーバースキャンをトリミング"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_JA NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_JA NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_JA NULL
@@ -32279,7 +38411,7 @@ struct retro_core_options_v2 options_it = {
 #define OPTION_VAL_SQUARE_JA NULL
 #define OPENMSX_EXT1_LABEL_JA NULL
 #define OPENMSX_EXT1_INFO_0_JA NULL
-#define OPTION_VAL_NONE_JA NULL
+#define OPTION_VAL_NONE_JA "なし"
 #define OPTION_VAL_2ND_PSG_JA NULL
 #define OPTION_VAL_ADVRAM_JA NULL
 #define OPTION_VAL_MEGARAM_2MB_JA NULL
@@ -33765,9 +39897,9 @@ struct retro_core_options_v2 options_ja = {
 
 /* RETRO_LANGUAGE_KO */
 
-#define CATEGORY_SYSTEM_LABEL_KO NULL
+#define CATEGORY_SYSTEM_LABEL_KO "시스템"
 #define CATEGORY_SYSTEM_INFO_0_KO NULL
-#define CATEGORY_VIDEO_LABEL_KO NULL
+#define CATEGORY_VIDEO_LABEL_KO "비디오"
 #define CATEGORY_VIDEO_INFO_0_KO NULL
 #define OPENMSX_MACHINE_LABEL_KO NULL
 #define OPENMSX_MACHINE_LABEL_CAT_KO NULL
@@ -33793,18 +39925,18 @@ struct retro_core_options_v2 options_ja = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_KO NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_KO NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_KO NULL
-#define OPENMSX_SCALE_LABEL_KO NULL
+#define OPENMSX_SCALE_LABEL_KO "해상도"
 #define OPENMSX_SCALE_INFO_0_KO NULL
-#define OPTION_VAL_AUTO_KO NULL
+#define OPTION_VAL_AUTO_KO "자동"
 #define OPTION_VAL_1_KO NULL
 #define OPTION_VAL_2_KO NULL
 #define OPTION_VAL_3_KO NULL
 #define OPTION_VAL_4_KO NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_KO NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_KO NULL
-#define OPTION_VAL_SOFTWARE_KO NULL
+#define OPTION_VAL_SOFTWARE_KO "소프트웨어"
 #define OPTION_VAL_OPENGL_KO NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_KO NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_KO "오버스캔 잘라내기"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_KO NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_KO NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_KO NULL
@@ -33812,7 +39944,7 @@ struct retro_core_options_v2 options_ja = {
 #define OPTION_VAL_SQUARE_KO NULL
 #define OPENMSX_EXT1_LABEL_KO NULL
 #define OPENMSX_EXT1_INFO_0_KO NULL
-#define OPTION_VAL_NONE_KO NULL
+#define OPTION_VAL_NONE_KO "없음"
 #define OPTION_VAL_2ND_PSG_KO NULL
 #define OPTION_VAL_ADVRAM_KO NULL
 #define OPTION_VAL_MEGARAM_2MB_KO NULL
@@ -35298,7 +41430,7 @@ struct retro_core_options_v2 options_ko = {
 
 /* RETRO_LANGUAGE_NL */
 
-#define CATEGORY_SYSTEM_LABEL_NL NULL
+#define CATEGORY_SYSTEM_LABEL_NL "Systeem"
 #define CATEGORY_SYSTEM_INFO_0_NL NULL
 #define CATEGORY_VIDEO_LABEL_NL NULL
 #define CATEGORY_VIDEO_INFO_0_NL NULL
@@ -35328,7 +41460,7 @@ struct retro_core_options_v2 options_ko = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_NL NULL
 #define OPENMSX_SCALE_LABEL_NL NULL
 #define OPENMSX_SCALE_INFO_0_NL NULL
-#define OPTION_VAL_AUTO_NL NULL
+#define OPTION_VAL_AUTO_NL "Automatisch"
 #define OPTION_VAL_1_NL NULL
 #define OPTION_VAL_2_NL NULL
 #define OPTION_VAL_3_NL NULL
@@ -35345,7 +41477,7 @@ struct retro_core_options_v2 options_ko = {
 #define OPTION_VAL_SQUARE_NL NULL
 #define OPENMSX_EXT1_LABEL_NL NULL
 #define OPENMSX_EXT1_INFO_0_NL NULL
-#define OPTION_VAL_NONE_NL NULL
+#define OPTION_VAL_NONE_NL "Geen"
 #define OPTION_VAL_2ND_PSG_NL NULL
 #define OPTION_VAL_ADVRAM_NL NULL
 #define OPTION_VAL_MEGARAM_2MB_NL NULL
@@ -36878,7 +43010,7 @@ struct retro_core_options_v2 options_nl = {
 #define OPTION_VAL_SQUARE_NO NULL
 #define OPENMSX_EXT1_LABEL_NO NULL
 #define OPENMSX_EXT1_INFO_0_NO NULL
-#define OPTION_VAL_NONE_NO NULL
+#define OPTION_VAL_NONE_NO "Ingen"
 #define OPTION_VAL_2ND_PSG_NO NULL
 #define OPTION_VAL_ADVRAM_NO NULL
 #define OPTION_VAL_MEGARAM_2MB_NO NULL
@@ -38362,11 +44494,1544 @@ struct retro_core_options_v2 options_no = {
    option_defs_no
 };
 
+/* RETRO_LANGUAGE_OR */
+
+#define CATEGORY_SYSTEM_LABEL_OR NULL
+#define CATEGORY_SYSTEM_INFO_0_OR NULL
+#define CATEGORY_VIDEO_LABEL_OR "ଵିଡ଼ିଓ"
+#define CATEGORY_VIDEO_INFO_0_OR NULL
+#define OPENMSX_MACHINE_LABEL_OR NULL
+#define OPENMSX_MACHINE_LABEL_CAT_OR NULL
+#define OPENMSX_MACHINE_INFO_0_OR NULL
+#define OPTION_VAL_C_BIOS_MSX1_OR NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_OR NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_OR NULL
+#define OPTION_VAL_C_BIOS_MSX2_OR NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OR NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OR NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_OR NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_OR NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_OR NULL
+#define OPTION_VAL_PHILIPS_VG_8020_OR NULL
+#define OPTION_VAL_SONY_HB_75P_OR NULL
+#define OPTION_VAL_TOSHIBA_HX_10_OR NULL
+#define OPTION_VAL_YAMAHA_CX5M_OR NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_OR NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_OR NULL
+#define OPTION_VAL_SONY_HB_F700P_OR NULL
+#define OPTION_VAL_SONY_HB_F1XD_OR NULL
+#define OPTION_VAL_SONY_HB_F1XV_OR NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_OR NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_OR NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_OR NULL
+#define OPENMSX_SCALE_LABEL_OR NULL
+#define OPENMSX_SCALE_INFO_0_OR NULL
+#define OPTION_VAL_AUTO_OR NULL
+#define OPTION_VAL_1_OR NULL
+#define OPTION_VAL_2_OR NULL
+#define OPTION_VAL_3_OR NULL
+#define OPTION_VAL_4_OR NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_OR NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_OR NULL
+#define OPTION_VAL_SOFTWARE_OR NULL
+#define OPTION_VAL_OPENGL_OR NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_OR NULL
+#define OPENMSX_CROP_OVERSCAN_INFO_0_OR NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_OR NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_OR NULL
+#define OPTION_VAL_TV_OR NULL
+#define OPTION_VAL_SQUARE_OR NULL
+#define OPENMSX_EXT1_LABEL_OR NULL
+#define OPENMSX_EXT1_INFO_0_OR NULL
+#define OPTION_VAL_NONE_OR NULL
+#define OPTION_VAL_2ND_PSG_OR NULL
+#define OPTION_VAL_ADVRAM_OR NULL
+#define OPTION_VAL_MEGARAM_2MB_OR NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_OR NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR NULL
+#define OPTION_VAL_MSXDOS2_OR NULL
+#define OPTION_VAL_AVT_DPF_550_OR NULL
+#define OPTION_VAL_MU_PACK_OR NULL
+#define OPTION_VAL_CASIO_KB_10_OR NULL
+#define OPTION_VAL_CASIO_KB_7_OR NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_OR NULL
+#define OPTION_VAL_DEBUGDEVICE_OR NULL
+#define OPTION_VAL_DDX_3_0_OR NULL
+#define OPTION_VAL_MEGARAM_OR NULL
+#define OPTION_VAL_MEGARAM_DISK_OR NULL
+#define OPTION_VAL_SMXWIFI_OR NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_OR NULL
+#define OPTION_VAL_ESE_RAMDISK_OR NULL
+#define OPTION_VAL_ESE_SCC_OR NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_OR NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_OR NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_OR NULL
+#define OPTION_VAL_RS232_OR NULL
+#define OPTION_VAL_AUDIO_OR NULL
+#define OPTION_VAL_AUDIO2_OR NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_OR NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_OR NULL
+#define OPTION_VAL_HIRESTIMER_OR NULL
+#define OPTION_VAL_HITACHI_MPC_310H_OR NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_OR NULL
+#define OPTION_VAL_JVC_MSX_MIDI_OR NULL
+#define OPTION_VAL_KONAMI_EC_701_OR NULL
+#define OPTION_VAL_KONAMI_EC_702_OR NULL
+#define OPTION_VAL_SCC_OR NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_OR NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR NULL
+#define OPTION_VAL_LASCOM_KANJI_OR NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR NULL
+#define OPTION_VAL_OPL3CARTRIDGE_OR NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_OR NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_OR NULL
+#define OPTION_VAL_RAM1MB_OR NULL
+#define OPTION_VAL_RAM2MB_OR NULL
+#define OPTION_VAL_RAM4MB_OR NULL
+#define OPTION_VAL_RAM512K_OR NULL
+#define OPTION_VAL_MICROSOL_CDX_2_OR NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR NULL
+#define OPTION_VAL_MBSTEREO_OR NULL
+#define OPTION_VAL_GOUDA_SCSI_OR NULL
+#define OPTION_VAL_MSXPI_OR NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_OR NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_OR NULL
+#define OPTION_VAL_NEOS_MA_20R_OR NULL
+#define OPTION_VAL_NEOS_MA_20V_OR NULL
+#define OPTION_VAL_UNAPINET_OR NULL
+#define OPTION_VAL_FMPAC_OR NULL
+#define OPTION_VAL_PAC_OR NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_OR NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_OR NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_OR NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_OR NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_OR NULL
+#define OPTION_VAL_PHILIPS_VY_0010_OR NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_OR NULL
+#define OPTION_VAL_PHILIPS_VU_0040_OR NULL
+#define OPTION_VAL_BOOSTED_AUDIO_OR NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_OR NULL
+#define OPTION_VAL_RAM16K_OR NULL
+#define OPTION_VAL_RAM32K_OR NULL
+#define OPTION_VAL_RAM64K_OR NULL
+#define OPTION_VAL_CARNIVORE2_OR NULL
+#define OPTION_VAL_SANYO_MFD_001_OR NULL
+#define OPTION_VAL_SANYO_MRS_001_OR NULL
+#define OPTION_VAL_SHARP_HB_4000_OR NULL
+#define OPTION_VAL_SHARP_HB_3600_OR NULL
+#define OPTION_VAL_SLOTEXPANDER_OR NULL
+#define OPTION_VAL_BEER_IDE_OR NULL
+#define OPTION_VAL_SONY_HBD_20W_OR NULL
+#define OPTION_VAL_SONY_HBD_F1_OR NULL
+#define OPTION_VAL_SONY_HBI_55_OR NULL
+#define OPTION_VAL_SONY_HBI_J1_OR NULL
+#define OPTION_VAL_SONY_HBD_50_OR NULL
+#define OPTION_VAL_SONY_HBK_30_OR NULL
+#define OPTION_VAL_SONY_HBI_232_OR NULL
+#define OPTION_VAL_SENSORKID_OR NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_OR NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_OR NULL
+#define OPTION_VAL_IDE_OR NULL
+#define OPTION_VAL_GFX9000_OR NULL
+#define OPTION_VAL_MOONSOUND_OR NULL
+#define OPTION_VAL_NOWIND_OR NULL
+#define OPTION_VAL_VIDEO9000_OR NULL
+#define OPTION_VAL_MAKOTO_OR NULL
+#define OPTION_VAL_FRANKY_NTSC_OR NULL
+#define OPTION_VAL_FRANKY_PAL_OR NULL
+#define OPTION_VAL_TALENT_TDC_600_OR NULL
+#define OPTION_VAL_TALENT_DPF_550_OR NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR NULL
+#define OPTION_VAL_SN76489_OR NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_OR NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_OR NULL
+#define OPTION_VAL_YAMAHA_FD_03_OR NULL
+#define OPTION_VAL_YAMAHA_FD_05_OR NULL
+#define OPTION_VAL_YAMAHA_SFG_05_OR NULL
+#define OPTION_VAL_YAMAHA_SFG_01_OR NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR NULL
+#define OPTION_VAL_YAMAHA_SKW_01_OR NULL
+#define OPENMSX_EXT2_LABEL_OR NULL
+#define OPENMSX_EXT3_LABEL_OR NULL
+#define OPENMSX_EXT4_LABEL_OR NULL
+#define OPENMSX_EXT5_LABEL_OR NULL
+#define OPENMSX_EXT6_LABEL_OR NULL
+#define OPENMSX_EXT7_LABEL_OR NULL
+#define OPENMSX_EXT8_LABEL_OR NULL
+#define OPENMSX_EXT9_LABEL_OR NULL
+#define OPENMSX_EXT10_LABEL_OR NULL
+
+struct retro_core_option_v2_category option_cats_or[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_OR, CATEGORY_SYSTEM_INFO_0_OR},
+    {"video", CATEGORY_VIDEO_LABEL_OR, CATEGORY_VIDEO_INFO_0_OR},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_or[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_OR, OPENMSX_MACHINE_LABEL_CAT_OR,
+        OPENMSX_MACHINE_INFO_0_OR,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_OR},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_OR},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_OR},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_OR},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_OR},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_OR},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_OR},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_OR},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_OR},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_OR},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_OR},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_OR},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_OR},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_OR},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_OR},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_OR},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_OR},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_OR},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_OR},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_OR},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_OR},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_OR, NULL,
+        OPENMSX_SCALE_INFO_0_OR,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_OR}, {"1", OPTION_VAL_1_OR}, {"2", OPTION_VAL_2_OR}, {"3", OPTION_VAL_3_OR}, {"4", OPTION_VAL_4_OR}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_OR, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_OR,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_OR}, {"opengl", OPTION_VAL_OPENGL_OR}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_OR, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_OR,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_OR, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_OR,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_OR}, {"square", OPTION_VAL_SQUARE_OR}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_OR, NULL,
+        OPENMSX_EXT1_INFO_0_OR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_OR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_OR},
+            {"advram", OPTION_VAL_ADVRAM_OR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_OR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_OR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_OR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_OR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_OR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_OR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_OR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_OR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_OR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_OR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_OR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_OR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_OR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_OR},
+            {"megaram", OPTION_VAL_MEGARAM_OR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_OR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_OR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_OR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_OR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_OR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_OR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_OR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_OR},
+            {"rs232", OPTION_VAL_RS232_OR},
+            {"audio", OPTION_VAL_AUDIO_OR},
+            {"audio2", OPTION_VAL_AUDIO2_OR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_OR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_OR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_OR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_OR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_OR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_OR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_OR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_OR},
+            {"scc", OPTION_VAL_SCC_OR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_OR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_OR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_OR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_OR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_OR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_OR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_OR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_OR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_OR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_OR},
+            {"ram1mb", OPTION_VAL_RAM1MB_OR},
+            {"ram2mb", OPTION_VAL_RAM2MB_OR},
+            {"ram4mb", OPTION_VAL_RAM4MB_OR},
+            {"ram512k", OPTION_VAL_RAM512K_OR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_OR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_OR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_OR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_OR},
+            {"MSXPi", OPTION_VAL_MSXPI_OR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_OR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_OR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_OR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_OR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_OR},
+            {"unapinet", OPTION_VAL_UNAPINET_OR},
+            {"fmpac", OPTION_VAL_FMPAC_OR},
+            {"pac", OPTION_VAL_PAC_OR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_OR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_OR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_OR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_OR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_OR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_OR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_OR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_OR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_OR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_OR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_OR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_OR},
+            {"ram16k", OPTION_VAL_RAM16K_OR},
+            {"ram32k", OPTION_VAL_RAM32K_OR},
+            {"ram64k", OPTION_VAL_RAM64K_OR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_OR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_OR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_OR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_OR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_OR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_OR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_OR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_OR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_OR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_OR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_OR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_OR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_OR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_OR},
+            {"SensorKid", OPTION_VAL_SENSORKID_OR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_OR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_OR},
+            {"ide", OPTION_VAL_IDE_OR},
+            {"gfx9000", OPTION_VAL_GFX9000_OR},
+            {"moonsound", OPTION_VAL_MOONSOUND_OR},
+            {"nowind", OPTION_VAL_NOWIND_OR},
+            {"video9000", OPTION_VAL_VIDEO9000_OR},
+            {"Makoto", OPTION_VAL_MAKOTO_OR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_OR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_OR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_OR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_OR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_OR},
+            {"SN76489", OPTION_VAL_SN76489_OR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_OR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_OR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_OR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_OR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_OR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_OR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_OR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_OR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_OR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_or = {
+   option_cats_or,
+   option_defs_or
+};
+
 /* RETRO_LANGUAGE_PL */
 
 #define CATEGORY_SYSTEM_LABEL_PL NULL
 #define CATEGORY_SYSTEM_INFO_0_PL NULL
-#define CATEGORY_VIDEO_LABEL_PL NULL
+#define CATEGORY_VIDEO_LABEL_PL "Wideo"
 #define CATEGORY_VIDEO_INFO_0_PL NULL
 #define OPENMSX_MACHINE_LABEL_PL NULL
 #define OPENMSX_MACHINE_LABEL_CAT_PL NULL
@@ -38392,18 +46057,18 @@ struct retro_core_options_v2 options_no = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_PL NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_PL NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_PL NULL
-#define OPENMSX_SCALE_LABEL_PL NULL
+#define OPENMSX_SCALE_LABEL_PL "Rozdzielczość"
 #define OPENMSX_SCALE_INFO_0_PL NULL
-#define OPTION_VAL_AUTO_PL NULL
+#define OPTION_VAL_AUTO_PL "Automatyczny"
 #define OPTION_VAL_1_PL NULL
 #define OPTION_VAL_2_PL NULL
 #define OPTION_VAL_3_PL NULL
 #define OPTION_VAL_4_PL NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_PL NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_PL NULL
-#define OPTION_VAL_SOFTWARE_PL NULL
+#define OPTION_VAL_SOFTWARE_PL "Programowy"
 #define OPTION_VAL_OPENGL_PL NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_PL NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_PL "Przytnij overscan"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_PL NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_PL NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_PL NULL
@@ -38411,7 +46076,7 @@ struct retro_core_options_v2 options_no = {
 #define OPTION_VAL_SQUARE_PL NULL
 #define OPENMSX_EXT1_LABEL_PL NULL
 #define OPENMSX_EXT1_INFO_0_PL NULL
-#define OPTION_VAL_NONE_PL NULL
+#define OPTION_VAL_NONE_PL "Brak"
 #define OPTION_VAL_2ND_PSG_PL NULL
 #define OPTION_VAL_ADVRAM_PL NULL
 #define OPTION_VAL_MEGARAM_2MB_PL NULL
@@ -39897,9 +47562,9 @@ struct retro_core_options_v2 options_pl = {
 
 /* RETRO_LANGUAGE_PT_BR */
 
-#define CATEGORY_SYSTEM_LABEL_PT_BR NULL
+#define CATEGORY_SYSTEM_LABEL_PT_BR "Sistema"
 #define CATEGORY_SYSTEM_INFO_0_PT_BR NULL
-#define CATEGORY_VIDEO_LABEL_PT_BR NULL
+#define CATEGORY_VIDEO_LABEL_PT_BR "Vídeo"
 #define CATEGORY_VIDEO_INFO_0_PT_BR NULL
 #define OPENMSX_MACHINE_LABEL_PT_BR NULL
 #define OPENMSX_MACHINE_LABEL_CAT_PT_BR NULL
@@ -39925,9 +47590,9 @@ struct retro_core_options_v2 options_pl = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_PT_BR NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_PT_BR NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_PT_BR NULL
-#define OPENMSX_SCALE_LABEL_PT_BR NULL
+#define OPENMSX_SCALE_LABEL_PT_BR "Resolução"
 #define OPENMSX_SCALE_INFO_0_PT_BR NULL
-#define OPTION_VAL_AUTO_PT_BR NULL
+#define OPTION_VAL_AUTO_PT_BR "Automático"
 #define OPTION_VAL_1_PT_BR NULL
 #define OPTION_VAL_2_PT_BR NULL
 #define OPTION_VAL_3_PT_BR NULL
@@ -39936,7 +47601,7 @@ struct retro_core_options_v2 options_pl = {
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_PT_BR NULL
 #define OPTION_VAL_SOFTWARE_PT_BR NULL
 #define OPTION_VAL_OPENGL_PT_BR NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_PT_BR NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_PT_BR "Cortar overscan"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_PT_BR NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_PT_BR NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_PT_BR NULL
@@ -39944,7 +47609,7 @@ struct retro_core_options_v2 options_pl = {
 #define OPTION_VAL_SQUARE_PT_BR NULL
 #define OPENMSX_EXT1_LABEL_PT_BR NULL
 #define OPENMSX_EXT1_INFO_0_PT_BR NULL
-#define OPTION_VAL_NONE_PT_BR NULL
+#define OPTION_VAL_NONE_PT_BR "Nenhum"
 #define OPTION_VAL_2ND_PSG_PT_BR NULL
 #define OPTION_VAL_ADVRAM_PT_BR NULL
 #define OPTION_VAL_MEGARAM_2MB_PT_BR NULL
@@ -41432,7 +49097,7 @@ struct retro_core_options_v2 options_pt_br = {
 
 #define CATEGORY_SYSTEM_LABEL_PT_PT NULL
 #define CATEGORY_SYSTEM_INFO_0_PT_PT NULL
-#define CATEGORY_VIDEO_LABEL_PT_PT NULL
+#define CATEGORY_VIDEO_LABEL_PT_PT "Vídeo"
 #define CATEGORY_VIDEO_INFO_0_PT_PT NULL
 #define OPENMSX_MACHINE_LABEL_PT_PT NULL
 #define OPENMSX_MACHINE_LABEL_CAT_PT_PT NULL
@@ -41460,7 +49125,7 @@ struct retro_core_options_v2 options_pt_br = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_PT_PT NULL
 #define OPENMSX_SCALE_LABEL_PT_PT NULL
 #define OPENMSX_SCALE_INFO_0_PT_PT NULL
-#define OPTION_VAL_AUTO_PT_PT NULL
+#define OPTION_VAL_AUTO_PT_PT "Automático"
 #define OPTION_VAL_1_PT_PT NULL
 #define OPTION_VAL_2_PT_PT NULL
 #define OPTION_VAL_3_PT_PT NULL
@@ -41477,7 +49142,7 @@ struct retro_core_options_v2 options_pt_br = {
 #define OPTION_VAL_SQUARE_PT_PT NULL
 #define OPENMSX_EXT1_LABEL_PT_PT NULL
 #define OPENMSX_EXT1_INFO_0_PT_PT NULL
-#define OPTION_VAL_NONE_PT_PT NULL
+#define OPTION_VAL_NONE_PT_PT "Não partilhar"
 #define OPTION_VAL_2ND_PSG_PT_PT NULL
 #define OPTION_VAL_ADVRAM_PT_PT NULL
 #define OPTION_VAL_MEGARAM_2MB_PT_PT NULL
@@ -42963,9 +50628,9 @@ struct retro_core_options_v2 options_pt_pt = {
 
 /* RETRO_LANGUAGE_RU */
 
-#define CATEGORY_SYSTEM_LABEL_RU NULL
+#define CATEGORY_SYSTEM_LABEL_RU "Система"
 #define CATEGORY_SYSTEM_INFO_0_RU NULL
-#define CATEGORY_VIDEO_LABEL_RU NULL
+#define CATEGORY_VIDEO_LABEL_RU "Видео"
 #define CATEGORY_VIDEO_INFO_0_RU NULL
 #define OPENMSX_MACHINE_LABEL_RU NULL
 #define OPENMSX_MACHINE_LABEL_CAT_RU NULL
@@ -42991,26 +50656,26 @@ struct retro_core_options_v2 options_pt_pt = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_RU NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_RU NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_RU NULL
-#define OPENMSX_SCALE_LABEL_RU NULL
+#define OPENMSX_SCALE_LABEL_RU "Разрешение"
 #define OPENMSX_SCALE_INFO_0_RU NULL
-#define OPTION_VAL_AUTO_RU NULL
+#define OPTION_VAL_AUTO_RU "Автоматически"
 #define OPTION_VAL_1_RU NULL
 #define OPTION_VAL_2_RU NULL
 #define OPTION_VAL_3_RU NULL
 #define OPTION_VAL_4_RU NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_RU NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_RU NULL
-#define OPTION_VAL_SOFTWARE_RU NULL
+#define OPTION_VAL_SOFTWARE_RU "Программный"
 #define OPTION_VAL_OPENGL_RU NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_RU NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_RU "Кадрирование вылетов развёртки"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_RU NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_RU NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_RU NULL
-#define OPTION_VAL_TV_RU NULL
+#define OPTION_VAL_TV_RU "ТВ"
 #define OPTION_VAL_SQUARE_RU NULL
 #define OPENMSX_EXT1_LABEL_RU NULL
 #define OPENMSX_EXT1_INFO_0_RU NULL
-#define OPTION_VAL_NONE_RU NULL
+#define OPTION_VAL_NONE_RU "Нет"
 #define OPTION_VAL_2ND_PSG_RU NULL
 #define OPTION_VAL_ADVRAM_RU NULL
 #define OPTION_VAL_MEGARAM_2MB_RU NULL
@@ -44496,57 +52161,57 @@ struct retro_core_options_v2 options_ru = {
 
 /* RETRO_LANGUAGE_SK */
 
-#define CATEGORY_SYSTEM_LABEL_SK NULL
-#define CATEGORY_SYSTEM_INFO_0_SK NULL
+#define CATEGORY_SYSTEM_LABEL_SK "Systém"
+#define CATEGORY_SYSTEM_INFO_0_SK "Počítač MSX a kazety v jeho slotoch. Zmeny sa prejavia pri ďalšom načítaní obsahu."
 #define CATEGORY_VIDEO_LABEL_SK NULL
-#define CATEGORY_VIDEO_INFO_0_SK NULL
-#define OPENMSX_MACHINE_LABEL_SK NULL
-#define OPENMSX_MACHINE_LABEL_CAT_SK NULL
-#define OPENMSX_MACHINE_INFO_0_SK NULL
+#define CATEGORY_VIDEO_INFO_0_SK "Veľkosť obrazu a jeho okraja."
+#define OPENMSX_MACHINE_LABEL_SK "Počítač (reštart)"
+#define OPENMSX_MACHINE_LABEL_CAT_SK "Počítač"
+#define OPENMSX_MACHINE_INFO_0_SK "Počítač MSX, ktorý sa má emulovať. Počítače C-BIOS nepotrebujú nič ďalšie; skutočný počítač potrebuje svoje systémové ROM v <system>/openmsx/share/systemroms, inak sa namiesto neho spustí C-BIOS MSX2+. Európa a Spojené kráľovstvo bežia na 50 Hz."
 #define OPTION_VAL_C_BIOS_MSX1_SK NULL
-#define OPTION_VAL_C_BIOS_MSX1_EU_SK NULL
-#define OPTION_VAL_C_BIOS_MSX1_JP_SK NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_SK "C-BIOS MSX1 (Európa)"
+#define OPTION_VAL_C_BIOS_MSX1_JP_SK "C-BIOS MSX1 (Japonsko)"
 #define OPTION_VAL_C_BIOS_MSX2_SK NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_SK NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_SK NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_SK "C-BIOS MSX2 (Európa)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_SK "C-BIOS MSX2 (Japonsko)"
 #define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_SK NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_SK NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_SK NULL
-#define OPTION_VAL_PHILIPS_VG_8020_SK NULL
-#define OPTION_VAL_SONY_HB_75P_SK NULL
-#define OPTION_VAL_TOSHIBA_HX_10_SK NULL
-#define OPTION_VAL_YAMAHA_CX5M_SK NULL
-#define OPTION_VAL_PHILIPS_NMS_8245_SK NULL
-#define OPTION_VAL_PHILIPS_NMS_8250_SK NULL
-#define OPTION_VAL_SONY_HB_F700P_SK NULL
-#define OPTION_VAL_SONY_HB_F1XD_SK NULL
-#define OPTION_VAL_SONY_HB_F1XV_SK NULL
-#define OPTION_VAL_PANASONIC_FS_A1WSX_SK NULL
-#define OPTION_VAL_PANASONIC_FS_A1ST_SK NULL
-#define OPTION_VAL_PANASONIC_FS_A1GT_SK NULL
-#define OPENMSX_SCALE_LABEL_SK NULL
-#define OPENMSX_SCALE_INFO_0_SK NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_SK "C-BIOS MSX2+ (Európa)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_SK "C-BIOS MSX2+ (Japonsko)"
+#define OPTION_VAL_PHILIPS_VG_8020_SK "Philips VG-8020 (MSX1, Európa)"
+#define OPTION_VAL_SONY_HB_75P_SK "Sony HB-75P (MSX1, Európa)"
+#define OPTION_VAL_TOSHIBA_HX_10_SK "Toshiba HX-10 (MSX1, Spojené kráľovstvo)"
+#define OPTION_VAL_YAMAHA_CX5M_SK "Yamaha CX5M (MSX1, Európa)"
+#define OPTION_VAL_PHILIPS_NMS_8245_SK "Philips NMS 8245 (MSX2, Európa)"
+#define OPTION_VAL_PHILIPS_NMS_8250_SK "Philips NMS 8250 (MSX2, Európa)"
+#define OPTION_VAL_SONY_HB_F700P_SK "Sony HB-F700P (MSX2, Európa)"
+#define OPTION_VAL_SONY_HB_F1XD_SK "Sony HB-F1XD (MSX2, Japonsko)"
+#define OPTION_VAL_SONY_HB_F1XV_SK "Sony HB-F1XV (MSX2+, Japonsko)"
+#define OPTION_VAL_PANASONIC_FS_A1WSX_SK "Panasonic FS-A1WSX (MSX2+, Japonsko)"
+#define OPTION_VAL_PANASONIC_FS_A1ST_SK "Panasonic FS-A1ST (turbo R, Japonsko)"
+#define OPTION_VAL_PANASONIC_FS_A1GT_SK "Panasonic FS-A1GT (turbo R, Japonsko)"
+#define OPENMSX_SCALE_LABEL_SK "Rozlíšenie"
+#define OPENMSX_SCALE_INFO_0_SK "Veľkosť, v akej openMSX kreslí obraz vrátane okrajov: 320x240 krát táto hodnota. Automaticky sa riadi režimom obrazovky: 1x pre režimy so šírkou 256 pixelov, 2x pre režimy so šírkou 512 a prekladané režimy."
 #define OPTION_VAL_AUTO_SK NULL
 #define OPTION_VAL_1_SK NULL
 #define OPTION_VAL_2_SK NULL
 #define OPTION_VAL_3_SK NULL
 #define OPTION_VAL_4_SK NULL
-#define OPENMSX_VIDEO_OUTPUT_LABEL_SK NULL
-#define OPENMSX_VIDEO_OUTPUT_INFO_0_SK NULL
-#define OPTION_VAL_SOFTWARE_SK NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_SK "Výstup videa (reštart)"
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_SK "Softvérový odovzdá RetroArchu obraz ako pixely, pre ľubovoľný video ovládač. OpenGL kreslí cez OpenGL kontext RetroArchu (video ovládač gl alebo glcore), s vlastnými škálovačmi a efektmi openMSX."
+#define OPTION_VAL_SOFTWARE_SK "Softvér"
 #define OPTION_VAL_OPENGL_SK NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_SK NULL
-#define OPENMSX_CROP_OVERSCAN_INFO_0_SK NULL
-#define OPENMSX_PIXEL_ASPECT_LABEL_SK NULL
-#define OPENMSX_PIXEL_ASPECT_INFO_0_SK NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_SK "Orezať overscan"
+#define OPENMSX_CROP_OVERSCAN_INFO_0_SK "Zobrazí iba časť obrazovky, na ktorej MSX zobrazuje, bez okraja; veľkosť sa riadi režimom obrazovky."
+#define OPENMSX_PIXEL_ASPECT_LABEL_SK "Pomer strán pixelu"
+#define OPENMSX_PIXEL_ASPECT_INFO_0_SK "TV: obraz taký široký ako na televízore, ako ho zobrazuje openMSX. Štvorcový: každý pixel taký široký ako vysoký."
 #define OPTION_VAL_TV_SK NULL
-#define OPTION_VAL_SQUARE_SK NULL
-#define OPENMSX_EXT1_LABEL_SK NULL
-#define OPENMSX_EXT1_INFO_0_SK NULL
-#define OPTION_VAL_NONE_SK NULL
-#define OPTION_VAL_2ND_PSG_SK NULL
+#define OPTION_VAL_SQUARE_SK "Štvorcový"
+#define OPENMSX_EXT1_LABEL_SK "Rozšírenie 1 (reštart)"
+#define OPENMSX_EXT1_INFO_0_SK "Kazeta alebo zariadenie vo voľnom slote, ako -ext v openMSX. Niektoré potrebujú svoje ROM v <system>/openmsx/share/systemroms."
+#define OPTION_VAL_NONE_SK "Žiadne"
+#define OPTION_VAL_2ND_PSG_SK "2. PSG"
 #define OPTION_VAL_ADVRAM_SK NULL
-#define OPTION_VAL_MEGARAM_2MB_SK NULL
+#define OPTION_VAL_MEGARAM_2MB_SK "Ademir Carchano MegaRAM (výročná edícia)"
 #define OPTION_VAL_ASCII_MSX_DOS2_SK NULL
 #define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SK NULL
 #define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SK NULL
@@ -44558,7 +52223,7 @@ struct retro_core_options_v2 options_ru = {
 #define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SK NULL
 #define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SK NULL
 #define OPTION_VAL_ROM_HUNTER_MK2_SK NULL
-#define OPTION_VAL_DEBUGDEVICE_SK NULL
+#define OPTION_VAL_DEBUGDEVICE_SK "Ladiace zariadenie"
 #define OPTION_VAL_DDX_3_0_SK NULL
 #define OPTION_VAL_MEGARAM_SK NULL
 #define OPTION_VAL_MEGARAM_DISK_SK NULL
@@ -44569,9 +52234,9 @@ struct retro_core_options_v2 options_ru = {
 #define OPTION_VAL_ESE_WAVE_SCSI_SK NULL
 #define OPTION_VAL_ESE_MEGA_SCSI_SK NULL
 #define OPTION_VAL_FAC_MIDI_INTERFACE_SK NULL
-#define OPTION_VAL_RS232_SK NULL
-#define OPTION_VAL_AUDIO_SK NULL
-#define OPTION_VAL_AUDIO2_SK NULL
+#define OPTION_VAL_RS232_SK "Všeobecné MSX RS-232C"
+#define OPTION_VAL_AUDIO_SK "Všeobecné MSX-AUDIO"
+#define OPTION_VAL_AUDIO2_SK "Všeobecné MSX-AUDIO 2 (alternatívne porty)"
 #define OPTION_VAL_GRADIENTE_CT_80E_SK NULL
 #define OPTION_VAL_ASCII16_X_MAPPER_XL_SK NULL
 #define OPTION_VAL_HIRESTIMER_SK NULL
@@ -44629,7 +52294,7 @@ struct retro_core_options_v2 options_ru = {
 #define OPTION_VAL_SANYO_MRS_001_SK NULL
 #define OPTION_VAL_SHARP_HB_4000_SK NULL
 #define OPTION_VAL_SHARP_HB_3600_SK NULL
-#define OPTION_VAL_SLOTEXPANDER_SK NULL
+#define OPTION_VAL_SLOTEXPANDER_SK "Rozširovač slotov"
 #define OPTION_VAL_BEER_IDE_SK NULL
 #define OPTION_VAL_SONY_HBD_20W_SK NULL
 #define OPTION_VAL_SONY_HBD_F1_SK NULL
@@ -44662,15 +52327,15 @@ struct retro_core_options_v2 options_ru = {
 #define OPTION_VAL_YAMAHA_SFG_01_SK NULL
 #define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SK NULL
 #define OPTION_VAL_YAMAHA_SKW_01_SK NULL
-#define OPENMSX_EXT2_LABEL_SK NULL
-#define OPENMSX_EXT3_LABEL_SK NULL
-#define OPENMSX_EXT4_LABEL_SK NULL
-#define OPENMSX_EXT5_LABEL_SK NULL
-#define OPENMSX_EXT6_LABEL_SK NULL
-#define OPENMSX_EXT7_LABEL_SK NULL
-#define OPENMSX_EXT8_LABEL_SK NULL
-#define OPENMSX_EXT9_LABEL_SK NULL
-#define OPENMSX_EXT10_LABEL_SK NULL
+#define OPENMSX_EXT2_LABEL_SK "Rozšírenie 2 (reštart)"
+#define OPENMSX_EXT3_LABEL_SK "Rozšírenie 3 (reštart)"
+#define OPENMSX_EXT4_LABEL_SK "Rozšírenie 4 (reštart)"
+#define OPENMSX_EXT5_LABEL_SK "Rozšírenie 5 (reštart)"
+#define OPENMSX_EXT6_LABEL_SK "Rozšírenie 6 (reštart)"
+#define OPENMSX_EXT7_LABEL_SK "Rozšírenie 7 (reštart)"
+#define OPENMSX_EXT8_LABEL_SK "Rozšírenie 8 (reštart)"
+#define OPENMSX_EXT9_LABEL_SK "Rozšírenie 9 (reštart)"
+#define OPENMSX_EXT10_LABEL_SK "Rozšírenie 10 (reštart)"
 
 struct retro_core_option_v2_category option_cats_sk[] = {
     {"system", CATEGORY_SYSTEM_LABEL_SK, CATEGORY_SYSTEM_INFO_0_SK},
@@ -46027,57 +53692,1590 @@ struct retro_core_options_v2 options_sk = {
    option_defs_sk
 };
 
+/* RETRO_LANGUAGE_SR */
+
+#define CATEGORY_SYSTEM_LABEL_SR NULL
+#define CATEGORY_SYSTEM_INFO_0_SR NULL
+#define CATEGORY_VIDEO_LABEL_SR NULL
+#define CATEGORY_VIDEO_INFO_0_SR NULL
+#define OPENMSX_MACHINE_LABEL_SR NULL
+#define OPENMSX_MACHINE_LABEL_CAT_SR NULL
+#define OPENMSX_MACHINE_INFO_0_SR NULL
+#define OPTION_VAL_C_BIOS_MSX1_SR NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_SR NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_SR NULL
+#define OPTION_VAL_C_BIOS_MSX2_SR NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_SR NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_SR NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_SR NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_SR NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_SR NULL
+#define OPTION_VAL_PHILIPS_VG_8020_SR NULL
+#define OPTION_VAL_SONY_HB_75P_SR NULL
+#define OPTION_VAL_TOSHIBA_HX_10_SR NULL
+#define OPTION_VAL_YAMAHA_CX5M_SR NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_SR NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_SR NULL
+#define OPTION_VAL_SONY_HB_F700P_SR NULL
+#define OPTION_VAL_SONY_HB_F1XD_SR NULL
+#define OPTION_VAL_SONY_HB_F1XV_SR NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_SR NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_SR NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_SR NULL
+#define OPENMSX_SCALE_LABEL_SR NULL
+#define OPENMSX_SCALE_INFO_0_SR NULL
+#define OPTION_VAL_AUTO_SR NULL
+#define OPTION_VAL_1_SR NULL
+#define OPTION_VAL_2_SR NULL
+#define OPTION_VAL_3_SR NULL
+#define OPTION_VAL_4_SR NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_SR NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_SR NULL
+#define OPTION_VAL_SOFTWARE_SR NULL
+#define OPTION_VAL_OPENGL_SR NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_SR NULL
+#define OPENMSX_CROP_OVERSCAN_INFO_0_SR NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_SR NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_SR NULL
+#define OPTION_VAL_TV_SR NULL
+#define OPTION_VAL_SQUARE_SR NULL
+#define OPENMSX_EXT1_LABEL_SR NULL
+#define OPENMSX_EXT1_INFO_0_SR NULL
+#define OPTION_VAL_NONE_SR NULL
+#define OPTION_VAL_2ND_PSG_SR NULL
+#define OPTION_VAL_ADVRAM_SR NULL
+#define OPTION_VAL_MEGARAM_2MB_SR NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_SR NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR NULL
+#define OPTION_VAL_MSXDOS2_SR NULL
+#define OPTION_VAL_AVT_DPF_550_SR NULL
+#define OPTION_VAL_MU_PACK_SR NULL
+#define OPTION_VAL_CASIO_KB_10_SR NULL
+#define OPTION_VAL_CASIO_KB_7_SR NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_SR NULL
+#define OPTION_VAL_DEBUGDEVICE_SR NULL
+#define OPTION_VAL_DDX_3_0_SR NULL
+#define OPTION_VAL_MEGARAM_SR NULL
+#define OPTION_VAL_MEGARAM_DISK_SR NULL
+#define OPTION_VAL_SMXWIFI_SR NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_SR NULL
+#define OPTION_VAL_ESE_RAMDISK_SR NULL
+#define OPTION_VAL_ESE_SCC_SR NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_SR NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_SR NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_SR NULL
+#define OPTION_VAL_RS232_SR NULL
+#define OPTION_VAL_AUDIO_SR NULL
+#define OPTION_VAL_AUDIO2_SR NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_SR NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_SR NULL
+#define OPTION_VAL_HIRESTIMER_SR NULL
+#define OPTION_VAL_HITACHI_MPC_310H_SR NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_SR NULL
+#define OPTION_VAL_JVC_MSX_MIDI_SR NULL
+#define OPTION_VAL_KONAMI_EC_701_SR NULL
+#define OPTION_VAL_KONAMI_EC_702_SR NULL
+#define OPTION_VAL_SCC_SR NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_SR NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR NULL
+#define OPTION_VAL_LASCOM_KANJI_SR NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR NULL
+#define OPTION_VAL_OPL3CARTRIDGE_SR NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_SR NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_SR NULL
+#define OPTION_VAL_RAM1MB_SR NULL
+#define OPTION_VAL_RAM2MB_SR NULL
+#define OPTION_VAL_RAM4MB_SR NULL
+#define OPTION_VAL_RAM512K_SR NULL
+#define OPTION_VAL_MICROSOL_CDX_2_SR NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR NULL
+#define OPTION_VAL_MBSTEREO_SR NULL
+#define OPTION_VAL_GOUDA_SCSI_SR NULL
+#define OPTION_VAL_MSXPI_SR NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_SR NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_SR NULL
+#define OPTION_VAL_NEOS_MA_20R_SR NULL
+#define OPTION_VAL_NEOS_MA_20V_SR NULL
+#define OPTION_VAL_UNAPINET_SR NULL
+#define OPTION_VAL_FMPAC_SR NULL
+#define OPTION_VAL_PAC_SR NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_SR NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_SR NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_SR NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_SR NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_SR NULL
+#define OPTION_VAL_PHILIPS_VY_0010_SR NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_SR NULL
+#define OPTION_VAL_PHILIPS_VU_0040_SR NULL
+#define OPTION_VAL_BOOSTED_AUDIO_SR NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_SR NULL
+#define OPTION_VAL_RAM16K_SR NULL
+#define OPTION_VAL_RAM32K_SR NULL
+#define OPTION_VAL_RAM64K_SR NULL
+#define OPTION_VAL_CARNIVORE2_SR NULL
+#define OPTION_VAL_SANYO_MFD_001_SR NULL
+#define OPTION_VAL_SANYO_MRS_001_SR NULL
+#define OPTION_VAL_SHARP_HB_4000_SR NULL
+#define OPTION_VAL_SHARP_HB_3600_SR NULL
+#define OPTION_VAL_SLOTEXPANDER_SR NULL
+#define OPTION_VAL_BEER_IDE_SR NULL
+#define OPTION_VAL_SONY_HBD_20W_SR NULL
+#define OPTION_VAL_SONY_HBD_F1_SR NULL
+#define OPTION_VAL_SONY_HBI_55_SR NULL
+#define OPTION_VAL_SONY_HBI_J1_SR NULL
+#define OPTION_VAL_SONY_HBD_50_SR NULL
+#define OPTION_VAL_SONY_HBK_30_SR NULL
+#define OPTION_VAL_SONY_HBI_232_SR NULL
+#define OPTION_VAL_SENSORKID_SR NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_SR NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_SR NULL
+#define OPTION_VAL_IDE_SR NULL
+#define OPTION_VAL_GFX9000_SR NULL
+#define OPTION_VAL_MOONSOUND_SR NULL
+#define OPTION_VAL_NOWIND_SR NULL
+#define OPTION_VAL_VIDEO9000_SR NULL
+#define OPTION_VAL_MAKOTO_SR NULL
+#define OPTION_VAL_FRANKY_NTSC_SR NULL
+#define OPTION_VAL_FRANKY_PAL_SR NULL
+#define OPTION_VAL_TALENT_TDC_600_SR NULL
+#define OPTION_VAL_TALENT_DPF_550_SR NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR NULL
+#define OPTION_VAL_SN76489_SR NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_SR NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_SR NULL
+#define OPTION_VAL_YAMAHA_FD_03_SR NULL
+#define OPTION_VAL_YAMAHA_FD_05_SR NULL
+#define OPTION_VAL_YAMAHA_SFG_05_SR NULL
+#define OPTION_VAL_YAMAHA_SFG_01_SR NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR NULL
+#define OPTION_VAL_YAMAHA_SKW_01_SR NULL
+#define OPENMSX_EXT2_LABEL_SR NULL
+#define OPENMSX_EXT3_LABEL_SR NULL
+#define OPENMSX_EXT4_LABEL_SR NULL
+#define OPENMSX_EXT5_LABEL_SR NULL
+#define OPENMSX_EXT6_LABEL_SR NULL
+#define OPENMSX_EXT7_LABEL_SR NULL
+#define OPENMSX_EXT8_LABEL_SR NULL
+#define OPENMSX_EXT9_LABEL_SR NULL
+#define OPENMSX_EXT10_LABEL_SR NULL
+
+struct retro_core_option_v2_category option_cats_sr[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_SR, CATEGORY_SYSTEM_INFO_0_SR},
+    {"video", CATEGORY_VIDEO_LABEL_SR, CATEGORY_VIDEO_INFO_0_SR},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_sr[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_SR, OPENMSX_MACHINE_LABEL_CAT_SR,
+        OPENMSX_MACHINE_INFO_0_SR,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_SR},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_SR},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_SR},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_SR},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_SR},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_SR},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_SR},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_SR},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_SR},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_SR},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_SR},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_SR},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_SR},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_SR},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_SR},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_SR},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_SR},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_SR},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_SR},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_SR},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_SR},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_SR, NULL,
+        OPENMSX_SCALE_INFO_0_SR,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_SR}, {"1", OPTION_VAL_1_SR}, {"2", OPTION_VAL_2_SR}, {"3", OPTION_VAL_3_SR}, {"4", OPTION_VAL_4_SR}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_SR, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_SR,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_SR}, {"opengl", OPTION_VAL_OPENGL_SR}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_SR, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_SR,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_SR, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_SR,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_SR}, {"square", OPTION_VAL_SQUARE_SR}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_SR, NULL,
+        OPENMSX_EXT1_INFO_0_SR,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_SR},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_SR},
+            {"advram", OPTION_VAL_ADVRAM_SR},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_SR},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_SR},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_SR},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_SR},
+            {"msxdos2", OPTION_VAL_MSXDOS2_SR},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_SR},
+            {"mu-PACK", OPTION_VAL_MU_PACK_SR},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_SR},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_SR},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_SR},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_SR},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_SR},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_SR},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_SR},
+            {"megaram", OPTION_VAL_MEGARAM_SR},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_SR},
+            {"smxwifi", OPTION_VAL_SMXWIFI_SR},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_SR},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_SR},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_SR},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_SR},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_SR},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_SR},
+            {"rs232", OPTION_VAL_RS232_SR},
+            {"audio", OPTION_VAL_AUDIO_SR},
+            {"audio2", OPTION_VAL_AUDIO2_SR},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_SR},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_SR},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_SR},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_SR},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_SR},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_SR},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_SR},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_SR},
+            {"scc", OPTION_VAL_SCC_SR},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_SR},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_SR},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_SR},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_SR},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_SR},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_SR},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_SR},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_SR},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_SR},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_SR},
+            {"ram1mb", OPTION_VAL_RAM1MB_SR},
+            {"ram2mb", OPTION_VAL_RAM2MB_SR},
+            {"ram4mb", OPTION_VAL_RAM4MB_SR},
+            {"ram512k", OPTION_VAL_RAM512K_SR},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_SR},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_SR},
+            {"mbstereo", OPTION_VAL_MBSTEREO_SR},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_SR},
+            {"MSXPi", OPTION_VAL_MSXPI_SR},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_SR},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_SR},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_SR},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_SR},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_SR},
+            {"unapinet", OPTION_VAL_UNAPINET_SR},
+            {"fmpac", OPTION_VAL_FMPAC_SR},
+            {"pac", OPTION_VAL_PAC_SR},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_SR},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_SR},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_SR},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_SR},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_SR},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_SR},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_SR},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_SR},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_SR},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_SR},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_SR},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_SR},
+            {"ram16k", OPTION_VAL_RAM16K_SR},
+            {"ram32k", OPTION_VAL_RAM32K_SR},
+            {"ram64k", OPTION_VAL_RAM64K_SR},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_SR},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_SR},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_SR},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_SR},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_SR},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_SR},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_SR},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_SR},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_SR},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_SR},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_SR},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_SR},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_SR},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_SR},
+            {"SensorKid", OPTION_VAL_SENSORKID_SR},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_SR},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_SR},
+            {"ide", OPTION_VAL_IDE_SR},
+            {"gfx9000", OPTION_VAL_GFX9000_SR},
+            {"moonsound", OPTION_VAL_MOONSOUND_SR},
+            {"nowind", OPTION_VAL_NOWIND_SR},
+            {"video9000", OPTION_VAL_VIDEO9000_SR},
+            {"Makoto", OPTION_VAL_MAKOTO_SR},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_SR},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_SR},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_SR},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_SR},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_SR},
+            {"SN76489", OPTION_VAL_SN76489_SR},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_SR},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_SR},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_SR},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_SR},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_SR},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_SR},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_SR},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SR},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_SR},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_sr = {
+   option_cats_sr,
+   option_defs_sr
+};
+
 /* RETRO_LANGUAGE_SV */
 
 #define CATEGORY_SYSTEM_LABEL_SV NULL
-#define CATEGORY_SYSTEM_INFO_0_SV NULL
+#define CATEGORY_SYSTEM_INFO_0_SV "MSX-maskinen och kassetterna i dess kortplatser. Ändringarna börjar gälla när innehållet läses in igen."
 #define CATEGORY_VIDEO_LABEL_SV NULL
-#define CATEGORY_VIDEO_INFO_0_SV NULL
-#define OPENMSX_MACHINE_LABEL_SV NULL
-#define OPENMSX_MACHINE_LABEL_CAT_SV NULL
-#define OPENMSX_MACHINE_INFO_0_SV NULL
+#define CATEGORY_VIDEO_INFO_0_SV "Bildens storlek och dess ram."
+#define OPENMSX_MACHINE_LABEL_SV "Maskin (starta om)"
+#define OPENMSX_MACHINE_LABEL_CAT_SV "Maskin"
+#define OPENMSX_MACHINE_INFO_0_SV "MSX-datorn som ska emuleras. C-BIOS-maskinerna behöver inget annat; en riktig maskin behöver sina system-ROM:ar i <system>/openmsx/share/systemroms, annars startas C-BIOS MSX2+ i stället. Europa och Storbritannien kör med 50 Hz."
 #define OPTION_VAL_C_BIOS_MSX1_SV NULL
-#define OPTION_VAL_C_BIOS_MSX1_EU_SV NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_SV "C-BIOS MSX1 (Europa)"
 #define OPTION_VAL_C_BIOS_MSX1_JP_SV NULL
 #define OPTION_VAL_C_BIOS_MSX2_SV NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_SV NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_SV "C-BIOS MSX2 (Europa)"
 #define OPTION_VAL_C_BIOS_MSX2_JP_SV NULL
 #define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_SV NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_SV NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_SV "C-BIOS MSX2+ (Europa)"
 #define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_SV NULL
-#define OPTION_VAL_PHILIPS_VG_8020_SV NULL
-#define OPTION_VAL_SONY_HB_75P_SV NULL
-#define OPTION_VAL_TOSHIBA_HX_10_SV NULL
-#define OPTION_VAL_YAMAHA_CX5M_SV NULL
-#define OPTION_VAL_PHILIPS_NMS_8245_SV NULL
-#define OPTION_VAL_PHILIPS_NMS_8250_SV NULL
-#define OPTION_VAL_SONY_HB_F700P_SV NULL
+#define OPTION_VAL_PHILIPS_VG_8020_SV "Philips VG-8020 (MSX1, Europa)"
+#define OPTION_VAL_SONY_HB_75P_SV "Sony HB-75P (MSX1, Europa)"
+#define OPTION_VAL_TOSHIBA_HX_10_SV "Toshiba HX-10 (MSX1, Storbritannien)"
+#define OPTION_VAL_YAMAHA_CX5M_SV "Yamaha CX5M (MSX1, Europa)"
+#define OPTION_VAL_PHILIPS_NMS_8245_SV "Philips NMS 8245 (MSX2, Europa)"
+#define OPTION_VAL_PHILIPS_NMS_8250_SV "Philips NMS 8250 (MSX2, Europa)"
+#define OPTION_VAL_SONY_HB_F700P_SV "Sony HB-F700P (MSX2, Europa)"
 #define OPTION_VAL_SONY_HB_F1XD_SV NULL
 #define OPTION_VAL_SONY_HB_F1XV_SV NULL
 #define OPTION_VAL_PANASONIC_FS_A1WSX_SV NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_SV NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_SV NULL
-#define OPENMSX_SCALE_LABEL_SV NULL
-#define OPENMSX_SCALE_INFO_0_SV NULL
+#define OPENMSX_SCALE_LABEL_SV "Upplösning"
+#define OPENMSX_SCALE_INFO_0_SV "Storleken som openMSX återger bilden i, inklusive ramar: 320 × 240 gånger detta. Auto följer skärmläget: 1× för lägen som är 256 bildpunkter breda, 2× för de med 512 bildpunkters bredd och för sammanflätade lägen."
 #define OPTION_VAL_AUTO_SV NULL
-#define OPTION_VAL_1_SV NULL
-#define OPTION_VAL_2_SV NULL
-#define OPTION_VAL_3_SV NULL
-#define OPTION_VAL_4_SV NULL
-#define OPENMSX_VIDEO_OUTPUT_LABEL_SV NULL
-#define OPENMSX_VIDEO_OUTPUT_INFO_0_SV NULL
-#define OPTION_VAL_SOFTWARE_SV NULL
+#define OPTION_VAL_1_SV "1× (320 × 240)"
+#define OPTION_VAL_2_SV "2× (640 × 480)"
+#define OPTION_VAL_3_SV "3× (960 × 720)"
+#define OPTION_VAL_4_SV "4× (1 280 × 960)"
+#define OPENMSX_VIDEO_OUTPUT_LABEL_SV "Videoutmatning (starta om)"
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_SV "Programvara skickar bilden till RetroArch som bildpunkter och fungerar med alla videodrivrutiner. OpenGL återger via OpenGL-kontexten i RetroArch (videodrivrutinen gl eller glcore), med openMSX egna skalare och effekter."
+#define OPTION_VAL_SOFTWARE_SV "Mjukvara"
 #define OPTION_VAL_OPENGL_SV NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_SV NULL
-#define OPENMSX_CROP_OVERSCAN_INFO_0_SV NULL
-#define OPENMSX_PIXEL_ASPECT_LABEL_SV NULL
-#define OPENMSX_PIXEL_ASPECT_INFO_0_SV NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_SV "Beskär Overscan"
+#define OPENMSX_CROP_OVERSCAN_INFO_0_SV "Visar endast den del av skärmen som MSX använder, utan ram; storleken följer skärmläget."
+#define OPENMSX_PIXEL_ASPECT_LABEL_SV "Bildpunktsproportioner"
+#define OPENMSX_PIXEL_ASPECT_INFO_0_SV "TV: bilden är lika bred som på en TV, så som openMSX visar den. Kvadratisk: varje bildpunkt är lika bred som hög."
 #define OPTION_VAL_TV_SV NULL
-#define OPTION_VAL_SQUARE_SV NULL
-#define OPENMSX_EXT1_LABEL_SV NULL
-#define OPENMSX_EXT1_INFO_0_SV NULL
-#define OPTION_VAL_NONE_SV NULL
-#define OPTION_VAL_2ND_PSG_SV NULL
+#define OPTION_VAL_SQUARE_SV "Kvadratisk"
+#define OPENMSX_EXT1_LABEL_SV "Tillägg 1 (starta om)"
+#define OPENMSX_EXT1_INFO_0_SV "En kassett eller enhet i en ledig kortplats, som openMSX -ext. Vissa behöver sina ROM:ar i <system>/openmsx/share/systemroms."
+#define OPTION_VAL_NONE_SV "Ingen"
+#define OPTION_VAL_2ND_PSG_SV "Andra PSG"
 #define OPTION_VAL_ADVRAM_SV NULL
 #define OPTION_VAL_MEGARAM_2MB_SV NULL
 #define OPTION_VAL_ASCII_MSX_DOS2_SV NULL
@@ -46195,15 +55393,15 @@ struct retro_core_options_v2 options_sk = {
 #define OPTION_VAL_YAMAHA_SFG_01_SV NULL
 #define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_SV NULL
 #define OPTION_VAL_YAMAHA_SKW_01_SV NULL
-#define OPENMSX_EXT2_LABEL_SV NULL
-#define OPENMSX_EXT3_LABEL_SV NULL
-#define OPENMSX_EXT4_LABEL_SV NULL
-#define OPENMSX_EXT5_LABEL_SV NULL
-#define OPENMSX_EXT6_LABEL_SV NULL
-#define OPENMSX_EXT7_LABEL_SV NULL
-#define OPENMSX_EXT8_LABEL_SV NULL
-#define OPENMSX_EXT9_LABEL_SV NULL
-#define OPENMSX_EXT10_LABEL_SV NULL
+#define OPENMSX_EXT2_LABEL_SV "Tillägg 2 (starta om)"
+#define OPENMSX_EXT3_LABEL_SV "Tillägg 3 (starta om)"
+#define OPENMSX_EXT4_LABEL_SV "Tillägg 4 (starta om)"
+#define OPENMSX_EXT5_LABEL_SV "Tillägg 5 (starta om)"
+#define OPENMSX_EXT6_LABEL_SV "Tillägg 6 (starta om)"
+#define OPENMSX_EXT7_LABEL_SV "Tillägg 7 (starta om)"
+#define OPENMSX_EXT8_LABEL_SV "Tillägg 8 (starta om)"
+#define OPENMSX_EXT9_LABEL_SV "Tillägg 9 (starta om)"
+#define OPENMSX_EXT10_LABEL_SV "Tillägg 10 (starta om)"
 
 struct retro_core_option_v2_category option_cats_sv[] = {
     {"system", CATEGORY_SYSTEM_LABEL_SV, CATEGORY_SYSTEM_INFO_0_SV},
@@ -47560,9 +56758,1542 @@ struct retro_core_options_v2 options_sv = {
    option_defs_sv
 };
 
+/* RETRO_LANGUAGE_TH */
+
+#define CATEGORY_SYSTEM_LABEL_TH "ระบบ"
+#define CATEGORY_SYSTEM_INFO_0_TH NULL
+#define CATEGORY_VIDEO_LABEL_TH "วิดีโอ"
+#define CATEGORY_VIDEO_INFO_0_TH NULL
+#define OPENMSX_MACHINE_LABEL_TH NULL
+#define OPENMSX_MACHINE_LABEL_CAT_TH NULL
+#define OPENMSX_MACHINE_INFO_0_TH NULL
+#define OPTION_VAL_C_BIOS_MSX1_TH NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_TH NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_TH NULL
+#define OPTION_VAL_C_BIOS_MSX2_TH NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_TH NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_TH NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_TH NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_TH NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_TH NULL
+#define OPTION_VAL_PHILIPS_VG_8020_TH NULL
+#define OPTION_VAL_SONY_HB_75P_TH NULL
+#define OPTION_VAL_TOSHIBA_HX_10_TH NULL
+#define OPTION_VAL_YAMAHA_CX5M_TH NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_TH NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_TH NULL
+#define OPTION_VAL_SONY_HB_F700P_TH NULL
+#define OPTION_VAL_SONY_HB_F1XD_TH NULL
+#define OPTION_VAL_SONY_HB_F1XV_TH NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_TH NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_TH NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_TH NULL
+#define OPENMSX_SCALE_LABEL_TH "ความละเอียด"
+#define OPENMSX_SCALE_INFO_0_TH NULL
+#define OPTION_VAL_AUTO_TH "อัตโนมัติ"
+#define OPTION_VAL_1_TH NULL
+#define OPTION_VAL_2_TH NULL
+#define OPTION_VAL_3_TH NULL
+#define OPTION_VAL_4_TH NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_TH NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_TH NULL
+#define OPTION_VAL_SOFTWARE_TH "ซอฟต์แวร์"
+#define OPTION_VAL_OPENGL_TH NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_TH "ตัดขอบภาพ"
+#define OPENMSX_CROP_OVERSCAN_INFO_0_TH NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_TH NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_TH NULL
+#define OPTION_VAL_TV_TH NULL
+#define OPTION_VAL_SQUARE_TH NULL
+#define OPENMSX_EXT1_LABEL_TH NULL
+#define OPENMSX_EXT1_INFO_0_TH NULL
+#define OPTION_VAL_NONE_TH "ไม่แชร์อินพุต"
+#define OPTION_VAL_2ND_PSG_TH NULL
+#define OPTION_VAL_ADVRAM_TH NULL
+#define OPTION_VAL_MEGARAM_2MB_TH NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_TH NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH NULL
+#define OPTION_VAL_MSXDOS2_TH NULL
+#define OPTION_VAL_AVT_DPF_550_TH NULL
+#define OPTION_VAL_MU_PACK_TH NULL
+#define OPTION_VAL_CASIO_KB_10_TH NULL
+#define OPTION_VAL_CASIO_KB_7_TH NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_TH NULL
+#define OPTION_VAL_DEBUGDEVICE_TH NULL
+#define OPTION_VAL_DDX_3_0_TH NULL
+#define OPTION_VAL_MEGARAM_TH NULL
+#define OPTION_VAL_MEGARAM_DISK_TH NULL
+#define OPTION_VAL_SMXWIFI_TH NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_TH NULL
+#define OPTION_VAL_ESE_RAMDISK_TH NULL
+#define OPTION_VAL_ESE_SCC_TH NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_TH NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_TH NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_TH NULL
+#define OPTION_VAL_RS232_TH NULL
+#define OPTION_VAL_AUDIO_TH NULL
+#define OPTION_VAL_AUDIO2_TH NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_TH NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_TH NULL
+#define OPTION_VAL_HIRESTIMER_TH NULL
+#define OPTION_VAL_HITACHI_MPC_310H_TH NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_TH NULL
+#define OPTION_VAL_JVC_MSX_MIDI_TH NULL
+#define OPTION_VAL_KONAMI_EC_701_TH NULL
+#define OPTION_VAL_KONAMI_EC_702_TH NULL
+#define OPTION_VAL_SCC_TH NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_TH NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH NULL
+#define OPTION_VAL_LASCOM_KANJI_TH NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH NULL
+#define OPTION_VAL_OPL3CARTRIDGE_TH NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_TH NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_TH NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_TH NULL
+#define OPTION_VAL_RAM1MB_TH NULL
+#define OPTION_VAL_RAM2MB_TH NULL
+#define OPTION_VAL_RAM4MB_TH NULL
+#define OPTION_VAL_RAM512K_TH NULL
+#define OPTION_VAL_MICROSOL_CDX_2_TH NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH NULL
+#define OPTION_VAL_MBSTEREO_TH NULL
+#define OPTION_VAL_GOUDA_SCSI_TH NULL
+#define OPTION_VAL_MSXPI_TH NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_TH NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_TH NULL
+#define OPTION_VAL_NEOS_MA_20R_TH NULL
+#define OPTION_VAL_NEOS_MA_20V_TH NULL
+#define OPTION_VAL_UNAPINET_TH NULL
+#define OPTION_VAL_FMPAC_TH NULL
+#define OPTION_VAL_PAC_TH NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_TH NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_TH NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_TH NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_TH NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_TH NULL
+#define OPTION_VAL_PHILIPS_VY_0010_TH NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_TH NULL
+#define OPTION_VAL_PHILIPS_VU_0040_TH NULL
+#define OPTION_VAL_BOOSTED_AUDIO_TH NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_TH NULL
+#define OPTION_VAL_RAM16K_TH NULL
+#define OPTION_VAL_RAM32K_TH NULL
+#define OPTION_VAL_RAM64K_TH NULL
+#define OPTION_VAL_CARNIVORE2_TH NULL
+#define OPTION_VAL_SANYO_MFD_001_TH NULL
+#define OPTION_VAL_SANYO_MRS_001_TH NULL
+#define OPTION_VAL_SHARP_HB_4000_TH NULL
+#define OPTION_VAL_SHARP_HB_3600_TH NULL
+#define OPTION_VAL_SLOTEXPANDER_TH NULL
+#define OPTION_VAL_BEER_IDE_TH NULL
+#define OPTION_VAL_SONY_HBD_20W_TH NULL
+#define OPTION_VAL_SONY_HBD_F1_TH NULL
+#define OPTION_VAL_SONY_HBI_55_TH NULL
+#define OPTION_VAL_SONY_HBI_J1_TH NULL
+#define OPTION_VAL_SONY_HBD_50_TH NULL
+#define OPTION_VAL_SONY_HBK_30_TH NULL
+#define OPTION_VAL_SONY_HBI_232_TH NULL
+#define OPTION_VAL_SENSORKID_TH NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_TH NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_TH NULL
+#define OPTION_VAL_IDE_TH NULL
+#define OPTION_VAL_GFX9000_TH NULL
+#define OPTION_VAL_MOONSOUND_TH NULL
+#define OPTION_VAL_NOWIND_TH NULL
+#define OPTION_VAL_VIDEO9000_TH NULL
+#define OPTION_VAL_MAKOTO_TH NULL
+#define OPTION_VAL_FRANKY_NTSC_TH NULL
+#define OPTION_VAL_FRANKY_PAL_TH NULL
+#define OPTION_VAL_TALENT_TDC_600_TH NULL
+#define OPTION_VAL_TALENT_DPF_550_TH NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH NULL
+#define OPTION_VAL_SN76489_TH NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_TH NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_TH NULL
+#define OPTION_VAL_YAMAHA_FD_03_TH NULL
+#define OPTION_VAL_YAMAHA_FD_05_TH NULL
+#define OPTION_VAL_YAMAHA_SFG_05_TH NULL
+#define OPTION_VAL_YAMAHA_SFG_01_TH NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH NULL
+#define OPTION_VAL_YAMAHA_SKW_01_TH NULL
+#define OPENMSX_EXT2_LABEL_TH NULL
+#define OPENMSX_EXT3_LABEL_TH NULL
+#define OPENMSX_EXT4_LABEL_TH NULL
+#define OPENMSX_EXT5_LABEL_TH NULL
+#define OPENMSX_EXT6_LABEL_TH NULL
+#define OPENMSX_EXT7_LABEL_TH NULL
+#define OPENMSX_EXT8_LABEL_TH NULL
+#define OPENMSX_EXT9_LABEL_TH NULL
+#define OPENMSX_EXT10_LABEL_TH NULL
+
+struct retro_core_option_v2_category option_cats_th[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_TH, CATEGORY_SYSTEM_INFO_0_TH},
+    {"video", CATEGORY_VIDEO_LABEL_TH, CATEGORY_VIDEO_INFO_0_TH},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_th[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_TH, OPENMSX_MACHINE_LABEL_CAT_TH,
+        OPENMSX_MACHINE_INFO_0_TH,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_TH},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_TH},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_TH},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_TH},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_TH},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_TH},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_TH},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_TH},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_TH},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_TH},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_TH},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_TH},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_TH},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_TH},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_TH},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_TH},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_TH},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_TH},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_TH},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_TH},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_TH},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_TH, NULL,
+        OPENMSX_SCALE_INFO_0_TH,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_TH}, {"1", OPTION_VAL_1_TH}, {"2", OPTION_VAL_2_TH}, {"3", OPTION_VAL_3_TH}, {"4", OPTION_VAL_4_TH}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_TH, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_TH,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_TH}, {"opengl", OPTION_VAL_OPENGL_TH}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_TH, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_TH,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_TH, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_TH,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_TH}, {"square", OPTION_VAL_SQUARE_TH}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_TH, NULL,
+        OPENMSX_EXT1_INFO_0_TH,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TH},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TH},
+            {"advram", OPTION_VAL_ADVRAM_TH},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TH},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TH},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TH},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TH},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TH},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TH},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TH},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TH},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TH},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TH},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TH},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TH},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TH},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TH},
+            {"megaram", OPTION_VAL_MEGARAM_TH},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TH},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TH},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TH},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TH},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TH},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TH},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TH},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TH},
+            {"rs232", OPTION_VAL_RS232_TH},
+            {"audio", OPTION_VAL_AUDIO_TH},
+            {"audio2", OPTION_VAL_AUDIO2_TH},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TH},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TH},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TH},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TH},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TH},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TH},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TH},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TH},
+            {"scc", OPTION_VAL_SCC_TH},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TH},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TH},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TH},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TH},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TH},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TH},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TH},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TH},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TH},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TH},
+            {"ram1mb", OPTION_VAL_RAM1MB_TH},
+            {"ram2mb", OPTION_VAL_RAM2MB_TH},
+            {"ram4mb", OPTION_VAL_RAM4MB_TH},
+            {"ram512k", OPTION_VAL_RAM512K_TH},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TH},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TH},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TH},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TH},
+            {"MSXPi", OPTION_VAL_MSXPI_TH},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TH},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TH},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TH},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TH},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TH},
+            {"unapinet", OPTION_VAL_UNAPINET_TH},
+            {"fmpac", OPTION_VAL_FMPAC_TH},
+            {"pac", OPTION_VAL_PAC_TH},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TH},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TH},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TH},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TH},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TH},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TH},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TH},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TH},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TH},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TH},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TH},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TH},
+            {"ram16k", OPTION_VAL_RAM16K_TH},
+            {"ram32k", OPTION_VAL_RAM32K_TH},
+            {"ram64k", OPTION_VAL_RAM64K_TH},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TH},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TH},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TH},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TH},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TH},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TH},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TH},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TH},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TH},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TH},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TH},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TH},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TH},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TH},
+            {"SensorKid", OPTION_VAL_SENSORKID_TH},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TH},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TH},
+            {"ide", OPTION_VAL_IDE_TH},
+            {"gfx9000", OPTION_VAL_GFX9000_TH},
+            {"moonsound", OPTION_VAL_MOONSOUND_TH},
+            {"nowind", OPTION_VAL_NOWIND_TH},
+            {"video9000", OPTION_VAL_VIDEO9000_TH},
+            {"Makoto", OPTION_VAL_MAKOTO_TH},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TH},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TH},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TH},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TH},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TH},
+            {"SN76489", OPTION_VAL_SN76489_TH},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TH},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TH},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TH},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TH},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TH},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TH},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TH},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TH},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TH},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_th = {
+   option_cats_th,
+   option_defs_th
+};
+
 /* RETRO_LANGUAGE_TR */
 
-#define CATEGORY_SYSTEM_LABEL_TR NULL
+#define CATEGORY_SYSTEM_LABEL_TR "Sistem"
 #define CATEGORY_SYSTEM_INFO_0_TR NULL
 #define CATEGORY_VIDEO_LABEL_TR NULL
 #define CATEGORY_VIDEO_INFO_0_TR NULL
@@ -47592,16 +58323,16 @@ struct retro_core_options_v2 options_sv = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_TR NULL
 #define OPENMSX_SCALE_LABEL_TR NULL
 #define OPENMSX_SCALE_INFO_0_TR NULL
-#define OPTION_VAL_AUTO_TR NULL
+#define OPTION_VAL_AUTO_TR "Otomatik"
 #define OPTION_VAL_1_TR NULL
 #define OPTION_VAL_2_TR NULL
 #define OPTION_VAL_3_TR NULL
 #define OPTION_VAL_4_TR NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_TR NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_TR NULL
-#define OPTION_VAL_SOFTWARE_TR NULL
+#define OPTION_VAL_SOFTWARE_TR "Yazılım"
 #define OPTION_VAL_OPENGL_TR NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_TR NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_TR "Aşırı Taramayı Kırp"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_TR NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_TR NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_TR NULL
@@ -47609,7 +58340,7 @@ struct retro_core_options_v2 options_sv = {
 #define OPTION_VAL_SQUARE_TR NULL
 #define OPENMSX_EXT1_LABEL_TR NULL
 #define OPENMSX_EXT1_INFO_0_TR NULL
-#define OPTION_VAL_NONE_TR NULL
+#define OPTION_VAL_NONE_TR "Yok"
 #define OPTION_VAL_2ND_PSG_TR NULL
 #define OPTION_VAL_ADVRAM_TR NULL
 #define OPTION_VAL_MEGARAM_2MB_TR NULL
@@ -49093,11 +59824,1544 @@ struct retro_core_options_v2 options_tr = {
    option_defs_tr
 };
 
+/* RETRO_LANGUAGE_TT */
+
+#define CATEGORY_SYSTEM_LABEL_TT NULL
+#define CATEGORY_SYSTEM_INFO_0_TT NULL
+#define CATEGORY_VIDEO_LABEL_TT "Видео"
+#define CATEGORY_VIDEO_INFO_0_TT NULL
+#define OPENMSX_MACHINE_LABEL_TT NULL
+#define OPENMSX_MACHINE_LABEL_CAT_TT NULL
+#define OPENMSX_MACHINE_INFO_0_TT NULL
+#define OPTION_VAL_C_BIOS_MSX1_TT NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_TT NULL
+#define OPTION_VAL_C_BIOS_MSX1_JP_TT NULL
+#define OPTION_VAL_C_BIOS_MSX2_TT NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_TT NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_TT NULL
+#define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_TT NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_TT NULL
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_TT NULL
+#define OPTION_VAL_PHILIPS_VG_8020_TT NULL
+#define OPTION_VAL_SONY_HB_75P_TT NULL
+#define OPTION_VAL_TOSHIBA_HX_10_TT NULL
+#define OPTION_VAL_YAMAHA_CX5M_TT NULL
+#define OPTION_VAL_PHILIPS_NMS_8245_TT NULL
+#define OPTION_VAL_PHILIPS_NMS_8250_TT NULL
+#define OPTION_VAL_SONY_HB_F700P_TT NULL
+#define OPTION_VAL_SONY_HB_F1XD_TT NULL
+#define OPTION_VAL_SONY_HB_F1XV_TT NULL
+#define OPTION_VAL_PANASONIC_FS_A1WSX_TT NULL
+#define OPTION_VAL_PANASONIC_FS_A1ST_TT NULL
+#define OPTION_VAL_PANASONIC_FS_A1GT_TT NULL
+#define OPENMSX_SCALE_LABEL_TT NULL
+#define OPENMSX_SCALE_INFO_0_TT NULL
+#define OPTION_VAL_AUTO_TT NULL
+#define OPTION_VAL_1_TT NULL
+#define OPTION_VAL_2_TT NULL
+#define OPTION_VAL_3_TT NULL
+#define OPTION_VAL_4_TT NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_TT NULL
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_TT NULL
+#define OPTION_VAL_SOFTWARE_TT NULL
+#define OPTION_VAL_OPENGL_TT NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_TT NULL
+#define OPENMSX_CROP_OVERSCAN_INFO_0_TT NULL
+#define OPENMSX_PIXEL_ASPECT_LABEL_TT NULL
+#define OPENMSX_PIXEL_ASPECT_INFO_0_TT NULL
+#define OPTION_VAL_TV_TT "ТВ"
+#define OPTION_VAL_SQUARE_TT NULL
+#define OPENMSX_EXT1_LABEL_TT NULL
+#define OPENMSX_EXT1_INFO_0_TT NULL
+#define OPTION_VAL_NONE_TT NULL
+#define OPTION_VAL_2ND_PSG_TT NULL
+#define OPTION_VAL_ADVRAM_TT NULL
+#define OPTION_VAL_MEGARAM_2MB_TT NULL
+#define OPTION_VAL_ASCII_MSX_DOS2_TT NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT NULL
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT NULL
+#define OPTION_VAL_MSXDOS2_TT NULL
+#define OPTION_VAL_AVT_DPF_550_TT NULL
+#define OPTION_VAL_MU_PACK_TT NULL
+#define OPTION_VAL_CASIO_KB_10_TT NULL
+#define OPTION_VAL_CASIO_KB_7_TT NULL
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT NULL
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT NULL
+#define OPTION_VAL_ROM_HUNTER_MK2_TT NULL
+#define OPTION_VAL_DEBUGDEVICE_TT NULL
+#define OPTION_VAL_DDX_3_0_TT NULL
+#define OPTION_VAL_MEGARAM_TT NULL
+#define OPTION_VAL_MEGARAM_DISK_TT NULL
+#define OPTION_VAL_SMXWIFI_TT NULL
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_TT NULL
+#define OPTION_VAL_ESE_RAMDISK_TT NULL
+#define OPTION_VAL_ESE_SCC_TT NULL
+#define OPTION_VAL_ESE_WAVE_SCSI_TT NULL
+#define OPTION_VAL_ESE_MEGA_SCSI_TT NULL
+#define OPTION_VAL_FAC_MIDI_INTERFACE_TT NULL
+#define OPTION_VAL_RS232_TT NULL
+#define OPTION_VAL_AUDIO_TT NULL
+#define OPTION_VAL_AUDIO2_TT NULL
+#define OPTION_VAL_GRADIENTE_CT_80E_TT NULL
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_TT NULL
+#define OPTION_VAL_HIRESTIMER_TT NULL
+#define OPTION_VAL_HITACHI_MPC_310H_TT NULL
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_TT NULL
+#define OPTION_VAL_JVC_MSX_MIDI_TT NULL
+#define OPTION_VAL_KONAMI_EC_701_TT NULL
+#define OPTION_VAL_KONAMI_EC_702_TT NULL
+#define OPTION_VAL_SCC_TT NULL
+#define OPTION_VAL_SCC_OPENMSX_EXT1_TT NULL
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT NULL
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT NULL
+#define OPTION_VAL_LASCOM_KANJI_TT NULL
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT NULL
+#define OPTION_VAL_OPL3CARTRIDGE_TT NULL
+#define OPTION_VAL_MIDI_INTERFACE_3_TT NULL
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_TT NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT NULL
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_TT NULL
+#define OPTION_VAL_RAM1MB_TT NULL
+#define OPTION_VAL_RAM2MB_TT NULL
+#define OPTION_VAL_RAM4MB_TT NULL
+#define OPTION_VAL_RAM512K_TT NULL
+#define OPTION_VAL_MICROSOL_CDX_2_TT NULL
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT NULL
+#define OPTION_VAL_MBSTEREO_TT NULL
+#define OPTION_VAL_GOUDA_SCSI_TT NULL
+#define OPTION_VAL_MSXPI_TT NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_TT NULL
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT NULL
+#define OPTION_VAL_NATIONAL_CF_SM003_TT NULL
+#define OPTION_VAL_NEOS_MA_20R_TT NULL
+#define OPTION_VAL_NEOS_MA_20V_TT NULL
+#define OPTION_VAL_UNAPINET_TT NULL
+#define OPTION_VAL_FMPAC_TT NULL
+#define OPTION_VAL_PAC_TT NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_TT NULL
+#define OPTION_VAL_PANASONIC_FS_CA1_TT NULL
+#define OPTION_VAL_PANASONIC_FS_PW1_TT NULL
+#define OPTION_VAL_PASSWORD_CARTRIDGE_TT NULL
+#define OPTION_VAL_PHILIPS_NMS_1200_TT NULL
+#define OPTION_VAL_PHILIPS_VY_0010_TT NULL
+#define OPTION_VAL_PHILIPS_NMS_1205_TT NULL
+#define OPTION_VAL_PHILIPS_VU_0040_TT NULL
+#define OPTION_VAL_BOOSTED_AUDIO_TT NULL
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT NULL
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT NULL
+#define OPTION_VAL_PROGRAMMABLEDEVICE_TT NULL
+#define OPTION_VAL_RAM16K_TT NULL
+#define OPTION_VAL_RAM32K_TT NULL
+#define OPTION_VAL_RAM64K_TT NULL
+#define OPTION_VAL_CARNIVORE2_TT NULL
+#define OPTION_VAL_SANYO_MFD_001_TT NULL
+#define OPTION_VAL_SANYO_MRS_001_TT NULL
+#define OPTION_VAL_SHARP_HB_4000_TT NULL
+#define OPTION_VAL_SHARP_HB_3600_TT NULL
+#define OPTION_VAL_SLOTEXPANDER_TT NULL
+#define OPTION_VAL_BEER_IDE_TT NULL
+#define OPTION_VAL_SONY_HBD_20W_TT NULL
+#define OPTION_VAL_SONY_HBD_F1_TT NULL
+#define OPTION_VAL_SONY_HBI_55_TT NULL
+#define OPTION_VAL_SONY_HBI_J1_TT NULL
+#define OPTION_VAL_SONY_HBD_50_TT NULL
+#define OPTION_VAL_SONY_HBK_30_TT NULL
+#define OPTION_VAL_SONY_HBI_232_TT NULL
+#define OPTION_VAL_SENSORKID_TT NULL
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_TT NULL
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_TT NULL
+#define OPTION_VAL_IDE_TT NULL
+#define OPTION_VAL_GFX9000_TT NULL
+#define OPTION_VAL_MOONSOUND_TT NULL
+#define OPTION_VAL_NOWIND_TT NULL
+#define OPTION_VAL_VIDEO9000_TT NULL
+#define OPTION_VAL_MAKOTO_TT NULL
+#define OPTION_VAL_FRANKY_NTSC_TT NULL
+#define OPTION_VAL_FRANKY_PAL_TT NULL
+#define OPTION_VAL_TALENT_TDC_600_TT NULL
+#define OPTION_VAL_TALENT_DPF_550_TT NULL
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT NULL
+#define OPTION_VAL_SN76489_TT NULL
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT NULL
+#define OPTION_VAL_TOSHIBA_HX_F101PE_TT NULL
+#define OPTION_VAL_TOSHIBA_HX_MU900_TT NULL
+#define OPTION_VAL_YAMAHA_FD_03_TT NULL
+#define OPTION_VAL_YAMAHA_FD_05_TT NULL
+#define OPTION_VAL_YAMAHA_SFG_05_TT NULL
+#define OPTION_VAL_YAMAHA_SFG_01_TT NULL
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT NULL
+#define OPTION_VAL_YAMAHA_SKW_01_TT NULL
+#define OPENMSX_EXT2_LABEL_TT NULL
+#define OPENMSX_EXT3_LABEL_TT NULL
+#define OPENMSX_EXT4_LABEL_TT NULL
+#define OPENMSX_EXT5_LABEL_TT NULL
+#define OPENMSX_EXT6_LABEL_TT NULL
+#define OPENMSX_EXT7_LABEL_TT NULL
+#define OPENMSX_EXT8_LABEL_TT NULL
+#define OPENMSX_EXT9_LABEL_TT NULL
+#define OPENMSX_EXT10_LABEL_TT NULL
+
+struct retro_core_option_v2_category option_cats_tt[] = {
+    {"system", CATEGORY_SYSTEM_LABEL_TT, CATEGORY_SYSTEM_INFO_0_TT},
+    {"video", CATEGORY_VIDEO_LABEL_TT, CATEGORY_VIDEO_INFO_0_TT},
+    {NULL, NULL, NULL},
+};
+struct retro_core_option_v2_definition option_defs_tt[] = {
+    {
+        "openmsx_machine", OPENMSX_MACHINE_LABEL_TT, OPENMSX_MACHINE_LABEL_CAT_TT,
+        OPENMSX_MACHINE_INFO_0_TT,
+        NULL, "system",
+        {
+            {"C-BIOS_MSX1", OPTION_VAL_C_BIOS_MSX1_TT},
+            {"C-BIOS_MSX1_EU", OPTION_VAL_C_BIOS_MSX1_EU_TT},
+            {"C-BIOS_MSX1_JP", OPTION_VAL_C_BIOS_MSX1_JP_TT},
+            {"C-BIOS_MSX2", OPTION_VAL_C_BIOS_MSX2_TT},
+            {"C-BIOS_MSX2_EU", OPTION_VAL_C_BIOS_MSX2_EU_TT},
+            {"C-BIOS_MSX2_JP", OPTION_VAL_C_BIOS_MSX2_JP_TT},
+            {"C-BIOS_MSX2+", OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_TT},
+            {"C-BIOS_MSX2+_EU", OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_TT},
+            {"C-BIOS_MSX2+_JP", OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_TT},
+            {"Philips_VG_8020", OPTION_VAL_PHILIPS_VG_8020_TT},
+            {"Sony_HB-75P", OPTION_VAL_SONY_HB_75P_TT},
+            {"Toshiba_HX-10", OPTION_VAL_TOSHIBA_HX_10_TT},
+            {"Yamaha_CX5M", OPTION_VAL_YAMAHA_CX5M_TT},
+            {"Philips_NMS_8245", OPTION_VAL_PHILIPS_NMS_8245_TT},
+            {"Philips_NMS_8250", OPTION_VAL_PHILIPS_NMS_8250_TT},
+            {"Sony_HB-F700P", OPTION_VAL_SONY_HB_F700P_TT},
+            {"Sony_HB-F1XD", OPTION_VAL_SONY_HB_F1XD_TT},
+            {"Sony_HB-F1XV", OPTION_VAL_SONY_HB_F1XV_TT},
+            {"Panasonic_FS-A1WSX", OPTION_VAL_PANASONIC_FS_A1WSX_TT},
+            {"Panasonic_FS-A1ST", OPTION_VAL_PANASONIC_FS_A1ST_TT},
+            {"Panasonic_FS-A1GT", OPTION_VAL_PANASONIC_FS_A1GT_TT},
+            {NULL, NULL},
+        },
+        "C-BIOS_MSX2+"
+    },
+    {
+        "openmsx_scale", OPENMSX_SCALE_LABEL_TT, NULL,
+        OPENMSX_SCALE_INFO_0_TT,
+        NULL, "video",
+        {{"auto", OPTION_VAL_AUTO_TT}, {"1", OPTION_VAL_1_TT}, {"2", OPTION_VAL_2_TT}, {"3", OPTION_VAL_3_TT}, {"4", OPTION_VAL_4_TT}, {NULL, NULL}},
+        "2"
+    },
+    /* Software by default, unlike openMSX, which has only its OpenGL
+     * renderer: it works with any video driver, RetroArch's shaders do what
+     * openMSX's scalers and effects would, and run-ahead's state loads are
+     * cheapest there (Tatsuya79) */
+    {
+        "openmsx_video_output", OPENMSX_VIDEO_OUTPUT_LABEL_TT, NULL,
+        OPENMSX_VIDEO_OUTPUT_INFO_0_TT,
+        NULL, "video",
+        {{"software", OPTION_VAL_SOFTWARE_TT}, {"opengl", OPTION_VAL_OPENGL_TT}, {NULL, NULL}},
+        "software"
+    },
+    {
+        "openmsx_crop_overscan", OPENMSX_CROP_OVERSCAN_LABEL_TT, NULL,
+        OPENMSX_CROP_OVERSCAN_INFO_0_TT,
+        NULL, "video",
+        {{"disabled", NULL}, {"enabled", NULL}, {NULL, NULL}},
+        "disabled"
+    },
+    {
+        "openmsx_pixel_aspect", OPENMSX_PIXEL_ASPECT_LABEL_TT, NULL,
+        OPENMSX_PIXEL_ASPECT_INFO_0_TT,
+        NULL, "video",
+        {{"tv", OPTION_VAL_TV_TT}, {"square", OPTION_VAL_SQUARE_TT}, {NULL, NULL}},
+        "tv"
+    },
+    {
+        "openmsx_ext1", OPENMSX_EXT1_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext2", OPENMSX_EXT2_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext3", OPENMSX_EXT3_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext4", OPENMSX_EXT4_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext5", OPENMSX_EXT5_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext6", OPENMSX_EXT6_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext7", OPENMSX_EXT7_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext8", OPENMSX_EXT8_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext9", OPENMSX_EXT9_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {
+        "openmsx_ext10", OPENMSX_EXT10_LABEL_TT, NULL,
+        OPENMSX_EXT1_INFO_0_TT,
+        NULL, "system",
+        {
+            {"none", OPTION_VAL_NONE_TT},
+            {"2nd_PSG", OPTION_VAL_2ND_PSG_TT},
+            {"advram", OPTION_VAL_ADVRAM_TT},
+            {"MegaRAM_2MB", OPTION_VAL_MEGARAM_2MB_TT},
+            {"ASCII_MSX-DOS2", OPTION_VAL_ASCII_MSX_DOS2_TT},
+            {"ASCII_Japanese_MSX-Write", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_TT},
+            {"ASCII_Japanese_MSX-Write_II", OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_TT},
+            {"msxdos2", OPTION_VAL_MSXDOS2_TT},
+            {"AVT_DPF-550", OPTION_VAL_AVT_DPF_550_TT},
+            {"mu-PACK", OPTION_VAL_MU_PACK_TT},
+            {"Casio_KB-10", OPTION_VAL_CASIO_KB_10_TT},
+            {"Casio_KB-7", OPTION_VAL_CASIO_KB_7_TT},
+            {"Checkmark_FM_Stereo_PAK", OPTION_VAL_CHECKMARK_FM_STEREO_PAK_TT},
+            {"Computer_Mates_Disk_Interface", OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_TT},
+            {"ROM_Hunter_Mk2", OPTION_VAL_ROM_HUNTER_MK2_TT},
+            {"debugdevice", OPTION_VAL_DEBUGDEVICE_TT},
+            {"DDX_3.0", OPTION_VAL_DDX_3_0_TT},
+            {"megaram", OPTION_VAL_MEGARAM_TT},
+            {"MegaRAM_Disk", OPTION_VAL_MEGARAM_DISK_TT},
+            {"smxwifi", OPTION_VAL_SMXWIFI_TT},
+            {"Epson_Chakkari_Copy", OPTION_VAL_EPSON_CHAKKARI_COPY_TT},
+            {"ESE_Ramdisk", OPTION_VAL_ESE_RAMDISK_TT},
+            {"ESE_SCC", OPTION_VAL_ESE_SCC_TT},
+            {"ESE_WAVE-SCSI", OPTION_VAL_ESE_WAVE_SCSI_TT},
+            {"ESE_MEGA-SCSI", OPTION_VAL_ESE_MEGA_SCSI_TT},
+            {"FAC_MIDI_Interface", OPTION_VAL_FAC_MIDI_INTERFACE_TT},
+            {"rs232", OPTION_VAL_RS232_TT},
+            {"audio", OPTION_VAL_AUDIO_TT},
+            {"audio2", OPTION_VAL_AUDIO2_TT},
+            {"Gradiente_CT-80E", OPTION_VAL_GRADIENTE_CT_80E_TT},
+            {"ASCII16-X_Mapper_XL", OPTION_VAL_ASCII16_X_MAPPER_XL_TT},
+            {"hirestimer", OPTION_VAL_HIRESTIMER_TT},
+            {"Hitachi_MPC-310H", OPTION_VAL_HITACHI_MPC_310H_TT},
+            {"Jun_Soft_DalSoRi_R2", OPTION_VAL_JUN_SOFT_DALSORI_R2_TT},
+            {"JVC_MSX_MIDI", OPTION_VAL_JVC_MSX_MIDI_TT},
+            {"Konami_EC-701", OPTION_VAL_KONAMI_EC_701_TT},
+            {"Konami_EC-702", OPTION_VAL_KONAMI_EC_702_TT},
+            {"scc", OPTION_VAL_SCC_TT},
+            {"scc+", OPTION_VAL_SCC_OPENMSX_EXT1_TT},
+            {"Konami_SD-Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Konami_Snatcher_Sound_Cartridge", OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_TT},
+            {"Lascom_Kanji", OPTION_VAL_LASCOM_KANJI_TT},
+            {"OPL3Cartridge_Moonsound_compatible", OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_TT},
+            {"OPL3Cartridge", OPTION_VAL_OPL3CARTRIDGE_TT},
+            {"MIDI_Interface_3", OPTION_VAL_MIDI_INTERFACE_3_TT},
+            {"Konami_Ultimate_Collection", OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_TT},
+            {"MegaFlashROM_SCC", OPTION_VAL_MEGAFLASHROM_SCC_TT},
+            {"MegaFlashROM_SCC+", OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_TT},
+            {"MegaFlashROM_SCC+_SD", OPTION_VAL_MEGAFLASHROM_SCC_SD_TT},
+            {"ram1mb", OPTION_VAL_RAM1MB_TT},
+            {"ram2mb", OPTION_VAL_RAM2MB_TT},
+            {"ram4mb", OPTION_VAL_RAM4MB_TT},
+            {"ram512k", OPTION_VAL_RAM512K_TT},
+            {"Microsol_CDX-2", OPTION_VAL_MICROSOL_CDX_2_TT},
+            {"Mitsubishi_ML-30DC_ML-30FD", OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_TT},
+            {"mbstereo", OPTION_VAL_MBSTEREO_TT},
+            {"Gouda_SCSI", OPTION_VAL_GOUDA_SCSI_TT},
+            {"MSXPi", OPTION_VAL_MSXPI_TT},
+            {"OPL3Cartridge2_mono", OPTION_VAL_OPL3CARTRIDGE2_MONO_TT},
+            {"OPL3Cartridge2_stereo", OPTION_VAL_OPL3CARTRIDGE2_STEREO_TT},
+            {"National_CF-SM003", OPTION_VAL_NATIONAL_CF_SM003_TT},
+            {"Neos_MA-20R", OPTION_VAL_NEOS_MA_20R_TT},
+            {"Neos_MA-20V", OPTION_VAL_NEOS_MA_20V_TT},
+            {"unapinet", OPTION_VAL_UNAPINET_TT},
+            {"fmpac", OPTION_VAL_FMPAC_TT},
+            {"pac", OPTION_VAL_PAC_TT},
+            {"Panasonic_FS-FD1A", OPTION_VAL_PANASONIC_FS_FD1A_TT},
+            {"Panasonic_FS-CA1", OPTION_VAL_PANASONIC_FS_CA1_TT},
+            {"Panasonic_FS-PW1", OPTION_VAL_PANASONIC_FS_PW1_TT},
+            {"Password_Cartridge", OPTION_VAL_PASSWORD_CARTRIDGE_TT},
+            {"Philips_NMS_1200", OPTION_VAL_PHILIPS_NMS_1200_TT},
+            {"Philips_VY_0010", OPTION_VAL_PHILIPS_VY_0010_TT},
+            {"Philips_NMS_1205", OPTION_VAL_PHILIPS_NMS_1205_TT},
+            {"Philips_VU_0040", OPTION_VAL_PHILIPS_VU_0040_TT},
+            {"Boosted_audio", OPTION_VAL_BOOSTED_AUDIO_TT},
+            {"Musical_Memory_Mapper", OPTION_VAL_MUSICAL_MEMORY_MAPPER_TT},
+            {"Popolon_Sound_Cartridge", OPTION_VAL_POPOLON_SOUND_CARTRIDGE_TT},
+            {"programmabledevice", OPTION_VAL_PROGRAMMABLEDEVICE_TT},
+            {"ram16k", OPTION_VAL_RAM16K_TT},
+            {"ram32k", OPTION_VAL_RAM32K_TT},
+            {"ram64k", OPTION_VAL_RAM64K_TT},
+            {"Carnivore2", OPTION_VAL_CARNIVORE2_TT},
+            {"Sanyo_MFD-001", OPTION_VAL_SANYO_MFD_001_TT},
+            {"Sanyo_MRS-001", OPTION_VAL_SANYO_MRS_001_TT},
+            {"Sharp_HB-4000", OPTION_VAL_SHARP_HB_4000_TT},
+            {"Sharp_HB-3600", OPTION_VAL_SHARP_HB_3600_TT},
+            {"slotexpander", OPTION_VAL_SLOTEXPANDER_TT},
+            {"Beer_IDE", OPTION_VAL_BEER_IDE_TT},
+            {"Sony_HBD-20W", OPTION_VAL_SONY_HBD_20W_TT},
+            {"Sony_HBD-F1", OPTION_VAL_SONY_HBD_F1_TT},
+            {"Sony_HBI-55", OPTION_VAL_SONY_HBI_55_TT},
+            {"Sony_HBI-J1", OPTION_VAL_SONY_HBI_J1_TT},
+            {"Sony_HBD-50", OPTION_VAL_SONY_HBD_50_TT},
+            {"Sony_HBK-30", OPTION_VAL_SONY_HBK_30_TT},
+            {"Sony_HBI-232", OPTION_VAL_SONY_HBI_232_TT},
+            {"SensorKid", OPTION_VAL_SENSORKID_TT},
+            {"Spectravideo_SVI-707", OPTION_VAL_SPECTRAVIDEO_SVI_707_TT},
+            {"SunriseIDE_Nextor", OPTION_VAL_SUNRISEIDE_NEXTOR_TT},
+            {"ide", OPTION_VAL_IDE_TT},
+            {"gfx9000", OPTION_VAL_GFX9000_TT},
+            {"moonsound", OPTION_VAL_MOONSOUND_TT},
+            {"nowind", OPTION_VAL_NOWIND_TT},
+            {"video9000", OPTION_VAL_VIDEO9000_TT},
+            {"Makoto", OPTION_VAL_MAKOTO_TT},
+            {"franky-ntsc", OPTION_VAL_FRANKY_NTSC_TT},
+            {"franky-pal", OPTION_VAL_FRANKY_PAL_TT},
+            {"Talent_TDC-600", OPTION_VAL_TALENT_TDC_600_TT},
+            {"Talent_DPF-550", OPTION_VAL_TALENT_DPF_550_TT},
+            {"Tecall_MSX_RAMFILE_TM220", OPTION_VAL_TECALL_MSX_RAMFILE_TM220_TT},
+            {"SN76489", OPTION_VAL_SN76489_TT},
+            {"The_SCC_Alliance_Yamanooto", OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_TT},
+            {"Toshiba_HX-F101PE", OPTION_VAL_TOSHIBA_HX_F101PE_TT},
+            {"Toshiba_HX-MU900", OPTION_VAL_TOSHIBA_HX_MU900_TT},
+            {"Yamaha_FD-03", OPTION_VAL_YAMAHA_FD_03_TT},
+            {"Yamaha_FD-05", OPTION_VAL_YAMAHA_FD_05_TT},
+            {"Yamaha_SFG-05", OPTION_VAL_YAMAHA_SFG_05_TT},
+            {"Yamaha_SFG-01", OPTION_VAL_YAMAHA_SFG_01_TT},
+            {"Yamaha_SKW-05_embedded", OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_TT},
+            {"Yamaha_SKW-01", OPTION_VAL_YAMAHA_SKW_01_TT},
+            {NULL, NULL},
+        },
+        "none"
+    },
+    {NULL, NULL, NULL, NULL, NULL, NULL, {{NULL, NULL}}, NULL},
+};
+struct retro_core_options_v2 options_tt = {
+   option_cats_tt,
+   option_defs_tt
+};
+
 /* RETRO_LANGUAGE_UK */
 
-#define CATEGORY_SYSTEM_LABEL_UK NULL
+#define CATEGORY_SYSTEM_LABEL_UK "Система"
 #define CATEGORY_SYSTEM_INFO_0_UK NULL
-#define CATEGORY_VIDEO_LABEL_UK NULL
+#define CATEGORY_VIDEO_LABEL_UK "Відео"
 #define CATEGORY_VIDEO_INFO_0_UK NULL
 #define OPENMSX_MACHINE_LABEL_UK NULL
 #define OPENMSX_MACHINE_LABEL_CAT_UK NULL
@@ -49123,26 +61387,26 @@ struct retro_core_options_v2 options_tr = {
 #define OPTION_VAL_PANASONIC_FS_A1WSX_UK NULL
 #define OPTION_VAL_PANASONIC_FS_A1ST_UK NULL
 #define OPTION_VAL_PANASONIC_FS_A1GT_UK NULL
-#define OPENMSX_SCALE_LABEL_UK NULL
+#define OPENMSX_SCALE_LABEL_UK "Роздільна здатність"
 #define OPENMSX_SCALE_INFO_0_UK NULL
-#define OPTION_VAL_AUTO_UK NULL
+#define OPTION_VAL_AUTO_UK "Автоматично"
 #define OPTION_VAL_1_UK NULL
 #define OPTION_VAL_2_UK NULL
 #define OPTION_VAL_3_UK NULL
 #define OPTION_VAL_4_UK NULL
 #define OPENMSX_VIDEO_OUTPUT_LABEL_UK NULL
 #define OPENMSX_VIDEO_OUTPUT_INFO_0_UK NULL
-#define OPTION_VAL_SOFTWARE_UK NULL
+#define OPTION_VAL_SOFTWARE_UK "Програмне забезпечення"
 #define OPTION_VAL_OPENGL_UK NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_UK NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_UK "Обрізати змію"
 #define OPENMSX_CROP_OVERSCAN_INFO_0_UK NULL
 #define OPENMSX_PIXEL_ASPECT_LABEL_UK NULL
 #define OPENMSX_PIXEL_ASPECT_INFO_0_UK NULL
-#define OPTION_VAL_TV_UK NULL
+#define OPTION_VAL_TV_UK "ТВ"
 #define OPTION_VAL_SQUARE_UK NULL
 #define OPENMSX_EXT1_LABEL_UK NULL
 #define OPENMSX_EXT1_INFO_0_UK NULL
-#define OPTION_VAL_NONE_UK NULL
+#define OPTION_VAL_NONE_UK "Немає"
 #define OPTION_VAL_2ND_PSG_UK NULL
 #define OPTION_VAL_ADVRAM_UK NULL
 #define OPTION_VAL_MEGARAM_2MB_UK NULL
@@ -50628,9 +62892,9 @@ struct retro_core_options_v2 options_uk = {
 
 /* RETRO_LANGUAGE_VAL */
 
-#define CATEGORY_SYSTEM_LABEL_VAL NULL
+#define CATEGORY_SYSTEM_LABEL_VAL "Sistema"
 #define CATEGORY_SYSTEM_INFO_0_VAL NULL
-#define CATEGORY_VIDEO_LABEL_VAL NULL
+#define CATEGORY_VIDEO_LABEL_VAL "Vídeo"
 #define CATEGORY_VIDEO_INFO_0_VAL NULL
 #define OPENMSX_MACHINE_LABEL_VAL NULL
 #define OPENMSX_MACHINE_LABEL_CAT_VAL NULL
@@ -50658,7 +62922,7 @@ struct retro_core_options_v2 options_uk = {
 #define OPTION_VAL_PANASONIC_FS_A1GT_VAL NULL
 #define OPENMSX_SCALE_LABEL_VAL NULL
 #define OPENMSX_SCALE_INFO_0_VAL NULL
-#define OPTION_VAL_AUTO_VAL NULL
+#define OPTION_VAL_AUTO_VAL "Selecció automàtica"
 #define OPTION_VAL_1_VAL NULL
 #define OPTION_VAL_2_VAL NULL
 #define OPTION_VAL_3_VAL NULL
@@ -50675,7 +62939,7 @@ struct retro_core_options_v2 options_uk = {
 #define OPTION_VAL_SQUARE_VAL NULL
 #define OPENMSX_EXT1_LABEL_VAL NULL
 #define OPENMSX_EXT1_INFO_0_VAL NULL
-#define OPTION_VAL_NONE_VAL NULL
+#define OPTION_VAL_NONE_VAL "Cap"
 #define OPTION_VAL_2ND_PSG_VAL NULL
 #define OPTION_VAL_ADVRAM_VAL NULL
 #define OPTION_VAL_MEGARAM_2MB_VAL NULL
@@ -52161,181 +64425,181 @@ struct retro_core_options_v2 options_val = {
 
 /* RETRO_LANGUAGE_VN */
 
-#define CATEGORY_SYSTEM_LABEL_VN NULL
-#define CATEGORY_SYSTEM_INFO_0_VN NULL
+#define CATEGORY_SYSTEM_LABEL_VN "Hệ thống"
+#define CATEGORY_SYSTEM_INFO_0_VN "Máy MSX và các hộp trò chơi được lắp vào các khe cắm của máy. Các thay đổi sẽ có hiệu lực khi nội dung được nạp lại."
 #define CATEGORY_VIDEO_LABEL_VN NULL
-#define CATEGORY_VIDEO_INFO_0_VN NULL
-#define OPENMSX_MACHINE_LABEL_VN NULL
-#define OPENMSX_MACHINE_LABEL_CAT_VN NULL
-#define OPENMSX_MACHINE_INFO_0_VN NULL
+#define CATEGORY_VIDEO_INFO_0_VN "Kích thước hình ảnh và phần viền xung quanh."
+#define OPENMSX_MACHINE_LABEL_VN "Máy (Khởi động lại)"
+#define OPENMSX_MACHINE_LABEL_CAT_VN "Máy"
+#define OPENMSX_MACHINE_INFO_0_VN "Máy tính MSX cần được giả lập. Các máy sử dụng C-BIOS không cần thêm gì khác; máy thật cần có các ROM hệ thống của nó trong <system>/openmsx/share/systemroms, nếu không thì C-BIOS MSX2+ sẽ khởi động thay thế. Châu Âu và Vương quốc Anh sử dụng tần số 50 Hz."
 #define OPTION_VAL_C_BIOS_MSX1_VN NULL
-#define OPTION_VAL_C_BIOS_MSX1_EU_VN NULL
-#define OPTION_VAL_C_BIOS_MSX1_JP_VN NULL
+#define OPTION_VAL_C_BIOS_MSX1_EU_VN "C-BIOS MSX1 (Châu Âu)"
+#define OPTION_VAL_C_BIOS_MSX1_JP_VN "C-BIOS MSX1 (Nhật Bản)"
 #define OPTION_VAL_C_BIOS_MSX2_VN NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_VN NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_VN NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_VN "C-BIOS MSX2 (Châu Âu)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_VN "C-BIOS MSX2 (Nhật Bản)"
 #define OPTION_VAL_C_BIOS_MSX2_OPENMSX_MACHINE_VN NULL
-#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_VN NULL
-#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_VN NULL
-#define OPTION_VAL_PHILIPS_VG_8020_VN NULL
-#define OPTION_VAL_SONY_HB_75P_VN NULL
-#define OPTION_VAL_TOSHIBA_HX_10_VN NULL
-#define OPTION_VAL_YAMAHA_CX5M_VN NULL
-#define OPTION_VAL_PHILIPS_NMS_8245_VN NULL
-#define OPTION_VAL_PHILIPS_NMS_8250_VN NULL
-#define OPTION_VAL_SONY_HB_F700P_VN NULL
-#define OPTION_VAL_SONY_HB_F1XD_VN NULL
-#define OPTION_VAL_SONY_HB_F1XV_VN NULL
-#define OPTION_VAL_PANASONIC_FS_A1WSX_VN NULL
-#define OPTION_VAL_PANASONIC_FS_A1ST_VN NULL
-#define OPTION_VAL_PANASONIC_FS_A1GT_VN NULL
-#define OPENMSX_SCALE_LABEL_VN NULL
-#define OPENMSX_SCALE_INFO_0_VN NULL
-#define OPTION_VAL_AUTO_VN NULL
+#define OPTION_VAL_C_BIOS_MSX2_EU_OPENMSX_MACHINE_VN "C-BIOS MSX2+ (Châu Âu)"
+#define OPTION_VAL_C_BIOS_MSX2_JP_OPENMSX_MACHINE_VN "C-BIOS MSX2+ (Nhật Bản)"
+#define OPTION_VAL_PHILIPS_VG_8020_VN "Philips VG-8020 (MSX1, Châu Âu)"
+#define OPTION_VAL_SONY_HB_75P_VN "Sony HB-75P (MSX1, Châu Âu)"
+#define OPTION_VAL_TOSHIBA_HX_10_VN "Toshiba HX-10 (MSX1, Vương quốc Anh)"
+#define OPTION_VAL_YAMAHA_CX5M_VN "Yamaha CX5M (MSX1, Châu Âu)"
+#define OPTION_VAL_PHILIPS_NMS_8245_VN "Philips NMS 8245 (MSX2, Châu Âu)"
+#define OPTION_VAL_PHILIPS_NMS_8250_VN "Philips NMS 8250 (MSX2, Châu Âu)"
+#define OPTION_VAL_SONY_HB_F700P_VN "Sony HB-F700P (MSX2, Châu Âu)"
+#define OPTION_VAL_SONY_HB_F1XD_VN "Sony HB-F1XD (MSX2, Nhật Bản)"
+#define OPTION_VAL_SONY_HB_F1XV_VN "Sony HB-F1XV (MSX2+, Nhật Bản)"
+#define OPTION_VAL_PANASONIC_FS_A1WSX_VN "Panasonic FS-A1WSX (MSX2+, Nhật Bản)"
+#define OPTION_VAL_PANASONIC_FS_A1ST_VN "Panasonic FS-A1ST (turbo R, Nhật Bản)"
+#define OPTION_VAL_PANASONIC_FS_A1GT_VN "Panasonic FS-A1GT (turbo R, Nhật Bản)"
+#define OPENMSX_SCALE_LABEL_VN "Độ phân giải"
+#define OPENMSX_SCALE_INFO_0_VN "Kích thước hình ảnh mà openMSX xuất ra, bao gồm cả viền: 320x240 nhân với giá trị này. Tự động điều chỉnh theo chế độ màn hình: 1x đối với các chế độ có chiều rộng 256 điểm ảnh, 2x đối với các chế độ rộng 512 điểm ảnh và chế độ quét xen kẽ."
+#define OPTION_VAL_AUTO_VN "Tự động"
 #define OPTION_VAL_1_VN NULL
 #define OPTION_VAL_2_VN NULL
 #define OPTION_VAL_3_VN NULL
 #define OPTION_VAL_4_VN NULL
-#define OPENMSX_VIDEO_OUTPUT_LABEL_VN NULL
-#define OPENMSX_VIDEO_OUTPUT_INFO_0_VN NULL
-#define OPTION_VAL_SOFTWARE_VN NULL
+#define OPENMSX_VIDEO_OUTPUT_LABEL_VN "Phương thức xuất hình ảnh (Khởi động lại)"
+#define OPENMSX_VIDEO_OUTPUT_INFO_0_VN "Phần mềm gửi hình ảnh dưới dạng các điểm ảnh đến RetroArch, tương thích với mọi trình điều khiển hình ảnh. OpenGL vẽ hình ảnh thông qua ngữ cảnh OpenGL của RetroArch (trình điều khiển hình ảnh gl hoặc glcore), sử dụng các bộ lọc tăng cường hình ảnh và hiệu ứng riêng của openMSX."
+#define OPTION_VAL_SOFTWARE_VN "Phần mềm"
 #define OPTION_VAL_OPENGL_VN NULL
-#define OPENMSX_CROP_OVERSCAN_LABEL_VN NULL
-#define OPENMSX_CROP_OVERSCAN_INFO_0_VN NULL
-#define OPENMSX_PIXEL_ASPECT_LABEL_VN NULL
-#define OPENMSX_PIXEL_ASPECT_INFO_0_VN NULL
+#define OPENMSX_CROP_OVERSCAN_LABEL_VN "Cắt vùng dư màn hình"
+#define OPENMSX_CROP_OVERSCAN_INFO_0_VN "Chỉ hiển thị phần màn hình được MSX sử dụng, không bao gồm đường viền; kích thước thay đổi theo chế độ màn hình."
+#define OPENMSX_PIXEL_ASPECT_LABEL_VN "Tỷ lệ khung hình điểm ảnh"
+#define OPENMSX_PIXEL_ASPECT_INFO_0_VN "TV: hình ảnh có chiều rộng giống như khi hiển thị trên TV theo cách openMSX mô phỏng. Vuông: mỗi điểm ảnh có chiều rộng bằng chiều cao."
 #define OPTION_VAL_TV_VN NULL
-#define OPTION_VAL_SQUARE_VN NULL
-#define OPENMSX_EXT1_LABEL_VN NULL
-#define OPENMSX_EXT1_INFO_0_VN NULL
-#define OPTION_VAL_NONE_VN NULL
-#define OPTION_VAL_2ND_PSG_VN NULL
+#define OPTION_VAL_SQUARE_VN "Vuông"
+#define OPENMSX_EXT1_LABEL_VN "Khe mở rộng 1 (Khởi động lại)"
+#define OPENMSX_EXT1_INFO_0_VN "Một hộp băng trò chơi hoặc thiết bị được gắn vào khe cắm còn trống, tương tự tùy chọn -ext của openMSX. Một số thiết bị yêu cầu tệp ROM của chúng phải nằm trong <system>/openmsx/share/systemroms."
+#define OPTION_VAL_NONE_VN "Không"
+#define OPTION_VAL_2ND_PSG_VN "PSG thứ hai"
 #define OPTION_VAL_ADVRAM_VN NULL
-#define OPTION_VAL_MEGARAM_2MB_VN NULL
-#define OPTION_VAL_ASCII_MSX_DOS2_VN NULL
-#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_VN NULL
-#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_VN NULL
-#define OPTION_VAL_MSXDOS2_VN NULL
-#define OPTION_VAL_AVT_DPF_550_VN NULL
-#define OPTION_VAL_MU_PACK_VN NULL
-#define OPTION_VAL_CASIO_KB_10_VN NULL
-#define OPTION_VAL_CASIO_KB_7_VN NULL
-#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_VN NULL
-#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_VN NULL
-#define OPTION_VAL_ROM_HUNTER_MK2_VN NULL
-#define OPTION_VAL_DEBUGDEVICE_VN NULL
-#define OPTION_VAL_DDX_3_0_VN NULL
-#define OPTION_VAL_MEGARAM_VN NULL
-#define OPTION_VAL_MEGARAM_DISK_VN NULL
-#define OPTION_VAL_SMXWIFI_VN NULL
-#define OPTION_VAL_EPSON_CHAKKARI_COPY_VN NULL
-#define OPTION_VAL_ESE_RAMDISK_VN NULL
-#define OPTION_VAL_ESE_SCC_VN NULL
-#define OPTION_VAL_ESE_WAVE_SCSI_VN NULL
-#define OPTION_VAL_ESE_MEGA_SCSI_VN NULL
-#define OPTION_VAL_FAC_MIDI_INTERFACE_VN NULL
-#define OPTION_VAL_RS232_VN NULL
-#define OPTION_VAL_AUDIO_VN NULL
-#define OPTION_VAL_AUDIO2_VN NULL
-#define OPTION_VAL_GRADIENTE_CT_80E_VN NULL
-#define OPTION_VAL_ASCII16_X_MAPPER_XL_VN NULL
-#define OPTION_VAL_HIRESTIMER_VN NULL
-#define OPTION_VAL_HITACHI_MPC_310H_VN NULL
-#define OPTION_VAL_JUN_SOFT_DALSORI_R2_VN NULL
-#define OPTION_VAL_JVC_MSX_MIDI_VN NULL
-#define OPTION_VAL_KONAMI_EC_701_VN NULL
-#define OPTION_VAL_KONAMI_EC_702_VN NULL
-#define OPTION_VAL_SCC_VN NULL
-#define OPTION_VAL_SCC_OPENMSX_EXT1_VN NULL
-#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_VN NULL
-#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_VN NULL
-#define OPTION_VAL_LASCOM_KANJI_VN NULL
-#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_VN NULL
-#define OPTION_VAL_OPL3CARTRIDGE_VN NULL
-#define OPTION_VAL_MIDI_INTERFACE_3_VN NULL
-#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_VN NULL
-#define OPTION_VAL_MEGAFLASHROM_SCC_VN NULL
-#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_VN NULL
-#define OPTION_VAL_MEGAFLASHROM_SCC_SD_VN NULL
-#define OPTION_VAL_RAM1MB_VN NULL
-#define OPTION_VAL_RAM2MB_VN NULL
-#define OPTION_VAL_RAM4MB_VN NULL
-#define OPTION_VAL_RAM512K_VN NULL
-#define OPTION_VAL_MICROSOL_CDX_2_VN NULL
-#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_VN NULL
-#define OPTION_VAL_MBSTEREO_VN NULL
-#define OPTION_VAL_GOUDA_SCSI_VN NULL
-#define OPTION_VAL_MSXPI_VN NULL
-#define OPTION_VAL_OPL3CARTRIDGE2_MONO_VN NULL
-#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_VN NULL
-#define OPTION_VAL_NATIONAL_CF_SM003_VN NULL
-#define OPTION_VAL_NEOS_MA_20R_VN NULL
-#define OPTION_VAL_NEOS_MA_20V_VN NULL
-#define OPTION_VAL_UNAPINET_VN NULL
+#define OPTION_VAL_MEGARAM_2MB_VN "Ademir Carchano MegaRAM (phiên bản kỷ niệm)"
+#define OPTION_VAL_ASCII_MSX_DOS2_VN "Hệ điều hành MSX-DOS2 tiếng Nhật của ASCII"
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_VN "Phần mềm soạn thảo MSX-Write tiếng Nhật của ASCII"
+#define OPTION_VAL_ASCII_JAPANESE_MSX_WRITE_II_VN "Phần mềm soạn thảo MSX-Write II tiếng Nhật của ASCII"
+#define OPTION_VAL_MSXDOS2_VN "Hệ điều hành MSX-DOS 2 của ASCII"
+#define OPTION_VAL_AVT_DPF_550_VN "Ổ đĩa mềm AVT DPF-550"
+#define OPTION_VAL_MU_PACK_VN "Bộ mở rộng Bit²/ASCII μ·PACK BM-117"
+#define OPTION_VAL_CASIO_KB_10_VN "Trạm kết nối Casio KB-10"
+#define OPTION_VAL_CASIO_KB_7_VN "Trạm kết nối Casio KB-7"
+#define OPTION_VAL_CHECKMARK_FM_STEREO_PAK_VN "Bộ mở rộng âm thanh FM Stereo của Checkmark"
+#define OPTION_VAL_COMPUTER_MATES_DISK_INTERFACE_VN "Giao diện ổ đĩa của Computer Mates"
+#define OPTION_VAL_ROM_HUNTER_MK2_VN "Hệ thống Daito Micom ROM Hunter Mk2"
+#define OPTION_VAL_DEBUGDEVICE_VN "Thiết bị gỡ lỗi"
+#define OPTION_VAL_DDX_3_0_VN "Bộ mở rộng Digital Design DDX 3.0"
+#define OPTION_VAL_MEGARAM_VN "Bộ nhớ mở rộng Digital Design MegaRAM"
+#define OPTION_VAL_MEGARAM_DISK_VN "Ổ đĩa ảo Digital Design MegaRAM"
+#define OPTION_VAL_SMXWIFI_VN "Bộ phát Wi-Fi DucaSP SM-X"
+#define OPTION_VAL_EPSON_CHAKKARI_COPY_VN "Máy sao chép Epson Chakkari"
+#define OPTION_VAL_ESE_RAMDISK_VN "Ổ đĩa RAM ESE của ESE Artists' Factory"
+#define OPTION_VAL_ESE_SCC_VN "Bộ mở rộng âm thanh ESE SCC của ESE Artists' Factory"
+#define OPTION_VAL_ESE_WAVE_SCSI_VN "Bộ mở rộng âm thanh ESE WAVE-SCSI của ESE Artists' Factory"
+#define OPTION_VAL_ESE_MEGA_SCSI_VN "Bộ điều khiển SCSI MEGA của ESE Artists' Factory"
+#define OPTION_VAL_FAC_MIDI_INTERFACE_VN "Giao diện MIDI FAC"
+#define OPTION_VAL_RS232_VN "Giao diện RS-232C dành cho MSX thông dụng"
+#define OPTION_VAL_AUDIO_VN "Bộ mở rộng âm thanh MSX-AUDIO thông dụng"
+#define OPTION_VAL_AUDIO2_VN "Bộ mở rộng âm thanh MSX-AUDIO 2 (cổng kết nối thay thế)"
+#define OPTION_VAL_GRADIENTE_CT_80E_VN "Thẻ mở rộng 80 cột Gradiente CT-80E"
+#define OPTION_VAL_ASCII16_X_MAPPER_XL_VN "Bộ ánh xạ bộ nhớ Grauw ASCII16-X XL"
+#define OPTION_VAL_HIRESTIMER_VN "bộ hẹn giờ độ phân giải cao"
+#define OPTION_VAL_HITACHI_MPC_310H_VN "Ổ đĩa mềm 2DD Hitachi kèm bộ điều khiển MPC-310H"
+#define OPTION_VAL_JUN_SOFT_DALSORI_R2_VN "Bộ mở rộng âm thanh Jun Soft DalSoRi R2"
+#define OPTION_VAL_JVC_MSX_MIDI_VN "Giao diện MIDI JVC MSX"
+#define OPTION_VAL_KONAMI_EC_701_VN "Hộp mực xử lý văn bản tiếng Nhật Konami EC-701"
+#define OPTION_VAL_KONAMI_EC_702_VN "Hộp mực ROM chữ Hán Konami EC-702"
+#define OPTION_VAL_SCC_VN "Bộ mở rộng âm thanh Konami SCC"
+#define OPTION_VAL_SCC_OPENMSX_EXT1_VN "Bộ mở rộng âm thanh Konami SCC+"
+#define OPTION_VAL_KONAMI_SD_SNATCHER_SOUND_CARTRIDGE_VN "Hộp mực âm thanh Konami SD-Snatcher RA-011"
+#define OPTION_VAL_KONAMI_SNATCHER_SOUND_CARTRIDGE_VN "Hộp mực âm thanh Konami Snatcher RA-004"
+#define OPTION_VAL_LASCOM_KANJI_VN "Hộp mực ROM chữ Hán Lascom"
+#define OPTION_VAL_OPL3CARTRIDGE_MOONSOUND_COMPATIBLE_VN "Hộp mực OPL3 Luciano Sturaro (tương thích Moonsound)"
+#define OPTION_VAL_OPL3CARTRIDGE_VN "Hộp mực OPL3 Luciano Sturaro (tương thích MSX-Audio)"
+#define OPTION_VAL_MIDI_INTERFACE_3_VN "Giao diện MIDI 3 của M. Fujimoto"
+#define OPTION_VAL_KONAMI_ULTIMATE_COLLECTION_VN "Bộ sưu tập tối thượng Konami phiên bản 3 của Manuel Pazos"
+#define OPTION_VAL_MEGAFLASHROM_SCC_VN "Bộ nhớ mở rộng MegaFlashROM SCC của Manuel Pazos"
+#define OPTION_VAL_MEGAFLASHROM_SCC_OPENMSX_EXT1_VN "Bộ nhớ mở rộng MegaFlashROM SCC+ của Manuel Pazos"
+#define OPTION_VAL_MEGAFLASHROM_SCC_SD_VN "Bộ nhớ mở rộng MegaFlashROM SCC+ SD của Manuel Pazos"
+#define OPTION_VAL_RAM1MB_VN "Bộ mở rộng bộ nhớ (1 MB)"
+#define OPTION_VAL_RAM2MB_VN "Bộ mở rộng bộ nhớ (2 MB)"
+#define OPTION_VAL_RAM4MB_VN "Bộ mở rộng bộ nhớ (4 MB)"
+#define OPTION_VAL_RAM512K_VN "Bộ mở rộng bộ nhớ (512 kB)"
+#define OPTION_VAL_MICROSOL_CDX_2_VN "Ổ đĩa CDX-2 của Microsol"
+#define OPTION_VAL_MITSUBISHI_ML_30DC_ML_30FD_VN "Bộ điều khiển và ổ đĩa mềm Mitsubishi ML-30DC/ML-30FD"
+#define OPTION_VAL_MBSTEREO_VN "Bộ mở rộng âm thanh nổi Moonblaster"
+#define OPTION_VAL_GOUDA_SCSI_VN "Bộ điều khiển SCSI Gouda Novaxis của MSX Club Gouda"
+#define OPTION_VAL_MSXPI_VN "Máy tính MSXPi"
+#define OPTION_VAL_OPL3CARTRIDGE2_MONO_VN "Hộp mực OPL3 MSXpro phiên bản v2 (âm thanh đơn kênh)"
+#define OPTION_VAL_OPL3CARTRIDGE2_STEREO_VN "Hộp mực OPL3 MSXpro phiên bản v2 (âm thanh nổi)"
+#define OPTION_VAL_NATIONAL_CF_SM003_VN "Bộ xử lý văn bản chữ Hán National CF-SM003"
+#define OPTION_VAL_NEOS_MA_20R_VN "Bộ chuyển đổi nâng cấp Neos MSX BASIC phiên bản 2.0 MA-20 (R)"
+#define OPTION_VAL_NEOS_MA_20V_VN "Bộ chuyển đổi nâng cấp Neos V MA-20 (V)"
+#define OPTION_VAL_UNAPINET_VN "bộ mở rộng mạng openMSXnet UnapiNet"
 #define OPTION_VAL_FMPAC_VN NULL
 #define OPTION_VAL_PAC_VN NULL
-#define OPTION_VAL_PANASONIC_FS_FD1A_VN NULL
-#define OPTION_VAL_PANASONIC_FS_CA1_VN NULL
-#define OPTION_VAL_PANASONIC_FS_PW1_VN NULL
-#define OPTION_VAL_PASSWORD_CARTRIDGE_VN NULL
-#define OPTION_VAL_PHILIPS_NMS_1200_VN NULL
-#define OPTION_VAL_PHILIPS_VY_0010_VN NULL
-#define OPTION_VAL_PHILIPS_NMS_1205_VN NULL
-#define OPTION_VAL_PHILIPS_VU_0040_VN NULL
-#define OPTION_VAL_BOOSTED_AUDIO_VN NULL
-#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_VN NULL
-#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_VN NULL
-#define OPTION_VAL_PROGRAMMABLEDEVICE_VN NULL
+#define OPTION_VAL_PANASONIC_FS_FD1A_VN "Ổ đĩa mềm Panasonic 3,5 inch FS-FD1A"
+#define OPTION_VAL_PANASONIC_FS_CA1_VN "Bộ âm thanh MSX Panasonic FS-CA1"
+#define OPTION_VAL_PANASONIC_FS_PW1_VN "Máy xử lý văn bản Panasonic kèm hộp ROM chữ Hán FS-PW1"
+#define OPTION_VAL_PASSWORD_CARTRIDGE_VN "Hộp mạch mật khẩu"
+#define OPTION_VAL_PHILIPS_NMS_1200_VN "Ổ đĩa mềm siêu nhỏ 2DD Philips NMS 1200"
+#define OPTION_VAL_PHILIPS_VY_0010_VN "Ổ đĩa mềm Philips 3,5 inch VY-0010"
+#define OPTION_VAL_PHILIPS_NMS_1205_VN "Mô-đun âm nhạc Philips NMS-1205"
+#define OPTION_VAL_PHILIPS_VU_0040_VN "Giao tiếp máy in song song Philips VU 0040"
+#define OPTION_VAL_BOOSTED_AUDIO_VN "Bộ âm thanh MSX Philips/MSXPro"
+#define OPTION_VAL_MUSICAL_MEMORY_MAPPER_VN "Bộ nhớ ánh xạ nhạc Popolon + Repro Factory (1 MB)"
+#define OPTION_VAL_POPOLON_SOUND_CARTRIDGE_VN "Hộp âm thanh Popolon"
+#define OPTION_VAL_PROGRAMMABLEDEVICE_VN "Thiết bị lập trình PVM"
 #define OPTION_VAL_RAM16K_VN NULL
 #define OPTION_VAL_RAM32K_VN NULL
 #define OPTION_VAL_RAM64K_VN NULL
 #define OPTION_VAL_CARNIVORE2_VN NULL
-#define OPTION_VAL_SANYO_MFD_001_VN NULL
-#define OPTION_VAL_SANYO_MRS_001_VN NULL
-#define OPTION_VAL_SHARP_HB_4000_VN NULL
-#define OPTION_VAL_SHARP_HB_3600_VN NULL
-#define OPTION_VAL_SLOTEXPANDER_VN NULL
+#define OPTION_VAL_SANYO_MFD_001_VN "Bộ ổ đĩa mềm MSX Sanyo MFD-001"
+#define OPTION_VAL_SANYO_MRS_001_VN "Bộ giao tiếp RS-232C MSX Sanyo MRS-001"
+#define OPTION_VAL_SHARP_HB_4000_VN "Bộ mở rộng 80 cột Sharp HB-4000"
+#define OPTION_VAL_SHARP_HB_3600_VN "Bộ điều khiển ổ đĩa kép Sharp HB-3600"
+#define OPTION_VAL_SLOTEXPANDER_VN "Bộ mở rộng khe cắm"
 #define OPTION_VAL_BEER_IDE_VN NULL
-#define OPTION_VAL_SONY_HBD_20W_VN NULL
-#define OPTION_VAL_SONY_HBD_F1_VN NULL
-#define OPTION_VAL_SONY_HBI_55_VN NULL
-#define OPTION_VAL_SONY_HBI_J1_VN NULL
-#define OPTION_VAL_SONY_HBD_50_VN NULL
-#define OPTION_VAL_SONY_HBK_30_VN NULL
-#define OPTION_VAL_SONY_HBI_232_VN NULL
-#define OPTION_VAL_SENSORKID_VN NULL
-#define OPTION_VAL_SPECTRAVIDEO_SVI_707_VN NULL
-#define OPTION_VAL_SUNRISEIDE_NEXTOR_VN NULL
-#define OPTION_VAL_IDE_VN NULL
-#define OPTION_VAL_GFX9000_VN NULL
-#define OPTION_VAL_MOONSOUND_VN NULL
-#define OPTION_VAL_NOWIND_VN NULL
-#define OPTION_VAL_VIDEO9000_VN NULL
-#define OPTION_VAL_MAKOTO_VN NULL
-#define OPTION_VAL_FRANKY_NTSC_VN NULL
-#define OPTION_VAL_FRANKY_PAL_VN NULL
-#define OPTION_VAL_TALENT_TDC_600_VN NULL
-#define OPTION_VAL_TALENT_DPF_550_VN NULL
-#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_VN NULL
-#define OPTION_VAL_SN76489_VN NULL
-#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_VN NULL
-#define OPTION_VAL_TOSHIBA_HX_F101PE_VN NULL
-#define OPTION_VAL_TOSHIBA_HX_MU900_VN NULL
-#define OPTION_VAL_YAMAHA_FD_03_VN NULL
-#define OPTION_VAL_YAMAHA_FD_05_VN NULL
-#define OPTION_VAL_YAMAHA_SFG_05_VN NULL
-#define OPTION_VAL_YAMAHA_SFG_01_VN NULL
-#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_VN NULL
-#define OPTION_VAL_YAMAHA_SKW_01_VN NULL
-#define OPENMSX_EXT2_LABEL_VN NULL
-#define OPENMSX_EXT3_LABEL_VN NULL
-#define OPENMSX_EXT4_LABEL_VN NULL
-#define OPENMSX_EXT5_LABEL_VN NULL
-#define OPENMSX_EXT6_LABEL_VN NULL
-#define OPENMSX_EXT7_LABEL_VN NULL
-#define OPENMSX_EXT8_LABEL_VN NULL
-#define OPENMSX_EXT9_LABEL_VN NULL
-#define OPENMSX_EXT10_LABEL_VN NULL
+#define OPTION_VAL_SONY_HBD_20W_VN "Ổ đĩa mềm siêu nhỏ 2DD Sony HBD-20W"
+#define OPTION_VAL_SONY_HBD_F1_VN "Ổ đĩa mềm siêu nhỏ 2DD Sony HBD-F1"
+#define OPTION_VAL_SONY_HBI_55_VN "Hộp dữ liệu Sony 4 KB HBI-55"
+#define OPTION_VAL_SONY_HBI_J1_VN "Hộp ROM chữ Hán Sony HBI-J1"
+#define OPTION_VAL_SONY_HBD_50_VN "Ổ đĩa mềm siêu nhỏ Sony HBD-50"
+#define OPTION_VAL_SONY_HBK_30_VN "Ổ đĩa mềm siêu nhỏ Sony HBK-30"
+#define OPTION_VAL_SONY_HBI_232_VN "Hộp giao tiếp RS-232C Sony HBI-232"
+#define OPTION_VAL_SENSORKID_VN "Hộp cảm biến Sony Sensor Kid HBJ-H081C"
+#define OPTION_VAL_SPECTRAVIDEO_SVI_707_VN "Ổ đĩa mềm MSX Spectravideo (320K) SVI-707"
+#define OPTION_VAL_SUNRISEIDE_NEXTOR_VN "Bộ giao tiếp ATA-IDE Sunrise kèm Nextor"
+#define OPTION_VAL_IDE_VN "Bộ giao tiếp ATA-IDE Sunrise"
+#define OPTION_VAL_GFX9000_VN "Bộ xử lý đồ họa Sunrise GFX9000"
+#define OPTION_VAL_MOONSOUND_VN "Bộ âm thanh Sunrise MoonSound"
+#define OPTION_VAL_NOWIND_VN "Bộ giao tiếp USB Nowind Sunrise"
+#define OPTION_VAL_VIDEO9000_VN "Bộ xử lý hình ảnh Sunrise Video9000"
+#define OPTION_VAL_MAKOTO_VN "Phần cứng Makoto SuperSoniqs / Electric River"
+#define OPTION_VAL_FRANKY_NTSC_VN "SuperSoniqs Franky hệ NTSC"
+#define OPTION_VAL_FRANKY_PAL_VN "SuperSoniqs Franky hệ PAL"
+#define OPTION_VAL_TALENT_TDC_600_VN "Ổ đĩa mềm Talent TDC-600"
+#define OPTION_VAL_TALENT_DPF_550_VN "Ổ đĩa mềm Talent DPF-550"
+#define OPTION_VAL_TECALL_MSX_RAMFILE_TM220_VN "Tệp RAM MSX Tecall TM220"
+#define OPTION_VAL_SN76489_VN "Bộ tạo âm thanh kỹ thuật số phức hợp Texas Instruments SN76489"
+#define OPTION_VAL_THE_SCC_ALLIANCE_YAMANOOTO_VN "Bộ âm thanh Yamanooto của SCC Alliance"
+#define OPTION_VAL_TOSHIBA_HX_F101PE_VN "Ổ đĩa mềm siêu nhỏ Toshiba HX-F101PE"
+#define OPTION_VAL_TOSHIBA_HX_MU900_VN "Hệ thống âm nhạc MSX Toshiba HX-MU900"
+#define OPTION_VAL_YAMAHA_FD_03_VN "Ổ đĩa mềm Yamaha 3,5 inch 1DD FD-03"
+#define OPTION_VAL_YAMAHA_FD_05_VN "Ổ đĩa mềm siêu nhỏ Yamaha MSX 3,5 inch FD-05/FD-051"
+#define OPTION_VAL_YAMAHA_SFG_05_VN "Bộ tạo âm thanh FM Yamaha thế hệ II SFG-05"
+#define OPTION_VAL_YAMAHA_SFG_01_VN "Bộ tạo âm thanh FM Yamaha SFG-01"
+#define OPTION_VAL_YAMAHA_SKW_05_EMBEDDED_VN "Bộ xử lý văn bản tiếng Nhật Yamaha (tích hợp sẵn) SKW-05"
+#define OPTION_VAL_YAMAHA_SKW_01_VN "Bộ xử lý văn bản tiếng Nhật Yamaha SKW-01"
+#define OPENMSX_EXT2_LABEL_VN "Mở rộng 2 (Cần khởi động lại)"
+#define OPENMSX_EXT3_LABEL_VN "Mở rộng 3 (Cần khởi động lại)"
+#define OPENMSX_EXT4_LABEL_VN "Mở rộng 4 (Cần khởi động lại)"
+#define OPENMSX_EXT5_LABEL_VN "Mở rộng 5 (Cần khởi động lại)"
+#define OPENMSX_EXT6_LABEL_VN "Mở rộng 6 (Cần khởi động lại)"
+#define OPENMSX_EXT7_LABEL_VN "Mở rộng 7 (Cần khởi động lại)"
+#define OPENMSX_EXT8_LABEL_VN "Mở rộng 8 (Cần khởi động lại)"
+#define OPENMSX_EXT9_LABEL_VN "Mở rộng 9 (Cần khởi động lại)"
+#define OPENMSX_EXT10_LABEL_VN "Mở rộng 10 (Cần khởi động lại)"
 
 struct retro_core_option_v2_category option_cats_vn[] = {
     {"system", CATEGORY_SYSTEM_LABEL_VN, CATEGORY_SYSTEM_INFO_0_VN},
