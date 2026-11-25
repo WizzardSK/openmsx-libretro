@@ -33,7 +33,7 @@ The core is preliminary. The libretro buildbot builds it.
 - Real machines and some extensions need their system ROMs in `system/openmsx/share/systemroms`.
 - The core hands RetroArch the picture as pixels by default, with any video driver; with Video > Video Output set to OpenGL it draws through RetroArch's OpenGL context, so the video driver has to be `gl` (or `glcore`).
 
-Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk images (`.dsk`, `.di1`, `.di2`, `.dmk`, `.xsa`), cassettes (`.cas`, `.wav`), `.m3u` lists of disks, and any of them zipped or gzipped.
+Content: cartridges (`.rom`, `.ri`, `.mx1`, `.mx2`, `.col`, `.sg`, `.sc`), disk images (`.dsk`, `.di1`, `.di2`, `.dmk`, `.xsa`), cassettes (`.cas`, `.wav`), `.m3u` lists of disks, and any of them in a `.zip` or `.7z` archive (unpacked by RetroArch) or gzipped.
 
 ## Core options
 

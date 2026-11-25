@@ -1348,9 +1348,13 @@ RETRO_API void retro_get_system_info(retro_system_info* info)
 	*info = {};
 	info->library_name = "openMSX";
 	info->library_version = "21.0 " OPENMSX_LIBRETRO_COMMIT;
-	info->valid_extensions = "rom|ri|mx1|mx2|col|sg|sc|dsk|di1|di2|dmk|xsa|cas|wav|m3u|zip|gz";
+	info->valid_extensions = "rom|ri|mx1|mx2|col|sg|sc|dsk|di1|di2|dmk|xsa|cas|wav|m3u|zip|7z|gz";
 	info->need_fullpath = true;
-	info->block_extract = true;
+	// RetroArch unpacks .zip and .7z and hands over the file inside, as for
+	// blueMSX: openMSX reads zip and gzip but not 7z, and with extraction
+	// blocked a .7z reached it whole and didn't load (#1). A .gz is not an
+	// archive to RetroArch and still reaches openMSX as it is.
+	info->block_extract = false;
 }
 
 RETRO_API void retro_get_system_av_info(retro_system_av_info* info)
